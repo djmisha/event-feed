@@ -11,9 +11,48 @@
  */
 /* line 5, src/sass/components/_base.scss */
 body {
+  font-family: Arial;
   margin: 0 auto;
   width: 100%;
   background: #fff;
   font-size: 20px;
   line-height: 24px;
+}
+
+/* line 1, src/sass/components/_events.scss */
+.single-event {
+  border: 1px solid #eee;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* line 7, src/sass/components/_events.scss */
+.event-artist {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 12, src/sass/components/_events.scss */
+.event-venue {
+  display: inline-block;
+  font-style: italic;
+  font-size: 16px;
+}
+
+/* line 18, src/sass/components/_events.scss */
+.event-location {
+  display: inline-block;
+  font-size: 12px;
+  color: #ccc;
+}
+
+/* line 24, src/sass/components/_events.scss */
+.event-link a {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #000;
+  padding: 3px 10px;
+  border: 1px solid #eee;
+  display: inline-block;
+  text-decoration: none;
 }

@@ -4,7 +4,9 @@
 ;(function() {
 
 
-	function requestPostsAndAttachtoPage(category, numberofposts) {
+	function requestEventsAndAttachtoPage(category, numberofposts) {
+
+		var eventData = [];
 
 		var http = new XMLHttpRequest();
 		var url = 'events.json';
@@ -14,38 +16,48 @@
 		http.onreadystatechange= function() {
 			if(http.readyState === XMLHttpRequest.DONE && http.status === 200) {
 				var PostResponce = JSON.parse(http.responseText);
-				console.log(PostResponce);
+				// console.log(PostResponce);
 				parseData(PostResponce);
 			}
 		};
 		
 		function parseData(data) {
-			for ( var i = 0; i < data.length; i++) {
+			for ( var g = 0; g < data.length; g++) {
 
-				var eventArtist = data[i].eventArtist;
-				var eventLocation = data[i].eventLocation;
-				var eventVenue = data[i].eventVenue;
-				var ageLabel = data[i].ageLabel;
-				// var eventDesc href = data[i].eventDesc;
-				// var button href = data[i].button;
-				var callout = data[i].callout;
-				// var callout href = data[i].callout;
-				// var callout 2 = data[i].callout;
-				// var callout href 2 = data[i].callout;
-				// var callout 3 = data[i].callout;
-				// var callout href 3 = data[i].callout;
-				var href = data[i].href;
-				// var button 3 = data[i].button;
-				// var button href 3 = data[i].button;
-				var eventSub = data[i].eventSub;
-				var userName = data[i].userName;
-				// var userName href = data[i].userName;
-				var userRep = data[i].userRep;
-				var arrow = data[i].arrow;
+				var singleEventListing = {
+					artist: data[g].eventArtist,
+					location: data[g].eventLocation,
+					venue: data[g].eventVenue,
+					age: data[g].ageLabel,
+					ticketlink: data[g]['button href'],
+				};
+
+				eventData.push(singleEventListing);
+
+				// var eventArtist = data[g].eventArtist;
+				// var eventLocation = data[g].eventLocation;
+				// var eventVenue = data[g].eventVenue;
+				// var ageLabel = data[g].ageLabel;
+				// var eventDesc href = data[g].eventDesc;
+				// var button href = data[g].button;
+				// var callout = data[g].callout;
+				// var callout href = data[g].callout;
+				// var callout 2 = data[g].callout;
+				// var callout href 2 = data[g].callout;
+				// var callout 3 = data[g].callout;
+				// var callout href 3 = data[g].callout;
+				// var href = data[g].href;
+				// var button 3 = data[g].button;
+				// var button href 3 = data[g].button;
+				// var eventSub = data[g].eventSub;
+				// var userName = data[g].userName;
+				// var userName href = data[g].userName;
+				// var userRep = data[g].userRep;
+				// var arrow = data[g].arrow;
 
 
 
-				console.log(eventLocation);
+				// console.log(singleEventListing);
 
 
 
@@ -56,12 +68,34 @@
 				// pageElement.innerHTML = '<a class=\"\" href=\"' + postURL + '\"><img src=\"' + postIMG + '\"><span>' + postTitle + '</span></a>';
 				
 				// document.body.appendChild(pageElement);
-			
 			}
+
+			for ( var i = 0; i < eventData.length; i++) {
+				var eventPageElement = document.createElement('div');
+				// console.log(eventPageElement);
+				eventPageElement.classList.add('single-event');
+				
+				eventPageElement.innerHTML = '<div class=event-artist>' + eventData[i].artist + '</div> \n' + 
+				'<div class=event-venue>' + eventData[i].venue + '</div> \n' + 
+				'<div class=event-location>' + eventData[i].location + '</div> \n' + 
+				'<div class=event-link><a href=' + eventData[i].ticketlink + ' target=_blank>Tickets</div> \n' 
+				;
+
+				document.body.appendChild(eventPageElement);
+			}
+			
 		}
+
+		// function attachToPage() {
+			// console.log(eventData);
+			// eventData.forEach(function(item) {
+
+		// }
+
+		// attachToPage();
 	}
 
-	requestPostsAndAttachtoPage();
+	requestEventsAndAttachtoPage();
 
 
 

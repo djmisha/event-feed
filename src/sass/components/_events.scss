@@ -1,0 +1,32 @@
+.single-event {
+	border: 1px solid #eee;
+	padding: 10px;
+	margin: 10px;
+}
+
+.event-artist {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.event-venue {
+	display: inline-block;
+	font-style: italic;
+	font-size: 16px;
+}
+
+.event-location {
+	display: inline-block;
+	font-size: 12px;
+	color: #ccc;
+}
+
+.event-link a {
+	margin-top: 10px;
+	font-size: 14px;
+	color: #000;
+	padding: 3px 10px;
+	border: 1px solid #eee;
+	display: inline-block;
+	text-decoration: none;
+}
