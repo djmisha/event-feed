@@ -1,4 +1,4 @@
-/*! amex-gbt-portal v0.0.1 | (c) 2020 Lewis | MIT License | https://bitbucket.org/mishaosinovskiy/amex-gbt-portal/src/master/ */
+/*! sdhm-event-feed v0.0.1 | (c) 2020 San Diego House Music | MIT License | https://github.com/djmisha/event-feed */
 /*To do*/
 
 // check if date has paseed and don't show past events
@@ -67,6 +67,8 @@
 				'<div class=\"event-link\"><a href=' + eventData[i].ticketlink + ' target=_blank>Learn More</a></div> \n' +
 				
 				'<a href=' + eventData[i].ticketlink + ' target=_blank><div class=\"event-image\" style=\"background-image:url(' + eventData[i].image + ')\"></div></a> \n'  
+
+				// '<a href=' + eventData[i].ticketlink + ' target=_blank><div class=\"event-image\" data-bg=\"' + eventData[i].image + ')\"></div></a> \n'  
 				
 				;
 

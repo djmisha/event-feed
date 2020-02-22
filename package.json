@@ -1,17 +1,17 @@
 {
-	"name": "amex-gbt-portal",
+	"name": "sdhm-event-feed",
 	"version": "0.0.1",
-	"description": "Interactive form",
+	"description": "Event Feed",
 	"main": "./dist/index.html",
-	"staging" : "gbt-portal-form.netlify.com",
+	"staging": "events.sandiegohousemusic.com",
 	"author": {
-		"name": "Lewis",
-		"url": "https://www.teamlewis.com"
+		"name": "San Diego House Music",
+		"url": "https://sandiegohousemusic.com"
 	},
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://bitbucket.org/mishaosinovskiy/amex-gbt-portal/src/master/"
+		"url": "https://github.com/djmisha/event-feed"
 	},
 	"boilerplate": {
 		"version": "2.2.6",
@@ -43,5 +43,6 @@
 		"autoprefixer": "9.6.1",
 		"gulp-svgmin": "2.1.0",
 		"browser-sync": "2.26.7"
-	}
+	},
+	"dependencies": {}
 }
