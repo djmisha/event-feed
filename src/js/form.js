@@ -4,8 +4,6 @@
 // convert date to Schema readable format
 
 
-
-
 /* Create Scope for Events*/
 ;(function() {
 
@@ -67,7 +65,7 @@
 				
 				'<div class=\"event-link\"><a href=' + eventData[i].ticketlink + ' target=_blank>Learn More</a></div> \n' +
 				
-				'<div class=\"event-image\" style=\"background-image:url(' + eventData[i].image + ')\"></div> \n'  
+				'<a href=' + eventData[i].ticketlink + ' target=_blank><div class=\"event-image\" style=\"background-image:url(' + eventData[i].image + ')\"></div></a> \n'  
 				
 				;
 
