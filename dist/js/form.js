@@ -1,9 +1,4 @@
 /*! sdhm-event-feed v0.0.1 | (c) 2020 San Diego House Music | MIT License | https://github.com/djmisha/event-feed */
-/* Init Lazy Loading Images */
-var bLazy = new Blazy({
-    // Options
-});
-
 
 /* Create Scope for Events*/
 
@@ -28,15 +23,15 @@ var bLazy = new Blazy({
 		http.onreadystatechange= function() {
 			if(http.readyState === XMLHttpRequest.DONE && http.status === 200) {
 				var PostResponce = JSON.parse(http.responseText);
-				// console.log(PostResponce);
+				/*Puts the Data into our array*/
 				parseData(PostResponce);
+				/*Attaches the data to the page*/
 				attachToPage();
 			}
 		};
 		
 		function parseData(data) {
 			for ( var g = 0; g < data.length; g++) {
-
 				var singleEventListing = {
 					artist: data[g].eventArtist,
 					location: data[g].eventLocation,
@@ -46,14 +41,21 @@ var bLazy = new Blazy({
 					age: data[g].ageLabel,
 					ticketlink: data[g]['button href'],
 				};
-
 				eventData.push(singleEventListing);
 			}
 			
 		}
 
 		function attachToPage() {
+
+			/* Init Lazy Loading Images */
+
+			var bLazy = new Blazy({
+			    // Options
+			});
+
 			/*Attach Events To Page */
+			
 			for ( var i = 0; i < eventData.length; i++) {
 				var eventPageElement = document.createElement('div');
 				eventPageElement.classList.add('single-event');
@@ -85,6 +87,8 @@ var bLazy = new Blazy({
 
 	if (theFeed) {
 		requestEventsXHR();
+
+
 	}
 
 })();

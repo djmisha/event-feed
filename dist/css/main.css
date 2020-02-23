@@ -6,7 +6,7 @@
  * @section Variables
  */
 /*Lazy Loading */
-/* line 36, src/sass/components/_variables.scss */
+/* line 35, src/sass/components/_variables.scss */
 .b-lazy {
   -webkit-transition: opacity 500ms ease-in-out;
   transition: opacity 500ms ease-in-out;
@@ -14,7 +14,7 @@
   opacity: 0;
 }
 
-/* line 42, src/sass/components/_variables.scss */
+/* line 41, src/sass/components/_variables.scss */
 .b-lazy.b-loaded {
   opacity: 1;
 }
