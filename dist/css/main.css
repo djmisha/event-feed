@@ -5,6 +5,20 @@
 /**
  * @section Variables
  */
+/*Lazy Loading */
+/* line 36, src/sass/components/_variables.scss */
+.b-lazy {
+  -webkit-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+  max-width: 100%;
+  opacity: 0;
+}
+
+/* line 42, src/sass/components/_variables.scss */
+.b-lazy.b-loaded {
+  opacity: 1;
+}
+
 /**
  * @section Base Styles
  */
@@ -23,12 +37,13 @@ h1 {
   text-align: center;
   font-size: 14px;
   color: #ccc;
+  font-weight: 100;
 }
 
-/* line 7, src/sass/components/_events.scss */
+/* line 8, src/sass/components/_events.scss */
 .single-event {
   border: 1px solid #eee;
-  padding: 30px 20px 30px 180px;
+  padding: 20px 20px 30px 180px;
   margin: 30px 10px;
   position: relative;
   border-radius: 27px;
@@ -37,7 +52,25 @@ h1 {
           box-shadow: 5px 5px 23px #d4d4d4,  -5px -5px 23px #ffffff;
 }
 
-/* line 18, src/sass/components/_events.scss */
+/* line 19, src/sass/components/_events.scss */
+.event-artist {
+  word-wrap: anywhere;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  padding-bottom: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 19, src/sass/components/_events.scss */
+  .event-artist {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+/* line 31, src/sass/components/_events.scss */
 .event-image {
   width: 140px;
   height: 140px;
@@ -48,40 +81,41 @@ h1 {
   border-radius: 27px;
 }
 
-/* line 30, src/sass/components/_events.scss */
-.event-artist {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 24px;
-  padding-bottom: 10px;
-}
-
-/* line 37, src/sass/components/_events.scss */
+/* line 43, src/sass/components/_events.scss */
 .event-venue {
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 16px;
 }
 
-/* line 42, src/sass/components/_events.scss */
+/* line 47, src/sass/components/_events.scss */
+.event-venue:before {
+  content: '@ ';
+}
+
+/* line 52, src/sass/components/_events.scss */
 .event-date {
-  font-size: 16px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #c1c1c1;
+  padding-bottom: 5px;
 }
 
-/* line 46, src/sass/components/_events.scss */
+/* line 59, src/sass/components/_events.scss */
 .event-location {
   font-size: 12px;
   color: #ccc;
 }
 
-/* line 51, src/sass/components/_events.scss */
+/* line 64, src/sass/components/_events.scss */
 .event-link a {
   margin-top: 10px;
   font-size: 14px;
   color: #000;
-  padding: 7px 15px;
+  padding: 5px 20px;
   display: inline-block;
   text-decoration: none;
-  border-radius: 27px;
+  border-radius: 10px;
   background: #ffffff;
   -webkit-box-shadow: 5px 5px 23px #d4d4d4,  -5px -5px 23px #ffffff;
           box-shadow: 5px 5px 23px #d4d4d4,  -5px -5px 23px #ffffff;

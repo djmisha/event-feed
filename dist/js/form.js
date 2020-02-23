@@ -1,11 +1,17 @@
 /*! sdhm-event-feed v0.0.1 | (c) 2020 San Diego House Music | MIT License | https://github.com/djmisha/event-feed */
+/* Init Lazy Loading Images */
+var bLazy = new Blazy({
+    // Options
+});
+
+
+/* Create Scope for Events*/
+
 /*To do*/
 
 // check if date has paseed and don't show past events
 // convert date to Schema readable format
 
-
-/* Create Scope for Events*/
 ;(function() {
 
 	var theFeed = document.getElementById('evenfeed');
@@ -56,9 +62,9 @@
 
 				eventPageElement.innerHTML = 
 
-				'<div class=\"event-artist\" itemprop=\"name\">' + eventData[i].artist + '</div> \n' + 
-				
 				'<div class=\"event-date\" itemprop=\"startDate\">' + eventData[i].date + '</div> \n'  +
+				
+				'<div class=\"event-artist\" itemprop=\"name\">' + eventData[i].artist + '</div> \n' + 
 				
 				'<div class=\"event-venue\" itemprop=\"location\" itemscope itemtype=\"http://schema.org/Place\"><span itemprop="name">' + eventData[i].venue + '</spana></div> \n' + 
 				
@@ -66,9 +72,9 @@
 				
 				'<div class=\"event-link\"><a href=' + eventData[i].ticketlink + ' target=_blank>Learn More</a></div> \n' +
 				
-				'<a href=' + eventData[i].ticketlink + ' target=_blank><div class=\"event-image\" style=\"background-image:url(' + eventData[i].image + ')\"></div></a> \n'  
+				// '<a href=' + eventData[i].ticketlink + ' target=_blank><div class=\"event-image\" style=\"background-image:url(' + eventData[i].image + ')\"></div></a> \n'  
 
-				// '<a href=' + eventData[i].ticketlink + ' target=_blank><div class=\"event-image\" data-bg=\"' + eventData[i].image + ')\"></div></a> \n'  
+				'<a href=' + eventData[i].ticketlink + ' target=_blank><div class=\"event-image b-lazy\" data-src=\"' + eventData[i].image + '\"></div></a> \n'  
 				
 				;
 
