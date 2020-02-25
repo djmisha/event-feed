@@ -4,6 +4,9 @@
 /*To do*/
 
 // check if date has paseed and don't show past events
+
+// console.log(Date.now());
+
 // convert date to Schema readable format
 
 ;(function() {
@@ -31,6 +34,12 @@
 		
 		function parseData(data) {
 			for ( var g = 0; g < data.length; g++) {
+				/**/
+				// var cleanDate = new Date(data[g].date);
+				// console.log(cleanDate);
+				// console.log(Date.parse(cleanDate));
+
+
 				var singleEventListing = {
 					artist: data[g].eventArtist,
 					location: data[g].eventLocation,
@@ -47,37 +56,46 @@
 
 		function attachToPage() {
 
-			/* Init Lazy Loading Images */
+			/* Init Lazy Loading Images for faster performance */
 
 			var bLazy = new Blazy({
 			    // Options
 			});
 
-			/*Attach Events To Page */
+			/* creates the HTML markup for each event */
+
+			function createMarkUpforEvent(event) {
+
+				var singleEventMarkUp = 
+
+				'<div class=\"event-date\" itemprop=\"startDate\">' + event.date + '</div> \n'  +
+				
+				'<div class=\"event-artist\" itemprop=\"name\">' + event.artist + '</div> \n' + 
+				
+				'<div class=\"event-venue\" itemprop=\"location\" itemscope itemtype=\"http://schema.org/Place\"><span itemprop="name">' + event.venue + '</spana></div> \n' + 
+				
+				// '<div class=event-location>' + event.location + '</div> \n' + 
+				
+				'<div class=\"event-link\"><a href=' + event.ticketlink + ' target=\"_blank\">Learn More</a></div> \n' +
+				
+				// '<a href=' + event.ticketlink + ' target=_blank><div class=\"event-image\" style=\"background-image:url(' + event.image + ')\"></div></a> \n'  
+
+				'<a href=' + event.ticketlink + ' target=_blank><div class=\"event-image b-lazy\" data-src=\"' + event.image + '\"></div></a> \n'  
+				
+				;
+
+				return singleEventMarkUp;
+			}
 			
+			/* loop through events and attach them to page */
+
 			for ( var i = 0; i < eventData.length; i++) {
 				var eventPageElement = document.createElement('div');
 				eventPageElement.classList.add('single-event');
 				eventPageElement.setAttribute('itemscope', '');
 				eventPageElement.setAttribute('itemtype', 'http://schema.org/Event');
 
-				eventPageElement.innerHTML = 
-
-				'<div class=\"event-date\" itemprop=\"startDate\">' + eventData[i].date + '</div> \n'  +
-				
-				'<div class=\"event-artist\" itemprop=\"name\">' + eventData[i].artist + '</div> \n' + 
-				
-				'<div class=\"event-venue\" itemprop=\"location\" itemscope itemtype=\"http://schema.org/Place\"><span itemprop="name">' + eventData[i].venue + '</spana></div> \n' + 
-				
-				// '<div class=event-location>' + eventData[i].location + '</div> \n' + 
-				
-				'<div class=\"event-link\"><a href=' + eventData[i].ticketlink + ' target=_blank>Learn More</a></div> \n' +
-				
-				// '<a href=' + eventData[i].ticketlink + ' target=_blank><div class=\"event-image\" style=\"background-image:url(' + eventData[i].image + ')\"></div></a> \n'  
-
-				'<a href=' + eventData[i].ticketlink + ' target=_blank><div class=\"event-image b-lazy\" data-src=\"' + eventData[i].image + '\"></div></a> \n'  
-				
-				;
+				eventPageElement.innerHTML = createMarkUpforEvent(eventData[i]);
 
 				theFeed.appendChild(eventPageElement);
 			}
