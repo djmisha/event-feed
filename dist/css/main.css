@@ -47,12 +47,20 @@ h1 {
   margin: 30px 10px;
   position: relative;
   border-radius: 27px;
-  background: #ffffff;
-  -webkit-box-shadow: 5px 5px 23px #d4d4d4,  -5px -5px 23px #ffffff;
-          box-shadow: 5px 5px 23px #d4d4d4,  -5px -5px 23px #ffffff;
+  -webkit-box-shadow: 5px 5px 23px #d4d4d4, -5px -5px 23px #ffffff;
+          box-shadow: 5px 5px 23px #d4d4d4, -5px -5px 23px #ffffff;
+  background-color: #fff;
+  min-height: 150px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
 }
 
-/* line 19, src/sass/components/_events.scss */
+/* line 18, src/sass/components/_events.scss */
+.single-event:hover {
+  background-color: #eee;
+}
+
+/* line 23, src/sass/components/_events.scss */
 .event-artist {
   word-wrap: anywhere;
   font-weight: bold;
@@ -63,14 +71,14 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 19, src/sass/components/_events.scss */
+  /* line 23, src/sass/components/_events.scss */
   .event-artist {
     font-size: 20px;
     line-height: 22px;
   }
 }
 
-/* line 31, src/sass/components/_events.scss */
+/* line 35, src/sass/components/_events.scss */
 .event-image {
   width: 140px;
   height: 140px;
@@ -81,19 +89,19 @@ h1 {
   border-radius: 27px;
 }
 
-/* line 43, src/sass/components/_events.scss */
+/* line 47, src/sass/components/_events.scss */
 .event-venue {
   display: inline-block;
   font-size: 14px;
   line-height: 16px;
 }
 
-/* line 47, src/sass/components/_events.scss */
+/* line 51, src/sass/components/_events.scss */
 .event-venue:before {
   content: '@ ';
 }
 
-/* line 52, src/sass/components/_events.scss */
+/* line 56, src/sass/components/_events.scss */
 .event-date {
   font-size: 12px;
   line-height: 16px;
@@ -101,13 +109,13 @@ h1 {
   padding-bottom: 5px;
 }
 
-/* line 59, src/sass/components/_events.scss */
+/* line 63, src/sass/components/_events.scss */
 .event-location {
   font-size: 12px;
   color: #ccc;
 }
 
-/* line 64, src/sass/components/_events.scss */
+/* line 68, src/sass/components/_events.scss */
 .event-link a {
   margin-top: 10px;
   font-size: 14px;

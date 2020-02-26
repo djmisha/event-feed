@@ -1,28 +1,8 @@
 [
   {
-    "eventArtist": "Richy Ahmed, Jimbo James, Tiago, Ramin",
-    "eventVenue": "Firehouse Pacific Beach",
-    "date": "Sunday, February 23",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Richy%20Ahmed.jpg?v=1",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145594",
-    "button href": "https://edmtrain.com/california?event=145594&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Richy Ahmed",
-    "callout href": "https://edmtrain.com/tours?artist=4859",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/richyahmed",
-    "eventSub": "Added by",
-    "userName": "sarasbrodir",
-    "userName href": "https://edmtrain.com/u/sarasbrodir",
-    "userRep": "73,198",
-    "arrow": "new"
-  },
-  {
     "eventArtist": "Hippie Sabotage, ilo ilo",
     "eventVenue": "Observatory North Park",
-    "date": "Thursday, February 27",
+    "date": "Thursday, February 27, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Hippie%20Sabotage.jpg?v=3",
     "ageLabel": "Under 18 with adult",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=134601",
@@ -42,7 +22,7 @@
   {
     "eventArtist": "Riot Ten, G-REX, Jessica Audiffred, Sharps, MADRECKLESS",
     "eventVenue": "House of Blues San Diego",
-    "date": "Friday, February 28",
+    "date": "Friday, February 28, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Riot%20Ten.jpg?v=3",
     "ageLabel": "18+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=134765",
@@ -62,7 +42,7 @@
   {
     "eventArtist": "Spencer Brown, David Hohme, Marchsh, Nox Vahn",
     "eventVenue": "Spin Nightclub",
-    "date": "Friday, February 28",
+    "date": "Friday, February 28, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Spencer%20Brown.jpg?v=2",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=136055",
@@ -82,7 +62,7 @@
   {
     "eventArtist": "Illenium",
     "eventVenue": "Omnia San Diego",
-    "date": "Friday, February 28",
+    "date": "Friday, February 28, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Illenium.jpg?v=3",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141252",
@@ -102,7 +82,7 @@
   {
     "eventArtist": "Rick Wonder",
     "eventVenue": "Parq",
-    "date": "Friday, February 28",
+    "date": "Friday, February 28, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Rick%20Wonder.jpg?v=3",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143108",
@@ -122,7 +102,7 @@
   {
     "eventArtist": "Techniche Blonde",
     "eventVenue": "Blonde Bar",
-    "date": "Friday, February 28",
+    "date": "Friday, February 28, 2020",
     "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143224",
@@ -142,7 +122,7 @@
   {
     "eventArtist": "Noizu",
     "eventVenue": "Bassmnt",
-    "date": "Saturday, February 29",
+    "date": "Saturday, February 29, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Noizu.jpg?v=1",
     "ageLabel": "18+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=137991",
@@ -162,7 +142,7 @@
   {
     "eventArtist": "Wild At Heart: DJ Shift",
     "eventVenue": "Omnia San Diego",
-    "date": "Saturday, February 29",
+    "date": "Saturday, February 29, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/DJ%20Shift.jpg?v=1",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=139141",
@@ -182,7 +162,7 @@
   {
     "eventArtist": "Maya Jane Coles",
     "eventVenue": "Spin Nightclub",
-    "date": "Saturday, February 29",
+    "date": "Saturday, February 29, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Maya%20Jane%20Coles.jpg?v=3",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=140681",
@@ -202,7 +182,7 @@
   {
     "eventArtist": "Matroda",
     "eventVenue": "Bang Bang",
-    "date": "Saturday, February 29",
+    "date": "Saturday, February 29, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Matroda.jpg?v=1",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=140895",
@@ -222,7 +202,7 @@
   {
     "eventArtist": "In The Bag presents - The 1%",
     "eventVenue": "Lair Nightclub",
-    "date": "Saturday, February 29",
+    "date": "Saturday, February 29, 2020",
     "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145846",
@@ -242,7 +222,7 @@
   {
     "eventArtist": "Rooftop Roots: Bontan",
     "eventVenue": "Spin Nightclub",
-    "date": "Sunday, March 01",
+    "date": "Sunday, March 01, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Bontan.jpg?v=1",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141456",
@@ -262,7 +242,7 @@
   {
     "eventArtist": "NGHTMRE",
     "eventVenue": "Soma",
-    "date": "Thursday, March 05",
+    "date": "Thursday, March 05, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/NGHTMRE.jpg?v=4",
     "ageLabel": "18+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=136815",
@@ -282,7 +262,7 @@
   {
     "eventArtist": "Liquid Stranger, Dirt Monkey, Hydraulix, INZO",
     "eventVenue": "House of Blues San Diego",
-    "date": "Thursday, March 05",
+    "date": "Thursday, March 05, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Liquid%20Stranger.jpg?v=3",
     "ageLabel": "18+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=137697",
@@ -302,7 +282,7 @@
   {
     "eventArtist": "Techniche Blaque",
     "eventVenue": "Rich's San Diego",
-    "date": "Thursday, March 05",
+    "date": "Thursday, March 05, 2020",
     "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143980",
@@ -322,7 +302,7 @@
   {
     "eventArtist": "Open To Close: Will Clarke",
     "eventVenue": "Spin Nightclub",
-    "date": "Friday, March 06",
+    "date": "Friday, March 06, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Will%20Clarke.jpg?v=3",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=134965",
@@ -342,7 +322,7 @@
   {
     "eventArtist": "Sam Feldt",
     "eventVenue": "Omnia San Diego",
-    "date": "Friday, March 06",
+    "date": "Friday, March 06, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Sam%20Feldt.jpg?v=4",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141836",
@@ -362,7 +342,7 @@
   {
     "eventArtist": "CRSSD Festival: Gesaffelstein, Rüfüs Du Sol, Chris Lake, Nora En Pure, Carl Cox, Charlotte De Witte, Sacha Robotti, Ben Böhmer",
     "eventVenue": "Waterfront Park",
-    "date": "Saturday, March 07",
+    "date": "Saturday, March 07, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Gesaffelstein.jpg?v=3",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=136219",
@@ -382,7 +362,7 @@
   {
     "eventArtist": "Golf Clap",
     "eventVenue": "Bassmnt",
-    "date": "Saturday, March 07",
+    "date": "Saturday, March 07, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Golf%20Clap.jpg?v=3",
     "ageLabel": "18+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=139216",
@@ -402,7 +382,7 @@
   {
     "eventArtist": "Elephante",
     "eventVenue": "Omnia San Diego",
-    "date": "Saturday, March 07",
+    "date": "Saturday, March 07, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Elephante.jpg?v=3",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141835",
@@ -422,7 +402,7 @@
   {
     "eventArtist": "Joe Maz",
     "eventVenue": "Parq",
-    "date": "Saturday, March 07",
+    "date": "Saturday, March 07, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Joe%20Maz.jpg?v=3",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145324",
@@ -442,7 +422,7 @@
   {
     "eventArtist": "Tiger & Woods, Bouquet",
     "eventVenue": "Kettner Exchange",
-    "date": "Saturday, March 07",
+    "date": "Saturday, March 07, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Tiger%20%26%20Woods.jpg?v=3",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145595",
@@ -462,7 +442,7 @@
   {
     "eventArtist": "Autograf",
     "eventVenue": "Music Box",
-    "date": "Saturday, March 07",
+    "date": "Saturday, March 07, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Autograf.jpg?v=3",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145682",
@@ -482,7 +462,7 @@
   {
     "eventArtist": "Happy Saturdayurday & Sundayday",
     "eventVenue": "Julep",
-    "date": "Saturday, March 07",
+    "date": "Saturday, March 07, 2020",
     "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145830",
@@ -502,7 +482,7 @@
   {
     "eventArtist": "CRSSD Festival",
     "eventVenue": "Waterfront Park",
-    "date": "Sunday, March 08",
+    "date": "Sunday, March 08, 2020",
     "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=136220",
@@ -522,7 +502,7 @@
   {
     "eventArtist": "Deep Tech Recordings Label Launch: Mr. Wright, Rawle Night Long, SarasBróðir, Garden Party",
     "eventVenue": "Blonde Bar",
-    "date": "Sunday, March 08",
+    "date": "Sunday, March 08, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/event/144776.jpg?v=1",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=144776",
@@ -542,7 +522,7 @@
   {
     "eventArtist": "Happy Saturdayurday & Sundayday",
     "eventVenue": "Julep",
-    "date": "Sunday, March 08",
+    "date": "Sunday, March 08, 2020",
     "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145831",
@@ -562,7 +542,7 @@
   {
     "eventArtist": "Dan Deacon",
     "eventVenue": "Music Box",
-    "date": "Mon, March 09",
+    "date": "Mon, March 09, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Dan%20Deacon.jpg?v=1",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=132678",
@@ -582,7 +562,7 @@
   {
     "eventArtist": "No Mana",
     "eventVenue": "Bang Bang",
-    "date": "Friday, March 13",
+    "date": "Friday, March 13, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/No%20Mana.jpg?v=3",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=137054",
@@ -602,7 +582,7 @@
   {
     "eventArtist": "Tiësto",
     "eventVenue": "Omnia San Diego",
-    "date": "Friday, March 13",
+    "date": "Friday, March 13, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Ti%C3%ABsto.jpg?v=3",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=139140",
@@ -622,7 +602,7 @@
   {
     "eventArtist": "B.Traits, La Fleur",
     "eventVenue": "Spin Nightclub",
-    "date": "Friday, March 13",
+    "date": "Friday, March 13, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/B.Traits.jpg?v=1",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143004",
@@ -642,7 +622,7 @@
   {
     "eventArtist": "ARMNHMR",
     "eventVenue": "Bassmnt",
-    "date": "Saturday, March 14",
+    "date": "Saturday, March 14, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/ARMNHMR.jpg?v=3",
     "ageLabel": "18+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=140590",
@@ -662,7 +642,7 @@
   {
     "eventArtist": "Taska Black",
     "eventVenue": "Bang Bang",
-    "date": "Saturday, March 14",
+    "date": "Saturday, March 14, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Taska%20Black.jpg?v=1",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145054",
@@ -682,7 +662,7 @@
   {
     "eventArtist": "Lords of Acid, Aesthetic Perfection, Praga Khan",
     "eventVenue": "Brick by Brick",
-    "date": "Sunday, March 15",
+    "date": "Sunday, March 15, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Lords%20of%20Acid.jpg?v=1",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=139273",
@@ -702,7 +682,7 @@
   {
     "eventArtist": "Rybo, Lubelski, Wyatt Marchshall",
     "eventVenue": "Spin Nightclub",
-    "date": "Sunday, March 15",
+    "date": "Sunday, March 15, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Rybo.jpg?v=1",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141455",
@@ -722,7 +702,7 @@
   {
     "eventArtist": "Elohim, Bahari, Mehro",
     "eventVenue": "House of Blues San Diego",
-    "date": "Friday, March 20",
+    "date": "Friday, March 20, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Elohim.jpg?v=1",
     "ageLabel": "Under 18 with adult",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=133758",
@@ -742,7 +722,7 @@
   {
     "eventArtist": "Dirty South, Le Youth",
     "eventVenue": "Spin Nightclub",
-    "date": "Friday, March 20",
+    "date": "Friday, March 20, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Dirty%20South.jpg?v=3",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141966",
@@ -762,7 +742,7 @@
   {
     "eventArtist": "Illyus & Barrientos",
     "eventVenue": "Bang Bang",
-    "date": "Friday, March 20",
+    "date": "Friday, March 20, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Illyus%20%26%20Barrientos.jpg?v=1",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145358",
@@ -782,7 +762,7 @@
   {
     "eventArtist": "RJD2",
     "eventVenue": "Music Box",
-    "date": "Saturday, March 21",
+    "date": "Saturday, March 21, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/RJD2.jpg?v=3",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=139129",
@@ -802,7 +782,7 @@
   {
     "eventArtist": "Jan Blomqvist",
     "eventVenue": "Quartyard",
-    "date": "Saturday, March 21",
+    "date": "Saturday, March 21, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Jan%20Blomqvist.jpg?v=1",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=142006",
@@ -822,7 +802,7 @@
   {
     "eventArtist": "Tube & Berger",
     "eventVenue": "Bang Bang",
-    "date": "Saturday, March 21",
+    "date": "Saturday, March 21, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Tube%20%26%20Berger.jpg?v=3",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143407",
@@ -842,7 +822,7 @@
   {
     "eventArtist": "Defected Showcase: Sam Divine, Monki, Ferreck Dawn",
     "eventVenue": "San Diego",
-    "date": "Saturday, March 21",
+    "date": "Saturday, March 21, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Sam%20Divine.jpg?v=1",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145051",
@@ -862,7 +842,7 @@
   {
     "eventArtist": "Matador",
     "eventVenue": "Bang Bang",
-    "date": "Thursday, March 26",
+    "date": "Thursday, March 26, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Matador.jpg?v=3",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145849",
@@ -882,7 +862,7 @@
   {
     "eventArtist": "Hex Cougar, Zeke Beats, Apollo V, Head$tash, Player Dave, Mayko",
     "eventVenue": "Music Box",
-    "date": "Thursday, March 26",
+    "date": "Thursday, March 26, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Hex%20Cougar.jpg?v=1",
     "ageLabel": "18+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145879",
@@ -902,7 +882,7 @@
   {
     "eventArtist": "Dada Life",
     "eventVenue": "Omnia San Diego",
-    "date": "Friday, March 27",
+    "date": "Friday, March 27, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Dada%20Life.jpg?v=3",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=140306",
@@ -922,7 +902,7 @@
   {
     "eventArtist": "ARTBAT",
     "eventVenue": "Spin Nightclub",
-    "date": "Friday, March 27",
+    "date": "Friday, March 27, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/ARTBAT.jpg?v=1",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=142439",
@@ -942,7 +922,7 @@
   {
     "eventArtist": "Odd Mob",
     "eventVenue": "Bang Bang",
-    "date": "Friday, March 27",
+    "date": "Friday, March 27, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Odd%20Mob.jpg?v=1",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=142788",
@@ -962,7 +942,7 @@
   {
     "eventArtist": "Mark Farina, Chuck Love, Cris Herrera, Uri Leshner",
     "eventVenue": "Music Box",
-    "date": "Saturday, March 28",
+    "date": "Saturday, March 28, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Mark%20Farina.jpg?v=3",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=137583",
@@ -982,7 +962,7 @@
   {
     "eventArtist": "Axel Boman",
     "eventVenue": "Bang Bang",
-    "date": "Saturday, March 28",
+    "date": "Saturday, March 28, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Axel%20Boman.jpg?v=3",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=140297",
@@ -1002,7 +982,7 @@
   {
     "eventArtist": "4B",
     "eventVenue": "Bassmnt",
-    "date": "Saturday, March 28",
+    "date": "Saturday, March 28, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/4B.jpg?v=3",
     "ageLabel": "18+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=144154",
@@ -1022,7 +1002,7 @@
   {
     "eventArtist": "Sigala",
     "eventVenue": "Bang Bang",
-    "date": "Friday, April 3",
+    "date": "Friday, April 3, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Sigala.jpg?v=3",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143406",
@@ -1042,7 +1022,7 @@
   {
     "eventArtist": "Kaskade (Redux Set)",
     "eventVenue": "Petco Park",
-    "date": "Saturday, April 4",
+    "date": "Saturday, April 4, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Kaskade%20%28Redux%20Set%29.jpg?v=1",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143280",
@@ -1062,7 +1042,7 @@
   {
     "eventArtist": "Snails",
     "eventVenue": "Bassmnt",
-    "date": "Saturday, April 4",
+    "date": "Saturday, April 4, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Snails.jpg?v=3",
     "ageLabel": "18+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145482",
@@ -1082,7 +1062,7 @@
   {
     "eventArtist": "Umbrella Nights // Back to Business: Evan Casey, Ocean Roulette, Britton, Astronaut Ghost",
     "eventVenue": "Spin Nightclub",
-    "date": "Saturday, April 4",
+    "date": "Saturday, April 4, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Evan%20Casey.jpg?v=1",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145593",
@@ -1102,7 +1082,7 @@
   {
     "eventArtist": "Cofresi",
     "eventVenue": "Soda Bar",
-    "date": "Thursday, April 9",
+    "date": "Thursday, April 9, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Cofresi.jpg?v=3",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145878",
@@ -1122,7 +1102,7 @@
   {
     "eventArtist": "SD Union w/ Break",
     "eventVenue": "Spin Nightclub",
-    "date": "Friday, April 10",
+    "date": "Friday, April 10, 2020",
     "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143993",
@@ -1142,7 +1122,7 @@
   {
     "eventArtist": "Hot Chip",
     "eventVenue": "Humphreys Concerts by the Bay",
-    "date": "Friday, April 10",
+    "date": "Friday, April 10, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Hot%20Chip.jpg?v=3",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=144213",
@@ -1162,7 +1142,7 @@
   {
     "eventArtist": "Folamour",
     "eventVenue": "Bang Bang",
-    "date": "Friday, April 17",
+    "date": "Friday, April 17, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Folamour.jpg?v=1",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141476",
@@ -1182,7 +1162,7 @@
   {
     "eventArtist": "Christian Smith, Drunken Kong",
     "eventVenue": "Spin Nightclub",
-    "date": "Friday, April 24",
+    "date": "Friday, April 24, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Christian%20Smith.jpg?v=3",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145361",
@@ -1202,7 +1182,7 @@
   {
     "eventArtist": "Blunts & Blondes",
     "eventVenue": "Bassmnt",
-    "date": "Saturday, April 25",
+    "date": "Saturday, April 25, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Blunts%20%26%20Blondes.jpg?v=3",
     "ageLabel": "18+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141980",
@@ -1222,7 +1202,7 @@
   {
     "eventArtist": "Ben Gold",
     "eventVenue": "Spin Nightclub",
-    "date": "Saturday, April 25",
+    "date": "Saturday, April 25, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Ben%20Gold.jpg?v=3",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143552",
@@ -1242,7 +1222,7 @@
   {
     "eventArtist": "Medasin",
     "eventVenue": "Observatory North Park",
-    "date": "Saturday, April 25",
+    "date": "Saturday, April 25, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Medasin.jpg?v=1",
     "ageLabel": "Under 18 with adult",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143717",
@@ -1262,7 +1242,7 @@
   {
     "eventArtist": "Attlas",
     "eventVenue": "Bang Bang",
-    "date": "Saturday, April 25",
+    "date": "Saturday, April 25, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Attlas.jpg?v=3",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=144001",
@@ -1282,7 +1262,7 @@
   {
     "eventArtist": "Kaytranada",
     "eventVenue": "Soma",
-    "date": "Tuesday, April 28",
+    "date": "Tuesday, April 28, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Kaytranada.jpg?v=3",
     "ageLabel": "All Ages",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143204",
@@ -1302,7 +1282,7 @@
   {
     "eventArtist": "Emancipator",
     "eventVenue": "Observatory North Park",
-    "date": "Thursday, April 30",
+    "date": "Thursday, April 30, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Emancipator.jpg?v=3",
     "ageLabel": "Under 18 with adult",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141426",
@@ -1322,7 +1302,7 @@
   {
     "eventArtist": "Manic Focus, Mersiv, Russ Liquid",
     "eventVenue": "Music Box",
-    "date": "Wednesday, May 6",
+    "date": "Wednesday, May 6, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Manic%20Focus.jpg?v=3",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=140994",
@@ -1342,7 +1322,7 @@
   {
     "eventArtist": "The Glitch Mob, Ivy Lab",
     "eventVenue": "Observatory North Park",
-    "date": "Thursday, May 7",
+    "date": "Thursday, May 7, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/The%20Glitch%20Mob.jpg?v=3",
     "ageLabel": "Under 18 with adult",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=140008",
@@ -1362,7 +1342,7 @@
   {
     "eventArtist": "Redlight",
     "eventVenue": "Bassmnt",
-    "date": "Saturday, May 9",
+    "date": "Saturday, May 9, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Redlight.jpg?v=3",
     "ageLabel": "18+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143403",
@@ -1382,7 +1362,7 @@
   {
     "eventArtist": "Tycho",
     "eventVenue": "Soma",
-    "date": "Wednesday, May 13",
+    "date": "Wednesday, May 13, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Tycho.jpg?v=3",
     "ageLabel": "All Ages",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=142412",
@@ -1402,7 +1382,7 @@
   {
     "eventArtist": "Monolink",
     "eventVenue": "Spin Nightclub",
-    "date": "Wednesday, May 13",
+    "date": "Wednesday, May 13, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Monolink.jpg?v=1",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145053",
@@ -1422,7 +1402,7 @@
   {
     "eventArtist": "Girl Talk",
     "eventVenue": "House of Blues San Diego",
-    "date": "Saturday, May 16",
+    "date": "Saturday, May 16, 2020",
     "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=144297",
@@ -1442,7 +1422,7 @@
   {
     "eventArtist": "Gabriel & Dresden",
     "eventVenue": "Spin Nightclub",
-    "date": "Friday, May 22",
+    "date": "Friday, May 22, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Gabriel%20%26%20Dresden.jpg?v=3",
     "ageLabel": "21+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=144952",
@@ -1462,7 +1442,7 @@
   {
     "eventArtist": "Cray",
     "eventVenue": "Bassmnt",
-    "date": "Saturday, May 23",
+    "date": "Saturday, May 23, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Cray.jpg?v=2",
     "ageLabel": "18+",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145281",
@@ -1482,7 +1462,7 @@
   {
     "eventArtist": "Purity Ring",
     "eventVenue": "Observatory North Park",
-    "date": "Wednesday, June 10",
+    "date": "Wednesday, June 10, 2020",
     "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Purity%20Ring.jpg?v=3",
     "ageLabel": "Under 18 with adult",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145328",
@@ -1502,7 +1482,7 @@
   {
     "eventArtist": "UNITE! Music Festival - San Diego Pride",
     "eventVenue": "Spin Nightclub",
-    "date": "Friday, July 17",
+    "date": "Friday, July 17, 2020",
     "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141267",
@@ -1522,7 +1502,7 @@
   {
     "eventArtist": "UNITE! Music Festival - San Diego Pride",
     "eventVenue": "Spin Nightclub",
-    "date": "Saturday, July 18",
+    "date": "Saturday, July 18, 2020",
     "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141268",
@@ -1542,7 +1522,7 @@
   {
     "eventArtist": "UNITE! Music Festival - San Diego Pride",
     "eventVenue": "Spin Nightclub",
-    "date": "Sunday, July 19",
+    "date": "Sunday, July 19, 2020",
     "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141269",
@@ -1562,7 +1542,7 @@
   {
     "eventArtist": "KAABOO",
     "eventVenue": "Petco Park",
-    "date": "Friday, September 18",
+    "date": "Friday, September 18, 2020",
     "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=128165",
@@ -1582,7 +1562,7 @@
   {
     "eventArtist": "KAABOO",
     "eventVenue": "Petco Park",
-    "date": "Saturday, September 19",
+    "date": "Saturday, September 19, 2020",
     "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=128166",
@@ -1602,7 +1582,7 @@
   {
     "eventArtist": "KAABOO",
     "eventVenue": "Petco Park",
-    "date": "Sunday, September 20",
+    "date": "Sunday, September 20, 2020",
     "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=128167",
@@ -1622,7 +1602,7 @@
   {
     "eventArtist": "Breakaway Music Festival",
     "eventVenue": "SDCCU Stadium",
-    "date": "Friday, November 13",
+    "date": "Friday, November 13, 2020",
     "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145450",
@@ -1642,7 +1622,7 @@
   {
     "eventArtist": "Breakaway Music Festival",
     "eventVenue": "SDCCU Stadium",
-    "date": "Saturday, November 14",
+    "date": "Saturday, November 14, 2020",
     "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
     "ageLabel": "",
     "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145451",

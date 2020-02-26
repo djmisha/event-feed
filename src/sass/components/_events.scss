@@ -11,9 +11,13 @@ h1 {
 	margin: 30px 10px;
 	position: relative;
 	border-radius: 27px;
-	background: #ffffff;
-	box-shadow:  5px 5px 23px #d4d4d4, 
-	             -5px -5px 23px #ffffff;
+	box-shadow:  5px 5px 23px #d4d4d4, -5px -5px 23px #ffffff;
+	background-color: #fff;
+	min-height: 150px;
+	transition: all .15s ease-in-out;
+    &:hover {
+    	background-color: #eee;
+    }
 }
 
 .event-artist {

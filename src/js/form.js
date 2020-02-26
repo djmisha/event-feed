@@ -3,19 +3,25 @@
 
 /*To do*/
 
-// check if date has paseed and don't show past events
+// add venue addresses, and to schema
 
-// console.log(Date.now());
+// add dropdown with more info and links
+// create search and/or sort by month?
 
-// convert date to Schema readable format
+
+// use fetch instead of XHR
+// connect to API data source
 
 ;(function() {
 
+	/*Get todays date*/
+	var todaysDate = Date.now();
+	/*Where we'll attach our app */
 	var theFeed = document.getElementById('evenfeed');
+	/*Array to hold event data*/
+	var eventData = [];
 
 	function requestEventsXHR() {
-
-		var eventData = [];
 
 		var http = new XMLHttpRequest();
 		var url = 'events.json';
@@ -32,26 +38,33 @@
 			}
 		};
 		
+
 		function parseData(data) {
 			for ( var g = 0; g < data.length; g++) {
-				/**/
-				// var cleanDate = new Date(data[g].date);
-				// console.log(cleanDate);
-				// console.log(Date.parse(cleanDate));
+				/*get date*/
+				var eventDateParsed = Date.parse(data[g].date);
+				/*convert date to ISO for Schema*/
+				var eventDateISO = new Date(data[g].date);
+				// console.log(eventDateISO);
+				/*Check the date for past events*/
+				if (eventDateParsed > todaysDate) {
+					// Create Event Object
+					var singleEventListing = {
+						artist: data[g].eventArtist,
+						location: data[g].eventLocation,
+						date: data[g].date,
+						schemadate: eventDateISO,
+						venue: data[g].eventVenue,
+						image: data[g].eventImage,
+						age: data[g].ageLabel,
+						ticketlink: data[g]['button href'],
+					};
 
-
-				var singleEventListing = {
-					artist: data[g].eventArtist,
-					location: data[g].eventLocation,
-					date: data[g].date,
-					venue: data[g].eventVenue,
-					image: data[g].eventImage,
-					age: data[g].ageLabel,
-					ticketlink: data[g]['button href'],
-				};
-				eventData.push(singleEventListing);
+					// singleEventListing.schemadate = eventDateISO;
+					/*Push To Array*/
+					eventData.push(singleEventListing);
+				}
 			}
-			
 		}
 
 		function attachToPage() {
@@ -67,11 +80,11 @@
 			function createMarkUpforEvent(event) {
 
 				var singleEventMarkUp = 
-
-				'<div class=\"event-date\" itemprop=\"startDate\">' + event.date + '</div> \n'  +
 				
 				'<div class=\"event-artist\" itemprop=\"name\">' + event.artist + '</div> \n' + 
 				
+				'<div class=\"event-date\" itemprop=\"startDate\" content=\"' + event.schemadate + '\">' + event.date + '</div> \n'  +
+			
 				'<div class=\"event-venue\" itemprop=\"location\" itemscope itemtype=\"http://schema.org/Place\"><span itemprop="name">' + event.venue + '</spana></div> \n' + 
 				
 				// '<div class=event-location>' + event.location + '</div> \n' + 
@@ -104,8 +117,6 @@
 
 	if (theFeed) {
 		requestEventsXHR();
-
-
 	}
 
 })();
