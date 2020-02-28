@@ -1,1642 +1,2896 @@
-[
-  {
-    "eventArtist": "Hippie Sabotage, ilo ilo",
-    "eventVenue": "Observatory North Park",
-    "date": "Thursday, February 27, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Hippie%20Sabotage.jpg?v=3",
-    "ageLabel": "Under 18 with adult",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=134601",
-    "button href": "https://edmtrain.com/california?event=134601&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=134601&stubhub",
-    "callout": "Hippie Sabotage",
-    "callout href": "https://edmtrain.com/tours?artist=4606",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/hippiesabotage",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Riot Ten, G-REX, Jessica Audiffred, Sharps, MADRECKLESS",
-    "eventVenue": "House of Blues San Diego",
-    "date": "Friday, February 28, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Riot%20Ten.jpg?v=3",
-    "ageLabel": "18+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=134765",
-    "button href": "https://edmtrain.com/california?event=134765&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=134765&stubhub",
-    "callout": "Riot Ten",
-    "callout href": "https://edmtrain.com/tours?artist=2057",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/riotten",
-    "eventSub": "Edited by",
-    "userName": "texasedmc",
-    "userName href": "https://edmtrain.com/u/texasedmc",
-    "userRep": "168,671",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Spencer Brown, David Hohme, Marchsh, Nox Vahn",
-    "eventVenue": "Spin Nightclub",
-    "date": "Friday, February 28, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Spencer%20Brown.jpg?v=2",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=136055",
-    "button href": "https://edmtrain.com/california?event=136055&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Spencer Brown",
-    "callout href": "https://edmtrain.com/tours?artist=773",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/spencerbrownofficial",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Illenium",
-    "eventVenue": "Omnia San Diego",
-    "date": "Friday, February 28, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Illenium.jpg?v=3",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141252",
-    "button href": "https://edmtrain.com/california?event=141252&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Illenium",
-    "callout href": "https://edmtrain.com/tours?artist=2320",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/illeniumofficial",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Rick Wonder",
-    "eventVenue": "Parq",
-    "date": "Friday, February 28, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Rick%20Wonder.jpg?v=3",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143108",
-    "button href": "https://edmtrain.com/california?event=143108&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Rick Wonder",
-    "callout href": "https://edmtrain.com/tours?artist=6454",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/rickwonder",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Techniche Blonde",
-    "eventVenue": "Blonde Bar",
-    "date": "Friday, February 28, 2020",
-    "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143224",
-    "button href": "https://edmtrain.com/california?event=143224&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "",
-    "callout href": "",
-    "callout 2": "",
-    "callout href 2": "",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Noizu",
-    "eventVenue": "Bassmnt",
-    "date": "Saturday, February 29, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Noizu.jpg?v=1",
-    "ageLabel": "18+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=137991",
-    "button href": "https://edmtrain.com/california?event=137991&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Noizu",
-    "callout href": "https://edmtrain.com/tours?artist=10060",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/noizusound",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Wild At Heart: DJ Shift",
-    "eventVenue": "Omnia San Diego",
-    "date": "Saturday, February 29, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/DJ%20Shift.jpg?v=1",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=139141",
-    "button href": "https://edmtrain.com/california?event=139141&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "DJ Shift",
-    "callout href": "https://edmtrain.com/tours?artist=3091",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/officialdjshift",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Maya Jane Coles",
-    "eventVenue": "Spin Nightclub",
-    "date": "Saturday, February 29, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Maya%20Jane%20Coles.jpg?v=3",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=140681",
-    "button href": "https://edmtrain.com/california?event=140681&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Maya Jane Coles",
-    "callout href": "https://edmtrain.com/tours?artist=3522",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/mayajanecoles",
-    "eventSub": "Added by",
-    "userName": "sarasbrodir",
-    "userName href": "https://edmtrain.com/u/sarasbrodir",
-    "userRep": "73,198",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Matroda",
-    "eventVenue": "Bang Bang",
-    "date": "Saturday, February 29, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Matroda.jpg?v=1",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=140895",
-    "button href": "https://edmtrain.com/california?event=140895&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Matroda",
-    "callout href": "https://edmtrain.com/tours?artist=8054",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/matrodamusic",
-    "eventSub": "Added by",
-    "userName": "sarasbrodir",
-    "userName href": "https://edmtrain.com/u/sarasbrodir",
-    "userRep": "73,198",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "In The Bag presents - The 1%",
-    "eventVenue": "Lair Nightclub",
-    "date": "Saturday, February 29, 2020",
-    "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145846",
-    "button href": "https://edmtrain.com/california?event=145846&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "",
-    "callout href": "",
-    "callout 2": "",
-    "callout href 2": "",
-    "eventSub": "Added by",
-    "userName": "sarasbrodir",
-    "userName href": "https://edmtrain.com/u/sarasbrodir",
-    "userRep": "73,198",
-    "arrow": "new"
-  },
-  {
-    "eventArtist": "Rooftop Roots: Bontan",
-    "eventVenue": "Spin Nightclub",
-    "date": "Sunday, March 01, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Bontan.jpg?v=1",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141456",
-    "button href": "https://edmtrain.com/california?event=141456&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Bontan",
-    "callout href": "https://edmtrain.com/tours?artist=8226",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/bontanmusic",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "NGHTMRE",
-    "eventVenue": "Soma",
-    "date": "Thursday, March 05, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/NGHTMRE.jpg?v=4",
-    "ageLabel": "18+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=136815",
-    "button href": "https://edmtrain.com/california?event=136815&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=136815&stubhub",
-    "callout": "NGHTMRE",
-    "callout href": "https://edmtrain.com/tours?artist=3776",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/nghtmre",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Liquid Stranger, Dirt Monkey, Hydraulix, INZO",
-    "eventVenue": "House of Blues San Diego",
-    "date": "Thursday, March 05, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Liquid%20Stranger.jpg?v=3",
-    "ageLabel": "18+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=137697",
-    "button href": "https://edmtrain.com/california?event=137697&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=137697&stubhub",
-    "callout": "Liquid Stranger",
-    "callout href": "https://edmtrain.com/tours?artist=387",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/liquidstranger",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Techniche Blaque",
-    "eventVenue": "Rich's San Diego",
-    "date": "Thursday, March 05, 2020",
-    "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143980",
-    "button href": "https://edmtrain.com/california?event=143980&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "",
-    "callout href": "",
-    "callout 2": "",
-    "callout href 2": "",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Open To Close: Will Clarke",
-    "eventVenue": "Spin Nightclub",
-    "date": "Friday, March 06, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Will%20Clarke.jpg?v=3",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=134965",
-    "button href": "https://edmtrain.com/california?event=134965&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=134965&stubhub",
-    "callout": "Will Clarke",
-    "callout href": "https://edmtrain.com/tours?artist=5132",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/djwillclarke",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Sam Feldt",
-    "eventVenue": "Omnia San Diego",
-    "date": "Friday, March 06, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Sam%20Feldt.jpg?v=4",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141836",
-    "button href": "https://edmtrain.com/california?event=141836&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Sam Feldt",
-    "callout href": "https://edmtrain.com/tours?artist=2859",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/samfeldt",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "CRSSD Festival: Gesaffelstein, Rüfüs Du Sol, Chris Lake, Nora En Pure, Carl Cox, Charlotte De Witte, Sacha Robotti, Ben Böhmer",
-    "eventVenue": "Waterfront Park",
-    "date": "Saturday, March 07, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Gesaffelstein.jpg?v=3",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=136219",
-    "button href": "https://edmtrain.com/california?event=136219&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=136219&stubhub",
-    "callout": "Gesaffelstein",
-    "callout href": "https://edmtrain.com/tours?artist=287",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/gesaffelstein",
-    "eventSub": "Added by",
-    "userName": "stledm",
-    "userName href": "https://edmtrain.com/u/stledm",
-    "userRep": "151,974",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Golf Clap",
-    "eventVenue": "Bassmnt",
-    "date": "Saturday, March 07, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Golf%20Clap.jpg?v=3",
-    "ageLabel": "18+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=139216",
-    "button href": "https://edmtrain.com/california?event=139216&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Golf Clap",
-    "callout href": "https://edmtrain.com/tours?artist=2727",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/golfclapdet",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Elephante",
-    "eventVenue": "Omnia San Diego",
-    "date": "Saturday, March 07, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Elephante.jpg?v=3",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141835",
-    "button href": "https://edmtrain.com/california?event=141835&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Elephante",
-    "callout href": "https://edmtrain.com/tours?artist=1411",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/iamtheelephante",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Joe Maz",
-    "eventVenue": "Parq",
-    "date": "Saturday, March 07, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Joe%20Maz.jpg?v=3",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145324",
-    "button href": "https://edmtrain.com/california?event=145324&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Joe Maz",
-    "callout href": "https://edmtrain.com/tours?artist=3855",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/joemaz",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": "new"
-  },
-  {
-    "eventArtist": "Tiger & Woods, Bouquet",
-    "eventVenue": "Kettner Exchange",
-    "date": "Saturday, March 07, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Tiger%20%26%20Woods.jpg?v=3",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145595",
-    "button href": "https://edmtrain.com/california?event=145595&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Tiger & Woods",
-    "callout href": "https://edmtrain.com/tours?artist=600",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/tigerandwoods",
-    "eventSub": "Added by",
-    "userName": "sarasbrodir",
-    "userName href": "https://edmtrain.com/u/sarasbrodir",
-    "userRep": "73,198",
-    "arrow": "new"
-  },
-  {
-    "eventArtist": "Autograf",
-    "eventVenue": "Music Box",
-    "date": "Saturday, March 07, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Autograf.jpg?v=3",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145682",
-    "button href": "https://edmtrain.com/california?event=145682&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Autograf",
-    "callout href": "https://edmtrain.com/tours?artist=1865",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/autografmusic",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": "new"
-  },
-  {
-    "eventArtist": "Happy Saturdayurday & Sundayday",
-    "eventVenue": "Julep",
-    "date": "Saturday, March 07, 2020",
-    "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145830",
-    "button href": "https://edmtrain.com/california?event=145830&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "",
-    "callout href": "",
-    "callout 2": "",
-    "callout href 2": "",
-    "eventSub": "Added by",
-    "userName": "sarasbrodir",
-    "userName href": "https://edmtrain.com/u/sarasbrodir",
-    "userRep": "73,198",
-    "arrow": "new"
-  },
-  {
-    "eventArtist": "CRSSD Festival",
-    "eventVenue": "Waterfront Park",
-    "date": "Sunday, March 08, 2020",
-    "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=136220",
-    "button href": "https://edmtrain.com/california?event=136220&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=136220&stubhub",
-    "callout": "",
-    "callout href": "",
-    "callout 2": "",
-    "callout href 2": "",
-    "eventSub": "Added by",
-    "userName": "stledm",
-    "userName href": "https://edmtrain.com/u/stledm",
-    "userRep": "151,974",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Deep Tech Recordings Label Launch: Mr. Wright, Rawle Night Long, SarasBróðir, Garden Party",
-    "eventVenue": "Blonde Bar",
-    "date": "Sunday, March 08, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/event/144776.jpg?v=1",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=144776",
-    "button href": "https://edmtrain.com/california?event=144776&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "SoundCloud",
-    "callout href": "https://soundcloud.com/mrwrightofficial",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/rawlenightlong",
-    "eventSub": "Added by",
-    "userName": "sarasbrodir",
-    "userName href": "https://edmtrain.com/u/sarasbrodir",
-    "userRep": "73,198",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Happy Saturdayurday & Sundayday",
-    "eventVenue": "Julep",
-    "date": "Sunday, March 08, 2020",
-    "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145831",
-    "button href": "https://edmtrain.com/california?event=145831&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "",
-    "callout href": "",
-    "callout 2": "",
-    "callout href 2": "",
-    "eventSub": "Added by",
-    "userName": "sarasbrodir",
-    "userName href": "https://edmtrain.com/u/sarasbrodir",
-    "userRep": "73,198",
-    "arrow": "new"
-  },
-  {
-    "eventArtist": "Dan Deacon",
-    "eventVenue": "Music Box",
-    "date": "Mon, March 09, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Dan%20Deacon.jpg?v=1",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=132678",
-    "button href": "https://edmtrain.com/california?event=132678&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=132678&stubhub",
-    "callout": "Dan Deacon",
-    "callout href": "https://edmtrain.com/tours?artist=7186",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/dan-deacon",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "No Mana",
-    "eventVenue": "Bang Bang",
-    "date": "Friday, March 13, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/No%20Mana.jpg?v=3",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=137054",
-    "button href": "https://edmtrain.com/california?event=137054&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "No Mana",
-    "callout href": "https://edmtrain.com/tours?artist=5329",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/ihavenomanas",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Tiësto",
-    "eventVenue": "Omnia San Diego",
-    "date": "Friday, March 13, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Ti%C3%ABsto.jpg?v=3",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=139140",
-    "button href": "https://edmtrain.com/california?event=139140&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Tiësto",
-    "callout href": "https://edmtrain.com/tours?artist=5688",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/tiesto",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "B.Traits, La Fleur",
-    "eventVenue": "Spin Nightclub",
-    "date": "Friday, March 13, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/B.Traits.jpg?v=1",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143004",
-    "button href": "https://edmtrain.com/california?event=143004&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "B.Traits",
-    "callout href": "https://edmtrain.com/tours?artist=9090",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/btraits",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "ARMNHMR",
-    "eventVenue": "Bassmnt",
-    "date": "Saturday, March 14, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/ARMNHMR.jpg?v=3",
-    "ageLabel": "18+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=140590",
-    "button href": "https://edmtrain.com/california?event=140590&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "ARMNHMR",
-    "callout href": "https://edmtrain.com/tours?artist=6837",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/armnhmr",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Taska Black",
-    "eventVenue": "Bang Bang",
-    "date": "Saturday, March 14, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Taska%20Black.jpg?v=1",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145054",
-    "button href": "https://edmtrain.com/california?event=145054&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Taska Black",
-    "callout href": "https://edmtrain.com/tours?artist=10143",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/taskablack",
-    "eventSub": "Added by",
-    "userName": "sarasbrodir",
-    "userName href": "https://edmtrain.com/u/sarasbrodir",
-    "userRep": "73,198",
-    "arrow": "new"
-  },
-  {
-    "eventArtist": "Lords of Acid, Aesthetic Perfection, Praga Khan",
-    "eventVenue": "Brick by Brick",
-    "date": "Sunday, March 15, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Lords%20of%20Acid.jpg?v=1",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=139273",
-    "button href": "https://edmtrain.com/california?event=139273&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=139273&stubhub",
-    "callout": "Lords of Acid",
-    "callout href": "https://edmtrain.com/tours?artist=13288",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/lordsofacid",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Rybo, Lubelski, Wyatt Marchshall",
-    "eventVenue": "Spin Nightclub",
-    "date": "Sunday, March 15, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Rybo.jpg?v=1",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141455",
-    "button href": "https://edmtrain.com/california?event=141455&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Rybo",
-    "callout href": "https://edmtrain.com/tours?artist=7217",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/rybo_music",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Elohim, Bahari, Mehro",
-    "eventVenue": "House of Blues San Diego",
-    "date": "Friday, March 20, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Elohim.jpg?v=1",
-    "ageLabel": "Under 18 with adult",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=133758",
-    "button href": "https://edmtrain.com/california?event=133758&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=133758&stubhub",
-    "callout": "Elohim",
-    "callout href": "https://edmtrain.com/tours?artist=6690",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/elohimelohim",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Dirty South, Le Youth",
-    "eventVenue": "Spin Nightclub",
-    "date": "Friday, March 20, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Dirty%20South.jpg?v=3",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141966",
-    "button href": "https://edmtrain.com/california?event=141966&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Dirty South",
-    "callout href": "https://edmtrain.com/tours?artist=219",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/dirtysouth",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Illyus & Barrientos",
-    "eventVenue": "Bang Bang",
-    "date": "Friday, March 20, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Illyus%20%26%20Barrientos.jpg?v=1",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145358",
-    "button href": "https://edmtrain.com/california?event=145358&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Illyus & Barrientos",
-    "callout href": "https://edmtrain.com/tours?artist=9266",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/illyusandbarrientos",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": "new"
-  },
-  {
-    "eventArtist": "RJD2",
-    "eventVenue": "Music Box",
-    "date": "Saturday, March 21, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/RJD2.jpg?v=3",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=139129",
-    "button href": "https://edmtrain.com/california?event=139129&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=139129&stubhub",
-    "callout": "RJD2",
-    "callout href": "https://edmtrain.com/tours?artist=508",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/officialrjd2",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Jan Blomqvist",
-    "eventVenue": "Quartyard",
-    "date": "Saturday, March 21, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Jan%20Blomqvist.jpg?v=1",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=142006",
-    "button href": "https://edmtrain.com/california?event=142006&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Jan Blomqvist",
-    "callout href": "https://edmtrain.com/tours?artist=7192",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/janblomqvist",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Tube & Berger",
-    "eventVenue": "Bang Bang",
-    "date": "Saturday, March 21, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Tube%20%26%20Berger.jpg?v=3",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143407",
-    "button href": "https://edmtrain.com/california?event=143407&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Tube & Berger",
-    "callout href": "https://edmtrain.com/tours?artist=2753",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/tubeandberger",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Defected Showcase: Sam Divine, Monki, Ferreck Dawn",
-    "eventVenue": "San Diego",
-    "date": "Saturday, March 21, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Sam%20Divine.jpg?v=1",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145051",
-    "button href": "https://edmtrain.com/california?event=145051&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Sam Divine",
-    "callout href": "https://edmtrain.com/tours?artist=10625",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/djsamdivine",
-    "eventSub": "Added by",
-    "userName": "sarasbrodir",
-    "userName href": "https://edmtrain.com/u/sarasbrodir",
-    "userRep": "73,198",
-    "arrow": "new"
-  },
-  {
-    "eventArtist": "Matador",
-    "eventVenue": "Bang Bang",
-    "date": "Thursday, March 26, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Matador.jpg?v=3",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145849",
-    "button href": "https://edmtrain.com/california?event=145849&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Matador",
-    "callout href": "https://edmtrain.com/tours?artist=806",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/matador_official",
-    "eventSub": "Added by",
-    "userName": "sarasbrodir",
-    "userName href": "https://edmtrain.com/u/sarasbrodir",
-    "userRep": "73,198",
-    "arrow": "new"
-  },
-  {
-    "eventArtist": "Hex Cougar, Zeke Beats, Apollo V, Head$tash, Player Dave, Mayko",
-    "eventVenue": "Music Box",
-    "date": "Thursday, March 26, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Hex%20Cougar.jpg?v=1",
-    "ageLabel": "18+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145879",
-    "button href": "https://edmtrain.com/california?event=145879&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Hex Cougar",
-    "callout href": "https://edmtrain.com/tours?artist=7172",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/hexcougar",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": "new"
-  },
-  {
-    "eventArtist": "Dada Life",
-    "eventVenue": "Omnia San Diego",
-    "date": "Friday, March 27, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Dada%20Life.jpg?v=3",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=140306",
-    "button href": "https://edmtrain.com/california?event=140306&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Dada Life",
-    "callout href": "https://edmtrain.com/tours?artist=186",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/dada-life",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "ARTBAT",
-    "eventVenue": "Spin Nightclub",
-    "date": "Friday, March 27, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/ARTBAT.jpg?v=1",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=142439",
-    "button href": "https://edmtrain.com/california?event=142439&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "ARTBAT",
-    "callout href": "https://edmtrain.com/tours?artist=12446",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/artbatmusic",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Odd Mob",
-    "eventVenue": "Bang Bang",
-    "date": "Friday, March 27, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Odd%20Mob.jpg?v=1",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=142788",
-    "button href": "https://edmtrain.com/california?event=142788&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Odd Mob",
-    "callout href": "https://edmtrain.com/tours?artist=16277",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/oddmob",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Mark Farina, Chuck Love, Cris Herrera, Uri Leshner",
-    "eventVenue": "Music Box",
-    "date": "Saturday, March 28, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Mark%20Farina.jpg?v=3",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=137583",
-    "button href": "https://edmtrain.com/california?event=137583&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=137583&stubhub",
-    "callout": "Mark Farina",
-    "callout href": "https://edmtrain.com/tours?artist=410",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/djmarkfarina",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Axel Boman",
-    "eventVenue": "Bang Bang",
-    "date": "Saturday, March 28, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Axel%20Boman.jpg?v=3",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=140297",
-    "button href": "https://edmtrain.com/california?event=140297&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Axel Boman",
-    "callout href": "https://edmtrain.com/tours?artist=4798",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/axelboman",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "4B",
-    "eventVenue": "Bassmnt",
-    "date": "Saturday, March 28, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/4B.jpg?v=3",
-    "ageLabel": "18+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=144154",
-    "button href": "https://edmtrain.com/california?event=144154&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "4B",
-    "callout href": "https://edmtrain.com/tours?artist=3474",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/dj4b",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Sigala",
-    "eventVenue": "Bang Bang",
-    "date": "Friday, April 3, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Sigala.jpg?v=3",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143406",
-    "button href": "https://edmtrain.com/california?event=143406&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Sigala",
-    "callout href": "https://edmtrain.com/tours?artist=5645",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/sigalamusic",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Kaskade (Redux Set)",
-    "eventVenue": "Petco Park",
-    "date": "Saturday, April 4, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Kaskade%20%28Redux%20Set%29.jpg?v=1",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143280",
-    "button href": "https://edmtrain.com/california?event=143280&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=143280&stubhub",
-    "callout": "Kaskade (Redux Set)",
-    "callout href": "https://edmtrain.com/tours?artist=9975",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/kaskade",
-    "eventSub": "Added by",
-    "userName": "gio-dev",
-    "userName href": "https://edmtrain.com/u/gio-dev",
-    "userRep": "189,963",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Snails",
-    "eventVenue": "Bassmnt",
-    "date": "Saturday, April 4, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Snails.jpg?v=3",
-    "ageLabel": "18+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145482",
-    "button href": "https://edmtrain.com/california?event=145482&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Snails",
-    "callout href": "https://edmtrain.com/tours?artist=1880",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/officialsnails",
-    "eventSub": "Added by",
-    "userName": "sarasbrodir",
-    "userName href": "https://edmtrain.com/u/sarasbrodir",
-    "userRep": "73,198",
-    "arrow": "new"
-  },
-  {
-    "eventArtist": "Umbrella Nights // Back to Business: Evan Casey, Ocean Roulette, Britton, Astronaut Ghost",
-    "eventVenue": "Spin Nightclub",
-    "date": "Saturday, April 4, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Evan%20Casey.jpg?v=1",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145593",
-    "button href": "https://edmtrain.com/california?event=145593&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Evan Casey",
-    "callout href": "https://edmtrain.com/tours?artist=12225",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/evancaseymusic",
-    "eventSub": "Added by",
-    "userName": "sarasbrodir",
-    "userName href": "https://edmtrain.com/u/sarasbrodir",
-    "userRep": "73,198",
-    "arrow": "new"
-  },
-  {
-    "eventArtist": "Cofresi",
-    "eventVenue": "Soda Bar",
-    "date": "Thursday, April 9, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Cofresi.jpg?v=3",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145878",
-    "button href": "https://edmtrain.com/california?event=145878&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Cofresi",
-    "callout href": "https://edmtrain.com/tours?artist=6126",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/cofresimusic",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": "new"
-  },
-  {
-    "eventArtist": "SD Union w/ Break",
-    "eventVenue": "Spin Nightclub",
-    "date": "Friday, April 10, 2020",
-    "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143993",
-    "button href": "https://edmtrain.com/california?event=143993&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "",
-    "callout href": "",
-    "callout 2": "",
-    "callout href 2": "",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Hot Chip",
-    "eventVenue": "Humphreys Concerts by the Bay",
-    "date": "Friday, April 10, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Hot%20Chip.jpg?v=3",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=144213",
-    "button href": "https://edmtrain.com/california?event=144213&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=144213&stubhub",
-    "callout": "Hot Chip",
-    "callout href": "https://edmtrain.com/tours?artist=1493",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/hot_chip",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Folamour",
-    "eventVenue": "Bang Bang",
-    "date": "Friday, April 17, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Folamour.jpg?v=1",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141476",
-    "button href": "https://edmtrain.com/california?event=141476&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Folamour",
-    "callout href": "https://edmtrain.com/tours?artist=7643",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/folamour",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Christian Smith, Drunken Kong",
-    "eventVenue": "Spin Nightclub",
-    "date": "Friday, April 24, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Christian%20Smith.jpg?v=3",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145361",
-    "button href": "https://edmtrain.com/california?event=145361&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Christian Smith",
-    "callout href": "https://edmtrain.com/tours?artist=1624",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/christiansmith",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": "new"
-  },
-  {
-    "eventArtist": "Blunts & Blondes",
-    "eventVenue": "Bassmnt",
-    "date": "Saturday, April 25, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Blunts%20%26%20Blondes.jpg?v=3",
-    "ageLabel": "18+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141980",
-    "button href": "https://edmtrain.com/california?event=141980&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Blunts & Blondes",
-    "callout href": "https://edmtrain.com/tours?artist=7036",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/bluntsnblondes",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Ben Gold",
-    "eventVenue": "Spin Nightclub",
-    "date": "Saturday, April 25, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Ben%20Gold.jpg?v=3",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143552",
-    "button href": "https://edmtrain.com/california?event=143552&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Ben Gold",
-    "callout href": "https://edmtrain.com/tours?artist=113",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/bengoldmusic",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Medasin",
-    "eventVenue": "Observatory North Park",
-    "date": "Saturday, April 25, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Medasin.jpg?v=1",
-    "ageLabel": "Under 18 with adult",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143717",
-    "button href": "https://edmtrain.com/california?event=143717&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=143717&stubhub",
-    "callout": "Medasin",
-    "callout href": "https://edmtrain.com/tours?artist=6564",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/officialmedasin",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Attlas",
-    "eventVenue": "Bang Bang",
-    "date": "Saturday, April 25, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Attlas.jpg?v=3",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=144001",
-    "button href": "https://edmtrain.com/california?event=144001&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Attlas",
-    "callout href": "https://edmtrain.com/tours?artist=5044",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/attlas",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Kaytranada",
-    "eventVenue": "Soma",
-    "date": "Tuesday, April 28, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Kaytranada.jpg?v=3",
-    "ageLabel": "All Ages",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143204",
-    "button href": "https://edmtrain.com/california?event=143204&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=143204&stubhub",
-    "callout": "Kaytranada",
-    "callout href": "https://edmtrain.com/tours?artist=360",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/kaytranada",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Emancipator",
-    "eventVenue": "Observatory North Park",
-    "date": "Thursday, April 30, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Emancipator.jpg?v=3",
-    "ageLabel": "Under 18 with adult",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141426",
-    "button href": "https://edmtrain.com/california?event=141426&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=141426&stubhub",
-    "callout": "Emancipator",
-    "callout href": "https://edmtrain.com/tours?artist=251",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/emancipator",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Manic Focus, Mersiv, Russ Liquid",
-    "eventVenue": "Music Box",
-    "date": "Wednesday, May 6, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Manic%20Focus.jpg?v=3",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=140994",
-    "button href": "https://edmtrain.com/california?event=140994&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=140994&stubhub",
-    "callout": "Manic Focus",
-    "callout href": "https://edmtrain.com/tours?artist=736",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/manicfocus",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "The Glitch Mob, Ivy Lab",
-    "eventVenue": "Observatory North Park",
-    "date": "Thursday, May 7, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/The%20Glitch%20Mob.jpg?v=3",
-    "ageLabel": "Under 18 with adult",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=140008",
-    "button href": "https://edmtrain.com/california?event=140008&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=140008&stubhub",
-    "callout": "The Glitch Mob",
-    "callout href": "https://edmtrain.com/tours?artist=586",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/theglitchmob",
-    "eventSub": "Added by",
-    "userName": "webermusic",
-    "userName href": "https://edmtrain.com/u/webermusic",
-    "userRep": "20,775",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Redlight",
-    "eventVenue": "Bassmnt",
-    "date": "Saturday, May 9, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Redlight.jpg?v=3",
-    "ageLabel": "18+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=143403",
-    "button href": "https://edmtrain.com/california?event=143403&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Redlight",
-    "callout href": "https://edmtrain.com/tours?artist=2373",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/redlight-uk",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Tycho",
-    "eventVenue": "Soma",
-    "date": "Wednesday, May 13, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Tycho.jpg?v=3",
-    "ageLabel": "All Ages",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=142412",
-    "button href": "https://edmtrain.com/california?event=142412&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=142412&stubhub",
-    "callout": "Tycho",
-    "callout href": "https://edmtrain.com/tours?artist=613",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/tycho",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Monolink",
-    "eventVenue": "Spin Nightclub",
-    "date": "Wednesday, May 13, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Monolink.jpg?v=1",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145053",
-    "button href": "https://edmtrain.com/california?event=145053&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Monolink",
-    "callout href": "https://edmtrain.com/tours?artist=8320",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/monolink",
-    "eventSub": "Added by",
-    "userName": "sarasbrodir",
-    "userName href": "https://edmtrain.com/u/sarasbrodir",
-    "userRep": "73,198",
-    "arrow": "new"
-  },
-  {
-    "eventArtist": "Girl Talk",
-    "eventVenue": "House of Blues San Diego",
-    "date": "Saturday, May 16, 2020",
-    "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=144297",
-    "button href": "https://edmtrain.com/california?event=144297&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=144297&stubhub",
-    "callout": "",
-    "callout href": "",
-    "callout 2": "",
-    "callout href 2": "",
-    "eventSub": "Added by",
-    "userName": "texasedmc",
-    "userName href": "https://edmtrain.com/u/texasedmc",
-    "userRep": "168,671",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Gabriel & Dresden",
-    "eventVenue": "Spin Nightclub",
-    "date": "Friday, May 22, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Gabriel%20%26%20Dresden.jpg?v=3",
-    "ageLabel": "21+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=144952",
-    "button href": "https://edmtrain.com/california?event=144952&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Gabriel & Dresden",
-    "callout href": "https://edmtrain.com/tours?artist=279",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/gabrielanddresden",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": "new"
-  },
-  {
-    "eventArtist": "Cray",
-    "eventVenue": "Bassmnt",
-    "date": "Saturday, May 23, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Cray.jpg?v=2",
-    "ageLabel": "18+",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145281",
-    "button href": "https://edmtrain.com/california?event=145281&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "Cray",
-    "callout href": "https://edmtrain.com/tours?artist=9912",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/craysounds",
-    "eventSub": "Added by",
-    "userName": "sarasbrodir",
-    "userName href": "https://edmtrain.com/u/sarasbrodir",
-    "userRep": "73,198",
-    "arrow": "new"
-  },
-  {
-    "eventArtist": "Purity Ring",
-    "eventVenue": "Observatory North Park",
-    "date": "Wednesday, June 10, 2020",
-    "eventImage": "https://edmtrain.s3.amazonaws.com/img/artist/Purity%20Ring.jpg?v=3",
-    "ageLabel": "Under 18 with adult",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145328",
-    "button href": "https://edmtrain.com/california?event=145328&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=145328&stubhub",
-    "callout": "Purity Ring",
-    "callout href": "https://edmtrain.com/tours?artist=1626",
-    "callout 2": "SoundCloud",
-    "callout href 2": "https://soundcloud.com/purity-ring",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": "new"
-  },
-  {
-    "eventArtist": "UNITE! Music Festival - San Diego Pride",
-    "eventVenue": "Spin Nightclub",
-    "date": "Friday, July 17, 2020",
-    "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141267",
-    "button href": "https://edmtrain.com/california?event=141267&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "",
-    "callout href": "",
-    "callout 2": "",
-    "callout href 2": "",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "UNITE! Music Festival - San Diego Pride",
-    "eventVenue": "Spin Nightclub",
-    "date": "Saturday, July 18, 2020",
-    "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141268",
-    "button href": "https://edmtrain.com/california?event=141268&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "",
-    "callout href": "",
-    "callout 2": "",
-    "callout href 2": "",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "UNITE! Music Festival - San Diego Pride",
-    "eventVenue": "Spin Nightclub",
-    "date": "Sunday, July 19, 2020",
-    "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=141269",
-    "button href": "https://edmtrain.com/california?event=141269&tickets",
-    "button 3": "",
-    "button href 3": "",
-    "callout": "",
-    "callout href": "",
-    "callout 2": "",
-    "callout href 2": "",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "KAABOO",
-    "eventVenue": "Petco Park",
-    "date": "Friday, September 18, 2020",
-    "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=128165",
-    "button href": "https://edmtrain.com/california?event=128165&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=128165&stubhub",
-    "callout": "",
-    "callout href": "",
-    "callout 2": "",
-    "callout href 2": "",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "KAABOO",
-    "eventVenue": "Petco Park",
-    "date": "Saturday, September 19, 2020",
-    "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=128166",
-    "button href": "https://edmtrain.com/california?event=128166&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=128166&stubhub",
-    "callout": "",
-    "callout href": "",
-    "callout 2": "",
-    "callout href 2": "",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "KAABOO",
-    "eventVenue": "Petco Park",
-    "date": "Sunday, September 20, 2020",
-    "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=128167",
-    "button href": "https://edmtrain.com/california?event=128167&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=128167&stubhub",
-    "callout": "",
-    "callout href": "",
-    "callout 2": "",
-    "callout href 2": "",
-    "eventSub": "",
-    "userName": "",
-    "userName href": "",
-    "userRep": "",
-    "arrow": ""
-  },
-  {
-    "eventArtist": "Breakaway Music Festival",
-    "eventVenue": "SDCCU Stadium",
-    "date": "Friday, November 13, 2020",
-    "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145450",
-    "button href": "https://edmtrain.com/california?event=145450&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=145450&stubhub",
-    "callout": "",
-    "callout href": "",
-    "callout 2": "",
-    "callout href 2": "",
-    "eventSub": "Added by",
-    "userName": "ditto",
-    "userName href": "https://edmtrain.com/u/ditto",
-    "userRep": "49,367",
-    "arrow": "new"
-  },
-  {
-    "eventArtist": "Breakaway Music Festival",
-    "eventVenue": "SDCCU Stadium",
-    "date": "Saturday, November 14, 2020",
-    "eventImage": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg",
-    "ageLabel": "",
-    "eventDesc href": "https://edmtrain.com/san-diego-ca?event=145451",
-    "button href": "https://edmtrain.com/california?event=145451&tickets",
-    "button 3": "StubHub Tickets",
-    "button href 3": "https://edmtrain.com/california?event=145451&stubhub",
-    "callout": "",
-    "callout href": "",
-    "callout 2": "",
-    "callout href 2": "",
-    "eventSub": "Added by",
-    "userName": "ditto",
-    "userName href": "https://edmtrain.com/u/ditto",
-    "userRep": "49,367",
-    "arrow": "new"
-  }
-]
+{
+   "data":[
+      {
+         "id":134601,
+         "link":"https://edmtrain.com/california?event=134601",
+         "name":null,
+         "ages":"Under 18 with adult",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-02-27",
+         "createdDate":"2019-11-19T04:42:23Z",
+         "venue":{
+            "id":2980,
+            "name":"Observatory North Park",
+            "location":"San Diego, CA",
+            "address":"2891 University Ave, San Diego, CA 92104, USA",
+            "state":"California",
+            "latitude":32.748,
+            "longitude":-117.131
+         },
+         "artistList":[
+            {
+               "id":4606,
+               "name":"Hippie Sabotage",
+               "link":"https://edmtrain.com/tours?artist=4606"
+            },
+            {
+               "id":15301,
+               "name":"ilo ilo",
+               "link":"https://edmtrain.com/tours?artist=15301"
+            }
+         ]
+      },
+      {
+         "id":134765,
+         "link":"https://edmtrain.com/california?event=134765",
+         "name":null,
+         "ages":"18+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-02-28",
+         "createdDate":"2019-11-19T21:53:16Z",
+         "venue":{
+            "id":1111,
+            "name":"House of Blues San Diego",
+            "location":"San Diego, CA",
+            "address":"1055 Fifth Ave, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.716,
+            "longitude":-117.16
+         },
+         "artistList":[
+            {
+               "id":2057,
+               "name":"Riot Ten",
+               "link":"https://edmtrain.com/tours?artist=2057"
+            },
+            {
+               "id":9104,
+               "name":"G-REX",
+               "link":"https://edmtrain.com/tours?artist=9104"
+            },
+            {
+               "id":12049,
+               "name":"Jessica Audiffred",
+               "link":"https://edmtrain.com/tours?artist=12049"
+            },
+            {
+               "id":10699,
+               "name":"Sharps",
+               "link":"https://edmtrain.com/tours?artist=10699"
+            },
+            {
+               "id":19510,
+               "name":"MADRECKLESS",
+               "link":"https://edmtrain.com/tours?artist=19510"
+            }
+         ]
+      },
+      {
+         "id":136055,
+         "link":"https://edmtrain.com/california?event=136055",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-02-28",
+         "createdDate":"2019-12-04T20:48:47Z",
+         "venue":{
+            "id":1508,
+            "name":"Spin Nightclub",
+            "location":"San Diego, CA",
+            "address":"2028 Hancock St, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.744,
+            "longitude":-117.188
+         },
+         "artistList":[
+            {
+               "id":773,
+               "name":"Spencer Brown",
+               "link":"https://edmtrain.com/tours?artist=773"
+            },
+            {
+               "id":7506,
+               "name":"David Hohme",
+               "link":"https://edmtrain.com/tours?artist=7506"
+            },
+            {
+               "id":13468,
+               "name":"Marsh",
+               "link":"https://edmtrain.com/tours?artist=13468"
+            },
+            {
+               "id":13376,
+               "name":"Nox Vahn",
+               "link":"https://edmtrain.com/tours?artist=13376"
+            }
+         ]
+      },
+      {
+         "id":141252,
+         "link":"https://edmtrain.com/california?event=141252",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-02-28",
+         "createdDate":"2020-01-21T02:59:48Z",
+         "venue":{
+            "id":2302,
+            "name":"Omnia San Diego",
+            "location":"San Diego, CA",
+            "address":"454 Sixth Ave, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.71,
+            "longitude":-117.159
+         },
+         "artistList":[
+            {
+               "id":2320,
+               "name":"Illenium",
+               "link":"https://edmtrain.com/tours?artist=2320"
+            }
+         ]
+      },
+      {
+         "id":143108,
+         "link":"https://edmtrain.com/california?event=143108",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-02-28",
+         "createdDate":"2020-02-02T15:22:46Z",
+         "venue":{
+            "id":1812,
+            "name":"Parq",
+            "location":"San Diego, CA",
+            "address":"615 Broadway, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.716,
+            "longitude":-117.159
+         },
+         "artistList":[
+            {
+               "id":6454,
+               "name":"Rick Wonder",
+               "link":"https://edmtrain.com/tours?artist=6454"
+            }
+         ]
+      },
+      {
+         "id":143224,
+         "link":"https://edmtrain.com/california?event=143224",
+         "name":"Techniche Blonde",
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-02-28",
+         "createdDate":"2020-02-04T00:06:24Z",
+         "venue":{
+            "id":3882,
+            "name":"Blonde Bar",
+            "location":"San Diego, CA",
+            "address":"1808 W Washington St, San Diego, CA 92103, USA",
+            "state":"California",
+            "latitude":32.743,
+            "longitude":-117.182
+         },
+         "artistList":[
+
+         ]
+      },
+      {
+         "id":137991,
+         "link":"https://edmtrain.com/california?event=137991",
+         "name":null,
+         "ages":"18+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-02-29",
+         "createdDate":"2019-12-20T04:36:04Z",
+         "venue":{
+            "id":1103,
+            "name":"Bassmnt",
+            "location":"San Diego, CA",
+            "address":"919 Fourth Ave #100, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.715,
+            "longitude":-117.161
+         },
+         "artistList":[
+            {
+               "id":10060,
+               "name":"Noizu",
+               "link":"https://edmtrain.com/tours?artist=10060"
+            }
+         ]
+      },
+      {
+         "id":139141,
+         "link":"https://edmtrain.com/california?event=139141",
+         "name":"Wild At Heart",
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-02-29",
+         "createdDate":"2020-01-08T03:26:23Z",
+         "venue":{
+            "id":2302,
+            "name":"Omnia San Diego",
+            "location":"San Diego, CA",
+            "address":"454 Sixth Ave, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.71,
+            "longitude":-117.159
+         },
+         "artistList":[
+            {
+               "id":3091,
+               "name":"DJ Shift",
+               "link":"https://edmtrain.com/tours?artist=3091"
+            }
+         ]
+      },
+      {
+         "id":140681,
+         "link":"https://edmtrain.com/california?event=140681",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-02-29",
+         "createdDate":"2020-01-16T15:38:07Z",
+         "venue":{
+            "id":1508,
+            "name":"Spin Nightclub",
+            "location":"San Diego, CA",
+            "address":"2028 Hancock St, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.744,
+            "longitude":-117.188
+         },
+         "artistList":[
+            {
+               "id":3522,
+               "name":"Maya Jane Coles",
+               "link":"https://edmtrain.com/tours?artist=3522"
+            }
+         ]
+      },
+      {
+         "id":140895,
+         "link":"https://edmtrain.com/california?event=140895",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-02-29",
+         "createdDate":"2020-01-17T16:00:56Z",
+         "venue":{
+            "id":1122,
+            "name":"Bang Bang",
+            "location":"San Diego, CA",
+            "address":"526 Market St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.712,
+            "longitude":-117.16
+         },
+         "artistList":[
+            {
+               "id":8054,
+               "name":"Matroda",
+               "link":"https://edmtrain.com/tours?artist=8054"
+            }
+         ]
+      },
+      {
+         "id":145846,
+         "link":"https://edmtrain.com/california?event=145846",
+         "name":"In The Bag presents - The 1%",
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-02-29",
+         "createdDate":"2020-02-21T23:42:21Z",
+         "venue":{
+            "id":8555,
+            "name":"Lair Nightclub",
+            "location":"San Diego, CA",
+            "address":"Seventh Ave & Broadway, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.716,
+            "longitude":-117.158
+         },
+         "artistList":[
+
+         ]
+      },
+      {
+         "id":141456,
+         "link":"https://edmtrain.com/california?event=141456",
+         "name":"Rooftop Roots",
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-01",
+         "createdDate":"2020-01-22T01:24:42Z",
+         "venue":{
+            "id":1508,
+            "name":"Spin Nightclub",
+            "location":"San Diego, CA",
+            "address":"2028 Hancock St, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.744,
+            "longitude":-117.188
+         },
+         "artistList":[
+            {
+               "id":8226,
+               "name":"Bontan",
+               "link":"https://edmtrain.com/tours?artist=8226"
+            }
+         ]
+      },
+      {
+         "id":136815,
+         "link":"https://edmtrain.com/california?event=136815",
+         "name":null,
+         "ages":"18+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-05",
+         "createdDate":"2019-12-11T04:24:09Z",
+         "venue":{
+            "id":1112,
+            "name":"Soma",
+            "location":"San Diego, CA",
+            "address":"3350 Sports Arena Blvd, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.754,
+            "longitude":-117.209
+         },
+         "artistList":[
+            {
+               "id":3776,
+               "name":"NGHTMRE",
+               "link":"https://edmtrain.com/tours?artist=3776"
+            }
+         ]
+      },
+      {
+         "id":137697,
+         "link":"https://edmtrain.com/california?event=137697",
+         "name":null,
+         "ages":"18+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-05",
+         "createdDate":"2019-12-18T01:26:10Z",
+         "venue":{
+            "id":1111,
+            "name":"House of Blues San Diego",
+            "location":"San Diego, CA",
+            "address":"1055 Fifth Ave, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.716,
+            "longitude":-117.16
+         },
+         "artistList":[
+            {
+               "id":387,
+               "name":"Liquid Stranger",
+               "link":"https://edmtrain.com/tours?artist=387"
+            },
+            {
+               "id":2135,
+               "name":"Dirt Monkey",
+               "link":"https://edmtrain.com/tours?artist=2135"
+            },
+            {
+               "id":4072,
+               "name":"Hydraulix",
+               "link":"https://edmtrain.com/tours?artist=4072"
+            },
+            {
+               "id":10467,
+               "name":"INZO",
+               "link":"https://edmtrain.com/tours?artist=10467"
+            }
+         ]
+      },
+      {
+         "id":143980,
+         "link":"https://edmtrain.com/california?event=143980",
+         "name":"Techniche Blaque",
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-05",
+         "createdDate":"2020-02-08T05:51:35Z",
+         "venue":{
+            "id":3017,
+            "name":"Rich's San Diego",
+            "location":"San Diego, CA",
+            "address":"1051 W University Ave, San Diego, CA 92103, USA",
+            "state":"California",
+            "latitude":32.749,
+            "longitude":-117.173
+         },
+         "artistList":[
+
+         ]
+      },
+      {
+         "id":134965,
+         "link":"https://edmtrain.com/california?event=134965",
+         "name":"Open To Close",
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-06",
+         "createdDate":"2019-11-20T20:24:39Z",
+         "venue":{
+            "id":1508,
+            "name":"Spin Nightclub",
+            "location":"San Diego, CA",
+            "address":"2028 Hancock St, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.744,
+            "longitude":-117.188
+         },
+         "artistList":[
+            {
+               "id":5132,
+               "name":"Will Clarke",
+               "link":"https://edmtrain.com/tours?artist=5132"
+            }
+         ]
+      },
+      {
+         "id":141836,
+         "link":"https://edmtrain.com/california?event=141836",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-06",
+         "createdDate":"2020-01-24T00:10:31Z",
+         "venue":{
+            "id":2302,
+            "name":"Omnia San Diego",
+            "location":"San Diego, CA",
+            "address":"454 Sixth Ave, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.71,
+            "longitude":-117.159
+         },
+         "artistList":[
+            {
+               "id":2859,
+               "name":"Sam Feldt",
+               "link":"https://edmtrain.com/tours?artist=2859"
+            }
+         ]
+      },
+      {
+         "id":146244,
+         "link":"https://edmtrain.com/california?event=146244",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-06",
+         "createdDate":"2020-02-25T17:00:45Z",
+         "venue":{
+            "id":1122,
+            "name":"Bang Bang",
+            "location":"San Diego, CA",
+            "address":"526 Market St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.712,
+            "longitude":-117.16
+         },
+         "artistList":[
+            {
+               "id":12027,
+               "name":"Mason Maynard",
+               "link":"https://edmtrain.com/tours?artist=12027"
+            }
+         ]
+      },
+      {
+         "id":136219,
+         "link":"https://edmtrain.com/california?event=136219",
+         "name":"CRSSD Festival",
+         "ages":null,
+         "festivalInd":true,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-07",
+         "createdDate":"2019-12-05T13:22:55Z",
+         "venue":{
+            "id":1803,
+            "name":"Waterfront Park",
+            "location":"San Diego, CA",
+            "address":"1600 Pacific Hwy, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.722,
+            "longitude":-117.172
+         },
+         "artistList":[
+            {
+               "id":287,
+               "name":"Gesaffelstein",
+               "link":"https://edmtrain.com/tours?artist=287"
+            },
+            {
+               "id":4384,
+               "name":"Rüfüs Du Sol",
+               "link":"https://edmtrain.com/tours?artist=4384"
+            },
+            {
+               "id":164,
+               "name":"Chris Lake",
+               "link":"https://edmtrain.com/tours?artist=164"
+            },
+            {
+               "id":2853,
+               "name":"Nora En Pure",
+               "link":"https://edmtrain.com/tours?artist=2853"
+            },
+            {
+               "id":152,
+               "name":"Carl Cox",
+               "link":"https://edmtrain.com/tours?artist=152"
+            },
+            {
+               "id":8043,
+               "name":"Charlotte De Witte",
+               "link":"https://edmtrain.com/tours?artist=8043"
+            },
+            {
+               "id":5423,
+               "name":"Sacha Robotti",
+               "link":"https://edmtrain.com/tours?artist=5423"
+            },
+            {
+               "id":9324,
+               "name":"Ben Böhmer",
+               "link":"https://edmtrain.com/tours?artist=9324"
+            }
+         ]
+      },
+      {
+         "id":139216,
+         "link":"https://edmtrain.com/california?event=139216",
+         "name":null,
+         "ages":"18+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-07",
+         "createdDate":"2020-01-08T03:39:43Z",
+         "venue":{
+            "id":1103,
+            "name":"Bassmnt",
+            "location":"San Diego, CA",
+            "address":"919 Fourth Ave #100, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.715,
+            "longitude":-117.161
+         },
+         "artistList":[
+            {
+               "id":2727,
+               "name":"Golf Clap",
+               "link":"https://edmtrain.com/tours?artist=2727"
+            }
+         ]
+      },
+      {
+         "id":141835,
+         "link":"https://edmtrain.com/california?event=141835",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-07",
+         "createdDate":"2020-01-24T00:10:30Z",
+         "venue":{
+            "id":2302,
+            "name":"Omnia San Diego",
+            "location":"San Diego, CA",
+            "address":"454 Sixth Ave, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.71,
+            "longitude":-117.159
+         },
+         "artistList":[
+            {
+               "id":1411,
+               "name":"Elephante",
+               "link":"https://edmtrain.com/tours?artist=1411"
+            }
+         ]
+      },
+      {
+         "id":145324,
+         "link":"https://edmtrain.com/california?event=145324",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-07",
+         "createdDate":"2020-02-19T01:32:04Z",
+         "venue":{
+            "id":1812,
+            "name":"Parq",
+            "location":"San Diego, CA",
+            "address":"615 Broadway, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.716,
+            "longitude":-117.159
+         },
+         "artistList":[
+            {
+               "id":3855,
+               "name":"Joe Maz",
+               "link":"https://edmtrain.com/tours?artist=3855"
+            }
+         ]
+      },
+      {
+         "id":145595,
+         "link":"https://edmtrain.com/california?event=145595",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-07",
+         "createdDate":"2020-02-20T01:50:12Z",
+         "venue":{
+            "id":3767,
+            "name":"Kettner Exchange",
+            "location":"San Diego, CA",
+            "address":"2001 Kettner Blvd, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.725,
+            "longitude":-117.17
+         },
+         "artistList":[
+            {
+               "id":600,
+               "name":"Tiger & Woods",
+               "link":"https://edmtrain.com/tours?artist=600"
+            },
+            {
+               "id":20333,
+               "name":"Bouquet",
+               "link":null
+            }
+         ]
+      },
+      {
+         "id":145682,
+         "link":"https://edmtrain.com/california?event=145682",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-07",
+         "createdDate":"2020-02-21T00:43:45Z",
+         "venue":{
+            "id":2901,
+            "name":"Music Box",
+            "location":"San Diego, CA",
+            "address":"1337 India St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.719,
+            "longitude":-117.168
+         },
+         "artistList":[
+            {
+               "id":1865,
+               "name":"Autograf",
+               "link":"https://edmtrain.com/tours?artist=1865"
+            }
+         ]
+      },
+      {
+         "id":145830,
+         "link":"https://edmtrain.com/california?event=145830",
+         "name":"Happy Saturday & Sunday",
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-07",
+         "createdDate":"2020-02-21T19:51:03Z",
+         "venue":{
+            "id":8553,
+            "name":"Julep",
+            "location":"San Diego, CA",
+            "address":"1735 Hancock St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.741,
+            "longitude":-117.183
+         },
+         "artistList":[
+
+         ]
+      },
+      {
+         "id":146027,
+         "link":"https://edmtrain.com/california?event=146027",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-07",
+         "createdDate":"2020-02-23T16:22:55Z",
+         "venue":{
+            "id":1102,
+            "name":"Hard Rock San Diego",
+            "location":"San Diego, CA",
+            "address":"207 Fifth Ave, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.708,
+            "longitude":-117.16
+         },
+         "artistList":[
+            {
+               "id":164,
+               "name":"Chris Lake",
+               "link":"https://edmtrain.com/tours?artist=164"
+            },
+            {
+               "id":3455,
+               "name":"Cassian",
+               "link":"https://edmtrain.com/tours?artist=3455"
+            }
+         ]
+      },
+      {
+         "id":146243,
+         "link":"https://edmtrain.com/california?event=146243",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-07",
+         "createdDate":"2020-02-25T17:00:43Z",
+         "venue":{
+            "id":1122,
+            "name":"Bang Bang",
+            "location":"San Diego, CA",
+            "address":"526 Market St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.712,
+            "longitude":-117.16
+         },
+         "artistList":[
+            {
+               "id":7024,
+               "name":"2ManyDJs",
+               "link":"https://edmtrain.com/tours?artist=7024"
+            },
+            {
+               "id":140,
+               "name":"Brodinski",
+               "link":"https://edmtrain.com/tours?artist=140"
+            }
+         ]
+      },
+      {
+         "id":146268,
+         "link":"https://edmtrain.com/california?event=146268",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-07",
+         "createdDate":"2020-02-25T17:06:02Z",
+         "venue":{
+            "id":6480,
+            "name":"Revel Revel",
+            "location":"San Diego, CA",
+            "address":"868 Fifth Ave, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.714,
+            "longitude":-117.161
+         },
+         "artistList":[
+            {
+               "id":4766,
+               "name":"Colette",
+               "link":"https://edmtrain.com/tours?artist=4766"
+            },
+            {
+               "id":4767,
+               "name":"DJ Heather",
+               "link":null
+            },
+            {
+               "id":12964,
+               "name":"DJ Holographic",
+               "link":null
+            }
+         ]
+      },
+      {
+         "id":146401,
+         "link":"https://edmtrain.com/california?event=146401",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-07",
+         "createdDate":"2020-02-26T06:53:21Z",
+         "venue":{
+            "id":2046,
+            "name":"Hornblower San Diego",
+            "location":"San Diego, CA",
+            "address":"1800 N Harbor Dr, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.724,
+            "longitude":-117.173
+         },
+         "artistList":[
+            {
+               "id":2853,
+               "name":"Nora En Pure",
+               "link":"https://edmtrain.com/tours?artist=2853"
+            }
+         ]
+      },
+      {
+         "id":146402,
+         "link":"https://edmtrain.com/california?event=146402",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-07",
+         "createdDate":"2020-02-26T06:53:22Z",
+         "venue":{
+            "id":2046,
+            "name":"Hornblower San Diego",
+            "location":"San Diego, CA",
+            "address":"1800 N Harbor Dr, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.724,
+            "longitude":-117.173
+         },
+         "artistList":[
+            {
+               "id":412,
+               "name":"Mark Knight",
+               "link":"https://edmtrain.com/tours?artist=412"
+            },
+            {
+               "id":3552,
+               "name":"Technasia",
+               "link":"https://edmtrain.com/tours?artist=3552"
+            }
+         ]
+      },
+      {
+         "id":136220,
+         "link":"https://edmtrain.com/california?event=136220",
+         "name":"CRSSD Festival",
+         "ages":null,
+         "festivalInd":true,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-08",
+         "createdDate":"2019-12-05T13:22:55Z",
+         "venue":{
+            "id":1803,
+            "name":"Waterfront Park",
+            "location":"San Diego, CA",
+            "address":"1600 Pacific Hwy, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.722,
+            "longitude":-117.172
+         },
+         "artistList":[
+
+         ]
+      },
+      {
+         "id":144776,
+         "link":"https://edmtrain.com/california?event=144776",
+         "name":"Deep Tech Recordings Label Launch",
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-08",
+         "createdDate":"2020-02-14T01:02:00Z",
+         "venue":{
+            "id":3882,
+            "name":"Blonde Bar",
+            "location":"San Diego, CA",
+            "address":"1808 W Washington St, San Diego, CA 92103, USA",
+            "state":"California",
+            "latitude":32.743,
+            "longitude":-117.182
+         },
+         "artistList":[
+            {
+               "id":8176,
+               "name":"Mr. Wright",
+               "link":null
+            },
+            {
+               "id":8868,
+               "name":"Rawle Night Long",
+               "link":null
+            },
+            {
+               "id":8177,
+               "name":"SarasBróðir",
+               "link":"https://edmtrain.com/tours?artist=8177"
+            },
+            {
+               "id":20173,
+               "name":"Garden Party",
+               "link":null
+            }
+         ]
+      },
+      {
+         "id":145831,
+         "link":"https://edmtrain.com/california?event=145831",
+         "name":"Happy Saturday & Sunday",
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-08",
+         "createdDate":"2020-02-21T19:51:04Z",
+         "venue":{
+            "id":8553,
+            "name":"Julep",
+            "location":"San Diego, CA",
+            "address":"1735 Hancock St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.741,
+            "longitude":-117.183
+         },
+         "artistList":[
+
+         ]
+      },
+      {
+         "id":146040,
+         "link":"https://edmtrain.com/california?event=146040",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-08",
+         "createdDate":"2020-02-24T14:46:44Z",
+         "venue":{
+            "id":1508,
+            "name":"Spin Nightclub",
+            "location":"San Diego, CA",
+            "address":"2028 Hancock St, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.744,
+            "longitude":-117.188
+         },
+         "artistList":[
+            {
+               "id":8043,
+               "name":"Charlotte De Witte",
+               "link":"https://edmtrain.com/tours?artist=8043"
+            },
+            {
+               "id":2735,
+               "name":"Jon Rundell",
+               "link":null
+            },
+            {
+               "id":3958,
+               "name":"Teenage Mutants",
+               "link":"https://edmtrain.com/tours?artist=3958"
+            }
+         ]
+      },
+      {
+         "id":146242,
+         "link":"https://edmtrain.com/california?event=146242",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-08",
+         "createdDate":"2020-02-25T17:00:42Z",
+         "venue":{
+            "id":1122,
+            "name":"Bang Bang",
+            "location":"San Diego, CA",
+            "address":"526 Market St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.712,
+            "longitude":-117.16
+         },
+         "artistList":[
+            {
+               "id":1002,
+               "name":"Justin Jay",
+               "link":"https://edmtrain.com/tours?artist=1002"
+            }
+         ]
+      },
+      {
+         "id":146400,
+         "link":"https://edmtrain.com/california?event=146400",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-08",
+         "createdDate":"2020-02-26T06:53:20Z",
+         "venue":{
+            "id":2046,
+            "name":"Hornblower San Diego",
+            "location":"San Diego, CA",
+            "address":"1800 N Harbor Dr, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.724,
+            "longitude":-117.173
+         },
+         "artistList":[
+            {
+               "id":2203,
+               "name":"Patrick Topping",
+               "link":"https://edmtrain.com/tours?artist=2203"
+            },
+            {
+               "id":7835,
+               "name":"Archie Hamilton",
+               "link":"https://edmtrain.com/tours?artist=7835"
+            }
+         ]
+      },
+      {
+         "id":146416,
+         "link":"https://edmtrain.com/california?event=146416",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-08",
+         "createdDate":"2020-02-26T06:56:35Z",
+         "venue":{
+            "id":3017,
+            "name":"Rich's San Diego",
+            "location":"San Diego, CA",
+            "address":"1051 W University Ave, San Diego, CA 92103, USA",
+            "state":"California",
+            "latitude":32.749,
+            "longitude":-117.173
+         },
+         "artistList":[
+            {
+               "id":311,
+               "name":"Hernan Cattaneo",
+               "link":"https://edmtrain.com/tours?artist=311"
+            },
+            {
+               "id":467,
+               "name":"Nick Warren",
+               "link":"https://edmtrain.com/tours?artist=467"
+            }
+         ]
+      },
+      {
+         "id":132678,
+         "link":"https://edmtrain.com/california?event=132678",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-11",
+         "createdDate":"2019-10-29T22:44:44Z",
+         "venue":{
+            "id":2901,
+            "name":"Music Box",
+            "location":"San Diego, CA",
+            "address":"1337 India St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.719,
+            "longitude":-117.168
+         },
+         "artistList":[
+            {
+               "id":7186,
+               "name":"Dan Deacon",
+               "link":"https://edmtrain.com/tours?artist=7186"
+            }
+         ]
+      },
+      {
+         "id":137054,
+         "link":"https://edmtrain.com/california?event=137054",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-13",
+         "createdDate":"2019-12-13T00:31:27Z",
+         "venue":{
+            "id":1122,
+            "name":"Bang Bang",
+            "location":"San Diego, CA",
+            "address":"526 Market St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.712,
+            "longitude":-117.16
+         },
+         "artistList":[
+            {
+               "id":5329,
+               "name":"No Mana",
+               "link":"https://edmtrain.com/tours?artist=5329"
+            }
+         ]
+      },
+      {
+         "id":139140,
+         "link":"https://edmtrain.com/california?event=139140",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-13",
+         "createdDate":"2020-01-08T03:26:21Z",
+         "venue":{
+            "id":2302,
+            "name":"Omnia San Diego",
+            "location":"San Diego, CA",
+            "address":"454 Sixth Ave, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.71,
+            "longitude":-117.159
+         },
+         "artistList":[
+            {
+               "id":5688,
+               "name":"Tiësto",
+               "link":"https://edmtrain.com/tours?artist=5688"
+            }
+         ]
+      },
+      {
+         "id":143004,
+         "link":"https://edmtrain.com/california?event=143004",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-13",
+         "createdDate":"2020-02-01T01:43:10Z",
+         "venue":{
+            "id":1508,
+            "name":"Spin Nightclub",
+            "location":"San Diego, CA",
+            "address":"2028 Hancock St, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.744,
+            "longitude":-117.188
+         },
+         "artistList":[
+            {
+               "id":9090,
+               "name":"B.Traits",
+               "link":"https://edmtrain.com/tours?artist=9090"
+            },
+            {
+               "id":6725,
+               "name":"La Fleur",
+               "link":"https://edmtrain.com/tours?artist=6725"
+            }
+         ]
+      },
+      {
+         "id":140590,
+         "link":"https://edmtrain.com/california?event=140590",
+         "name":null,
+         "ages":"18+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-14",
+         "createdDate":"2020-01-16T03:06:20Z",
+         "venue":{
+            "id":1103,
+            "name":"Bassmnt",
+            "location":"San Diego, CA",
+            "address":"919 Fourth Ave #100, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.715,
+            "longitude":-117.161
+         },
+         "artistList":[
+            {
+               "id":6837,
+               "name":"ARMNHMR",
+               "link":"https://edmtrain.com/tours?artist=6837"
+            }
+         ]
+      },
+      {
+         "id":145054,
+         "link":"https://edmtrain.com/california?event=145054",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-14",
+         "createdDate":"2020-02-15T15:37:46Z",
+         "venue":{
+            "id":1122,
+            "name":"Bang Bang",
+            "location":"San Diego, CA",
+            "address":"526 Market St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.712,
+            "longitude":-117.16
+         },
+         "artistList":[
+            {
+               "id":10143,
+               "name":"Taska Black",
+               "link":"https://edmtrain.com/tours?artist=10143"
+            }
+         ]
+      },
+      {
+         "id":146315,
+         "link":"https://edmtrain.com/california?event=146315",
+         "name":"Back To The Future",
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-14",
+         "createdDate":"2020-02-26T00:05:12Z",
+         "venue":{
+            "id":1508,
+            "name":"Spin Nightclub",
+            "location":"San Diego, CA",
+            "address":"2028 Hancock St, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.744,
+            "longitude":-117.188
+         },
+         "artistList":[
+            {
+               "id":6808,
+               "name":"Desert Hearts",
+               "link":"https://edmtrain.com/tours?artist=6808"
+            }
+         ]
+      },
+      {
+         "id":139273,
+         "link":"https://edmtrain.com/california?event=139273",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-15",
+         "createdDate":"2020-01-08T17:59:18Z",
+         "venue":{
+            "id":4396,
+            "name":"Brick by Brick",
+            "location":"San Diego, CA",
+            "address":"1130 Buenos Ave, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.769,
+            "longitude":-117.201
+         },
+         "artistList":[
+            {
+               "id":13288,
+               "name":"Lords of Acid",
+               "link":"https://edmtrain.com/tours?artist=13288"
+            },
+            {
+               "id":12750,
+               "name":"Aesthetic Perfection",
+               "link":null
+            },
+            {
+               "id":19235,
+               "name":"Praga Khan",
+               "link":null
+            }
+         ]
+      },
+      {
+         "id":141455,
+         "link":"https://edmtrain.com/california?event=141455",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-15",
+         "createdDate":"2020-01-22T01:24:38Z",
+         "venue":{
+            "id":1508,
+            "name":"Spin Nightclub",
+            "location":"San Diego, CA",
+            "address":"2028 Hancock St, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.744,
+            "longitude":-117.188
+         },
+         "artistList":[
+            {
+               "id":7217,
+               "name":"Rybo",
+               "link":"https://edmtrain.com/tours?artist=7217"
+            },
+            {
+               "id":8954,
+               "name":"Lubelski",
+               "link":"https://edmtrain.com/tours?artist=8954"
+            },
+            {
+               "id":12930,
+               "name":"Wyatt Marshall",
+               "link":"https://edmtrain.com/tours?artist=12930"
+            }
+         ]
+      },
+      {
+         "id":133758,
+         "link":"https://edmtrain.com/california?event=133758",
+         "name":null,
+         "ages":"Under 18 with adult",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-20",
+         "createdDate":"2019-11-12T18:41:49Z",
+         "venue":{
+            "id":1111,
+            "name":"House of Blues San Diego",
+            "location":"San Diego, CA",
+            "address":"1055 Fifth Ave, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.716,
+            "longitude":-117.16
+         },
+         "artistList":[
+            {
+               "id":6690,
+               "name":"Elohim",
+               "link":"https://edmtrain.com/tours?artist=6690"
+            },
+            {
+               "id":18229,
+               "name":"Bahari",
+               "link":null
+            },
+            {
+               "id":18230,
+               "name":"Mehro",
+               "link":null
+            }
+         ]
+      },
+      {
+         "id":141966,
+         "link":"https://edmtrain.com/california?event=141966",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-20",
+         "createdDate":"2020-01-24T22:20:33Z",
+         "venue":{
+            "id":1508,
+            "name":"Spin Nightclub",
+            "location":"San Diego, CA",
+            "address":"2028 Hancock St, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.744,
+            "longitude":-117.188
+         },
+         "artistList":[
+            {
+               "id":219,
+               "name":"Dirty South",
+               "link":"https://edmtrain.com/tours?artist=219"
+            },
+            {
+               "id":381,
+               "name":"Le Youth",
+               "link":"https://edmtrain.com/tours?artist=381"
+            }
+         ]
+      },
+      {
+         "id":145358,
+         "link":"https://edmtrain.com/california?event=145358",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-20",
+         "createdDate":"2020-02-19T02:02:19Z",
+         "venue":{
+            "id":1122,
+            "name":"Bang Bang",
+            "location":"San Diego, CA",
+            "address":"526 Market St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.712,
+            "longitude":-117.16
+         },
+         "artistList":[
+            {
+               "id":9266,
+               "name":"Illyus & Barrientos",
+               "link":"https://edmtrain.com/tours?artist=9266"
+            }
+         ]
+      },
+      {
+         "id":139129,
+         "link":"https://edmtrain.com/california?event=139129",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-21",
+         "createdDate":"2020-01-08T03:25:09Z",
+         "venue":{
+            "id":2901,
+            "name":"Music Box",
+            "location":"San Diego, CA",
+            "address":"1337 India St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.719,
+            "longitude":-117.168
+         },
+         "artistList":[
+            {
+               "id":508,
+               "name":"RJD2",
+               "link":"https://edmtrain.com/tours?artist=508"
+            }
+         ]
+      },
+      {
+         "id":142006,
+         "link":"https://edmtrain.com/california?event=142006",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-21",
+         "createdDate":"2020-01-24T22:31:46Z",
+         "venue":{
+            "id":2435,
+            "name":"Quartyard",
+            "location":"San Diego, CA",
+            "address":"1301 Market St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.711,
+            "longitude":-117.153
+         },
+         "artistList":[
+            {
+               "id":7192,
+               "name":"Jan Blomqvist",
+               "link":"https://edmtrain.com/tours?artist=7192"
+            }
+         ]
+      },
+      {
+         "id":143407,
+         "link":"https://edmtrain.com/california?event=143407",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-21",
+         "createdDate":"2020-02-05T01:48:04Z",
+         "venue":{
+            "id":1122,
+            "name":"Bang Bang",
+            "location":"San Diego, CA",
+            "address":"526 Market St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.712,
+            "longitude":-117.16
+         },
+         "artistList":[
+            {
+               "id":2753,
+               "name":"Tube & Berger",
+               "link":"https://edmtrain.com/tours?artist=2753"
+            }
+         ]
+      },
+      {
+         "id":145051,
+         "link":"https://edmtrain.com/california?event=145051",
+         "name":"Defected Showcase",
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-21",
+         "createdDate":"2020-02-15T03:18:33Z",
+         "venue":{
+            "id":1826,
+            "name":"San Diego",
+            "location":"San Diego, CA",
+            "address":"San Diego, CA, USA",
+            "state":"California",
+            "latitude":32.716,
+            "longitude":-117.161
+         },
+         "artistList":[
+            {
+               "id":10625,
+               "name":"Sam Divine",
+               "link":"https://edmtrain.com/tours?artist=10625"
+            },
+            {
+               "id":11581,
+               "name":"Monki",
+               "link":"https://edmtrain.com/tours?artist=11581"
+            },
+            {
+               "id":12829,
+               "name":"Ferreck Dawn",
+               "link":"https://edmtrain.com/tours?artist=12829"
+            }
+         ]
+      },
+      {
+         "id":145849,
+         "link":"https://edmtrain.com/california?event=145849",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-26",
+         "createdDate":"2020-02-22T01:24:30Z",
+         "venue":{
+            "id":1122,
+            "name":"Bang Bang",
+            "location":"San Diego, CA",
+            "address":"526 Market St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.712,
+            "longitude":-117.16
+         },
+         "artistList":[
+            {
+               "id":806,
+               "name":"Matador",
+               "link":"https://edmtrain.com/tours?artist=806"
+            }
+         ]
+      },
+      {
+         "id":145879,
+         "link":"https://edmtrain.com/california?event=145879",
+         "name":null,
+         "ages":"18+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-26",
+         "createdDate":"2020-02-22T03:13:02Z",
+         "venue":{
+            "id":2901,
+            "name":"Music Box",
+            "location":"San Diego, CA",
+            "address":"1337 India St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.719,
+            "longitude":-117.168
+         },
+         "artistList":[
+            {
+               "id":7172,
+               "name":"Hex Cougar",
+               "link":"https://edmtrain.com/tours?artist=7172"
+            },
+            {
+               "id":6167,
+               "name":"Zeke Beats",
+               "link":"https://edmtrain.com/tours?artist=6167"
+            },
+            {
+               "id":20386,
+               "name":"Apollo V",
+               "link":null
+            },
+            {
+               "id":19445,
+               "name":"Head$tash",
+               "link":null
+            },
+            {
+               "id":20387,
+               "name":"Player Dave",
+               "link":null
+            },
+            {
+               "id":20388,
+               "name":"Mayko",
+               "link":null
+            }
+         ]
+      },
+      {
+         "id":140306,
+         "link":"https://edmtrain.com/california?event=140306",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-27",
+         "createdDate":"2020-01-14T22:46:00Z",
+         "venue":{
+            "id":2302,
+            "name":"Omnia San Diego",
+            "location":"San Diego, CA",
+            "address":"454 Sixth Ave, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.71,
+            "longitude":-117.159
+         },
+         "artistList":[
+            {
+               "id":186,
+               "name":"Dada Life",
+               "link":"https://edmtrain.com/tours?artist=186"
+            }
+         ]
+      },
+      {
+         "id":142439,
+         "link":"https://edmtrain.com/california?event=142439",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-27",
+         "createdDate":"2020-01-29T01:39:45Z",
+         "venue":{
+            "id":1508,
+            "name":"Spin Nightclub",
+            "location":"San Diego, CA",
+            "address":"2028 Hancock St, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.744,
+            "longitude":-117.188
+         },
+         "artistList":[
+            {
+               "id":12446,
+               "name":"ARTBAT",
+               "link":"https://edmtrain.com/tours?artist=12446"
+            }
+         ]
+      },
+      {
+         "id":142788,
+         "link":"https://edmtrain.com/california?event=142788",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-27",
+         "createdDate":"2020-01-30T23:18:35Z",
+         "venue":{
+            "id":1122,
+            "name":"Bang Bang",
+            "location":"San Diego, CA",
+            "address":"526 Market St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.712,
+            "longitude":-117.16
+         },
+         "artistList":[
+            {
+               "id":16277,
+               "name":"Odd Mob",
+               "link":"https://edmtrain.com/tours?artist=16277"
+            }
+         ]
+      },
+      {
+         "id":137583,
+         "link":"https://edmtrain.com/california?event=137583",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-28",
+         "createdDate":"2019-12-18T00:40:03Z",
+         "venue":{
+            "id":2901,
+            "name":"Music Box",
+            "location":"San Diego, CA",
+            "address":"1337 India St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.719,
+            "longitude":-117.168
+         },
+         "artistList":[
+            {
+               "id":410,
+               "name":"Mark Farina",
+               "link":"https://edmtrain.com/tours?artist=410"
+            },
+            {
+               "id":18362,
+               "name":"Chuck Love",
+               "link":null
+            },
+            {
+               "id":5189,
+               "name":"Cris Herrera",
+               "link":null
+            },
+            {
+               "id":20187,
+               "name":"Uri Leshner",
+               "link":null
+            }
+         ]
+      },
+      {
+         "id":140297,
+         "link":"https://edmtrain.com/california?event=140297",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-28",
+         "createdDate":"2020-01-14T22:41:55Z",
+         "venue":{
+            "id":1122,
+            "name":"Bang Bang",
+            "location":"San Diego, CA",
+            "address":"526 Market St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.712,
+            "longitude":-117.16
+         },
+         "artistList":[
+            {
+               "id":4798,
+               "name":"Axel Boman",
+               "link":"https://edmtrain.com/tours?artist=4798"
+            }
+         ]
+      },
+      {
+         "id":144154,
+         "link":"https://edmtrain.com/california?event=144154",
+         "name":null,
+         "ages":"18+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-03-28",
+         "createdDate":"2020-02-10T23:31:53Z",
+         "venue":{
+            "id":1103,
+            "name":"Bassmnt",
+            "location":"San Diego, CA",
+            "address":"919 Fourth Ave #100, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.715,
+            "longitude":-117.161
+         },
+         "artistList":[
+            {
+               "id":3474,
+               "name":"4B",
+               "link":"https://edmtrain.com/tours?artist=3474"
+            }
+         ]
+      },
+      {
+         "id":143406,
+         "link":"https://edmtrain.com/california?event=143406",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-04-03",
+         "createdDate":"2020-02-05T01:48:04Z",
+         "venue":{
+            "id":1122,
+            "name":"Bang Bang",
+            "location":"San Diego, CA",
+            "address":"526 Market St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.712,
+            "longitude":-117.16
+         },
+         "artistList":[
+            {
+               "id":5645,
+               "name":"Sigala",
+               "link":"https://edmtrain.com/tours?artist=5645"
+            }
+         ]
+      },
+      {
+         "id":143280,
+         "link":"https://edmtrain.com/california?event=143280",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-04-04",
+         "createdDate":"2020-02-04T17:52:31Z",
+         "venue":{
+            "id":2656,
+            "name":"Petco Park",
+            "location":"San Diego, CA",
+            "address":"100 Park Blvd, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.707,
+            "longitude":-117.156
+         },
+         "artistList":[
+            {
+               "id":9975,
+               "name":"Kaskade (Redux Set)",
+               "link":"https://edmtrain.com/tours?artist=9975"
+            }
+         ]
+      },
+      {
+         "id":145482,
+         "link":"https://edmtrain.com/california?event=145482",
+         "name":null,
+         "ages":"18+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-04-04",
+         "createdDate":"2020-02-19T22:16:29Z",
+         "venue":{
+            "id":1103,
+            "name":"Bassmnt",
+            "location":"San Diego, CA",
+            "address":"919 Fourth Ave #100, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.715,
+            "longitude":-117.161
+         },
+         "artistList":[
+            {
+               "id":1880,
+               "name":"Snails",
+               "link":"https://edmtrain.com/tours?artist=1880"
+            }
+         ]
+      },
+      {
+         "id":145593,
+         "link":"https://edmtrain.com/california?event=145593",
+         "name":"Umbrella Nights // Back to Business",
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-04-04",
+         "createdDate":"2020-02-20T01:36:40Z",
+         "venue":{
+            "id":1508,
+            "name":"Spin Nightclub",
+            "location":"San Diego, CA",
+            "address":"2028 Hancock St, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.744,
+            "longitude":-117.188
+         },
+         "artistList":[
+            {
+               "id":12225,
+               "name":"Evan Casey",
+               "link":"https://edmtrain.com/tours?artist=12225"
+            },
+            {
+               "id":15327,
+               "name":"Ocean Roulette",
+               "link":null
+            },
+            {
+               "id":20330,
+               "name":"Britton",
+               "link":null
+            },
+            {
+               "id":20331,
+               "name":"Astronaut Ghost",
+               "link":null
+            }
+         ]
+      },
+      {
+         "id":145878,
+         "link":"https://edmtrain.com/california?event=145878",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-04-09",
+         "createdDate":"2020-02-22T03:13:01Z",
+         "venue":{
+            "id":3157,
+            "name":"Soda Bar",
+            "location":"San Diego, CA",
+            "address":"3615 El Cajon Blvd, San Diego, CA 92104, USA",
+            "state":"California",
+            "latitude":32.755,
+            "longitude":-117.115
+         },
+         "artistList":[
+            {
+               "id":6126,
+               "name":"Cofresi",
+               "link":"https://edmtrain.com/tours?artist=6126"
+            }
+         ]
+      },
+      {
+         "id":143993,
+         "link":"https://edmtrain.com/california?event=143993",
+         "name":"SD Union w/ Break",
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-04-10",
+         "createdDate":"2020-02-08T06:12:40Z",
+         "venue":{
+            "id":1508,
+            "name":"Spin Nightclub",
+            "location":"San Diego, CA",
+            "address":"2028 Hancock St, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.744,
+            "longitude":-117.188
+         },
+         "artistList":[
+
+         ]
+      },
+      {
+         "id":144213,
+         "link":"https://edmtrain.com/california?event=144213",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-04-10",
+         "createdDate":"2020-02-10T23:41:01Z",
+         "venue":{
+            "id":4057,
+            "name":"Humphreys Concerts by the Bay",
+            "location":"San Diego, CA",
+            "address":"2241 Shelter Island Dr, San Diego, CA 92106, USA",
+            "state":"California",
+            "latitude":32.716,
+            "longitude":-117.224
+         },
+         "artistList":[
+            {
+               "id":1493,
+               "name":"Hot Chip",
+               "link":"https://edmtrain.com/tours?artist=1493"
+            }
+         ]
+      },
+      {
+         "id":141476,
+         "link":"https://edmtrain.com/california?event=141476",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-04-17",
+         "createdDate":"2020-01-22T01:27:12Z",
+         "venue":{
+            "id":1122,
+            "name":"Bang Bang",
+            "location":"San Diego, CA",
+            "address":"526 Market St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.712,
+            "longitude":-117.16
+         },
+         "artistList":[
+            {
+               "id":7643,
+               "name":"Folamour",
+               "link":"https://edmtrain.com/tours?artist=7643"
+            }
+         ]
+      },
+      {
+         "id":146136,
+         "link":"https://edmtrain.com/california?event=146136",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-04-17",
+         "createdDate":"2020-02-24T23:36:28Z",
+         "venue":{
+            "id":2901,
+            "name":"Music Box",
+            "location":"San Diego, CA",
+            "address":"1337 India St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.719,
+            "longitude":-117.168
+         },
+         "artistList":[
+            {
+               "id":486,
+               "name":"Paul Oakenfold",
+               "link":"https://edmtrain.com/tours?artist=486"
+            },
+            {
+               "id":6923,
+               "name":"Varun",
+               "link":null
+            }
+         ]
+      },
+      {
+         "id":145361,
+         "link":"https://edmtrain.com/california?event=145361",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-04-24",
+         "createdDate":"2020-02-19T02:03:32Z",
+         "venue":{
+            "id":1508,
+            "name":"Spin Nightclub",
+            "location":"San Diego, CA",
+            "address":"2028 Hancock St, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.744,
+            "longitude":-117.188
+         },
+         "artistList":[
+            {
+               "id":1624,
+               "name":"Christian Smith",
+               "link":"https://edmtrain.com/tours?artist=1624"
+            },
+            {
+               "id":15384,
+               "name":"Drunken Kong",
+               "link":"https://edmtrain.com/tours?artist=15384"
+            }
+         ]
+      },
+      {
+         "id":141980,
+         "link":"https://edmtrain.com/california?event=141980",
+         "name":null,
+         "ages":"18+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-04-25",
+         "createdDate":"2020-01-24T22:21:53Z",
+         "venue":{
+            "id":1103,
+            "name":"Bassmnt",
+            "location":"San Diego, CA",
+            "address":"919 Fourth Ave #100, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.715,
+            "longitude":-117.161
+         },
+         "artistList":[
+            {
+               "id":7036,
+               "name":"Blunts & Blondes",
+               "link":"https://edmtrain.com/tours?artist=7036"
+            }
+         ]
+      },
+      {
+         "id":143552,
+         "link":"https://edmtrain.com/california?event=143552",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-04-25",
+         "createdDate":"2020-02-05T16:34:41Z",
+         "venue":{
+            "id":1508,
+            "name":"Spin Nightclub",
+            "location":"San Diego, CA",
+            "address":"2028 Hancock St, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.744,
+            "longitude":-117.188
+         },
+         "artistList":[
+            {
+               "id":113,
+               "name":"Ben Gold",
+               "link":"https://edmtrain.com/tours?artist=113"
+            }
+         ]
+      },
+      {
+         "id":143717,
+         "link":"https://edmtrain.com/california?event=143717",
+         "name":null,
+         "ages":"Under 18 with adult",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-04-25",
+         "createdDate":"2020-02-06T00:03:19Z",
+         "venue":{
+            "id":2980,
+            "name":"Observatory North Park",
+            "location":"San Diego, CA",
+            "address":"2891 University Ave, San Diego, CA 92104, USA",
+            "state":"California",
+            "latitude":32.748,
+            "longitude":-117.131
+         },
+         "artistList":[
+            {
+               "id":6564,
+               "name":"Medasin",
+               "link":"https://edmtrain.com/tours?artist=6564"
+            }
+         ]
+      },
+      {
+         "id":144001,
+         "link":"https://edmtrain.com/california?event=144001",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-04-25",
+         "createdDate":"2020-02-08T06:13:10Z",
+         "venue":{
+            "id":1122,
+            "name":"Bang Bang",
+            "location":"San Diego, CA",
+            "address":"526 Market St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.712,
+            "longitude":-117.16
+         },
+         "artistList":[
+            {
+               "id":5044,
+               "name":"Attlas",
+               "link":"https://edmtrain.com/tours?artist=5044"
+            }
+         ]
+      },
+      {
+         "id":143204,
+         "link":"https://edmtrain.com/california?event=143204",
+         "name":null,
+         "ages":"All Ages",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-04-28",
+         "createdDate":"2020-02-03T23:58:19Z",
+         "venue":{
+            "id":1112,
+            "name":"Soma",
+            "location":"San Diego, CA",
+            "address":"3350 Sports Arena Blvd, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.754,
+            "longitude":-117.209
+         },
+         "artistList":[
+            {
+               "id":360,
+               "name":"Kaytranada",
+               "link":"https://edmtrain.com/tours?artist=360"
+            }
+         ]
+      },
+      {
+         "id":141426,
+         "link":"https://edmtrain.com/california?event=141426",
+         "name":null,
+         "ages":"Under 18 with adult",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-04-30",
+         "createdDate":"2020-01-22T01:15:55Z",
+         "venue":{
+            "id":2980,
+            "name":"Observatory North Park",
+            "location":"San Diego, CA",
+            "address":"2891 University Ave, San Diego, CA 92104, USA",
+            "state":"California",
+            "latitude":32.748,
+            "longitude":-117.131
+         },
+         "artistList":[
+            {
+               "id":251,
+               "name":"Emancipator",
+               "link":"https://edmtrain.com/tours?artist=251"
+            }
+         ]
+      },
+      {
+         "id":140994,
+         "link":"https://edmtrain.com/california?event=140994",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-05-06",
+         "createdDate":"2020-01-17T21:54:06Z",
+         "venue":{
+            "id":2901,
+            "name":"Music Box",
+            "location":"San Diego, CA",
+            "address":"1337 India St, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.719,
+            "longitude":-117.168
+         },
+         "artistList":[
+            {
+               "id":736,
+               "name":"Manic Focus",
+               "link":"https://edmtrain.com/tours?artist=736"
+            },
+            {
+               "id":8104,
+               "name":"Mersiv",
+               "link":"https://edmtrain.com/tours?artist=8104"
+            },
+            {
+               "id":709,
+               "name":"Russ Liquid",
+               "link":"https://edmtrain.com/tours?artist=709"
+            }
+         ]
+      },
+      {
+         "id":140008,
+         "link":"https://edmtrain.com/california?event=140008",
+         "name":null,
+         "ages":"Under 18 with adult",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-05-07",
+         "createdDate":"2020-01-13T21:41:27Z",
+         "venue":{
+            "id":2980,
+            "name":"Observatory North Park",
+            "location":"San Diego, CA",
+            "address":"2891 University Ave, San Diego, CA 92104, USA",
+            "state":"California",
+            "latitude":32.748,
+            "longitude":-117.131
+         },
+         "artistList":[
+            {
+               "id":586,
+               "name":"The Glitch Mob",
+               "link":"https://edmtrain.com/tours?artist=586"
+            },
+            {
+               "id":6630,
+               "name":"Ivy Lab",
+               "link":"https://edmtrain.com/tours?artist=6630"
+            }
+         ]
+      },
+      {
+         "id":143403,
+         "link":"https://edmtrain.com/california?event=143403",
+         "name":null,
+         "ages":"18+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-05-09",
+         "createdDate":"2020-02-05T01:47:23Z",
+         "venue":{
+            "id":1103,
+            "name":"Bassmnt",
+            "location":"San Diego, CA",
+            "address":"919 Fourth Ave #100, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.715,
+            "longitude":-117.161
+         },
+         "artistList":[
+            {
+               "id":2373,
+               "name":"Redlight",
+               "link":"https://edmtrain.com/tours?artist=2373"
+            }
+         ]
+      },
+      {
+         "id":142412,
+         "link":"https://edmtrain.com/california?event=142412",
+         "name":null,
+         "ages":"All Ages",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-05-13",
+         "createdDate":"2020-01-29T01:31:11Z",
+         "venue":{
+            "id":1112,
+            "name":"Soma",
+            "location":"San Diego, CA",
+            "address":"3350 Sports Arena Blvd, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.754,
+            "longitude":-117.209
+         },
+         "artistList":[
+            {
+               "id":613,
+               "name":"Tycho",
+               "link":"https://edmtrain.com/tours?artist=613"
+            }
+         ]
+      },
+      {
+         "id":145053,
+         "link":"https://edmtrain.com/california?event=145053",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-05-13",
+         "createdDate":"2020-02-15T15:24:15Z",
+         "venue":{
+            "id":1508,
+            "name":"Spin Nightclub",
+            "location":"San Diego, CA",
+            "address":"2028 Hancock St, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.744,
+            "longitude":-117.188
+         },
+         "artistList":[
+            {
+               "id":8320,
+               "name":"Monolink",
+               "link":"https://edmtrain.com/tours?artist=8320"
+            }
+         ]
+      },
+      {
+         "id":144297,
+         "link":"https://edmtrain.com/california?event=144297",
+         "name":"Girl Talk",
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-05-16",
+         "createdDate":"2020-02-11T06:55:32Z",
+         "venue":{
+            "id":1111,
+            "name":"House of Blues San Diego",
+            "location":"San Diego, CA",
+            "address":"1055 Fifth Ave, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.716,
+            "longitude":-117.16
+         },
+         "artistList":[
+
+         ]
+      },
+      {
+         "id":146307,
+         "link":"https://edmtrain.com/california?event=146307",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-05-21",
+         "createdDate":"2020-02-25T20:42:11Z",
+         "venue":{
+            "id":2980,
+            "name":"Observatory North Park",
+            "location":"San Diego, CA",
+            "address":"2891 University Ave, San Diego, CA 92104, USA",
+            "state":"California",
+            "latitude":32.748,
+            "longitude":-117.131
+         },
+         "artistList":[
+            {
+               "id":20432,
+               "name":"Stereolab",
+               "link":null
+            },
+            {
+               "id":20433,
+               "name":"Deradoorian",
+               "link":null
+            }
+         ]
+      },
+      {
+         "id":144952,
+         "link":"https://edmtrain.com/california?event=144952",
+         "name":null,
+         "ages":"21+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-05-22",
+         "createdDate":"2020-02-14T22:41:53Z",
+         "venue":{
+            "id":1508,
+            "name":"Spin Nightclub",
+            "location":"San Diego, CA",
+            "address":"2028 Hancock St, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.744,
+            "longitude":-117.188
+         },
+         "artistList":[
+            {
+               "id":279,
+               "name":"Gabriel & Dresden",
+               "link":"https://edmtrain.com/tours?artist=279"
+            }
+         ]
+      },
+      {
+         "id":145281,
+         "link":"https://edmtrain.com/california?event=145281",
+         "name":null,
+         "ages":"18+",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-05-23",
+         "createdDate":"2020-02-19T01:06:22Z",
+         "venue":{
+            "id":1103,
+            "name":"Bassmnt",
+            "location":"San Diego, CA",
+            "address":"919 Fourth Ave #100, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.715,
+            "longitude":-117.161
+         },
+         "artistList":[
+            {
+               "id":9912,
+               "name":"Cray",
+               "link":"https://edmtrain.com/tours?artist=9912"
+            }
+         ]
+      },
+      {
+         "id":146313,
+         "link":"https://edmtrain.com/california?event=146313",
+         "name":"My Life Every Day USA",
+         "ages":null,
+         "festivalInd":true,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-05-23",
+         "createdDate":"2020-02-25T23:30:51Z",
+         "venue":{
+            "id":2656,
+            "name":"Petco Park",
+            "location":"San Diego, CA",
+            "address":"100 Park Blvd, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.707,
+            "longitude":-117.156
+         },
+         "artistList":[
+
+         ]
+      },
+      {
+         "id":146314,
+         "link":"https://edmtrain.com/california?event=146314",
+         "name":"My Life Every Day USA",
+         "ages":null,
+         "festivalInd":true,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-05-24",
+         "createdDate":"2020-02-25T23:30:51Z",
+         "venue":{
+            "id":2656,
+            "name":"Petco Park",
+            "location":"San Diego, CA",
+            "address":"100 Park Blvd, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.707,
+            "longitude":-117.156
+         },
+         "artistList":[
+
+         ]
+      },
+      {
+         "id":145328,
+         "link":"https://edmtrain.com/california?event=145328",
+         "name":null,
+         "ages":"Under 18 with adult",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-06-10",
+         "createdDate":"2020-02-19T01:33:20Z",
+         "venue":{
+            "id":2980,
+            "name":"Observatory North Park",
+            "location":"San Diego, CA",
+            "address":"2891 University Ave, San Diego, CA 92104, USA",
+            "state":"California",
+            "latitude":32.748,
+            "longitude":-117.131
+         },
+         "artistList":[
+            {
+               "id":1626,
+               "name":"Purity Ring",
+               "link":"https://edmtrain.com/tours?artist=1626"
+            }
+         ]
+      },
+      {
+         "id":146309,
+         "link":"https://edmtrain.com/california?event=146309",
+         "name":null,
+         "ages":"Under 18 with adult",
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-06-12",
+         "createdDate":"2020-02-25T20:45:16Z",
+         "venue":{
+            "id":2980,
+            "name":"Observatory North Park",
+            "location":"San Diego, CA",
+            "address":"2891 University Ave, San Diego, CA 92104, USA",
+            "state":"California",
+            "latitude":32.748,
+            "longitude":-117.131
+         },
+         "artistList":[
+            {
+               "id":171,
+               "name":"CHVRCHES",
+               "link":"https://edmtrain.com/tours?artist=171"
+            }
+         ]
+      },
+      {
+         "id":146169,
+         "link":"https://edmtrain.com/california?event=146169",
+         "name":null,
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-06-25",
+         "createdDate":"2020-02-24T23:41:27Z",
+         "venue":{
+            "id":7597,
+            "name":"Balboa Theatre",
+            "location":"San Diego, CA",
+            "address":"868 Fourth Ave, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.714,
+            "longitude":-117.161
+         },
+         "artistList":[
+            {
+               "id":20405,
+               "name":"Kraftwerk",
+               "link":"https://edmtrain.com/tours?artist=20405"
+            }
+         ]
+      },
+      {
+         "id":141267,
+         "link":"https://edmtrain.com/california?event=141267",
+         "name":"UNITE! Music Festival - San Diego Pride",
+         "ages":null,
+         "festivalInd":true,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-07-17",
+         "createdDate":"2020-01-21T03:04:47Z",
+         "venue":{
+            "id":1508,
+            "name":"Spin Nightclub",
+            "location":"San Diego, CA",
+            "address":"2028 Hancock St, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.744,
+            "longitude":-117.188
+         },
+         "artistList":[
+
+         ]
+      },
+      {
+         "id":141268,
+         "link":"https://edmtrain.com/california?event=141268",
+         "name":"UNITE! Music Festival - San Diego Pride",
+         "ages":null,
+         "festivalInd":true,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-07-18",
+         "createdDate":"2020-01-21T03:04:52Z",
+         "venue":{
+            "id":1508,
+            "name":"Spin Nightclub",
+            "location":"San Diego, CA",
+            "address":"2028 Hancock St, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.744,
+            "longitude":-117.188
+         },
+         "artistList":[
+
+         ]
+      },
+      {
+         "id":141269,
+         "link":"https://edmtrain.com/california?event=141269",
+         "name":"UNITE! Music Festival - San Diego Pride",
+         "ages":null,
+         "festivalInd":true,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-07-19",
+         "createdDate":"2020-01-21T03:04:55Z",
+         "venue":{
+            "id":1508,
+            "name":"Spin Nightclub",
+            "location":"San Diego, CA",
+            "address":"2028 Hancock St, San Diego, CA 92110, USA",
+            "state":"California",
+            "latitude":32.744,
+            "longitude":-117.188
+         },
+         "artistList":[
+
+         ]
+      },
+      {
+         "id":128165,
+         "link":"https://edmtrain.com/california?event=128165",
+         "name":"KAABOO",
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-09-18",
+         "createdDate":"2019-09-25T15:48:44Z",
+         "venue":{
+            "id":2656,
+            "name":"Petco Park",
+            "location":"San Diego, CA",
+            "address":"100 Park Blvd, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.707,
+            "longitude":-117.156
+         },
+         "artistList":[
+
+         ]
+      },
+      {
+         "id":128166,
+         "link":"https://edmtrain.com/california?event=128166",
+         "name":"KAABOO",
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-09-19",
+         "createdDate":"2019-09-25T15:48:44Z",
+         "venue":{
+            "id":2656,
+            "name":"Petco Park",
+            "location":"San Diego, CA",
+            "address":"100 Park Blvd, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.707,
+            "longitude":-117.156
+         },
+         "artistList":[
+
+         ]
+      },
+      {
+         "id":128167,
+         "link":"https://edmtrain.com/california?event=128167",
+         "name":"KAABOO",
+         "ages":null,
+         "festivalInd":false,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-09-20",
+         "createdDate":"2019-09-25T15:48:44Z",
+         "venue":{
+            "id":2656,
+            "name":"Petco Park",
+            "location":"San Diego, CA",
+            "address":"100 Park Blvd, San Diego, CA 92101, USA",
+            "state":"California",
+            "latitude":32.707,
+            "longitude":-117.156
+         },
+         "artistList":[
+
+         ]
+      },
+      {
+         "id":145450,
+         "link":"https://edmtrain.com/california?event=145450",
+         "name":"Breakaway Music Festival",
+         "ages":null,
+         "festivalInd":true,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-11-13",
+         "createdDate":"2020-02-19T17:36:13Z",
+         "venue":{
+            "id":8537,
+            "name":"SDCCU Stadium",
+            "location":"San Diego, CA",
+            "address":"9449 Friars Rd, San Diego, CA 92108, USA",
+            "state":"California",
+            "latitude":32.782,
+            "longitude":-117.12
+         },
+         "artistList":[
+
+         ]
+      },
+      {
+         "id":145451,
+         "link":"https://edmtrain.com/california?event=145451",
+         "name":"Breakaway Music Festival",
+         "ages":null,
+         "festivalInd":true,
+         "electronicGenreInd":true,
+         "otherGenreInd":false,
+         "date":"2020-11-14",
+         "createdDate":"2020-02-19T17:36:13Z",
+         "venue":{
+            "id":8537,
+            "name":"SDCCU Stadium",
+            "location":"San Diego, CA",
+            "address":"9449 Friars Rd, San Diego, CA 92108, USA",
+            "state":"California",
+            "latitude":32.782,
+            "longitude":-117.12
+         },
+         "artistList":[
+
+         ]
+      }
+   ],
+   "success":true
+}

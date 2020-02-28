@@ -7,10 +7,10 @@ h1 {
 
 .single-event {
 	border: 1px solid #eee;
-	padding: 20px 20px 30px 180px;
+	padding: 20px 20px 30px 40px;
 	margin: 30px 10px;
 	position: relative;
-	border-radius: 27px;
+	border-radius: 17px;
 	box-shadow:  5px 5px 23px #d4d4d4, -5px -5px 23px #ffffff;
 	background-color: #fff;
 	min-height: 150px;
@@ -32,25 +32,21 @@ h1 {
 		line-height: 22px;
 	}
 }
-.event-image {
-	width: 140px;
-	height: 140px;
-	background-size: cover;
-	position: absolute;
-	left: 20px;
-	top: 20px;
-	border-radius: 27px;
 
-}
-
+// .event-image {
+// 	width: 140px;
+// 	height: 140px;
+// 	background-size: cover;
+// 	position: absolute;
+// 	left: 20px;
+// 	top: 20px;
+// 	border-radius: 27px;
+// }
 
 .event-venue {
 	display: inline-block;
 	font-size: 14px;
 	line-height: 16px;
-	&:before {
-		content: '@ ';
-	}
 }
 
 .event-date {

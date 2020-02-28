@@ -3,14 +3,11 @@
 
 /*To do*/
 
-// add venue addresses, and to schema
-
+// connect to API data source
+// add venue addresses to schema
 // add dropdown with more info and links
 // create search and/or sort by month?
-
-
 // use fetch instead of XHR
-// connect to API data source
 
 ;(function() {
 
@@ -35,36 +32,62 @@
 				parseData(PostResponce);
 				/*Attaches the data to the page*/
 				attachToPage();
+
+				// console.log(PostResponce);
 			}
 		};
 		
 
-		function parseData(data) {
-			for ( var g = 0; g < data.length; g++) {
+		function parseData(result) {
+			for ( var g = 0; g < result.data.length; g++) {
+				// console.log(result.data[g]);
 				/*get date*/
-				var eventDateParsed = Date.parse(data[g].date);
+				// var eventDateParsed = Date.parse(data[g].date);
 				/*convert date to ISO for Schema*/
-				var eventDateISO = new Date(data[g].date);
+				// var eventDateISO = new Date(data[g].date);
 				// console.log(eventDateISO);
 				/*Check the date for past events*/
-				if (eventDateParsed > todaysDate) {
+				// console.log(data[g]);
+				// if (eventDateParsed > todaysDate) {
 					// Create Event Object
 					var singleEventListing = {
-						artist: data[g].eventArtist,
-						location: data[g].eventLocation,
-						date: data[g].date,
-						schemadate: eventDateISO,
-						venue: data[g].eventVenue,
-						image: data[g].eventImage,
-						age: data[g].ageLabel,
-						ticketlink: data[g]['button href'],
+						name: result.data[g].name,
+						date: result.data[g].date,
+						link: result.data[g].link,
+						venuename: result.data[g].venue.name,
+						venueaddress: result.data[g].venue.address,
+						venuecity: result.data[g].venue.location,
+						venuestate: result.data[g].venue.state,
+						artist: [result.data[g].artistList],
+						// schemadate: eventDateISO,
+						// image: data[g].eventImage,
+						// age: data[g].ageLabel,
 					};
 
 					// singleEventListing.schemadate = eventDateISO;
 					/*Push To Array*/
 					eventData.push(singleEventListing);
-				}
+					// console.log(singleEventListing.artist);
+
+					for (a = 0; a < singleEventListing.artist.length; a++) {
+						for (b = 0; b < singleEventListing.artist[a].length; b++) {
+
+							var theartist = {
+								artistname: singleEventListing.artist[a][b].name,
+								artistlink: singleEventListing.artist[a][b].link,
+								artistid: singleEventListing.artist[a][b].id,
+							};
+
+							console.log(theartist);
+							// return theartist;
+							// eventData.push(theartist);
+							// console.log(singleEventListing.artist[a][b]);
+						}
+					}
+
+				// }
 			}
+			console.log(eventData);
 		}
 
 		function attachToPage() {
@@ -81,19 +104,21 @@
 
 				var singleEventMarkUp = 
 				
-				'<div class=\"event-artist\" itemprop=\"name\">' + event.artist + '</div> \n' + 
+				'<div class=\"event-artist\" itemprop=\"name\">' + event.name + '</div> \n' + 
+
+				// '<div class=\"event-artist\" itemprop=\"name\">' + theartist.name + '</div> \n' + 
 				
 				'<div class=\"event-date\" itemprop=\"startDate\" content=\"' + event.schemadate + '\">' + event.date + '</div> \n'  +
 			
-				'<div class=\"event-venue\" itemprop=\"location\" itemscope itemtype=\"http://schema.org/Place\"><span itemprop="name">' + event.venue + '</spana></div> \n' + 
+				'<div class=\"event-venue\" itemprop=\"location\" itemscope itemtype=\"http://schema.org/Place\"><span itemprop="name">' + event.venuename + '</spana></div> \n' + 
 				
-				// '<div class=event-location>' + event.location + '</div> \n' + 
+				'<div class=event-location>' + event.venueaddress + '</div> \n' + 
 				
-				'<div class=\"event-link\"><a href=' + event.ticketlink + ' target=\"_blank\">Learn More</a></div> \n' +
+				'<div class=\"event-link\"><a href=' + event.link + ' target=\"_blank\">Learn More</a></div> \n' +
 				
 				// '<a href=' + event.ticketlink + ' target=_blank><div class=\"event-image\" style=\"background-image:url(' + event.image + ')\"></div></a> \n'  
 
-				'<a href=' + event.ticketlink + ' target=_blank><div class=\"event-image b-lazy\" data-src=\"' + event.image + '\"></div></a> \n'  
+				'<a href=' + event.link + ' target=_blank><div class=\"event-image b-lazy\" data-src=\"' + event.image + '\"></div></a> \n'  
 				
 				;
 

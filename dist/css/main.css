@@ -43,10 +43,10 @@ h1 {
 /* line 8, src/sass/components/_events.scss */
 .single-event {
   border: 1px solid #eee;
-  padding: 20px 20px 30px 180px;
+  padding: 20px 20px 30px 40px;
   margin: 30px 10px;
   position: relative;
-  border-radius: 27px;
+  border-radius: 17px;
   -webkit-box-shadow: 5px 5px 23px #d4d4d4, -5px -5px 23px #ffffff;
           box-shadow: 5px 5px 23px #d4d4d4, -5px -5px 23px #ffffff;
   background-color: #fff;
@@ -78,30 +78,14 @@ h1 {
   }
 }
 
-/* line 35, src/sass/components/_events.scss */
-.event-image {
-  width: 140px;
-  height: 140px;
-  background-size: cover;
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  border-radius: 27px;
-}
-
-/* line 47, src/sass/components/_events.scss */
+/* line 46, src/sass/components/_events.scss */
 .event-venue {
   display: inline-block;
   font-size: 14px;
   line-height: 16px;
 }
 
-/* line 51, src/sass/components/_events.scss */
-.event-venue:before {
-  content: '@ ';
-}
-
-/* line 56, src/sass/components/_events.scss */
+/* line 52, src/sass/components/_events.scss */
 .event-date {
   font-size: 12px;
   line-height: 16px;
@@ -109,13 +93,13 @@ h1 {
   padding-bottom: 5px;
 }
 
-/* line 63, src/sass/components/_events.scss */
+/* line 59, src/sass/components/_events.scss */
 .event-location {
   font-size: 12px;
   color: #ccc;
 }
 
-/* line 68, src/sass/components/_events.scss */
+/* line 64, src/sass/components/_events.scss */
 .event-link a {
   margin-top: 10px;
   font-size: 14px;
