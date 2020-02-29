@@ -4,6 +4,7 @@
 
 /*To do*/
 
+// find source for images 	
 // convert date to readable 
 
 // remove comma in artists array
@@ -12,7 +13,6 @@
 // add dropdown with more info and links
 // create search and/or sort by month?
 // use fetch instead of XHR
-// find source for images 
 
 ;(function() {
 
@@ -20,8 +20,54 @@
 	var todaysDate = Date.now();
 	/*Where we'll attach our app */
 	var theFeed = document.getElementById('evenfeed');
+	
 	/*Array to hold event data*/
 	var eventData = [];
+
+	/* Array to hold Image Data*/
+	var imageData = [];
+
+	function requestImagesXHR() {
+
+		var http = new XMLHttpRequest();
+		var url = 'images.json';
+		http.open('GET', url);
+		http.send();
+
+		http.onreadystatechange= function() {
+			if(http.readyState === XMLHttpRequest.DONE && http.status === 200) {
+				var PostResponce = JSON.parse(http.responseText);
+				/*Puts the Data into our array*/
+				parseData(PostResponce);
+				/*Attaches the data to the page*/
+				// attachToPage();
+				matchImageswithEvents(imageData);
+
+			}
+		};
+		
+
+		function parseData(result) {
+			for ( var g = 0; g < result.length; g++) {
+
+					// Create Event Object
+					var singleImageListing = {
+						url: result[g].url,
+						id: result[g].id,
+					};
+
+					// singleImageListing.schemadate = eventDateISO;
+					/*Push To Array*/
+					imageData.push(singleImageListing);
+				// }
+			}
+			// console.log(imageData);
+		}
+	}
+
+	requestImagesXHR();
+
+
 
 	function requestEventsXHR() {
 
@@ -55,6 +101,7 @@
 				// if (eventDateParsed > todaysDate) {
 					// Create Event Object
 					var singleEventListing = {
+						id: result.data[g].id,
 						name: result.data[g].name,
 						date: result.data[g].date,
 						link: result.data[g].link,
@@ -63,6 +110,7 @@
 						venuecity: result.data[g].venue.location,
 						venuestate: result.data[g].venue.state,
 						artist: [result.data[g].artistList],
+						image: '',
 						// schemadate: eventDateISO,
 						// image: data[g].eventImage,
 						// age: data[g].ageLabel,
@@ -99,9 +147,9 @@
 
 			/* Init Lazy Loading Images for faster performance */
 
-			// var bLazy = new Blazy({
+			var bLazy = new Blazy({
 			    // Options
-			// });
+			});
 
 			/* Check for Event name*/
 
@@ -118,24 +166,24 @@
 			/* creates the HTML markup for each event */
 
 			function createMarkUpforEvent(event) {
-
+				var id = event.id;
 				var singleEventMarkUp = 
 
-				'<div class=\"event-date\" itemprop=\"startDate\" content=\"' + event.schemadate + '\">' + event.date + '</div> \n'  +
+				'<a href=' + event.link + ' target=_blank><div class=\"event-image b-lazy\" data-src=\"' + matchImageswithEvents(imageData, id) + '\"></div></a> \n'  +
+
 				
 				'<div class=\"event-title\" itemprop=\"name\">' + checkEventName(event) + '</div> \n' + 
 
 				'<div class=\"event-artist\" itemprop=\"name\">' + listArtists(event) + '</div> \n' + 
 			
+				'<div class=\"event-date\" itemprop=\"startDate\" content=\"' + event.schemadate + '\">' + event.date + '</div> \n'  +
+				
 				'<div class=\"event-venue\" itemprop=\"location\" itemscope itemtype=\"http://schema.org/Place\"><span itemprop="name">' + event.venuename + '</spana></div> \n' + 
 				
 				'<div class=event-location>' + event.venueaddress + '</div> \n' + 
 				
-				'<div class=\"event-link\"><a href=' + event.link + ' target=\"_blank\">Learn More</a></div> \n' +
-				
-				// '<a href=' + event.ticketlink + ' target=_blank><div class=\"event-image\" style=\"background-image:url(' + event.image + ')\"></div></a> \n'  
+				'<div class=\"event-link\"><a href=' + event.link + ' target=\"_blank\">Learn More</a></div> \n' 
 
-				'<a href=' + event.link + ' target=_blank><div class=\"event-image b-lazy\" data-src=\"' + event.image + '\"></div></a> \n'  
 				
 				;
 
@@ -159,8 +207,23 @@
 		}
 	}
 
+
+	function matchImageswithEvents(images, id) {
+		for (i = 0; i < images.length; i++) {
+			if( id === images[i].id) {
+			artistImage = images[i].url;
+			// console.log(id);
+			return artistImage;
+			}
+		}
+	}
+
+
 	if (theFeed) {
 		requestEventsXHR();
 	}
+
+
+
 
 })();
