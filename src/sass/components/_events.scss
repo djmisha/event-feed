@@ -33,13 +33,11 @@ h1 {
 	word-wrap: anywhere;
 	font-weight: bold;
 	text-transform: uppercase;
-	font-size: 20px;
-	line-height: 22px;
+	// font-size: 20px;
+	// line-height: 22px;
+	font-size: 24px;
+	line-height: 26px;
 	padding-bottom: 5px;
-	@include media($tablet) {
-		font-size: 24px;
-		line-height: 26px;
-	}
 }
 
 .artist {

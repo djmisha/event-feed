@@ -12,6 +12,7 @@
 // add dropdown with more info and links
 // create search and/or sort by month?
 // use fetch instead of XHR
+// find source for images 
 
 ;(function() {
 
