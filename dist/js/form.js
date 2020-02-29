@@ -70,25 +70,31 @@
 					eventData.push(singleEventListing);
 					// console.log(singleEventListing.artist);
 
-					for (a = 0; a < singleEventListing.artist.length; a++) {
-						for (b = 0; b < singleEventListing.artist[a].length; b++) {
-
-							var theartist = {
-								artistname: singleEventListing.artist[a][b].name,
-								artistlink: singleEventListing.artist[a][b].link,
-								artistid: singleEventListing.artist[a][b].id,
-							};
-
-							console.log(theartist);
-							// return theartist;
-							// eventData.push(theartist);
-							// console.log(singleEventListing.artist[a][b]);
-						}
-					}
+				
 
 				// }
 			}
-			console.log(eventData);
+			// console.log(eventData);
+		}
+
+		function listArtists(event){
+			var theArtists = [];
+			for (a = 0; a < event.artist.length; a++) {
+				for (b = 0; b < event.artist[a].length; b++) {
+
+					var theartist = 
+
+					'<div class=\"artist-' + b +'\"><a href=\"'+ event.artist[a][b].link +'\" target=\"_blank\">' 
+					+ event.artist[a][b].name + 
+					'</a></div>'
+					;
+
+					// push artists to array
+					theArtists.push(theartist);
+
+				}
+				return theArtists;
+			}
 		}
 
 		function attachToPage() {
@@ -99,15 +105,27 @@
 			    // Options
 			});
 
+
+			function checkEventName(event) {
+				console.log(event.name);
+				if (event.name !== null) {
+					return event.name;
+				}
+				else {
+					return;
+				}
+			}
+
+
 			/* creates the HTML markup for each event */
 
 			function createMarkUpforEvent(event) {
 
 				var singleEventMarkUp = 
 				
-				'<div class=\"event-artist\" itemprop=\"name\">' + event.name + '</div> \n' + 
+				'<div class=\"event-artist\" itemprop=\"name\">' + checkEventName(event) + '</div> \n' + 
 
-				// '<div class=\"event-artist\" itemprop=\"name\">' + theartist.name + '</div> \n' + 
+				'<div class=\"event-artist\" itemprop=\"name\">' + listArtists(event) + '</div> \n' + 
 				
 				'<div class=\"event-date\" itemprop=\"startDate\" content=\"' + event.schemadate + '\">' + event.date + '</div> \n'  +
 			
@@ -134,8 +152,10 @@
 				eventPageElement.setAttribute('itemscope', '');
 				eventPageElement.setAttribute('itemtype', 'http://schema.org/Event');
 
+				/*Set Content for each Event*/
 				eventPageElement.innerHTML = createMarkUpforEvent(eventData[i]);
 
+				/*Attach To the page*/
 				theFeed.appendChild(eventPageElement);
 			}
 		}

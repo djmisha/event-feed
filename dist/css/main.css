@@ -42,6 +42,7 @@ h1 {
 
 /* line 8, src/sass/components/_events.scss */
 .single-event {
+  text-align: center;
   border: 1px solid #eee;
   padding: 20px 20px 30px 40px;
   margin: 30px 10px;
@@ -55,12 +56,12 @@ h1 {
   transition: all .15s ease-in-out;
 }
 
-/* line 18, src/sass/components/_events.scss */
+/* line 19, src/sass/components/_events.scss */
 .single-event:hover {
   background-color: #eee;
 }
 
-/* line 23, src/sass/components/_events.scss */
+/* line 24, src/sass/components/_events.scss */
 .event-artist {
   word-wrap: anywhere;
   font-weight: bold;
@@ -71,21 +72,21 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 23, src/sass/components/_events.scss */
+  /* line 24, src/sass/components/_events.scss */
   .event-artist {
     font-size: 20px;
     line-height: 22px;
   }
 }
 
-/* line 46, src/sass/components/_events.scss */
+/* line 47, src/sass/components/_events.scss */
 .event-venue {
   display: inline-block;
   font-size: 14px;
   line-height: 16px;
 }
 
-/* line 52, src/sass/components/_events.scss */
+/* line 53, src/sass/components/_events.scss */
 .event-date {
   font-size: 12px;
   line-height: 16px;
@@ -93,13 +94,13 @@ h1 {
   padding-bottom: 5px;
 }
 
-/* line 59, src/sass/components/_events.scss */
+/* line 60, src/sass/components/_events.scss */
 .event-location {
   font-size: 12px;
   color: #ccc;
 }
 
-/* line 64, src/sass/components/_events.scss */
+/* line 65, src/sass/components/_events.scss */
 .event-link a {
   margin-top: 10px;
   font-size: 14px;
