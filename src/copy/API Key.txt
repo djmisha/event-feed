@@ -1,0 +1,20 @@
+API Key 
+
+
+locations?client=
+
+
+https://edmtrain.com/api/events?locationIds=81&client=47211b0d-26f7-424c-b81c-45613a70f865
+
+
+
+
+
+
+
+locations?client=
+https://edmtrain.com/api/locations?client=47211b0d-26f7-424c-b81c-45613a70f865
+
+
+
+{"id":81,"city":"San Diego","state":"California","stateCode":"CA","latitude":32.716,"longitude":-117.161,"link":"https://edmtrain.com/san-diego-ca"},

@@ -17,20 +17,36 @@ h1 {
 	min-height: 150px;
 	transition: all .15s ease-in-out;
     &:hover {
-    	background-color: #eee;
+    	// background-color: #eee;
     }
+}
+
+
+.event-title {
+	font-size: 18px;
+	line-height: 20px;
+	padding-bottom: 5px;
+	font-style: italic;
 }
 
 .event-artist {
 	word-wrap: anywhere;
 	font-weight: bold;
 	text-transform: uppercase;
-	font-size: 16px;
-	line-height: 18px;
+	font-size: 20px;
+	line-height: 22px;
 	padding-bottom: 5px;
 	@include media($tablet) {
-		font-size: 20px;
-		line-height: 22px;
+		font-size: 24px;
+		line-height: 26px;
+	}
+}
+
+.artist {
+	display: inline-block;
+	a {
+		color: #000;
+		text-decoration: none;
 	}
 }
 
@@ -46,15 +62,16 @@ h1 {
 
 .event-venue {
 	display: inline-block;
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 16px;
+	padding-top: 20px;
 }
 
 .event-date {
 	font-size: 12px;
 	line-height: 16px;
 	color: #c1c1c1;
-	padding-bottom: 5px;
+	padding-bottom: 15px;
 }
 
 .event-location {

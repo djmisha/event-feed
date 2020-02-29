@@ -3,11 +3,15 @@
 
 /*To do*/
 
-// connect to API data source
+// convert date to readable 
+
+// remove comma in artists array
+// random color bg event
 // add venue addresses to schema
 // add dropdown with more info and links
 // create search and/or sort by month?
 // use fetch instead of XHR
+// find source for images 
 
 ;(function() {
 
@@ -21,7 +25,7 @@
 	function requestEventsXHR() {
 
 		var http = new XMLHttpRequest();
-		var url = 'events.json';
+		var url = 'https://edmtrain.com/api/events?locationIds=81&client=' + config.apiKey;
 		http.open('GET', url);
 		http.send();
 
@@ -40,14 +44,13 @@
 
 		function parseData(result) {
 			for ( var g = 0; g < result.data.length; g++) {
-				// console.log(result.data[g]);
 				/*get date*/
-				// var eventDateParsed = Date.parse(data[g].date);
+				var eventDateParsed = Date.parse(result.data[g].date);
 				/*convert date to ISO for Schema*/
-				// var eventDateISO = new Date(data[g].date);
+				var eventDateISO = new Date(result.data[g].date);
 				// console.log(eventDateISO);
-				/*Check the date for past events*/
-				// console.log(data[g]);
+				// Check the date for past events
+				// Need to add one more day so that todays events show !!!!!!!
 				// if (eventDateParsed > todaysDate) {
 					// Create Event Object
 					var singleEventListing = {
@@ -67,10 +70,6 @@
 					// singleEventListing.schemadate = eventDateISO;
 					/*Push To Array*/
 					eventData.push(singleEventListing);
-					// console.log(singleEventListing.artist);
-
-				
-
 				// }
 			}
 			// console.log(eventData);
@@ -83,9 +82,7 @@
 
 					var theartist = 
 
-					'<div class=\"artist-' + b +'\"><a href=\"'+ event.artist[a][b].link +'\" target=\"_blank\">' 
-					+ event.artist[a][b].name + 
-					'</a></div>'
+					'<div class=\"artist artist-' + b +'\">&nbsp;<a href=\"'+ event.artist[a][b].link +'\" target=\"_blank\">' + event.artist[a][b].name + '</a></div>'
 					;
 
 					// push artists to array
@@ -96,22 +93,23 @@
 			}
 		}
 
+
 		function attachToPage() {
 
 			/* Init Lazy Loading Images for faster performance */
 
-			var bLazy = new Blazy({
+			// var bLazy = new Blazy({
 			    // Options
-			});
+			// });
 
+			/* Check for Event name*/
 
 			function checkEventName(event) {
-				console.log(event.name);
-				if (event.name !== null) {
+				if (!event.name === false) {
 					return event.name;
 				}
 				else {
-					return;
+					return '';
 				}
 			}
 
@@ -121,12 +119,12 @@
 			function createMarkUpforEvent(event) {
 
 				var singleEventMarkUp = 
+
+				'<div class=\"event-date\" itemprop=\"startDate\" content=\"' + event.schemadate + '\">' + event.date + '</div> \n'  +
 				
-				'<div class=\"event-artist\" itemprop=\"name\">' + checkEventName(event) + '</div> \n' + 
+				'<div class=\"event-title\" itemprop=\"name\">' + checkEventName(event) + '</div> \n' + 
 
 				'<div class=\"event-artist\" itemprop=\"name\">' + listArtists(event) + '</div> \n' + 
-				
-				'<div class=\"event-date\" itemprop=\"startDate\" content=\"' + event.schemadate + '\">' + event.date + '</div> \n'  +
 			
 				'<div class=\"event-venue\" itemprop=\"location\" itemscope itemtype=\"http://schema.org/Place\"><span itemprop="name">' + event.venuename + '</spana></div> \n' + 
 				
