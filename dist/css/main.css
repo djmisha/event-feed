@@ -32,7 +32,7 @@ body {
   line-height: 24px;
 }
 
-/* line 1, src/sass/components/_events.scss */
+/* line 1, src/sass/components/_feed.scss */
 h1 {
   text-align: center;
   font-size: 14px;
@@ -41,7 +41,7 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 8, src/sass/components/_events.scss */
+  /* line 8, src/sass/components/_feed.scss */
   #evenfeed {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -51,36 +51,46 @@ h1 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  /* line 13, src/sass/components/_events.scss */
+  /* line 13, src/sass/components/_feed.scss */
   #evenfeed > div {
     width: 30%;
   }
 }
 
-/* line 19, src/sass/components/_events.scss */
+/* line 19, src/sass/components/_feed.scss */
 .single-event {
-  text-align: center;
-  padding: 20px 10px 30px 10px;
+  text-align: left;
+  padding: 20px 10px 30px 190px;
   margin: 30px 10px;
   position: relative;
   border-radius: 17px;
   -webkit-box-shadow: 5px 5px 23px #d4d4d4, -5px -5px 23px #ffffff;
           box-shadow: 5px 5px 23px #d4d4d4, -5px -5px 23px #ffffff;
   background-color: #fff;
-  min-height: 150px;
+  min-height: 190px;
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
 }
 
-/* line 34, src/sass/components/_events.scss */
+/* line 32, src/sass/components/_feed.scss */
+.single-event a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 35, src/sass/components/_feed.scss */
+.single-event a:hover {
+  text-decoration: underline !important;
+}
+
+/* line 41, src/sass/components/_feed.scss */
 .event-date {
   font-size: 14px;
   line-height: 16px;
-  color: #c1c1c1;
   padding-bottom: 10px;
 }
 
-/* line 41, src/sass/components/_events.scss */
+/* line 48, src/sass/components/_feed.scss */
 .event-title {
   font-size: 18px;
   line-height: 20px;
@@ -88,62 +98,62 @@ h1 {
   font-style: italic;
 }
 
-/* line 48, src/sass/components/_events.scss */
+/* line 55, src/sass/components/_feed.scss */
 .event-artist {
   word-wrap: anywhere;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 24px;
-  line-height: 26px;
-  padding-bottom: 5px;
+  font-size: 20px;
+  line-height: 22px;
   padding-bottom: 20px;
+  text-align: left;
 }
 
-/* line 59, src/sass/components/_events.scss */
+/* line 65, src/sass/components/_feed.scss */
 .artist {
   display: inline-block;
+  text-align: left;
 }
 
-/* line 61, src/sass/components/_events.scss */
-.artist a {
-  color: #000;
-  text-decoration: none;
-}
-
-/* line 64, src/sass/components/_events.scss */
-.artist a:hover {
-  text-decoration: underline !important;
-}
-
-/* line 70, src/sass/components/_events.scss */
+/* line 70, src/sass/components/_feed.scss */
 .event-image {
   width: 140px;
   height: 140px;
   background-size: cover;
-  margin: 0 auto;
+  position: absolute;
+  left: 20px;
+  top: 20px;
   margin-bottom: 30px;
   border-radius: 27px;
 }
 
-/* line 79, src/sass/components/_events.scss */
+/* line 81, src/sass/components/_feed.scss */
 .event-venue {
   display: inline-block;
   font-size: 18px;
   line-height: 16px;
 }
 
-/* line 85, src/sass/components/_events.scss */
+/* line 87, src/sass/components/_feed.scss */
 .event-location {
   font-size: 12px;
-  color: #ccc;
+  line-height: 14px;
 }
 
-/* line 90, src/sass/components/_events.scss */
+/* line 90, src/sass/components/_feed.scss */
+.event-location a {
+  color: #c1c1c1;
+}
+
+/* line 95, src/sass/components/_feed.scss */
 .event-link a {
+  position: absolute;
+  left: 20px;
+  top: 150px;
   margin-top: 30px;
   font-size: 14px;
   color: #000;
-  padding: 5px 20px;
+  padding: 5px 30px;
   display: inline-block;
   text-decoration: none;
   border-radius: 10px;
@@ -152,7 +162,7 @@ h1 {
           box-shadow: 5px 5px 23px #d4d4d4, -5px -5px 23px #ffffff;
 }
 
-/* line 100, src/sass/components/_events.scss */
+/* line 108, src/sass/components/_feed.scss */
 .event-link a:hover {
   text-decoration: underline !important;
 }
