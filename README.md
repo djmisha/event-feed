@@ -1,6 +1,6 @@
-# EDM Event Feed
+# EDM Event Feed for sandiegohousemusic.com
 
-## todo and ideas
+## Todo List and Ideas
 
 - remove comma in artists array
 - random color bg event
@@ -14,6 +14,7 @@
 
 March, 2020
 
+- add to search console
 - add link to venue to map 
 - add venue addresses to schema
 

@@ -129,7 +129,7 @@
 			
 			'<div class=\"event-venue\" itemprop=\"location\" itemscope itemtype=\"http://schema.org/Place\"><a href=\"https://www.google.com/maps/search/' + event.venuename + event.venueaddress + '\" target=_blank><span itemprop="name">' + event.venuename + '</span></a></div> \n' + 
 			
-			'<div class=\"event-location\"  itemscope itemtype=\"http://schema.org/PostalAddress\"><a href=\"https://www.google.com/maps/search/' + event.venuename + ' ' + event.venueaddress + '\" target=_blank><span itemprop=\"address\">' + event.venueaddress + '</span></div> \n' + 
+			'<div class=\"event-location\"  itemscope itemtype=\"http://schema.org/PostalAddress\"  itemprop=\"address\"><a href=\"https://www.google.com/maps/search/' + event.venuename + ' ' + event.venueaddress + '\" target=_blank><span>' + event.venueaddress + '</span></div> \n' + 
 			
 			'<div class=\"event-link\"><a href=' + event.link + ' target=\"_blank\">Learn More</a></div> \n' 
 
