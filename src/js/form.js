@@ -1,18 +1,6 @@
 
 /* Create Scope for Events*/
 
-/*To do*/
-
-// find source for images 	
-// convert date to readable 
-
-// remove comma in artists array
-// random color bg event
-// add venue addresses to schema
-// add dropdown with more info and links
-// create search and/or sort by month?
-// use fetch instead of XHR
-
 ;(function() {
 
 	/*Get todays date*/
@@ -44,23 +32,18 @@
 
 			}
 		};
-		
 
 		function parseData(result) {
 			for ( var g = 0; g < result.length; g++) {
 
-					// Create Event Object
-					var singleImageListing = {
-						url: result[g].url,
-						id: result[g].id,
-					};
-
-					// singleImageListing.schemadate = eventDateISO;
-					/*Push To Array*/
-					imageData.push(singleImageListing);
-				// }
+				// Create Event Object
+				var singleImageListing = {
+					url: result[g].url,
+					id: result[g].id,
+				};
+				
+				imageData.push(singleImageListing);
 			}
-			// console.log(imageData);
 		}
 	}
 

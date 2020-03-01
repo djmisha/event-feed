@@ -1,4 +1,4 @@
-/*! sdhm-event-feed v0.0.1 | (c) 2020 San Diego House Music | MIT License | https://github.com/djmisha/event-feed */
+/*! sdhm-event-feed v2.0.0 | (c) 2020 San Diego House Music | MIT License | https://github.com/djmisha/event-feed */
 /**
  * Element.matches() polyfill (simple version)
  * https://developer.mozilla.org/en-US/docs/Web/API/Element/matches#Polyfill
