@@ -2,7 +2,7 @@
 
 /* Create Scope for Events*/
 
-;(function() {
+// ;(function() {
 
 	/* Get todays date*/
 	var todaysDate = Date.now();
@@ -124,13 +124,15 @@
 			'<div class=\"event-date\" itemprop=\"startDate\" content=\"' + event.schemadate + '\">' + event.date + '</div> \n'  +
 			
 			'<a href=' + event.link + ' target=_blank><div class=\"event-image b-lazy\" data-src=\"' + showImages + '\"></div></a> \n'  +
+			
 			'<div class=\"event-title\" itemprop=\"name\">' + showName + '</div> \n' + 
 
 			'<div class=\"event-artist\" itemprop=\"name\">' + showArtist + '</div> \n' + 
 			
-			'<div class=\"event-venue\" itemprop=\"location\" itemscope itemtype=\"http://schema.org/Place\"><a href=\"https://www.google.com/maps/search/' + event.venuename + event.venueaddress + '\" target=_blank><span itemprop="name">' + event.venuename + '</span></a></div> \n' + 
+			'<div class=\"event-venue\" itemprop=\"location\" itemscope itemtype=\"http://schema.org/Place\"><a href=\"https://www.google.com/maps/search/' + event.venuename + ' ' + event.venueaddress + '\" target=_blank><span itemprop="name">' + event.venuename + '</span></a> \n' + 
 			
-			'<div class=\"event-location\"  itemscope itemtype=\"http://schema.org/PostalAddress\"  itemprop=\"address\"><a href=\"https://www.google.com/maps/search/' + event.venuename + ' ' + event.venueaddress + '\" target=_blank><span>' + event.venueaddress + '</span></div> \n' + 
+			//itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"
+			'<div class=\"event-location\" itemscope itemtype=\"http://schema.org/PostalAddress\"  itemprop=\"address\" content=\"' + event.venueaddress + '\"><a href=\"https://www.google.com/maps/search/' + event.venuename + ' ' + event.venueaddress + '\" target=_blank><span>' + event.venueaddress + '</span></div></div> \n' + 
 			
 			'<div class=\"event-link\"><a href=' + event.link + ' target=\"_blank\">Learn More</a></div> \n' 
 
@@ -204,5 +206,4 @@
 		requestEventsXHR();
 	}
 
-
-})();
+// })();

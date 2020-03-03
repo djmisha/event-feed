@@ -2,6 +2,7 @@
 
 ## Todo List and Ideas
 
+- fix favicon
 - remove comma in artists array
 - random color bg event
 - create search and/or sort by month?

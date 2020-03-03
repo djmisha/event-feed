@@ -42,7 +42,6 @@ h1 {
 	font-size: 14px;
 	line-height: 16px;
 	padding-bottom: 10px;
-
 }
 
 .event-title {
@@ -84,7 +83,9 @@ h1 {
 	line-height: 16px;
 }
 
-.event-location {
+.event-location span {
+	padding-top: 5px;
+	display: block;
 	font-size: 12px;
 	line-height: 14px;
 	a {

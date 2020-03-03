@@ -90,7 +90,7 @@ h1 {
   padding-bottom: 10px;
 }
 
-/* line 48, src/sass/components/_feed.scss */
+/* line 47, src/sass/components/_feed.scss */
 .event-title {
   font-size: 18px;
   line-height: 20px;
@@ -98,7 +98,7 @@ h1 {
   font-style: italic;
 }
 
-/* line 55, src/sass/components/_feed.scss */
+/* line 54, src/sass/components/_feed.scss */
 .event-artist {
   word-wrap: anywhere;
   font-weight: bold;
@@ -109,13 +109,13 @@ h1 {
   text-align: left;
 }
 
-/* line 65, src/sass/components/_feed.scss */
+/* line 64, src/sass/components/_feed.scss */
 .artist {
   display: inline-block;
   text-align: left;
 }
 
-/* line 70, src/sass/components/_feed.scss */
+/* line 69, src/sass/components/_feed.scss */
 .event-image {
   width: 140px;
   height: 140px;
@@ -127,25 +127,27 @@ h1 {
   border-radius: 27px;
 }
 
-/* line 81, src/sass/components/_feed.scss */
+/* line 80, src/sass/components/_feed.scss */
 .event-venue {
   display: inline-block;
   font-size: 18px;
   line-height: 16px;
 }
 
-/* line 87, src/sass/components/_feed.scss */
-.event-location {
+/* line 86, src/sass/components/_feed.scss */
+.event-location span {
+  padding-top: 5px;
+  display: block;
   font-size: 12px;
   line-height: 14px;
 }
 
-/* line 90, src/sass/components/_feed.scss */
-.event-location a {
+/* line 91, src/sass/components/_feed.scss */
+.event-location span a {
   color: #c1c1c1;
 }
 
-/* line 95, src/sass/components/_feed.scss */
+/* line 96, src/sass/components/_feed.scss */
 .event-link a {
   position: absolute;
   left: 20px;
@@ -162,7 +164,7 @@ h1 {
           box-shadow: 5px 5px 23px #d4d4d4, -5px -5px 23px #ffffff;
 }
 
-/* line 108, src/sass/components/_feed.scss */
+/* line 109, src/sass/components/_feed.scss */
 .event-link a:hover {
   text-decoration: underline !important;
 }
