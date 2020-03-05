@@ -8,12 +8,33 @@
 
 	var form = document.querySelector('#form-search');
 	var input = document.querySelector('#input-search');
-	var resultList = document.querySelector('#search-results');
+	var resultList = document.querySelector('#searchresults');
 
 
 	//
 	// Methods
 	//
+
+
+	/* Function to hide unmatched Events on Search */
+
+	function hideUnmatchedEvents(event) {
+		var notMatchedEvents = document.querySelectorAll('.single-event');
+
+		console.log(event.id);
+
+		notMatchedEvents.forEach(function(e){
+			var matchedID = e.getAttribute('data-id');
+			console.log(matchedID)
+			// return matchedID;
+			e.classList.add('hidden');
+			if (event.id.toString() === matchedID ) {
+				console.log('found one');
+				e.classList.remove('hidden');
+			}
+		});
+	}
+
 
 	/**
 	 * Create the HTML for each result
@@ -22,18 +43,21 @@
 	 * @return {String}         The markup
 	 */
 	var createHTML = function (article, id) {
-		var html =
-			'<div id="search-result-' + id + '">' +
-				'<a href="' + article.url + '">' +
-					'<aside>' +
-						article.date +
-					'</aside>' +
-					'<h2>' + article.title + '</h2>' +
-					// article.summary.slice(0, 150) + '...<br>' +
-					article.url +
-				'</a>' +
-			'</div>';
-		return html;
+		
+		hideUnmatchedEvents(article);
+		// var html = createMarkUpforEvent(article,id);
+
+			// '<div id="search-result-' + id + '">' +
+			// 	'<a href="' + article.link + '">' +
+			// 		'<aside>' +
+			// 			article.date +
+			// 		'</aside>' +
+			// 		'<h2>' + article.name + '</h2>' +
+			// 		// article.summary.slice(0, 150) + '...<br>' +
+			// 		article.url +
+			// 	'</a>' +
+			// '</div>';
+		// return html;
 	};
 
 	/**
@@ -78,8 +102,14 @@
 		var results = [].concat(priority1, priority2);
 
 		// Display the results
-		resultList.innerHTML = results.length < 1 ? createNoResultsHTML() : createResultsHTML(results);
 
+		if (results.length < 1) {
+			resultList.innerHTML = createNoResultsHTML();
+		} 
+		else {
+			createResultsHTML(results);
+		}
+		// resultList.innerHTML = results.length < 1 ? createNoResultsHTML() : createResultsHTML(results);
 	};
 
 	/**

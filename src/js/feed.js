@@ -52,7 +52,7 @@
 	function requestEventsXHR() {
 
 		var http = new XMLHttpRequest();
-		var url = 'https://edmtrain.com/api/events?locationIds=81&client=' + config.apiKey;
+		var url = 'https://edmtrain.com/api/events?locationIds=81&client=' + config.theGoods;
 		http.open('GET', url);
 		http.send();
 
@@ -113,32 +113,8 @@
 
 		/* creates the HTML markup for each event */
 
-		function createMarkUpforEvent(event) {
-			var id = event.id;
-			var showImages = matchImageswithEvents(imageData, id);
-			var showArtist = listArtists(event);
-			var showName = checkEventName(event);
-			var singleEventMarkUp = 
+		// createMarkUpforEvent(event);
 
-			'<div class=\"event-date\" itemprop=\"startDate\" content=\"' + event.schemadate + '\">' + event.date + '</div> \n'  +
-			
-			'<a href=' + event.link + ' target=_blank><div class=\"event-image b-lazy\" data-src=\"' + showImages + '\"></div></a> \n'  +
-			
-			'<div class=\"event-title\" itemprop=\"name\">' + showName + '</div> \n' + 
-
-			'<div class=\"event-artist\" itemprop=\"name\">' + showArtist + '</div> \n' + 
-			
-			'<div class=\"event-venue\" itemprop=\"location\" itemscope itemtype=\"http://schema.org/Place\"><a href=\"https://www.google.com/maps/search/' + event.venuename + ' ' + event.venueaddress + '\" target=_blank><span itemprop="name">' + event.venuename + '</span></a> \n' + 
-			
-			//itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"
-			'<div class=\"event-location\" itemscope itemtype=\"http://schema.org/PostalAddress\"  itemprop=\"address\" content=\"' + event.venueaddress + '\"><a href=\"https://www.google.com/maps/search/' + event.venuename + ' ' + event.venueaddress + '\" target=_blank><span>' + event.venueaddress + '</span></div></div> \n' + 
-			
-			'<div class=\"event-link\"><a href=' + event.link + ' target=\"_blank\">Learn More</a></div> \n' 
-
-			;
-
-			return singleEventMarkUp;
-		}
 		
 		/* loop through events and attach them to page */
 
@@ -146,6 +122,7 @@
 			var eventPageElement = document.createElement('div');
 			eventPageElement.classList.add('single-event');
 			eventPageElement.setAttribute('itemscope', '');
+			eventPageElement.setAttribute('data-id', eventData[i].id);
 			eventPageElement.setAttribute('itemtype', 'http://schema.org/Event');
 
 			/*Set Content for each Event*/
@@ -196,6 +173,33 @@
 			return artistImage;
 			}
 		}
+	}
+
+
+	function createMarkUpforEvent(event) {
+		var id = event.id;
+		var showImages = matchImageswithEvents(imageData, id);
+		var showArtist = listArtists(event);
+		var showName = checkEventName(event);
+		var singleEventMarkUp = 
+
+		'<div class=\"event-date\" itemprop=\"startDate\" content=\"' + event.schemadate + '\">' + event.date + '</div> \n'  +
+		
+		'<a href=' + event.link + ' target=_blank><div class=\"event-image b-lazy\" data-src=\"' + showImages + '\"></div></a> \n'  +
+		
+		'<div class=\"event-title\" itemprop=\"name\">' + showName + '</div> \n' + 
+
+		'<div class=\"event-artist\" itemprop=\"name\">' + showArtist + '</div> \n' + 
+		
+		'<div class=\"event-venue\" itemprop=\"location\" itemscope itemtype=\"http://schema.org/Place\"><a href=\"https://www.google.com/maps/search/' + event.venuename + ' ' + event.venueaddress + '\" target=_blank><span itemprop="name">' + event.venuename + '</span></a> \n' + 
+		
+		'<div class=\"event-location\" itemscope itemtype=\"http://schema.org/PostalAddress\"  itemprop=\"address\" content=\"' + event.venueaddress + '\"><a href=\"https://www.google.com/maps/search/' + event.venuename + ' ' + event.venueaddress + '\" target=_blank><span>' + event.venueaddress + '</span></a></div></div> \n' + 
+		
+		'<div class=\"event-link\"><a href=' + event.link + ' target=\"_blank\">Learn More</a></div> \n' 
+
+		;
+
+		return singleEventMarkUp;
 	}
 
 

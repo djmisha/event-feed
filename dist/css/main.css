@@ -60,7 +60,7 @@ h1 {
 /* line 19, src/sass/components/_feed.scss */
 .single-event {
   text-align: left;
-  padding: 20px 10px 30px 190px;
+  padding: 20px 190px 30px 20px;
   margin: 30px 10px;
   position: relative;
   border-radius: 17px;
@@ -72,15 +72,20 @@ h1 {
   transition: all .15s ease-in-out;
 }
 
-/* line 32, src/sass/components/_feed.scss */
+/* line 29, src/sass/components/_feed.scss */
 .single-event a {
   color: #000;
   text-decoration: none;
 }
 
-/* line 35, src/sass/components/_feed.scss */
+/* line 32, src/sass/components/_feed.scss */
 .single-event a:hover {
   text-decoration: underline !important;
+}
+
+/* line 36, src/sass/components/_feed.scss */
+.single-event.hidden {
+  display: none;
 }
 
 /* line 41, src/sass/components/_feed.scss */
@@ -121,7 +126,7 @@ h1 {
   height: 140px;
   background-size: cover;
   position: absolute;
-  left: 20px;
+  right: 20px;
   top: 20px;
   margin-bottom: 30px;
   border-radius: 27px;
@@ -149,9 +154,6 @@ h1 {
 
 /* line 96, src/sass/components/_feed.scss */
 .event-link a {
-  position: absolute;
-  left: 20px;
-  top: 150px;
   margin-top: 30px;
   font-size: 14px;
   color: #000;
@@ -164,7 +166,7 @@ h1 {
           box-shadow: 5px 5px 23px #d4d4d4, -5px -5px 23px #ffffff;
 }
 
-/* line 109, src/sass/components/_feed.scss */
+/* line 106, src/sass/components/_feed.scss */
 .event-link a:hover {
   text-decoration: underline !important;
 }
