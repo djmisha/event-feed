@@ -74,7 +74,7 @@ h1 {
 	right: 20px;
 	top: 20px;
 	margin-bottom: 30px;
-	border-radius: 27px;
+	border-radius: 10px;
 }
 
 .event-venue {
@@ -105,5 +105,54 @@ h1 {
 	box-shadow: 5px 5px 23px #d4d4d4, -5px -5px 23px #ffffff;
 	&:hover {
 		text-decoration: underline !important;
+	}
+}
+
+
+#form-search {
+	margin: 20px 10px;
+	display: flex;
+
+	label {
+		position: absolute;
+		left: -999px;
+		top: -999px;
+	}
+	input {
+		padding: 10px;
+		width: 70%;
+		font-size: 16px;
+
+	}
+	button {
+		font-size: 14px;
+		text-transform: uppercase;
+		width: 30%;
+		border: 1px solid #ccc;
+		border-left: none;
+	}
+}
+
+#searchresults p {
+	font-size: 14px;
+	text-align: center;
+	padding: 2px 15px;
+	border: 1px solid #ccc;
+	margin: 0 10px;
+}
+
+#clearSearch {
+	font-size: 14px;
+	text-align: right;
+	padding: 2px 15px;
+	// border: 1px solid #ccc;
+	margin: 0 10px;
+	color: red;
+	display: none;
+	&.visible {
+		display: block;
+	}	
+	&.hidden {
+		// display: none;
 	}
 }

@@ -129,7 +129,7 @@ h1 {
   right: 20px;
   top: 20px;
   margin-bottom: 30px;
-  border-radius: 27px;
+  border-radius: 10px;
 }
 
 /* line 80, src/sass/components/_feed.scss */
@@ -169,4 +169,59 @@ h1 {
 /* line 106, src/sass/components/_feed.scss */
 .event-link a:hover {
   text-decoration: underline !important;
+}
+
+/* line 112, src/sass/components/_feed.scss */
+#form-search {
+  margin: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 116, src/sass/components/_feed.scss */
+#form-search label {
+  position: absolute;
+  left: -999px;
+  top: -999px;
+}
+
+/* line 121, src/sass/components/_feed.scss */
+#form-search input {
+  padding: 10px;
+  width: 70%;
+  font-size: 16px;
+}
+
+/* line 127, src/sass/components/_feed.scss */
+#form-search button {
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 30%;
+  border: 1px solid #ccc;
+  border-left: none;
+}
+
+/* line 136, src/sass/components/_feed.scss */
+#searchresults p {
+  font-size: 14px;
+  text-align: center;
+  padding: 2px 15px;
+  border: 1px solid #ccc;
+  margin: 0 10px;
+}
+
+/* line 144, src/sass/components/_feed.scss */
+#clearSearch {
+  font-size: 14px;
+  text-align: right;
+  padding: 2px 15px;
+  margin: 0 10px;
+  color: red;
+  display: none;
+}
+
+/* line 152, src/sass/components/_feed.scss */
+#clearSearch.visible {
+  display: block;
 }

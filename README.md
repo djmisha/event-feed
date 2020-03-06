@@ -2,10 +2,7 @@
 
 ## Todo List and Ideas
 
-- search: search, artistsm venues and event name
-- search: clear search button 
-- search: show search results text 
-
+- search : add autocomplete https://vanillajstoolkit.com/reference/javascript-free/autocomplete/ 
 - fix favicon
 - remove comma in artists array
 - random color bg event
@@ -19,6 +16,10 @@
 
 March, 2020
 
+- search: clear search button 
+- search: search, artistsm venues and event name
+- search: show search results text 
+- search: fix single result only
 - add to search console
 - add link to venue to map 
 - add venue addresses to schema

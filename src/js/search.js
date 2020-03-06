@@ -9,27 +9,50 @@
 	var form = document.querySelector('#form-search');
 	var input = document.querySelector('#input-search');
 	var resultList = document.querySelector('#searchresults');
-
+	var clearSeach = document.querySelector('#clearSearch');
 
 	//
 	// Methods
 	//
 
-	/* Function to hide unmatched Events on Search */
 
-	function hideUnmatchedEvents(event) {
-		var notMatchedEvents = document.querySelectorAll('.single-event');
+	/*Clear Search */
+	
+	clearSeach.addEventListener('click', function() {
+		showAllEvents();
+		resultList.innerHTML = '';
+		clearSeach.classList.remove('visible');
+	});
 
-		console.log(event.id);
+	/* Function to hide all Events on Search click */
 
-		notMatchedEvents.forEach(function(e){
-			var matchedID = e.getAttribute('data-id');
+	function hideAllEvents() {
+		var allEvents = document.querySelectorAll('.single-event');
+		allEvents.forEach(function(e){
 			e.classList.add('hidden');
-			if (event.id.toString() === matchedID ) {
-				console.log('found one');
-				e.classList.remove('hidden');
-			}
 		});
+	}
+
+	function showAllEvents() {
+		var allEvents = document.querySelectorAll('.single-event');
+		allEvents.forEach(function(e){
+			e.classList.remove('hidden');
+		});
+	}
+
+	/* Show Matched Events */
+
+	function showMatchedEvents(events) {
+			var allEvents = document.querySelectorAll('.single-event');
+			var bLazy = new Blazy({});
+
+			allEvents.forEach(function(e){
+				var matchedID = e.getAttribute('data-id');
+				if (events.id.toString() === matchedID ) {
+
+					e.classList.remove('hidden');
+				}
+			});
 	}
 
 	/**
@@ -37,7 +60,7 @@
 	 * @return {String} The markup
 	 */
 	var createNoResultsHTML = function () {
-		return '<p>Sorry, no events were found.</p>';
+		return '<p>No events were found. Search again! </p>';
 	};
 
 	/**
@@ -46,12 +69,17 @@
 	 * @return {String}        The results HTML
 	 */
 	var createResultsHTML = function (results) {
+		hideAllEvents();
 		results.map(function (article, index) {
-			hideUnmatchedEvents(article);
+			// console.log(article,index);
+			showMatchedEvents(article);
 		});
-		var html = '<p>Found ' + results.length + ' matching events <span id=\"clearSearch\">Clear Search</span></p>';
+		var html = '<p>Found ' + results.length + ' matching events. </p>';
 		resultList.innerHTML = html;
+		clearSearch.classList.add('visible');
 	};
+
+	
 
 	/**
 	 * Search for matches
@@ -63,15 +91,24 @@
 		var reg = new RegExp(query, 'gi');
 		var priority1 = [];
 		var priority2 = [];
+		var priority3 = [];
 
 		// Search the content
 		eventData.forEach(function (article) {
+			// console.log((article.artist.name));
 			if (reg.test(article.name)) return priority1.push(article);
-			if (reg.test(article.artist)) priority2.push(article);
+			// if (reg.test(article.artist)) priority2.push(article);
+			article.artist.forEach(function(a){
+				a.forEach(function(e) {
+					if (reg.test(e.name)) priority2.push(article);
+					// console.log(e.name);
+				});
+			});
+			if (reg.test(article.venuename)) priority3.push(article);
 		});
 
 		// Combine the results into a single array
-		var results = [].concat(priority1, priority2);
+		var results = [].concat(priority1, priority2, priority3);
 
 		// Display the results
 		// if no results
@@ -96,8 +133,12 @@
 	 * Remove site: from the input
 	 */
 	var clearInput = function () {
-		input.value = input.value.replace(' site:your-domain.com', '');
+		input.value = input.value.replace('Artist, Venue, Event', '');
 	};
+
+	input.addEventListener('focusin', function (event) {
+		input.value = '';
+	});
 
 
 	//
@@ -108,7 +149,7 @@
 	if (!form || !input || !resultList || !eventData) return;
 
 	// Clear the input field
-	clearInput();
+	// clearInput();
 
 	// Create a submit handler
 	form.addEventListener('submit', submitHandler, false);
