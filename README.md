@@ -2,6 +2,10 @@
 
 ## Todo List and Ideas
 
+- search: search, artistsm venues and event name
+- search: clear search button 
+- search: show search results text 
+
 - fix favicon
 - remove comma in artists array
 - random color bg event

@@ -15,7 +15,6 @@
 	// Methods
 	//
 
-
 	/* Function to hide unmatched Events on Search */
 
 	function hideUnmatchedEvents(event) {
@@ -25,8 +24,6 @@
 
 		notMatchedEvents.forEach(function(e){
 			var matchedID = e.getAttribute('data-id');
-			console.log(matchedID)
-			// return matchedID;
 			e.classList.add('hidden');
 			if (event.id.toString() === matchedID ) {
 				console.log('found one');
@@ -35,37 +32,12 @@
 		});
 	}
 
-
-	/**
-	 * Create the HTML for each result
-	 * @param  {Object} article The article
-	 * @param  {Number} id      The result index
-	 * @return {String}         The markup
-	 */
-	var createHTML = function (article, id) {
-		
-		hideUnmatchedEvents(article);
-		// var html = createMarkUpforEvent(article,id);
-
-			// '<div id="search-result-' + id + '">' +
-			// 	'<a href="' + article.link + '">' +
-			// 		'<aside>' +
-			// 			article.date +
-			// 		'</aside>' +
-			// 		'<h2>' + article.name + '</h2>' +
-			// 		// article.summary.slice(0, 150) + '...<br>' +
-			// 		article.url +
-			// 	'</a>' +
-			// '</div>';
-		// return html;
-	};
-
 	/**
 	 * Create the markup when no results are found
 	 * @return {String} The markup
 	 */
 	var createNoResultsHTML = function () {
-		return '<p>Sorry, no matches were found.</p>';
+		return '<p>Sorry, no events were found.</p>';
 	};
 
 	/**
@@ -74,11 +46,11 @@
 	 * @return {String}        The results HTML
 	 */
 	var createResultsHTML = function (results) {
-		var html = '<p>Found ' + results.length + ' matching articles</p>';
-		html += results.map(function (article, index) {
-			return createHTML(article, index);
-		}).join('');
-		return html;
+		results.map(function (article, index) {
+			hideUnmatchedEvents(article);
+		});
+		var html = '<p>Found ' + results.length + ' matching events <span id=\"clearSearch\">Clear Search</span></p>';
+		resultList.innerHTML = html;
 	};
 
 	/**
@@ -95,21 +67,21 @@
 		// Search the content
 		eventData.forEach(function (article) {
 			if (reg.test(article.name)) return priority1.push(article);
-			if (reg.test(article.content)) priority2.push(article);
+			if (reg.test(article.artist)) priority2.push(article);
 		});
 
 		// Combine the results into a single array
 		var results = [].concat(priority1, priority2);
 
 		// Display the results
-
-		if (results.length < 1) {
+		// if no results
+		if (results.length < 1) { 
 			resultList.innerHTML = createNoResultsHTML();
 		} 
+		// if have results
 		else {
 			createResultsHTML(results);
 		}
-		// resultList.innerHTML = results.length < 1 ? createNoResultsHTML() : createResultsHTML(results);
 	};
 
 	/**
