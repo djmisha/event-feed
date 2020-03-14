@@ -18,7 +18,7 @@ h1 {
 
 .single-event {
 	text-align: left;
-	padding: 20px 190px 30px 20px;
+	padding: 20px 150px 30px 20px;
 	margin: 30px 10px;
 	position: relative;
 	border-radius: 17px;
@@ -28,8 +28,11 @@ h1 {
 	transition: all .15s ease-in-out;
 	position: relative;
 	top: 0;
+	@include media($tablet) {
+		padding: 20px 190px 30px 20px;
+		
+	}
 	&:hover {
-		// top: -3px;
 		box-shadow: 5px 5px 23px #d4d4d4, -5px -5px 23px #ffffff;
 	}
     a {
@@ -47,7 +50,7 @@ h1 {
 .event-date {
 	font-size: 16px;
 	line-height: 16px;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	color: #767679;
 }
 
@@ -61,10 +64,10 @@ h1 {
 
 .event-artist {
 	word-wrap: anywhere;
-	font-weight: bold;
+	font-weight: 700;
 	text-transform: uppercase;
-	font-size: 20px;
-	line-height: 22px;
+	font-size: 22px;
+	line-height: 24px;
 	padding-bottom: 20px;
 	text-align: left;
 }
@@ -75,14 +78,18 @@ h1 {
 }
 
 .event-image {
-	width: 140px;
-	height: 140px;
+	width: 100px;
+	height: 100px;
 	background-size: cover;
 	position: absolute;
 	right: 20px;
 	top: 20px;
 	margin-bottom: 30px;
 	border-radius: 10px;
+	@include media($tablet) {
+		width: 140px;
+		height: 140px;
+	}
 }
 
 .event-venue {
@@ -112,10 +119,10 @@ h1 {
 	border: none;
 	background: #eee;
 	box-shadow: 0px 3px 7px rgba(#000, .1);
-	border: 1px solid #eee;
+	// border: 1px solid #eee;
 	// box-shadow: 5px 5px 23px #d4d4d4, -5px -5px 23px #ffffff;
+	border: 1px solid #ccc;
 	&:hover {
-		border: 1px solid #ccc;
 		text-decoration: none !important;
 	}
 }
@@ -138,7 +145,6 @@ h1 {
 		top: 5px;
 		width: 30px;
 		height: 30px;
-		// background-color: red;
 		z-index: 999;
 	}
 
@@ -150,7 +156,6 @@ h1 {
 	input {
 		padding: 10px 30px 10px 50px;
 		width: 50%;
-		font-size: 16px;
 		border-radius: 5px;
 		border: 1px solid #fff;
 		background: #eee;
@@ -170,8 +175,8 @@ h1 {
 	}
 	button {
 		margin-left: 10px;
-		font-size: 14px;
 		width: 20%;
+		min-width: 100px;
 		border: 1px solid #ccc;
 		background-color: #eee;
 		border-radius: 50px;
