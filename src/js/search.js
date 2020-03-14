@@ -132,13 +132,14 @@
 	/**
 	 * Remove site: from the input
 	 */
-	var clearInput = function () {
-		input.value = input.value.replace('Artist, Venue, Event', '');
-	};
+	// var clearInput = function () {
+	// 	input.value = input.value.replace('Search Artist, Venue, Event', '');
+	// };
 
 	input.addEventListener('focusin', function (event) {
 		input.value = '';
 	});
+
 
 
 	//
