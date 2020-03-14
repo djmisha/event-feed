@@ -2,6 +2,8 @@
 
 ## Todo List and Ideas
 
+
+- Input Sort by Artist: Date, Venue
 - search : add autocomplete https://vanillajstoolkit.com/reference/javascript-free/autocomplete/ 
 - fix favicon
 - remove comma in artists array
