@@ -2,7 +2,8 @@
 
 ## Todo List and Ideas
 
-
+- Go National Data
+- Push Data to local Json
 - Input Sort by Artist: Date, Venue
 - search : add autocomplete https://vanillajstoolkit.com/reference/javascript-free/autocomplete/ 
 - fix favicon
