@@ -10,7 +10,7 @@ h1 {
 ==================================*/
 
 #evenfeed {
-	padding: 0 5px;
+	padding: 0 px;
 	@include media(650px) {
 		padding: 0 10px;
 		display: grid;
@@ -25,16 +25,18 @@ h1 {
 .single-event {
 	text-align: left;
 	padding: 20px 150px 30px 20px;
-	margin: 20px 10px;
+	margin: 20px 0px;
 	position: relative;
-	border-radius: 17px;
-	box-shadow: 0px 3px 7px rgba(#000, .3);
+	// border-radius: 17px;
 	background-color: #fff;
 	min-height: 190px;
 	transition: all .15s ease-in-out;
 	position: relative;
 	top: 0;
+		box-shadow: 0px 2px 4px rgba(#000, .3);
+	// border-bottom: ;
 	@include media($tablet) {
+		box-shadow: 0px 3px 7px rgba(#000, .3);
 		padding: 20px 190px 30px 20px;
 		margin: 30px 10px;
 	}
@@ -93,7 +95,7 @@ h1 {
 	right: 20px;
 	top: 20px;
 	margin-bottom: 30px;
-	border-radius: 10px;
+	border-radius: 5px;
 	@include media($tablet) {
 		width: 140px;
 		height: 140px;
@@ -123,7 +125,7 @@ h1 {
 	padding: 5px 30px;
 	display: inline-block;
 	text-decoration: none;
-	border-radius: 5px;
+	// border-radius: 5px;
 	border: none;
 	background: #eee;
 	box-shadow: 0px 3px 7px rgba(#000, .1);
@@ -151,7 +153,7 @@ h1 {
 	&:before {
 		content: '';
 		background: url('../svg/icon-search.svg');
-		background-size: 30px 30px;
+		background-size: 27px 27px;
 		position: absolute;
 		left: 12px;
 		top: 5px;
