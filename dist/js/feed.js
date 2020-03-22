@@ -1,4 +1,10 @@
 /*! sdhm-event-feed v2.0.0 | (c) 2020 San Diego House Music | MIT License | https://github.com/djmisha/event-feed */
+// Helpers 
+
+function removeDuplicates(array) {
+  return array.filter((a, b) => array.indexOf(a) === b);
+}
+
 
 /* Create Scope for Events*/
 
@@ -97,7 +103,7 @@
 				};
 
 				/*Push To Array*/
-					eventData.push(singleEventListing);
+				eventData.push(singleEventListing);
 			}
 		}
 	}
@@ -117,21 +123,53 @@
 		// createMarkUpforEvent(event);
 
 		
-		/* loop through events and attach them to page */
+		/* loop through all events and attach them to page */
 
 		for ( var i = 0; i < eventData.length; i++) {
-			var eventPageElement = document.createElement('div');
-			eventPageElement.classList.add('single-event');
-			eventPageElement.setAttribute('itemscope', '');
-			eventPageElement.setAttribute('data-id', eventData[i].id);
-			eventPageElement.setAttribute('itemtype', 'http://schema.org/Event');
+			var singleEventElement = document.createElement('div');
+			singleEventElement.classList.add('single-event');
+			singleEventElement.setAttribute('itemscope', '');
+			singleEventElement.setAttribute('data-id', eventData[i].id);
+			singleEventElement.setAttribute('itemtype', 'http://schema.org/Event');
 
 			/*Set Content for each Event*/
-			eventPageElement.innerHTML = createMarkUpforEvent(eventData[i]);
+			singleEventElement.innerHTML = createMarkUpforEvent(eventData[i]);
 
 			/*Attach To the page*/
-			theFeed.appendChild(eventPageElement);
+			theFeed.appendChild(singleEventElement);
 		}
+
+		/* Loop throught Venues and attach them to page */
+
+		var venueContainer  = document.getElementById('venue-list');
+		var venueArray = [];
+
+		eventData.forEach((function(item){
+			var venue = item.venuename;
+			venueArray.push(venue);
+		}));
+
+
+
+		removeDuplicates(venueArray).forEach((function(v){
+			var vElement = document.createElement('div');
+			vElement.innerHTML = v;
+			venueContainer.appendChild(vElement);
+			console.log(v);
+			vElement.addEventListener('click', (function() {
+				console.log(this);
+				search(v);
+			}));
+		}));
+		
+
+			// v.addEventListener('click', function (venue) {
+			// 	console.log('this');
+			// })
+
+		// console.log(removeDuplicates(venueArray));
+
+
 	}
 
 	/* function to list out all Artists*/
