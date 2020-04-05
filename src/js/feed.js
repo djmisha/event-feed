@@ -157,7 +157,7 @@ function removeDuplicates(array) {
 			console.log(v);
 			vElement.addEventListener('click', function() {
 				console.log(this);
-				search(v);
+				// search(v);
 			});
 		});
 		
