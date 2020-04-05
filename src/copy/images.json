@@ -1,251 +1,7 @@
 [
   {
-    "id": 137991,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Noizu.jpg?v=1"
-  },
-  {
-    "id": 139141,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/DJ%20Shift.jpg?v=1"
-  },
-  {
-    "id": 140681,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Maya%20Jane%20Coles.jpg?v=3"
-  },
-  {
-    "id": 140895,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Matroda.jpg?v=1"
-  },
-  {
-    "id": 145846,
-    "url": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg"
-  },
-  {
-    "id": 141456,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Bontan.jpg?v=1"
-  },
-  {
-    "id": 136815,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/NGHTMRE.jpg?v=4"
-  },
-  {
-    "id": 137697,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Liquid%20Stranger.jpg?v=3"
-  },
-  {
-    "id": 143980,
-    "url": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg"
-  },
-  {
-    "id": 134965,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Will%20Clarke.jpg?v=3"
-  },
-  {
-    "id": 141836,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Sam%20Feldt.jpg?v=4"
-  },
-  {
-    "id": 146244,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Mason%20Maynard.jpg?v=1"
-  },
-  {
-    "id": 136219,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Gesaffelstein.jpg?v=3"
-  },
-  {
-    "id": 141835,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Elephante.jpg?v=3"
-  },
-  {
-    "id": 145595,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Tiger%20%26%20Woods.jpg?v=3"
-  },
-  {
-    "id": 145682,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Autograf.jpg?v=3"
-  },
-  {
-    "id": 145830,
-    "url": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg"
-  },
-  {
-    "id": 146027,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Chris%20Lake.jpg?v=3"
-  },
-  {
-    "id": 146243,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/2ManyDJs.jpg?v=3"
-  },
-  {
-    "id": 146268,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Colette.jpg?v=3"
-  },
-  {
-    "id": 146401,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Nora%20En%20Pure.jpg?v=4"
-  },
-  {
-    "id": 146402,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Mark%20Knight.jpg?v=3"
-  },
-  {
-    "id": 139216,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Golf%20Clap.jpg?v=3"
-  },
-  {
-    "id": 145324,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Joe%20Maz.jpg?v=3"
-  },
-  {
-    "id": 136220,
-    "url": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg"
-  },
-  {
-    "id": 144776,
-    "url": "https://edmtrain.s3.amazonaws.com/img/event/144776.jpg?v=1"
-  },
-  {
-    "id": 145831,
-    "url": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg"
-  },
-  {
-    "id": 146040,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Charlotte%20De%20Witte.jpg?v=1"
-  },
-  {
-    "id": 146242,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Justin%20Jay.jpg?v=3"
-  },
-  {
-    "id": 146400,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Patrick%20Topping.jpg?v=3"
-  },
-  {
-    "id": 146416,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Hernan%20Cattaneo.jpg?v=3"
-  },
-  {
-    "id": 146691,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Goldroom.jpg?v=3"
-  },
-  {
-    "id": 132678,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Dan%20Deacon.jpg?v=1"
-  },
-  {
-    "id": 137054,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/No%20Mana.jpg?v=3"
-  },
-  {
-    "id": 139140,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Ti%C3%ABsto.jpg?v=3"
-  },
-  {
-    "id": 143004,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/B.Traits.jpg?v=1"
-  },
-  {
-    "id": 140590,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/ARMNHMR.jpg?v=3"
-  },
-  {
-    "id": 145054,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Taska%20Black.jpg?v=1"
-  },
-  {
-    "id": 146315,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Desert%20Hearts.jpg?v=3"
-  },
-  {
-    "id": 146576,
-    "url": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg"
-  },
-  {
-    "id": 139273,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Lords%20of%20Acid.jpg?v=1"
-  },
-  {
-    "id": 141455,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Rybo.jpg?v=1"
-  },
-  {
-    "id": 133758,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Elohim.jpg?v=1"
-  },
-  {
-    "id": 141966,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Dirty%20South.jpg?v=3"
-  },
-  {
-    "id": 145358,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Illyus%20%26%20Barrientos.jpg?v=1"
-  },
-  {
-    "id": 139129,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/RJD2.jpg?v=3"
-  },
-  {
-    "id": 142006,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Jan%20Blomqvist.jpg?v=1"
-  },
-  {
-    "id": 143407,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Tube%20%26%20Berger.jpg?v=3"
-  },
-  {
-    "id": 145051,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Sam%20Divine.jpg?v=1"
-  },
-  {
-    "id": 145849,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Matador.jpg?v=3"
-  },
-  {
-    "id": 145879,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Hex%20Cougar.jpg?v=1"
-  },
-  {
-    "id": 140306,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Dada%20Life.jpg?v=3"
-  },
-  {
-    "id": 142439,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/ARTBAT.jpg?v=1"
-  },
-  {
-    "id": 142788,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Odd%20Mob.jpg?v=1"
-  },
-  {
-    "id": 137583,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Mark%20Farina.jpg?v=3"
-  },
-  {
-    "id": 140297,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Axel%20Boman.jpg?v=3"
-  },
-  {
-    "id": 144154,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/4B.jpg?v=3"
-  },
-  {
-    "id": 146786,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/John%20Tejada.jpg?v=1"
-  },
-  {
-    "id": 143406,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Sigala.jpg?v=3"
-  },
-  {
-    "id": 143280,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Kaskade%20%28Redux%20Set%29.jpg?v=1</td>"
-  },
-  {
-    "id": 145482,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Snails.jpg?v=3"
-  },
-  {
-    "id": 145593,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Evan%20Casey.jpg?v=1"
+    "id": 147272,
+    "url": "https://edmtrain.s3.amazonaws.com/img/artist/ANOTR.jpg?v=1"
   },
   {
     "id": 145878,
@@ -256,24 +12,28 @@
     "url": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg"
   },
   {
-    "id": 144213,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Hot%20Chip.jpg?v=3"
-  },
-  {
     "id": 146563,
     "url": "https://edmtrain.s3.amazonaws.com/img/artist/BRKLYN.jpg?v=3"
+  },
+  {
+    "id": 147648,
+    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Father%20Bear.jpg?v=1"
+  },
+  {
+    "id": 147254,
+    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Fatboy%20Slim.jpg?v=3"
   },
   {
     "id": 141476,
     "url": "https://edmtrain.s3.amazonaws.com/img/artist/Folamour.jpg?v=1"
   },
   {
-    "id": 146136,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Paul%20Oakenfold.jpg?v=3"
-  },
-  {
     "id": 146562,
     "url": "https://edmtrain.s3.amazonaws.com/img/artist/Coast%20Club.jpg?v=1"
+  },
+  {
+    "id": 147631,
+    "url": "https://edmtrain.s3.amazonaws.com/img/artist/MONXX.jpg?v=3"
   },
   {
     "id": 146529,
@@ -302,14 +62,6 @@
   {
     "id": 146561,
     "url": "https://edmtrain.s3.amazonaws.com/img/artist/Lil%20Jon.jpg?v=3"
-  },
-  {
-    "id": 143204,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Kaytranada.jpg?v=3"
-  },
-  {
-    "id": 141426,
-    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Emancipator.jpg?v=3"
   },
   {
     "id": 140994,
@@ -356,12 +108,28 @@
     "url": "https://edmtrain.s3.amazonaws.com/img/event/146314.jpg?v=1"
   },
   {
+    "id": 147528,
+    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Slow%20Magic.jpg?v=3"
+  },
+  {
     "id": 146822,
     "url": "https://edmtrain.s3.amazonaws.com/img/artist/STRFKR.jpg?v=3"
   },
   {
+    "id": 147965,
+    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Flux%20Pavilion.jpg?v=3"
+  },
+  {
+    "id": 147365,
+    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Purity%20Ring.jpg?v=3"
+  },
+  {
     "id": 145328,
     "url": "https://edmtrain.s3.amazonaws.com/img/artist/Purity%20Ring.jpg?v=3"
+  },
+  {
+    "id": 148212,
+    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Trinix.jpg?v=1"
   },
   {
     "id": 146821,
@@ -372,8 +140,32 @@
     "url": "https://edmtrain.s3.amazonaws.com/img/artist/CHVRCHES.jpg?v=3"
   },
   {
+    "id": 148950,
+    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Capyac.jpg?v=1"
+  },
+  {
+    "id": 148675,
+    "url": "https://edmtrain.s3.amazonaws.com/img/artist/GoldFish.jpg?v=3"
+  },
+  {
     "id": 146169,
     "url": "https://edmtrain.s3.amazonaws.com/img/artist/Kraftwerk.jpg?v=1"
+  },
+  {
+    "id": 148630,
+    "url": "https://edmtrain.s3.amazonaws.com/img/artist/RJD2.jpg?v=3"
+  },
+  {
+    "id": 149078,
+    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Mark%20Farina.jpg?v=3"
+  },
+  {
+    "id": 149660,
+    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Chris%20Lake.jpg?v=3"
+  },
+  {
+    "id": 148454,
+    "url": "https://edmtrain.s3.amazonaws.com/img/artist/RAC.jpg?v=3"
   },
   {
     "id": 141267,
@@ -388,8 +180,20 @@
     "url": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg"
   },
   {
+    "id": 147149,
+    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Lindsey%20Stirling.jpg?v=5"
+  },
+  {
+    "id": 149435,
+    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Emancipator.jpg?v=3"
+  },
+  {
     "id": 146843,
     "url": "https://edmtrain.s3.amazonaws.com/img/artist/OTR.jpg?v=1"
+  },
+  {
+    "id": 149076,
+    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Paul%20Oakenfold.jpg?v=3"
   },
   {
     "id": 128165,
@@ -404,11 +208,15 @@
     "url": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg"
   },
   {
+    "id": 149072,
+    "url": "https://edmtrain.s3.amazonaws.com/img/artist/Hot%20Chip.jpg?v=3"
+  },
+  {
     "id": 145450,
     "url": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg"
   },
   {
-    "id": 145451,
+    "id": 14545,
     "url": "https://sandiegohousemusic.com/wordpress/wp-content/uploads/2020/02/events.jpg"
   }
 ]
