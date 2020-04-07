@@ -1,4 +1,24 @@
-.sort {display: none;}
+.sort {
+	padding: 0 10px 0px 10px;
+	span {
+		font-weight: bold;
+		font-size: 14px;
+	}
+}
+
+#venue-list {
+	// display: flex;
+	overflow: hidden;
+	flex-wrap: nowrap;
+	> div {
+		width: auto;
+		padding-right: 10px;
+		// border: 1px solid pink;
+		font-size: 14px !important;
+		line-height: 16px;
+		display: inline-block;
+	}
+}
 
 h1 {
 	text-align: center;
@@ -14,7 +34,7 @@ h1 {
 #evenfeed {
 	padding: 0 px;
 	@include media(650px) {
-		padding: 0 10px;
+		padding: 0;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 1rem;
@@ -175,7 +195,7 @@ h1 {
 		border-radius: 5px;
 		border: 1px solid #fff;
 		background: #eee;
-		border-radius: 50px;
+		// border-radius: 50px;
 		transition: all .15s ease-in-out;
 		position: relative;
 		display: block;
@@ -195,7 +215,7 @@ h1 {
 		min-width: 100px;
 		border: 1px solid #ccc;
 		background-color: #eee;
-		border-radius: 50px;
+		// border-radius: 50px;
 		border: 1px solid #fff;
 		cursor: pointer;
 		color: #767679;
@@ -205,31 +225,34 @@ h1 {
 	}
 }
 
+#searchresults {
+	position: relative;
+}
+
 #searchresults p {
 	font-size: 14px;
 	text-align: center;
 	padding: 2px 15px;
-	border: 1px solid #ccc;
+	border: 1px solid pink;
+	color: red;
 	margin: 0 10px;
-	border-radius: 50px;
 }
 
 #clearSearch {
-	font-size: 14px;
+	font-size: 12px;
 	text-align: right;
 	padding: 2px 15px;
-	// border: 1px solid #ccc;
 	margin: 0 10px;
 	color: #a70000;
 	display: none;
+	position: relative;
 	&.visible {
 		display: block;
 	}	
-	&.hidden {
-		// display: none;
-	}
 	span {
-		font-size: 30px;
+		right: 0px;
+		position: absolute;
+		font-size: 50px;
 	}
 }
 

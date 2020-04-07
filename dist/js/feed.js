@@ -1,9 +1,6 @@
 /*! sdhm-event-feed v2.0.0 | (c) 2020 San Diego House Music | MIT License | https://github.com/djmisha/event-feed */
 // Helpers 
 
-function removeDuplicates(array) {
-  return array.filter((a, b) => array.indexOf(a) === b);
-}
 
 
 /* Create Scope for Events*/
@@ -139,6 +136,25 @@ function removeDuplicates(array) {
 			theFeed.appendChild(singleEventElement);
 		}
 
+
+		/* artists */
+
+		// eventData.forEach(function(e) {
+		// 	var newarra = e.artist;
+		// 	// console.log(newarra);
+		// 	newarra.forEach(function(a) {
+		// 		// console.log(e);
+		// 	})
+		// });
+
+
+		/* Remove Duplicates Helper*/
+
+		function removeDuplicates(array) {
+		  return array.filter((a, b) => array.indexOf(a) === b);
+		}
+
+
 		/* Loop throught Venues and attach them to page */
 
 		var venueContainer  = document.getElementById('venue-list');
@@ -147,29 +163,28 @@ function removeDuplicates(array) {
 		eventData.forEach((function(item){
 			var venue = item.venuename;
 			venueArray.push(venue);
+			// console.log(venue);
+		}));
+
+		venueArray = removeDuplicates(venueArray);
+
+		venueArray.forEach((function(venue){
+			var venuleElement = document.createElement('div');
+			venuleElement.innerHTML = venue;
+			venueContainer.appendChild(venuleElement);
+			venuleElement.addEventListener('click', manualSearch);
 		}));
 
 
+		/* Manual Search by populating input and clicking button*/
 
-		removeDuplicates(venueArray).forEach((function(v){
-			var vElement = document.createElement('div');
-			vElement.innerHTML = v;
-			venueContainer.appendChild(vElement);
-			console.log(v);
-			vElement.addEventListener('click', (function() {
-				console.log(this);
-				// search(v);
-			}));
-		}));
-		
-
-			// v.addEventListener('click', function (venue) {
-			// 	console.log('this');
-			// })
-
-		// console.log(removeDuplicates(venueArray));
-
-
+		function manualSearch() {
+				console.log(this.innerHTML);
+				var searchInput = document.getElementById('input-search');
+				var searchButton = document.getElementById('submit-search');
+				searchInput.value = this.innerHTML;
+				searchButton.click();
+		}
 	}
 
 	/* function to list out all Artists*/
