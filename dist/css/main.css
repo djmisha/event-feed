@@ -1,4 +1,5 @@
 /*! sdhm-event-feed v2.0.0 | (c) 2020 San Diego House Music | MIT License | https://github.com/djmisha/event-feed */
+@charset "UTF-8";
 /**
  * @section Mixins
  */
@@ -33,51 +34,16 @@ body {
   font-weight: 100;
 }
 
-/* line 1, src/sass/components/_feed.scss */
-.sort {
-  padding: 0 10px 0px 10px;
-}
-
-/* line 3, src/sass/components/_feed.scss */
-.sort span {
-  font-weight: bold;
-  font-size: 14px;
-}
-
-/* line 9, src/sass/components/_feed.scss */
-#venue-list {
-  overflow: hidden;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-}
-
-/* line 13, src/sass/components/_feed.scss */
-#venue-list > div {
-  width: auto;
-  padding-right: 10px;
-  font-size: 14px !important;
-  line-height: 16px;
-  display: inline-block;
-}
-
-/* line 23, src/sass/components/_feed.scss */
-h1 {
-  text-align: center;
-  font-size: 14px;
-  color: #ccc;
-  font-weight: 100;
-}
-
 /*==================================
 =            Event Feed            =
 ==================================*/
-/* line 34, src/sass/components/_feed.scss */
+/* line 5, src/sass/components/_feed.scss */
 #evenfeed {
   padding: 0 px;
 }
 
 @media only screen and (min-width: 650px) {
-  /* line 34, src/sass/components/_feed.scss */
+  /* line 5, src/sass/components/_feed.scss */
   #evenfeed {
     padding: 0;
     display: grid;
@@ -87,13 +53,13 @@ h1 {
 }
 
 @media only screen and (min-width: 1080px) {
-  /* line 34, src/sass/components/_feed.scss */
+  /* line 5, src/sass/components/_feed.scss */
   #evenfeed {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* line 47, src/sass/components/_feed.scss */
+/* line 18, src/sass/components/_feed.scss */
 .single-event {
   text-align: left;
   padding: 20px 150px 30px 20px;
@@ -110,7 +76,7 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 47, src/sass/components/_feed.scss */
+  /* line 18, src/sass/components/_feed.scss */
   .single-event {
     -webkit-box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3);
@@ -119,29 +85,29 @@ h1 {
   }
 }
 
-/* line 67, src/sass/components/_feed.scss */
+/* line 38, src/sass/components/_feed.scss */
 .single-event:hover {
   -webkit-box-shadow: 5px 5px 23px #d4d4d4, -5px -5px 23px #ffffff;
           box-shadow: 5px 5px 23px #d4d4d4, -5px -5px 23px #ffffff;
 }
 
-/* line 70, src/sass/components/_feed.scss */
+/* line 41, src/sass/components/_feed.scss */
 .single-event a {
   color: #767679;
   text-decoration: none;
 }
 
-/* line 73, src/sass/components/_feed.scss */
+/* line 44, src/sass/components/_feed.scss */
 .single-event a:hover {
   text-decoration: underline !important;
 }
 
-/* line 77, src/sass/components/_feed.scss */
+/* line 48, src/sass/components/_feed.scss */
 .single-event.hidden {
   display: none;
 }
 
-/* line 82, src/sass/components/_feed.scss */
+/* line 53, src/sass/components/_feed.scss */
 .event-date {
   font-size: 16px;
   line-height: 16px;
@@ -149,7 +115,7 @@ h1 {
   color: #767679;
 }
 
-/* line 89, src/sass/components/_feed.scss */
+/* line 60, src/sass/components/_feed.scss */
 .event-title {
   font-size: 18px;
   line-height: 20px;
@@ -158,7 +124,7 @@ h1 {
   color: #767679;
 }
 
-/* line 97, src/sass/components/_feed.scss */
+/* line 68, src/sass/components/_feed.scss */
 .event-artist {
   word-wrap: anywhere;
   font-weight: 700;
@@ -169,13 +135,13 @@ h1 {
   text-align: left;
 }
 
-/* line 107, src/sass/components/_feed.scss */
+/* line 78, src/sass/components/_feed.scss */
 .artist {
   display: inline-block;
   text-align: left;
 }
 
-/* line 112, src/sass/components/_feed.scss */
+/* line 83, src/sass/components/_feed.scss */
 .event-image {
   width: 100px;
   height: 100px;
@@ -188,21 +154,21 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 112, src/sass/components/_feed.scss */
+  /* line 83, src/sass/components/_feed.scss */
   .event-image {
     width: 140px;
     height: 140px;
   }
 }
 
-/* line 127, src/sass/components/_feed.scss */
+/* line 98, src/sass/components/_feed.scss */
 .event-venue {
   display: inline-block;
   font-size: 18px;
   line-height: 20px;
 }
 
-/* line 133, src/sass/components/_feed.scss */
+/* line 104, src/sass/components/_feed.scss */
 .event-location span {
   padding-top: 5px;
   display: block;
@@ -210,12 +176,12 @@ h1 {
   line-height: 14px;
 }
 
-/* line 138, src/sass/components/_feed.scss */
+/* line 109, src/sass/components/_feed.scss */
 .event-location span a {
   color: #c1c1c1;
 }
 
-/* line 143, src/sass/components/_feed.scss */
+/* line 114, src/sass/components/_feed.scss */
 .event-link a {
   margin-top: 30px;
   font-size: 14px;
@@ -230,7 +196,7 @@ h1 {
   border: 1px solid #ccc;
 }
 
-/* line 157, src/sass/components/_feed.scss */
+/* line 128, src/sass/components/_feed.scss */
 .event-link a:hover {
   text-decoration: none !important;
 }
@@ -238,7 +204,7 @@ h1 {
 /*=======================================
 =            Search and Form            =
 =======================================*/
-/* line 167, src/sass/components/_feed.scss */
+/* line 6, src/sass/components/_navigation.scss */
 #form-search {
   margin: 20px 10px;
   display: -webkit-box;
@@ -251,7 +217,7 @@ h1 {
           justify-content: space-between;
 }
 
-/* line 175, src/sass/components/_feed.scss */
+/* line 14, src/sass/components/_navigation.scss */
 #form-search:before {
   content: '';
   background: url("../svg/icon-search.svg");
@@ -264,14 +230,14 @@ h1 {
   z-index: 999;
 }
 
-/* line 187, src/sass/components/_feed.scss */
+/* line 26, src/sass/components/_navigation.scss */
 #form-search label {
   position: absolute;
   left: -999px;
   top: -999px;
 }
 
-/* line 192, src/sass/components/_feed.scss */
+/* line 31, src/sass/components/_navigation.scss */
 #form-search input {
   padding: 10px 30px 10px 50px;
   width: 50%;
@@ -286,19 +252,19 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 192, src/sass/components/_feed.scss */
+  /* line 31, src/sass/components/_navigation.scss */
   #form-search input {
     width: 80%;
   }
 }
 
-/* line 207, src/sass/components/_feed.scss */
+/* line 46, src/sass/components/_navigation.scss */
 #form-search input:focus {
   border: 1px solid #ccc;
   background: #fff;
 }
 
-/* line 212, src/sass/components/_feed.scss */
+/* line 51, src/sass/components/_navigation.scss */
 #form-search button {
   margin-left: 10px;
   width: 20%;
@@ -310,17 +276,17 @@ h1 {
   color: #767679;
 }
 
-/* line 222, src/sass/components/_feed.scss */
+/* line 61, src/sass/components/_navigation.scss */
 #form-search button:hover {
   border: 1px solid #ccc;
 }
 
-/* line 228, src/sass/components/_feed.scss */
+/* line 67, src/sass/components/_navigation.scss */
 #searchresults {
   position: relative;
 }
 
-/* line 232, src/sass/components/_feed.scss */
+/* line 71, src/sass/components/_navigation.scss */
 #searchresults p {
   font-size: 14px;
   text-align: center;
@@ -330,7 +296,7 @@ h1 {
   margin: 0 10px;
 }
 
-/* line 241, src/sass/components/_feed.scss */
+/* line 80, src/sass/components/_navigation.scss */
 #clearSearch {
   font-size: 12px;
   text-align: right;
@@ -341,14 +307,62 @@ h1 {
   position: relative;
 }
 
-/* line 249, src/sass/components/_feed.scss */
+/* line 88, src/sass/components/_navigation.scss */
 #clearSearch.visible {
   display: block;
 }
 
-/* line 252, src/sass/components/_feed.scss */
+/* line 91, src/sass/components/_navigation.scss */
 #clearSearch span {
   right: 0px;
   position: absolute;
   font-size: 50px;
+}
+
+/*==========================================
+=            Navigation Toggles            =
+==========================================*/
+/* line 104, src/sass/components/_navigation.scss */
+.sort {
+  padding: 0 10px 0px 10px;
+  position: relative;
+}
+
+/* line 107, src/sass/components/_navigation.scss */
+.sort span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* line 110, src/sass/components/_navigation.scss */
+.sort span:after {
+  content: '↓';
+  margin-left: 5px;
+}
+
+/* line 117, src/sass/components/_navigation.scss */
+#venue-list {
+  overflow: hidden;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  max-width: 300px;
+  position: absolute;
+  z-index: 9999;
+  background: #000;
+  color: #fff;
+  height: 0;
+}
+
+/* line 131, src/sass/components/_navigation.scss */
+#venue-list > div {
+  width: auto;
+  padding: 5px;
+  font-size: 14px !important;
+  line-height: 16px;
+  display: block;
+}
+
+/* line 140, src/sass/components/_navigation.scss */
+#venue-list.visibile {
+  height: auto;
 }

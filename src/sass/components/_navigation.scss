@@ -1,0 +1,143 @@
+
+/*=======================================
+=            Search and Form            =
+=======================================*/
+
+#form-search {
+	margin: 20px 10px;
+	display: flex;
+	position: relative;
+	color: #767679;
+	justify-content: space-between;
+
+	
+	&:before {
+		content: '';
+		background: url('../svg/icon-search.svg');
+		background-size: 27px 27px;
+		position: absolute;
+		left: 12px;
+		top: 5px;
+		width: 30px;
+		height: 30px;
+		z-index: 999;
+	}
+
+	label {
+		position: absolute;
+		left: -999px;
+		top: -999px;
+	}
+	input {
+		padding: 10px 30px 10px 50px;
+		width: 50%;
+		border-radius: 5px;
+		border: 1px solid #fff;
+		background: #eee;
+		// border-radius: 50px;
+		transition: all .15s ease-in-out;
+		position: relative;
+		display: block;
+		color: #767679;
+		@include media($tablet) {
+			width: 80%;
+		}
+
+		&:focus{
+			border: 1px solid #ccc;
+			background: #fff;
+		}
+	}
+	button {
+		margin-left: 10px;
+		width: 20%;
+		min-width: 100px;
+		border: 1px solid #ccc;
+		background-color: #eee;
+		// border-radius: 50px;
+		border: 1px solid #fff;
+		cursor: pointer;
+		color: #767679;
+		&:hover {
+			border: 1px solid #ccc;
+		}
+	}
+}
+
+#searchresults {
+	position: relative;
+}
+
+#searchresults p {
+	font-size: 14px;
+	text-align: center;
+	padding: 2px 15px;
+	border: 1px solid pink;
+	color: red;
+	margin: 0 10px;
+}
+
+#clearSearch {
+	font-size: 12px;
+	text-align: right;
+	padding: 2px 15px;
+	margin: 0 10px;
+	color: #a70000;
+	display: none;
+	position: relative;
+	&.visible {
+		display: block;
+	}	
+	span {
+		right: 0px;
+		position: absolute;
+		font-size: 50px;
+	}
+}
+
+
+/*==========================================
+=            Navigation Toggles            =
+==========================================*/
+
+
+.sort {
+	padding: 0 10px 0px 10px;
+	position: relative;
+	span {
+		font-weight: bold;
+		font-size: 14px;
+		&:after {
+			content: '↓';
+			margin-left: 5px;
+		}
+	}
+}
+
+#venue-list {
+	// display: flex;
+	overflow: hidden;
+	flex-wrap: nowrap;
+	max-width: 300px;
+	position: absolute;
+	z-index: 9999;
+	background: #000;
+	color: #fff;
+	// display: none;
+	height: 0;
+
+
+
+	> div {
+		width: auto;
+		padding: 5px;
+		// border: 1px solid pink;
+		font-size: 14px !important;
+		line-height: 16px;
+		display: block;
+	}
+}
+#venue-list.visibile {
+height: auto;
+	// display: block !important;
+}

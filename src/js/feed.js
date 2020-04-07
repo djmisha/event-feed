@@ -1,5 +1,24 @@
-// Helpers 
+// Navigation  
 
+function navToggles() {
+	var toggler = document.getElementById('drop-trigger');
+	var menu = document.getElementById('venue-list');
+	toggler.addEventListener('click', showHideDropdown);
+}
+
+
+function showHideDropdown(e) {
+	var menu = document.getElementById('venue-list');
+	// e.preventDefault();
+	if(menu.classList.contains('visibile')) {
+		menu.classList.remove('visibile');
+	}
+	else {
+		menu.classList.add('visibile');
+	}
+}
+
+navToggles();
 
 
 /* Create Scope for Events*/
@@ -179,6 +198,7 @@
 
 		function manualSearch() {
 				console.log(this.innerHTML);
+				showHideDropdown();
 				var searchInput = document.getElementById('input-search');
 				var searchButton = document.getElementById('submit-search');
 				searchInput.value = this.innerHTML;
