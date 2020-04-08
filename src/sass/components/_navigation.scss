@@ -105,23 +105,30 @@
 	padding: 0 10px 0px 10px;
 	position: relative;
 	display: flex;
+	// flex-wrap: nowrap;
+	// justify-content: space-between;
 	> div {
-		margin-right: 20px;
+		margin-right: 40px;
 	}
 	span {
+		padding: 2px 3px;
+		border-bottom: 2px solid #ccc;
+		border-top: 2px solid #ccc;
 		font-weight: bold;
 		font-size: 14px;
 		&:after {
 			content: '↓';
+			color: #ccc;
 			margin-left: 5px;
 		}
 	}
 }
 
-#venue-list, #date-list {
+#venue-list, #date-list, #artist-list {
 	overflow: hidden;
 	flex-wrap: nowrap;
-	max-width: 300px;
+	max-width: 350px;
+	min-width: 250px;
 	position: absolute;
 	z-index: 9999;
 	background: #000;
@@ -138,6 +145,7 @@
 }
 
 #venue-list.visibile,
+#artist-list.visibile,
 #date-list.visibile {
 	height: auto;
 }

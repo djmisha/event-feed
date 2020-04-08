@@ -2,6 +2,7 @@
 // Navigations
 
 var venueMenu = document.getElementById('venue-list');
+var artistMenu = document.getElementById('artist-list');
 var dateMenu = document.getElementById('date-list');
 
 function navToggles(menu) {
@@ -20,6 +21,7 @@ function navToggles(menu) {
 }
 
 navToggles(venueMenu);
+navToggles(artistMenu);
 navToggles(dateMenu);
 
 
@@ -196,6 +198,32 @@ navToggles(dateMenu);
 		});
 
 
+		var artistContainer  = document.getElementById('artist-list');
+		artistArray = [];
+		eventData.forEach(function(item){
+			var artist = item.artist;
+			// console.log(artist);
+			artist.forEach(function(a) {
+				// console.log(a);
+				a.forEach(function(b) {
+					artistArray.push(b.name);
+				})
+			})
+			// dateArray.push(date);
+		});
+
+		artistArray = removeDuplicates(artistArray);
+
+		// console.log(artistArray);
+
+		artistArray.forEach(function(artist){
+			var element = document.createElement('div');
+			element.innerHTML = artist;
+			// console.log(element);
+			artistContainer.appendChild(element);
+			element.addEventListener('click', manualSearch);
+		});
+
 
 		/* Loop throught Venues and attach them to page */
 
@@ -254,6 +282,9 @@ navToggles(dateMenu);
 		}
 	}
 
+
+	// var artistArray = listArtists(eventData);
+	// console.log(artistArray);
 	/* function to Check for Event name*/
 
 	function checkEventName(event) {
