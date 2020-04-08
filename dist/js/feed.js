@@ -1,25 +1,27 @@
 /*! sdhm-event-feed v2.0.0 | (c) 2020 San Diego House Music | MIT License | https://github.com/djmisha/event-feed */
-// Navigation  
 
-function navToggles() {
-	var toggler = document.getElementById('drop-trigger');
-	var menu = document.getElementById('venue-list');
+// Navigations
+
+var venueMenu = document.getElementById('venue-list');
+var dateMenu = document.getElementById('date-list');
+
+function navToggles(menu) {
+	toggler = menu.previousElementSibling;
 	toggler.addEventListener('click', showHideDropdown);
-}
 
-navToggles();
-
-function showHideDropdown(e) {
-	var menu = document.getElementById('venue-list');
-	// e.preventDefault();
-	if(menu.classList.contains('visibile')) {
-		menu.classList.remove('visibile');
-	}
-	else {
-		menu.classList.add('visibile');
+	function showHideDropdown() {
+		// var menu = document.getElementById('venue-list');
+		if(menu.classList.contains('visibile')) {
+			menu.classList.remove('visibile');
+		}
+		else {
+			menu.classList.add('visibile');
+		}
 	}
 }
 
+navToggles(venueMenu);
+navToggles(dateMenu);
 
 
 /* Create Scope for Events*/
@@ -195,11 +197,37 @@ function showHideDropdown(e) {
 		}));
 
 
+
+		/* Loop throught Venues and attach them to page */
+
+		var dateContainer  = document.getElementById('date-list');
+		var dateArray = [];
+
+		eventData.forEach((function(item){
+			var date = item.date;
+			dateArray.push(date);
+		}));
+
+
+		dateArray = removeDuplicates(dateArray);
+
+		console.log(dateContainer);
+
+		dateArray.forEach((function(date){
+			var element = document.createElement('div');
+			element.innerHTML = date;
+			// console.log(element);
+			dateContainer.appendChild(element);
+			element.addEventListener('click', manualSearch);
+		}));
+
+
 		/* Manual Search by populating input and clicking button*/
 
 		function manualSearch() {
-				console.log(this.innerHTML);
-				showHideDropdown();
+				console.log(this.parentElement);
+				this.parentElement.classList.remove('visibile');
+				// showHideDropdown();
 				var searchInput = document.getElementById('input-search');
 				var searchButton = document.getElementById('submit-search');
 				searchInput.value = this.innerHTML;

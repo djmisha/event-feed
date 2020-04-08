@@ -96,7 +96,7 @@
 		// Search the content
 		eventData.forEach(function (article) {
 			// console.log((article.artist.name));
-			if (reg.test(article.name)) return priority1.push(article);
+			if (reg.test(article.date)) return priority1.push(article);
 			// if (reg.test(article.artist)) priority2.push(article);
 			article.artist.forEach(function(a){
 				a.forEach(function(e) {
