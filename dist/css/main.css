@@ -39,7 +39,7 @@ body {
 ==================================*/
 /* line 5, src/sass/components/_feed.scss */
 #evenfeed {
-  padding: 0 px;
+  padding: 0;
 }
 
 @media only screen and (min-width: 650px) {
@@ -326,22 +326,30 @@ body {
 .sort {
   padding: 0 10px 0px 10px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-/* line 107, src/sass/components/_navigation.scss */
+/* line 108, src/sass/components/_navigation.scss */
+.sort > div {
+  margin-right: 20px;
+}
+
+/* line 111, src/sass/components/_navigation.scss */
 .sort span {
   font-weight: bold;
   font-size: 14px;
 }
 
-/* line 110, src/sass/components/_navigation.scss */
+/* line 114, src/sass/components/_navigation.scss */
 .sort span:after {
   content: '↓';
   margin-left: 5px;
 }
 
-/* line 117, src/sass/components/_navigation.scss */
-#venue-list {
+/* line 121, src/sass/components/_navigation.scss */
+#venue-list, #date-list {
   overflow: hidden;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
@@ -351,10 +359,11 @@ body {
   background: #000;
   color: #fff;
   height: 0;
+  border-radius: 4px;
 }
 
 /* line 131, src/sass/components/_navigation.scss */
-#venue-list > div {
+#venue-list > div, #date-list > div {
   width: auto;
   padding: 5px;
   font-size: 14px !important;
@@ -363,6 +372,7 @@ body {
 }
 
 /* line 140, src/sass/components/_navigation.scss */
-#venue-list.visibile {
+#venue-list.visibile,
+#date-list.visibile {
   height: auto;
 }

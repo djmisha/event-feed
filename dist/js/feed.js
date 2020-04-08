@@ -7,6 +7,7 @@ function navToggles() {
 	toggler.addEventListener('click', showHideDropdown);
 }
 
+navToggles();
 
 function showHideDropdown(e) {
 	var menu = document.getElementById('venue-list');
@@ -19,7 +20,6 @@ function showHideDropdown(e) {
 	}
 }
 
-navToggles();
 
 
 /* Create Scope for Events*/

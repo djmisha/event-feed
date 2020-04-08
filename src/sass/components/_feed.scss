@@ -3,7 +3,7 @@
 ==================================*/
 
 #evenfeed {
-	padding: 0 px;
+	padding: 0;
 	@include media(650px) {
 		padding: 0;
 		display: grid;

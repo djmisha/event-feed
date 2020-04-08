@@ -104,6 +104,10 @@
 .sort {
 	padding: 0 10px 0px 10px;
 	position: relative;
+	display: flex;
+	> div {
+		margin-right: 20px;
+	}
 	span {
 		font-weight: bold;
 		font-size: 14px;
@@ -114,8 +118,7 @@
 	}
 }
 
-#venue-list {
-	// display: flex;
+#venue-list, #date-list {
 	overflow: hidden;
 	flex-wrap: nowrap;
 	max-width: 300px;
@@ -123,21 +126,18 @@
 	z-index: 9999;
 	background: #000;
 	color: #fff;
-	// display: none;
 	height: 0;
-
-
-
+	border-radius: 4px;
 	> div {
 		width: auto;
 		padding: 5px;
-		// border: 1px solid pink;
 		font-size: 14px !important;
 		line-height: 16px;
 		display: block;
 	}
 }
-#venue-list.visibile {
-height: auto;
-	// display: block !important;
+
+#venue-list.visibile,
+#date-list.visibile {
+	height: auto;
 }
