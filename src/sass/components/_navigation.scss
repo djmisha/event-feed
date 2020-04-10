@@ -102,45 +102,44 @@
 
 
 .sort {
-	padding: 0 10px 0px 10px;
+	padding: 10px 10px 0px 10px;
 	position: relative;
 	display: flex;
-	// flex-wrap: nowrap;
+	flex-wrap: nowrap;
 	// justify-content: space-between;
 	> div {
 		margin-right: 40px;
 	}
 	span {
-		padding: 2px 3px;
-		border-bottom: 2px solid #ccc;
-		border-top: 2px solid #ccc;
-		font-weight: bold;
+		border: 1px solid #ccc;
+		// font-weight: bold;
 		font-size: 14px;
+		padding: 3px 10px;
 		&:after {
 			content: '↓';
 			color: #ccc;
 			margin-left: 5px;
+			position: relative;
+			top: -2px;
 		}
 	}
 }
 
 #venue-list, #date-list, #artist-list {
 	overflow: hidden;
-	flex-wrap: nowrap;
-	max-width: 350px;
-	min-width: 250px;
+	max-width: 650px;
 	position: absolute;
 	z-index: 9999;
 	background: #000;
 	color: #fff;
 	height: 0;
 	border-radius: 4px;
+	display: flex; 
+	flex-wrap: wrap;
 	> div {
-		width: auto;
-		padding: 5px;
+		padding: 5px 10px;
 		font-size: 14px !important;
 		line-height: 16px;
-		display: block;
 	}
 }
 

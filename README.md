@@ -4,7 +4,6 @@
 
 - Go National Data
 - Push Data to local Json
-- Input Sort by Artist: Date, Venue
 - search : add autocomplete https://vanillajstoolkit.com/reference/javascript-free/autocomplete/ 
 - fix favicon
 - remove comma in artists array
@@ -16,6 +15,10 @@
 - get more event data and add dropdown with more info and links
 
 ## Completed
+
+April, 2020
+
+- Input Sort by Artist: Date, Venue
 
 March, 2020
 

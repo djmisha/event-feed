@@ -159,17 +159,6 @@ navToggles(dateMenu);
 		}
 
 
-		/* artists */
-
-		// eventData.forEach(function(e) {
-		// 	var newarra = e.artist;
-		// 	// console.log(newarra);
-		// 	newarra.forEach(function(a) {
-		// 		// console.log(e);
-		// 	})
-		// });
-
-
 		/* Remove Duplicates Helper*/
 
 		function removeDuplicates(array) {
@@ -185,7 +174,6 @@ navToggles(dateMenu);
 		eventData.forEach(function(item){
 			var venue = item.venuename;
 			venueArray.push(venue);
-			// console.log(venue);
 		});
 
 		venueArray = removeDuplicates(venueArray);
@@ -202,19 +190,14 @@ navToggles(dateMenu);
 		artistArray = [];
 		eventData.forEach(function(item){
 			var artist = item.artist;
-			// console.log(artist);
 			artist.forEach(function(a) {
-				// console.log(a);
 				a.forEach(function(b) {
 					artistArray.push(b.name);
-				})
-			})
-			// dateArray.push(date);
+				});
+			});
 		});
 
 		artistArray = removeDuplicates(artistArray);
-
-		// console.log(artistArray);
 
 		artistArray.forEach(function(artist){
 			var element = document.createElement('div');

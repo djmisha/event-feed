@@ -324,11 +324,13 @@ body {
 ==========================================*/
 /* line 104, src/sass/components/_navigation.scss */
 .sort {
-  padding: 0 10px 0px 10px;
+  padding: 10px 10px 0px 10px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 /* line 110, src/sass/components/_navigation.scss */
@@ -338,45 +340,45 @@ body {
 
 /* line 113, src/sass/components/_navigation.scss */
 .sort span {
-  padding: 2px 3px;
-  border-bottom: 2px solid #ccc;
-  border-top: 2px solid #ccc;
-  font-weight: bold;
+  border: 1px solid #ccc;
   font-size: 14px;
+  padding: 3px 10px;
 }
 
-/* line 119, src/sass/components/_navigation.scss */
+/* line 118, src/sass/components/_navigation.scss */
 .sort span:after {
   content: '↓';
   color: #ccc;
   margin-left: 5px;
+  position: relative;
+  top: -2px;
 }
 
-/* line 127, src/sass/components/_navigation.scss */
+/* line 128, src/sass/components/_navigation.scss */
 #venue-list, #date-list, #artist-list {
   overflow: hidden;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  max-width: 350px;
-  min-width: 250px;
+  max-width: 650px;
   position: absolute;
   z-index: 9999;
   background: #000;
   color: #fff;
   height: 0;
   border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-/* line 138, src/sass/components/_navigation.scss */
+/* line 139, src/sass/components/_navigation.scss */
 #venue-list > div, #date-list > div, #artist-list > div {
-  width: auto;
-  padding: 5px;
+  padding: 5px 10px;
   font-size: 14px !important;
   line-height: 16px;
-  display: block;
 }
 
-/* line 147, src/sass/components/_navigation.scss */
+/* line 146, src/sass/components/_navigation.scss */
 #venue-list.visibile,
 #artist-list.visibile,
 #date-list.visibile {
