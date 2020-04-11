@@ -31,7 +31,7 @@
 	input {
 		padding: 10px 30px 10px 50px;
 		width: 50%;
-		border-radius: 5px;
+		// border-radius: 5px;
 		border: 1px solid #fff;
 		background: #eee;
 		// border-radius: 50px;
@@ -64,8 +64,11 @@
 	}
 }
 
-#searchresults {
+
+.seach-all {
 	position: relative;
+}
+#searchresults {
 }
 
 #searchresults p {
@@ -73,7 +76,8 @@
 	text-align: center;
 	padding: 2px 15px;
 	border: 1px solid pink;
-	color: red;
+	border-left: 5px solid pink;
+	color: pink;
 	margin: 0 10px;
 }
 
@@ -84,14 +88,16 @@
 	margin: 0 10px;
 	color: #a70000;
 	display: none;
-	position: relative;
+	position: absolute;
+	right: 5px;
 	&.visible {
 		display: block;
 	}	
 	span {
+		top: 0px;
 		right: 0px;
-		position: absolute;
-		font-size: 50px;
+		font-size: 60px;
+		color: pink;
 	}
 }
 
@@ -109,12 +115,14 @@
 	// justify-content: space-between;
 	> div {
 		margin-right: 40px;
+		cursor: pointer;
 	}
 	span {
+		cursor: pointer;
 		border: 1px solid #ccc;
-		// font-weight: bold;
+		// border-radius: 4px;
 		font-size: 14px;
-		padding: 3px 10px;
+		padding: 4px 15px;
 		&:after {
 			content: '↓';
 			color: #ccc;
@@ -127,24 +135,32 @@
 
 #venue-list, #date-list, #artist-list {
 	overflow: hidden;
-	max-width: 650px;
+	max-width: 600px;
 	position: absolute;
+	right: 0px;
+	left: 0px;
+	top: 40px;
 	z-index: 9999;
 	background: #000;
 	color: #fff;
 	height: 0;
-	border-radius: 4px;
+	// border-radius: 4px;
 	display: flex; 
 	flex-wrap: wrap;
 	> div {
-		padding: 5px 10px;
+		padding: 7px 12px;
 		font-size: 14px !important;
 		line-height: 16px;
+		border-radius: 2px;
+		&:hover {
+			background: rgba(#fff, .2);
+		}
 	}
 }
 
 #venue-list.visibile,
 #artist-list.visibile,
 #date-list.visibile {
+	padding: 10px 5px;
 	height: auto;
 }

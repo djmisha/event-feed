@@ -74,7 +74,7 @@
 			// console.log(article,index);
 			showMatchedEvents(article);
 		});
-		var html = '<p>Found ' + results.length + ' matching events. </p>';
+		var html = '<p>Found ' + results.length + ' matching events for \"' + input.value + '\"</p>';
 		resultList.innerHTML = html;
 		clearSearch.classList.add('visible');
 	};

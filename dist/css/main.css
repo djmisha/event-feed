@@ -241,7 +241,6 @@ body {
 #form-search input {
   padding: 10px 30px 10px 50px;
   width: 50%;
-  border-radius: 5px;
   border: 1px solid #fff;
   background: #eee;
   -webkit-transition: all .15s ease-in-out;
@@ -281,22 +280,23 @@ body {
   border: 1px solid #ccc;
 }
 
-/* line 67, src/sass/components/_navigation.scss */
-#searchresults {
+/* line 68, src/sass/components/_navigation.scss */
+.seach-all {
   position: relative;
 }
 
-/* line 71, src/sass/components/_navigation.scss */
+/* line 74, src/sass/components/_navigation.scss */
 #searchresults p {
   font-size: 14px;
   text-align: center;
   padding: 2px 15px;
   border: 1px solid pink;
-  color: red;
+  border-left: 5px solid pink;
+  color: pink;
   margin: 0 10px;
 }
 
-/* line 80, src/sass/components/_navigation.scss */
+/* line 84, src/sass/components/_navigation.scss */
 #clearSearch {
   font-size: 12px;
   text-align: right;
@@ -304,25 +304,27 @@ body {
   margin: 0 10px;
   color: #a70000;
   display: none;
-  position: relative;
+  position: absolute;
+  right: 5px;
 }
 
-/* line 88, src/sass/components/_navigation.scss */
+/* line 93, src/sass/components/_navigation.scss */
 #clearSearch.visible {
   display: block;
 }
 
-/* line 91, src/sass/components/_navigation.scss */
+/* line 96, src/sass/components/_navigation.scss */
 #clearSearch span {
+  top: 0px;
   right: 0px;
-  position: absolute;
-  font-size: 50px;
+  font-size: 60px;
+  color: pink;
 }
 
 /*==========================================
 =            Navigation Toggles            =
 ==========================================*/
-/* line 104, src/sass/components/_navigation.scss */
+/* line 110, src/sass/components/_navigation.scss */
 .sort {
   padding: 10px 10px 0px 10px;
   position: relative;
@@ -333,19 +335,21 @@ body {
       flex-wrap: nowrap;
 }
 
-/* line 110, src/sass/components/_navigation.scss */
+/* line 116, src/sass/components/_navigation.scss */
 .sort > div {
   margin-right: 40px;
+  cursor: pointer;
 }
 
-/* line 113, src/sass/components/_navigation.scss */
+/* line 120, src/sass/components/_navigation.scss */
 .sort span {
+  cursor: pointer;
   border: 1px solid #ccc;
   font-size: 14px;
-  padding: 3px 10px;
+  padding: 4px 15px;
 }
 
-/* line 118, src/sass/components/_navigation.scss */
+/* line 126, src/sass/components/_navigation.scss */
 .sort span:after {
   content: '↓';
   color: #ccc;
@@ -354,16 +358,18 @@ body {
   top: -2px;
 }
 
-/* line 128, src/sass/components/_navigation.scss */
+/* line 136, src/sass/components/_navigation.scss */
 #venue-list, #date-list, #artist-list {
   overflow: hidden;
-  max-width: 650px;
+  max-width: 600px;
   position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 40px;
   z-index: 9999;
   background: #000;
   color: #fff;
   height: 0;
-  border-radius: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -371,16 +377,23 @@ body {
       flex-wrap: wrap;
 }
 
-/* line 139, src/sass/components/_navigation.scss */
+/* line 150, src/sass/components/_navigation.scss */
 #venue-list > div, #date-list > div, #artist-list > div {
-  padding: 5px 10px;
+  padding: 7px 12px;
   font-size: 14px !important;
   line-height: 16px;
+  border-radius: 2px;
 }
 
-/* line 146, src/sass/components/_navigation.scss */
+/* line 155, src/sass/components/_navigation.scss */
+#venue-list > div:hover, #date-list > div:hover, #artist-list > div:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* line 161, src/sass/components/_navigation.scss */
 #venue-list.visibile,
 #artist-list.visibile,
 #date-list.visibile {
+  padding: 10px 5px;
   height: auto;
 }
