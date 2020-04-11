@@ -285,7 +285,7 @@ body {
   position: relative;
 }
 
-/* line 74, src/sass/components/_navigation.scss */
+/* line 72, src/sass/components/_navigation.scss */
 #searchresults p {
   font-size: 14px;
   text-align: center;
@@ -296,11 +296,10 @@ body {
   margin: 0 10px;
 }
 
-/* line 84, src/sass/components/_navigation.scss */
+/* line 82, src/sass/components/_navigation.scss */
 #clearSearch {
   font-size: 12px;
   text-align: right;
-  padding: 2px 15px;
   margin: 0 10px;
   color: #a70000;
   display: none;
@@ -308,12 +307,12 @@ body {
   right: 5px;
 }
 
-/* line 93, src/sass/components/_navigation.scss */
+/* line 91, src/sass/components/_navigation.scss */
 #clearSearch.visible {
   display: block;
 }
 
-/* line 96, src/sass/components/_navigation.scss */
+/* line 94, src/sass/components/_navigation.scss */
 #clearSearch span {
   top: 0px;
   right: 0px;
@@ -324,7 +323,7 @@ body {
 /*==========================================
 =            Navigation Toggles            =
 ==========================================*/
-/* line 110, src/sass/components/_navigation.scss */
+/* line 108, src/sass/components/_navigation.scss */
 .sort {
   padding: 10px 10px 0px 10px;
   position: relative;
@@ -335,13 +334,13 @@ body {
       flex-wrap: nowrap;
 }
 
-/* line 116, src/sass/components/_navigation.scss */
+/* line 114, src/sass/components/_navigation.scss */
 .sort > div {
   margin-right: 40px;
   cursor: pointer;
 }
 
-/* line 120, src/sass/components/_navigation.scss */
+/* line 118, src/sass/components/_navigation.scss */
 .sort span {
   cursor: pointer;
   border: 1px solid #ccc;
@@ -349,7 +348,7 @@ body {
   padding: 4px 15px;
 }
 
-/* line 126, src/sass/components/_navigation.scss */
+/* line 124, src/sass/components/_navigation.scss */
 .sort span:after {
   content: '↓';
   color: #ccc;
@@ -358,7 +357,7 @@ body {
   top: -2px;
 }
 
-/* line 136, src/sass/components/_navigation.scss */
+/* line 134, src/sass/components/_navigation.scss */
 #venue-list, #date-list, #artist-list {
   overflow: hidden;
   max-width: 600px;
@@ -377,7 +376,7 @@ body {
       flex-wrap: wrap;
 }
 
-/* line 150, src/sass/components/_navigation.scss */
+/* line 148, src/sass/components/_navigation.scss */
 #venue-list > div, #date-list > div, #artist-list > div {
   padding: 7px 12px;
   font-size: 14px !important;
@@ -385,12 +384,12 @@ body {
   border-radius: 2px;
 }
 
-/* line 155, src/sass/components/_navigation.scss */
+/* line 153, src/sass/components/_navigation.scss */
 #venue-list > div:hover, #date-list > div:hover, #artist-list > div:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* line 161, src/sass/components/_navigation.scss */
+/* line 159, src/sass/components/_navigation.scss */
 #venue-list.visibile,
 #artist-list.visibile,
 #date-list.visibile {
