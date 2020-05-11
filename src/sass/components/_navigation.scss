@@ -1,164 +1,161 @@
-
 /*=======================================
 =            Search and Form            =
 =======================================*/
 
 #form-search {
-	margin: 20px 10px;
-	display: flex;
-	position: relative;
-	color: #767679;
-	justify-content: space-between;
+    margin: 20px 10px;
+    display: flex;
+    position: relative;
+    color: #767679;
+    justify-content: space-between;
 
-	
-	&:before {
-		content: '';
-		background: url('../svg/icon-search.svg');
-		background-size: 27px 27px;
-		position: absolute;
-		left: 12px;
-		top: 5px;
-		width: 30px;
-		height: 30px;
-		z-index: 999;
-	}
+    &:before {
+        content: "";
+        background: url("../svg/icon-search.svg");
+        background-size: 27px 27px;
+        position: absolute;
+        left: 12px;
+        top: 5px;
+        width: 30px;
+        height: 30px;
+        z-index: 999;
+    }
 
-	label {
-		position: absolute;
-		left: -999px;
-		top: -999px;
-	}
-	input {
-		padding: 10px 30px 10px 50px;
-		width: 50%;
-		// border-radius: 5px;
-		border: 1px solid #fff;
-		background: #eee;
-		// border-radius: 50px;
-		transition: all .15s ease-in-out;
-		position: relative;
-		display: block;
-		color: #767679;
-		@include media($tablet) {
-			width: 80%;
-		}
+    label {
+        position: absolute;
+        left: -999px;
+        top: -999px;
+    }
+    input {
+        padding: 10px 30px 10px 50px;
+        width: 50%;
+        // border-radius: 5px;
+        border: 1px solid #fff;
+        background: #eee;
+        // border-radius: 50px;
+        transition: all 0.15s ease-in-out;
+        position: relative;
+        display: block;
+        color: #767679;
+        @include media($tablet) {
+            width: 80%;
+        }
 
-		&:focus{
-			border: 1px solid #ccc;
-			background: #fff;
-		}
-	}
-	button {
-		margin-left: 10px;
-		width: 20%;
-		min-width: 100px;
-		border: 1px solid #ccc;
-		background-color: #eee;
-		// border-radius: 50px;
-		border: 1px solid #fff;
-		cursor: pointer;
-		color: #767679;
-		&:hover {
-			border: 1px solid #ccc;
-		}
-	}
+        &:focus {
+            border: 1px solid #ccc;
+            background: #fff;
+        }
+    }
+    button {
+        margin-left: 10px;
+        width: 20%;
+        min-width: 100px;
+        border: 1px solid #ccc;
+        background-color: #eee;
+        // border-radius: 50px;
+        border: 1px solid #fff;
+        cursor: pointer;
+        color: #767679;
+        &:hover {
+            border: 1px solid #ccc;
+        }
+    }
 }
 
-
 .seach-all {
-	position: relative;
+    position: relative;
 }
 
 #searchresults p {
-	font-size: 14px;
-	text-align: center;
-	padding: 2px 15px;
-	border: 1px solid pink;
-	border-left: 5px solid pink;
-	color: pink;
-	margin: 0 10px;
+    font-size: 14px;
+    text-align: center;
+    padding: 2px 15px;
+    border: 1px solid pink;
+    border-left: 5px solid pink;
+    color: pink;
+    margin: 0 10px;
 }
 
 #clearSearch {
-	font-size: 12px;
-	text-align: right;
-	// padding: 2px 15px;
-	margin: 0 10px;
-	color: #a70000;
-	display: none;
-	position: absolute;
-	right: 5px;
-	&.visible {
-		display: block;
-	}	
-	span {
-		top: 0px;
-		right: 0px;
-		font-size: 60px;
-		color: pink;
-	}
+    font-size: 12px;
+    text-align: right;
+    // padding: 2px 15px;
+    margin: 0 10px;
+    color: #a70000;
+    display: none;
+    position: absolute;
+    right: 5px;
+    &.visible {
+        display: block;
+    }
+    span {
+        top: 0px;
+        right: 0px;
+        font-size: 60px;
+        color: pink;
+    }
 }
-
 
 /*==========================================
 =            Navigation Toggles            =
 ==========================================*/
 
-
 .sort {
-	padding: 10px 10px 0px 10px;
-	position: relative;
-	display: flex;
-	flex-wrap: nowrap;
-	// justify-content: space-between;
-	> div {
-		margin-right: 40px;
-		cursor: pointer;
-	}
-	span {
-		cursor: pointer;
-		border: 1px solid #ccc;
-		// border-radius: 4px;
-		font-size: 14px;
-		padding: 4px 15px;
-		&:after {
-			content: '↓';
-			color: #ccc;
-			margin-left: 5px;
-			position: relative;
-			top: -2px;
-		}
-	}
+    padding: 10px 10px 0px 10px;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    // justify-content: space-between;
+    > div {
+        margin-right: 40px;
+        cursor: pointer;
+    }
+    span {
+        cursor: pointer;
+        border: 1px solid #ccc;
+        // border-radius: 4px;
+        font-size: 14px;
+        padding: 4px 15px;
+        &:after {
+            content: "↓";
+            color: #ccc;
+            margin-left: 5px;
+            position: relative;
+            top: -2px;
+        }
+    }
 }
 
-#venue-list, #date-list, #artist-list {
-	overflow: hidden;
-	max-width: 600px;
-	position: absolute;
-	right: 0px;
-	left: 0px;
-	top: 40px;
-	z-index: 9999;
-	background: #000;
-	color: #fff;
-	height: 0;
-	// border-radius: 4px;
-	display: flex; 
-	flex-wrap: wrap;
-	> div {
-		padding: 7px 12px;
-		font-size: 14px !important;
-		line-height: 16px;
-		border-radius: 2px;
-		&:hover {
-			background: rgba(#fff, .2);
-		}
-	}
+#venue-list,
+#date-list,
+#artist-list {
+    overflow: hidden;
+    max-width: 600px;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 40px;
+    z-index: 9999;
+    background: #000;
+    color: #fff;
+    height: 0;
+    // border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    > div {
+        padding: 10px 12px;
+        font-size: 16px !important;
+        line-height: 18px;
+        border-radius: 2px;
+        &:hover {
+            background: rgba(#fff, 0.2);
+        }
+    }
 }
 
 #venue-list.visibile,
 #artist-list.visibile,
 #date-list.visibile {
-	padding: 10px 5px;
-	height: auto;
+    padding: 10px 5px;
+    height: auto;
 }

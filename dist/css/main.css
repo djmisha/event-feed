@@ -62,17 +62,15 @@ body {
 /* line 18, src/sass/components/_feed.scss */
 .single-event {
   text-align: left;
-  padding: 20px 150px 30px 20px;
-  margin: 20px 0px;
+  padding: 15px 20px 15px 20px;
+  margin: 0px 0px;
   position: relative;
   background-color: #fff;
-  min-height: 190px;
-  -webkit-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
   position: relative;
   top: 0;
-  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid whitesmoke;
 }
 
 @media only screen and (min-width: 768px) {
@@ -107,15 +105,27 @@ body {
   display: none;
 }
 
-/* line 53, src/sass/components/_feed.scss */
+/* line 51, src/sass/components/_feed.scss */
+.single-event:nth-of-type(odd) {
+  background-color: whitesmoke;
+}
+
+/* line 56, src/sass/components/_feed.scss */
 .event-date {
   font-size: 16px;
   line-height: 16px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   color: #767679;
 }
 
-/* line 60, src/sass/components/_feed.scss */
+@media only screen and (min-width: 768px) {
+  /* line 56, src/sass/components/_feed.scss */
+  .event-date {
+    padding-bottom: 20px;
+  }
+}
+
+/* line 66, src/sass/components/_feed.scss */
 .event-title {
   font-size: 18px;
   line-height: 20px;
@@ -124,27 +134,35 @@ body {
   color: #767679;
 }
 
-/* line 68, src/sass/components/_feed.scss */
+/* line 74, src/sass/components/_feed.scss */
 .event-artist {
   word-wrap: anywhere;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
   line-height: 24px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   text-align: left;
+  margin-right: 100px;
 }
 
-/* line 78, src/sass/components/_feed.scss */
+@media only screen and (min-width: 768px) {
+  /* line 74, src/sass/components/_feed.scss */
+  .event-artist {
+    padding-bottom: 20px;
+  }
+}
+
+/* line 88, src/sass/components/_feed.scss */
 .artist {
   display: inline-block;
   text-align: left;
 }
 
-/* line 83, src/sass/components/_feed.scss */
+/* line 93, src/sass/components/_feed.scss */
 .event-image {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background-size: cover;
   position: absolute;
   right: 20px;
@@ -154,21 +172,33 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 83, src/sass/components/_feed.scss */
+  /* line 93, src/sass/components/_feed.scss */
   .event-image {
     width: 140px;
     height: 140px;
   }
 }
 
-/* line 98, src/sass/components/_feed.scss */
+/* line 108, src/sass/components/_feed.scss */
 .event-venue {
   display: inline-block;
   font-size: 18px;
   line-height: 20px;
 }
 
-/* line 104, src/sass/components/_feed.scss */
+/* line 114, src/sass/components/_feed.scss */
+.event-location {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 114, src/sass/components/_feed.scss */
+  .event-location {
+    display: block;
+  }
+}
+
+/* line 121, src/sass/components/_feed.scss */
 .event-location span {
   padding-top: 5px;
   display: block;
@@ -176,27 +206,34 @@ body {
   line-height: 14px;
 }
 
-/* line 109, src/sass/components/_feed.scss */
+/* line 126, src/sass/components/_feed.scss */
 .event-location span a {
   color: #c1c1c1;
 }
 
-/* line 114, src/sass/components/_feed.scss */
+/* line 131, src/sass/components/_feed.scss */
 .event-link a {
-  margin-top: 30px;
   font-size: 14px;
   color: #767679;
-  padding: 5px 30px;
-  display: inline-block;
   text-decoration: none;
-  border: none;
   background: #eee;
-  -webkit-box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
   border: 1px solid #ccc;
+  display: none;
 }
 
-/* line 128, src/sass/components/_feed.scss */
+@media only screen and (min-width: 768px) {
+  /* line 131, src/sass/components/_feed.scss */
+  .event-link a {
+    border: none;
+    -webkit-box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+    padding: 5px 30px;
+    display: inline-block;
+    margin-top: 30px;
+  }
+}
+
+/* line 145, src/sass/components/_feed.scss */
 .event-link a:hover {
   text-decoration: none !important;
 }
@@ -204,7 +241,7 @@ body {
 /*=======================================
 =            Search and Form            =
 =======================================*/
-/* line 6, src/sass/components/_navigation.scss */
+/* line 5, src/sass/components/_navigation.scss */
 #form-search {
   margin: 20px 10px;
   display: -webkit-box;
@@ -217,9 +254,9 @@ body {
           justify-content: space-between;
 }
 
-/* line 14, src/sass/components/_navigation.scss */
+/* line 12, src/sass/components/_navigation.scss */
 #form-search:before {
-  content: '';
+  content: "";
   background: url("../svg/icon-search.svg");
   background-size: 27px 27px;
   position: absolute;
@@ -230,40 +267,40 @@ body {
   z-index: 999;
 }
 
-/* line 26, src/sass/components/_navigation.scss */
+/* line 24, src/sass/components/_navigation.scss */
 #form-search label {
   position: absolute;
   left: -999px;
   top: -999px;
 }
 
-/* line 31, src/sass/components/_navigation.scss */
+/* line 29, src/sass/components/_navigation.scss */
 #form-search input {
   padding: 10px 30px 10px 50px;
   width: 50%;
   border: 1px solid #fff;
   background: #eee;
-  -webkit-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
   position: relative;
   display: block;
   color: #767679;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 31, src/sass/components/_navigation.scss */
+  /* line 29, src/sass/components/_navigation.scss */
   #form-search input {
     width: 80%;
   }
 }
 
-/* line 46, src/sass/components/_navigation.scss */
+/* line 44, src/sass/components/_navigation.scss */
 #form-search input:focus {
   border: 1px solid #ccc;
   background: #fff;
 }
 
-/* line 51, src/sass/components/_navigation.scss */
+/* line 49, src/sass/components/_navigation.scss */
 #form-search button {
   margin-left: 10px;
   width: 20%;
@@ -275,17 +312,17 @@ body {
   color: #767679;
 }
 
-/* line 61, src/sass/components/_navigation.scss */
+/* line 59, src/sass/components/_navigation.scss */
 #form-search button:hover {
   border: 1px solid #ccc;
 }
 
-/* line 68, src/sass/components/_navigation.scss */
+/* line 65, src/sass/components/_navigation.scss */
 .seach-all {
   position: relative;
 }
 
-/* line 72, src/sass/components/_navigation.scss */
+/* line 69, src/sass/components/_navigation.scss */
 #searchresults p {
   font-size: 14px;
   text-align: center;
@@ -296,7 +333,7 @@ body {
   margin: 0 10px;
 }
 
-/* line 82, src/sass/components/_navigation.scss */
+/* line 79, src/sass/components/_navigation.scss */
 #clearSearch {
   font-size: 12px;
   text-align: right;
@@ -307,12 +344,12 @@ body {
   right: 5px;
 }
 
-/* line 91, src/sass/components/_navigation.scss */
+/* line 88, src/sass/components/_navigation.scss */
 #clearSearch.visible {
   display: block;
 }
 
-/* line 94, src/sass/components/_navigation.scss */
+/* line 91, src/sass/components/_navigation.scss */
 #clearSearch span {
   top: 0px;
   right: 0px;
@@ -323,7 +360,7 @@ body {
 /*==========================================
 =            Navigation Toggles            =
 ==========================================*/
-/* line 108, src/sass/components/_navigation.scss */
+/* line 103, src/sass/components/_navigation.scss */
 .sort {
   padding: 10px 10px 0px 10px;
   position: relative;
@@ -334,13 +371,13 @@ body {
       flex-wrap: nowrap;
 }
 
-/* line 114, src/sass/components/_navigation.scss */
+/* line 109, src/sass/components/_navigation.scss */
 .sort > div {
   margin-right: 40px;
   cursor: pointer;
 }
 
-/* line 118, src/sass/components/_navigation.scss */
+/* line 113, src/sass/components/_navigation.scss */
 .sort span {
   cursor: pointer;
   border: 1px solid #ccc;
@@ -348,17 +385,19 @@ body {
   padding: 4px 15px;
 }
 
-/* line 124, src/sass/components/_navigation.scss */
+/* line 119, src/sass/components/_navigation.scss */
 .sort span:after {
-  content: '↓';
+  content: "↓";
   color: #ccc;
   margin-left: 5px;
   position: relative;
   top: -2px;
 }
 
-/* line 134, src/sass/components/_navigation.scss */
-#venue-list, #date-list, #artist-list {
+/* line 129, src/sass/components/_navigation.scss */
+#venue-list,
+#date-list,
+#artist-list {
   overflow: hidden;
   max-width: 600px;
   position: absolute;
@@ -376,20 +415,24 @@ body {
       flex-wrap: wrap;
 }
 
-/* line 148, src/sass/components/_navigation.scss */
-#venue-list > div, #date-list > div, #artist-list > div {
-  padding: 7px 12px;
-  font-size: 14px !important;
-  line-height: 16px;
+/* line 145, src/sass/components/_navigation.scss */
+#venue-list > div,
+#date-list > div,
+#artist-list > div {
+  padding: 10px 12px;
+  font-size: 16px !important;
+  line-height: 18px;
   border-radius: 2px;
 }
 
-/* line 153, src/sass/components/_navigation.scss */
-#venue-list > div:hover, #date-list > div:hover, #artist-list > div:hover {
+/* line 150, src/sass/components/_navigation.scss */
+#venue-list > div:hover,
+#date-list > div:hover,
+#artist-list > div:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* line 159, src/sass/components/_navigation.scss */
+/* line 156, src/sass/components/_navigation.scss */
 #venue-list.visibile,
 #artist-list.visibile,
 #date-list.visibile {

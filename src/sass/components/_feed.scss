@@ -3,130 +3,146 @@
 ==================================*/
 
 #evenfeed {
-	padding: 0;
-	@include media(650px) {
-		padding: 0;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-gap: 1rem;
-	}
-	@include media($desktop) {
-		grid-template-columns: repeat(3, 1fr);
-	}
+    padding: 0;
+    @include media(650px) {
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+    @include media($desktop) {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .single-event {
-	text-align: left;
-	padding: 20px 150px 30px 20px;
-	margin: 20px 0px;
-	position: relative;
-	// border-radius: 17px;
-	background-color: #fff;
-	min-height: 190px;
-	transition: all .15s ease-in-out;
-	position: relative;
-	top: 0;
-		box-shadow: 0px 2px 4px rgba(#000, .3);
-	// border-bottom: ;
-	@include media($tablet) {
-		box-shadow: 0px 3px 7px rgba(#000, .3);
-		padding: 20px 190px 30px 20px;
-		margin: 30px 10px;
-	}
-	@include media($desktop) {
-	}
-	&:hover {
-		box-shadow: 5px 5px 23px #d4d4d4, -5px -5px 23px #ffffff;
-	}
-	a {
-		color: #767679;
-		text-decoration: none;
-		&:hover {
-			text-decoration: underline !important;
-		}
-	}
-	&.hidden {
-		display: none;
-	}
+    text-align: left;
+    padding: 15px 20px 15px 20px;
+    margin: 0px 0px;
+    position: relative;
+    // border-radius: 17px;
+    background-color: #fff;
+    // min-height: 190px;
+    transition: all 0.15s ease-in-out;
+    position: relative;
+    top: 0;
+    border-bottom: 1px solid rgb(245, 245, 245);
+    // box-shadow: 0px 2px 4px rgba(#000, 0.3);
+    @include media($tablet) {
+        box-shadow: 0px 3px 7px rgba(#000, 0.3);
+        padding: 20px 190px 30px 20px;
+        margin: 30px 10px;
+    }
+    @include media($desktop) {
+    }
+    &:hover {
+        box-shadow: 5px 5px 23px #d4d4d4, -5px -5px 23px #ffffff;
+    }
+    a {
+        color: #767679;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline !important;
+        }
+    }
+    &.hidden {
+        display: none;
+    }
+    &:nth-of-type(odd) {
+        background-color: rgb(245, 245, 245);
+    }
 }
 
 .event-date {
-	font-size: 16px;
-	line-height: 16px;
-	padding-bottom: 20px;
-	color: #767679;
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 10px;
+    color: #767679;
+    @include media($tablet) {
+        padding-bottom: 20px;
+    }
 }
 
 .event-title {
-	font-size: 18px;
-	line-height: 20px;
-	padding-bottom: 5px;
-	font-style: italic;
-	color: #767679;
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 5px;
+    font-style: italic;
+    color: #767679;
 }
 
 .event-artist {
-	word-wrap: anywhere;
-	font-weight: 700;
-	text-transform: uppercase;
-	font-size: 22px;
-	line-height: 24px;
-	padding-bottom: 20px;
-	text-align: left;
+    word-wrap: anywhere;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 24px;
+    padding-bottom: 10px;
+    text-align: left;
+    margin-right: 100px;
+    @include media($tablet) {
+        padding-bottom: 20px;
+    }
 }
 
 .artist {
-	display: inline-block;
-	text-align: left;
+    display: inline-block;
+    text-align: left;
 }
 
 .event-image {
-	width: 100px;
-	height: 100px;
-	background-size: cover;
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	margin-bottom: 30px;
-	border-radius: 5px;
-	@include media($tablet) {
-		width: 140px;
-		height: 140px;
-	}
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    @include media($tablet) {
+        width: 140px;
+        height: 140px;
+    }
 }
 
 .event-venue {
-	display: inline-block;
-	font-size: 18px;
-	line-height: 20px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.event-location {
+    display: none;
+    @include media($tablet) {
+        display: block;
+    }
 }
 
 .event-location span {
-	padding-top: 5px;
-	display: block;
-	font-size: 12px;
-	line-height: 14px;
-	a {
-		color: #c1c1c1;
-	}
+    padding-top: 5px;
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+    a {
+        color: #c1c1c1;
+    }
 }
 
 .event-link a {
-	margin-top: 30px;
-	font-size: 14px;
-	color: #767679;
-	padding: 5px 30px;
-	display: inline-block;
-	text-decoration: none;
-	// border-radius: 5px;
-	border: none;
-	background: #eee;
-	box-shadow: 0px 3px 7px rgba(#000, .1);
-	// border: 1px solid #eee;
-	// box-shadow: 5px 5px 23px #d4d4d4, -5px -5px 23px #ffffff;
-	border: 1px solid #ccc;
-	&:hover {
-		text-decoration: none !important;
-	}
+    font-size: 14px;
+    color: #767679;
+    text-decoration: none;
+    background: #eee;
+    border: 1px solid #ccc;
+    display: none;
+    @include media($tablet) {
+        border: none;
+        box-shadow: 0px 3px 7px rgba(#000, 0.1);
+        padding: 5px 30px;
+        display: inline-block;
+        margin-top: 30px;
+    }
+    &:hover {
+        text-decoration: none !important;
+    }
 }
-
