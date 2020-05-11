@@ -149,17 +149,18 @@ body {
 @media only screen and (min-width: 768px) {
   /* line 74, src/sass/components/_feed.scss */
   .event-artist {
+    margin-right: 0px;
     padding-bottom: 20px;
   }
 }
 
-/* line 88, src/sass/components/_feed.scss */
+/* line 89, src/sass/components/_feed.scss */
 .artist {
   display: inline-block;
   text-align: left;
 }
 
-/* line 93, src/sass/components/_feed.scss */
+/* line 94, src/sass/components/_feed.scss */
 .event-image {
   width: 80px;
   height: 80px;
@@ -172,33 +173,33 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 93, src/sass/components/_feed.scss */
+  /* line 94, src/sass/components/_feed.scss */
   .event-image {
     width: 140px;
     height: 140px;
   }
 }
 
-/* line 108, src/sass/components/_feed.scss */
+/* line 109, src/sass/components/_feed.scss */
 .event-venue {
   display: inline-block;
   font-size: 18px;
   line-height: 20px;
 }
 
-/* line 114, src/sass/components/_feed.scss */
+/* line 115, src/sass/components/_feed.scss */
 .event-location {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 114, src/sass/components/_feed.scss */
+  /* line 115, src/sass/components/_feed.scss */
   .event-location {
     display: block;
   }
 }
 
-/* line 121, src/sass/components/_feed.scss */
+/* line 122, src/sass/components/_feed.scss */
 .event-location span {
   padding-top: 5px;
   display: block;
@@ -206,12 +207,12 @@ body {
   line-height: 14px;
 }
 
-/* line 126, src/sass/components/_feed.scss */
+/* line 127, src/sass/components/_feed.scss */
 .event-location span a {
   color: #c1c1c1;
 }
 
-/* line 131, src/sass/components/_feed.scss */
+/* line 132, src/sass/components/_feed.scss */
 .event-link a {
   font-size: 14px;
   color: #767679;
@@ -222,7 +223,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 131, src/sass/components/_feed.scss */
+  /* line 132, src/sass/components/_feed.scss */
   .event-link a {
     border: none;
     -webkit-box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
@@ -233,7 +234,7 @@ body {
   }
 }
 
-/* line 145, src/sass/components/_feed.scss */
+/* line 146, src/sass/components/_feed.scss */
 .event-link a:hover {
   text-decoration: none !important;
 }
@@ -294,13 +295,13 @@ body {
   }
 }
 
-/* line 44, src/sass/components/_navigation.scss */
+/* line 41, src/sass/components/_navigation.scss */
 #form-search input:focus {
   border: 1px solid #ccc;
   background: #fff;
 }
 
-/* line 49, src/sass/components/_navigation.scss */
+/* line 46, src/sass/components/_navigation.scss */
 #form-search button {
   margin-left: 10px;
   width: 20%;
@@ -312,55 +313,54 @@ body {
   color: #767679;
 }
 
-/* line 59, src/sass/components/_navigation.scss */
+/* line 56, src/sass/components/_navigation.scss */
 #form-search button:hover {
   border: 1px solid #ccc;
 }
 
-/* line 65, src/sass/components/_navigation.scss */
+/* line 62, src/sass/components/_navigation.scss */
 .seach-all {
   position: relative;
 }
 
-/* line 69, src/sass/components/_navigation.scss */
+/* line 66, src/sass/components/_navigation.scss */
 #searchresults p {
   font-size: 14px;
   text-align: center;
   padding: 2px 15px;
-  border: 1px solid pink;
-  border-left: 5px solid pink;
-  color: pink;
+  border: 1px solid #f09dab;
+  border-left: 5px solid #f09dab;
+  color: #f09dab;
   margin: 0 10px;
 }
 
-/* line 79, src/sass/components/_navigation.scss */
+/* line 76, src/sass/components/_navigation.scss */
 #clearSearch {
   font-size: 12px;
   text-align: right;
   margin: 0 10px;
-  color: #a70000;
   display: none;
   position: absolute;
   right: 5px;
 }
 
-/* line 88, src/sass/components/_navigation.scss */
+/* line 83, src/sass/components/_navigation.scss */
 #clearSearch.visible {
   display: block;
 }
 
-/* line 91, src/sass/components/_navigation.scss */
+/* line 86, src/sass/components/_navigation.scss */
 #clearSearch span {
   top: 0px;
   right: 0px;
   font-size: 60px;
-  color: pink;
+  color: #f09dab;
 }
 
 /*==========================================
 =            Navigation Toggles            =
 ==========================================*/
-/* line 103, src/sass/components/_navigation.scss */
+/* line 98, src/sass/components/_navigation.scss */
 .sort {
   padding: 10px 10px 0px 10px;
   position: relative;
@@ -371,13 +371,13 @@ body {
       flex-wrap: nowrap;
 }
 
-/* line 109, src/sass/components/_navigation.scss */
+/* line 104, src/sass/components/_navigation.scss */
 .sort > div {
   margin-right: 40px;
   cursor: pointer;
 }
 
-/* line 113, src/sass/components/_navigation.scss */
+/* line 108, src/sass/components/_navigation.scss */
 .sort span {
   cursor: pointer;
   border: 1px solid #ccc;
@@ -385,7 +385,7 @@ body {
   padding: 4px 15px;
 }
 
-/* line 119, src/sass/components/_navigation.scss */
+/* line 114, src/sass/components/_navigation.scss */
 .sort span:after {
   content: "↓";
   color: #ccc;
@@ -394,7 +394,7 @@ body {
   top: -2px;
 }
 
-/* line 129, src/sass/components/_navigation.scss */
+/* line 124, src/sass/components/_navigation.scss */
 #venue-list,
 #date-list,
 #artist-list {
@@ -415,7 +415,7 @@ body {
       flex-wrap: wrap;
 }
 
-/* line 145, src/sass/components/_navigation.scss */
+/* line 140, src/sass/components/_navigation.scss */
 #venue-list > div,
 #date-list > div,
 #artist-list > div {
@@ -425,14 +425,14 @@ body {
   border-radius: 2px;
 }
 
-/* line 150, src/sass/components/_navigation.scss */
+/* line 145, src/sass/components/_navigation.scss */
 #venue-list > div:hover,
 #date-list > div:hover,
 #artist-list > div:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* line 156, src/sass/components/_navigation.scss */
+/* line 151, src/sass/components/_navigation.scss */
 #venue-list.visibile,
 #artist-list.visibile,
 #date-list.visibile {

@@ -2,17 +2,18 @@
  * @section Variables
  */
 
+$white: #fff;
+$black: #000;
 
- $white: #fff;
- $black: #000;
+$blue: #0c0b68;
+$lightBlue: #006fcf;
+$lighterBlue: rgba(0, 111, 207, 0.1);
+$darkBlue: #021a58;
 
- $blue: #0C0B68;
- $lightBlue: #006FCF;
- $lighterBlue: rgba(0,111,207,0.1);
- $darkBlue: #021a58;
+$pink: rgb(240, 157, 171);
 
- $red: #CF0000;
- $textColor : #00175A;
+$red: #cf0000;
+$textColor: #00175a;
 
 // Media Query break points
 
@@ -29,15 +30,14 @@ $ipadpro-max: 1366px;
 $ipad: ipads;
 $ipads: ipads;
 
-
 /*Lazy Loading */
 
 .b-lazy {
-	transition: opacity 500ms ease-in-out;
-	max-width: 100%;
-	opacity: 0;
+    transition: opacity 500ms ease-in-out;
+    max-width: 100%;
+    opacity: 0;
 }
 
 .b-lazy.b-loaded {
-	opacity: 1;
+    opacity: 1;
 }

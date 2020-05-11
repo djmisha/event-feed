@@ -81,6 +81,7 @@
     text-align: left;
     margin-right: 100px;
     @include media($tablet) {
+        margin-right: 0px;
         padding-bottom: 20px;
     }
 }

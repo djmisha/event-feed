@@ -70,7 +70,7 @@ function requestImagesXHR() {
     http.open("GET", url);
     http.send();
 
-    console.log(http);
+    // console.log(http);
 
     http.onreadystatechange = function () {
         if (http.readyState === XMLHttpRequest.DONE && http.status === 200) {
@@ -228,7 +228,7 @@ function attachToPage() {
 
     dateArray = removeDuplicates(dateArray);
 
-    console.log(dateContainer);
+    // console.log(dateContainer);
 
     dateArray.forEach(function (date) {
         var element = document.createElement("div");
