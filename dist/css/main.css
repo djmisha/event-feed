@@ -79,7 +79,7 @@ body {
     -webkit-box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3);
     padding: 20px 190px 30px 20px;
-    margin: 30px 10px;
+    margin: 10px 10px;
   }
 }
 
@@ -229,7 +229,6 @@ body {
     -webkit-box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
     padding: 5px 30px;
-    display: inline-block;
     margin-top: 30px;
   }
 }
@@ -328,9 +327,9 @@ body {
   font-size: 14px;
   text-align: center;
   padding: 2px 15px;
-  border: 1px solid #f09dab;
-  border-left: 5px solid #f09dab;
-  color: #f09dab;
+  border: 1px solid #ed687f;
+  border-left: 5px solid #ed687f;
+  color: #ed687f;
   margin: 0 10px;
 }
 
@@ -354,7 +353,7 @@ body {
   top: 0px;
   right: 0px;
   font-size: 60px;
-  color: #f09dab;
+  color: #ed687f;
 }
 
 /*==========================================
@@ -380,7 +379,6 @@ body {
 /* line 108, src/sass/components/_navigation.scss */
 .sort span {
   cursor: pointer;
-  border: 1px solid #ccc;
   font-size: 14px;
   padding: 4px 15px;
 }
@@ -399,11 +397,13 @@ body {
 #date-list,
 #artist-list {
   overflow: hidden;
-  max-width: 600px;
+  width: 100vw;
+  height: 100vh;
+  max-width: 1280px;
   position: absolute;
   right: 0px;
   left: 0px;
-  top: 40px;
+  top: 50px;
   z-index: 9999;
   background: #000;
   color: #fff;
@@ -415,7 +415,7 @@ body {
       flex-wrap: wrap;
 }
 
-/* line 140, src/sass/components/_navigation.scss */
+/* line 141, src/sass/components/_navigation.scss */
 #venue-list > div,
 #date-list > div,
 #artist-list > div {
@@ -425,14 +425,14 @@ body {
   border-radius: 2px;
 }
 
-/* line 145, src/sass/components/_navigation.scss */
+/* line 146, src/sass/components/_navigation.scss */
 #venue-list > div:hover,
 #date-list > div:hover,
 #artist-list > div:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* line 151, src/sass/components/_navigation.scss */
+/* line 152, src/sass/components/_navigation.scss */
 #venue-list.visibile,
 #artist-list.visibile,
 #date-list.visibile {

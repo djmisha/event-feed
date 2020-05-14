@@ -107,7 +107,7 @@
     }
     span {
         cursor: pointer;
-        border: 1px solid #ccc;
+        // border: 1px solid #ccc;
         // border-radius: 4px;
         font-size: 14px;
         padding: 4px 15px;
@@ -125,16 +125,17 @@
 #date-list,
 #artist-list {
     overflow: hidden;
-    max-width: 600px;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1280px;
     position: absolute;
     right: 0px;
     left: 0px;
-    top: 40px;
+    top: 50px;
     z-index: 9999;
     background: #000;
     color: #fff;
     height: 0;
-    // border-radius: 4px;
     display: flex;
     flex-wrap: wrap;
     > div {

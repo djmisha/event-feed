@@ -1,55 +1,89 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>EDM Events House Music Techno Dance Clubs San Diego</title>
-	<meta name="viewport" content="maximum-scale=5.0, user-scalable=yes, width=device-width" />
-	<meta name="google-site-verification" content="Me3u2y7obUKYQhQRu7jyrLKEaksGmf9J3tTIKg7DGFg" />
-	<meta name="description"  content="Find EDM events clubs house music techno dance and more at on our event listing page. Explore now..." />
-	<link rel="canonical" href="https://events.sandiegohousemusic.com" />
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700&display=swap" rel="stylesheet"> 
+    <head>
+        <title>EDM Events House Music Techno Dance Clubs San Diego</title>
+        <meta
+            name="viewport"
+            content="maximum-scale=5.0, user-scalable=yes, width=device-width"
+        />
+        <meta
+            name="google-site-verification"
+            content="Me3u2y7obUKYQhQRu7jyrLKEaksGmf9J3tTIKg7DGFg"
+        />
+        <meta
+            name="description"
+            content="Find EDM events clubs house music techno dance and more at on our event listing page. Explore now..."
+        />
+        <link rel="canonical" href="https://events.sandiegohousemusic.com" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Oswald:200,400,700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-</head>
+    <body>
+        <section class="sort">
+            <div class="sort-artists">
+                <span id="drop-trigger">Artists</span>
+                <div id="artist-list"></div>
+            </div>
 
-<body>
-	
-	<section class="sort">
-		<div class="sort-venues">
-			<span id="drop-trigger">Venues</span>
-			<div id="venue-list"></div>
-		</div>
-	
- 		<div class="sort-artists">
-			<span id="drop-trigger">Artists</span>
-			<div id="artist-list"></div>
-		</div>
-	
-		<div class="sort-date">
-			<span id="drop-trigger">Dates</span>
-			<div id="date-list"></div>
-		</div> 
-	</section>
-	
-	<section class="search">
-		<form action="https://www.google.com/search" id="form-search">
-			<label for="input-search">search</label>
-			<input type="text" name="q" id="input-search" value="Search artist, venue, event...">
-			<button id="submit-search">Search</button>
-		</form>
-	</section>
+            <div class="sort-venues">
+                <span id="drop-trigger">Venues</span>
+                <div id="venue-list"></div>
+            </div>
 
-	<div class="search-all">
-		<div id="clearSearch"><span>&times;</span></div>
-		<section id="searchresults"></section>
-	</div>
+            <div class="sort-date">
+                <span id="drop-trigger">Dates</span>
+                <div id="date-list"></div>
+            </div>
 
-	<section id="evenfeed"></section>
+            <div class="sort-city">
+                <span id="drop-trigger">City</span>
+                <div id="city-list"></div>
+            </div>
+        </section>
 
-<!-- Scripts -->
-<script src="vendor/blazy.min.js"></script>
-<script src="js/config.min.js"></script>
-<script src="js/feed.min.js"></script>
-<script src="js/search.min.js"></script>
-	
-</body>
+        <section class="search">
+            <form action="https://www.google.com/search" id="form-search">
+                <label for="input-search">search</label>
+                <input
+                    type="text"
+                    name="search"
+                    id="input-search"
+                    value="Search artist, venue, event..."
+                />
+                <button id="submit-search">Search</button>
+            </form>
+        </section>
+
+        <div class="search-all">
+            <div id="clearSearch"><span>&times;</span></div>
+            <section id="searchresults"></section>
+        </div>
+
+        <section id="evenfeed"></section>
+
+        <!-- Scripts -->
+        <script src="vendor/blazy.min.js"></script>
+        <script src="js/config.min.js"></script>
+        <script src="js/feed.min.js"></script>
+        <script src="js/search.min.js"></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-115514301-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "UA-115514301-1");
+        </script>
+    </body>
 </html>

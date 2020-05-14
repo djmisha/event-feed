@@ -1,11 +1,13 @@
 /* Javascript Helper Function */
 
 /* Select an Element in the DOM */
+
 function get(selector) {
     return document.querySelector(selector);
 }
 
 /* Create Marup for an element with classes and content */
+
 function createMarkUp(elementType, classList, content) {
     element = document.createElement(elementType);
     if (classList.length > 0) {
@@ -28,6 +30,7 @@ function removeDuplicates(array) {
 var venueMenu = document.getElementById("venue-list");
 var artistMenu = document.getElementById("artist-list");
 var dateMenu = document.getElementById("date-list");
+var cityMenu = document.getElementById("city-list");
 
 function navToggles(menu) {
     toggler = menu.previousElementSibling;
@@ -46,6 +49,7 @@ function navToggles(menu) {
 navToggles(venueMenu);
 navToggles(artistMenu);
 navToggles(dateMenu);
+navToggles(cityMenu);
 
 /* Create Scope for Events*/
 
@@ -59,6 +63,10 @@ var theFeed = document.getElementById("evenfeed");
 
 /* Array to hold event data */
 var eventData = [];
+
+/* Locations Data */
+
+var locationsData = [];
 
 /* Array to hold Image Data */
 var imageData = [];
@@ -95,9 +103,72 @@ function requestImagesXHR() {
     }
 }
 
+/* Select City */
+
+/* Request Locations JSON */
+function requestLocationsXHR() {
+    var http = new XMLHttpRequest();
+    var url = "locations.json";
+    http.open("GET", url);
+    http.send();
+
+    // console.log(http);
+
+    http.onreadystatechange = function () {
+        if (http.readyState === XMLHttpRequest.DONE && http.status === 200) {
+            var PostResponce = JSON.parse(http.responseText);
+            /*Puts the Data into our array*/
+            parseLocationsData(PostResponce);
+            /*Attaches the data to the page*/
+            console.log(PostResponce);
+        }
+    };
+
+    function parseLocationsData(result) {
+        // console.log(result);
+        var data = result;
+        for (var g = 0; g < result.length; g++) {
+            // console.log(result[g].city);
+            // Create Event Object
+            var singleLocationsListing = {
+                id: result[g].id,
+                city: result[g].city,
+                state: result[g].state,
+            };
+
+            locationsData.push(singleLocationsListing);
+        }
+    }
+}
+
+/* Loop throught Locations and attach them to page */
+
+var cityContainer = document.getElementById("city-list");
+var cityArray = [];
+
+console.log(locationsData.length);
+
+for (var i = 0; i < locationsData.length; i++) {
+    console.log("testing");
+}
+
+locationsData.forEach(function (item) {
+    var city = item.city;
+    cityArray.push(city);
+});
+
+// cityArray = removeDuplicates(cityArray);
+// console.log(cityArray);
+locationsData.forEach(function (city) {
+    var cityElement = document.createElement("div");
+    cityElement.innerHTML = city;
+    cityContainer.appendChild(cityElement);
+    cityElement.addEventListener("click", manualSearch);
+});
+
 /* Request Events JSON */
 
-function requestEventsXHR() {
+function requestEventsXHR(city) {
     var http = new XMLHttpRequest();
     var url =
         "https://edmtrain.com/api/events?locationIds=81&client=" +
@@ -272,8 +343,6 @@ function listArtists(event) {
     }
 }
 
-// var artistArray = listArtists(eventData);
-// console.log(artistArray);
 /* function to Check for Event name*/
 
 function checkEventName(event) {
@@ -294,6 +363,8 @@ function matchImageswithEvents(images, id) {
         }
     }
 }
+
+/* Create MarkupForEvent */
 
 function createMarkUpforEvent(event) {
     var id = event.id;
@@ -342,6 +413,7 @@ function createMarkUpforEvent(event) {
 
 /* Initialize our App */
 if (theFeed) {
+    requestLocationsXHR();
     requestImagesXHR();
     requestEventsXHR();
 }
