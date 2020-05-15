@@ -38,10 +38,10 @@ function navToggles(menu) {
 
     function showHideDropdown() {
         // var menu = document.getElementById('venue-list');
-        if (menu.classList.contains("visibile")) {
-            menu.classList.remove("visibile");
+        if (menu.classList.contains("visible")) {
+            menu.classList.remove("visible");
         } else {
-            menu.classList.add("visibile");
+            menu.classList.add("visible");
         }
     }
 }
@@ -119,59 +119,33 @@ function requestLocationsXHR() {
             var PostResponce = JSON.parse(http.responseText);
             /*Puts the Data into our array*/
             parseLocationsData(PostResponce);
-            /*Attaches the data to the page*/
-            console.log(PostResponce);
         }
     };
 
     function parseLocationsData(result) {
-        // console.log(result);
         var data = result;
         for (var g = 0; g < result.length; g++) {
-            // console.log(result[g].city);
-            // Create Event Object
+            // Create Location Object
             var singleLocationsListing = {
                 id: result[g].id,
                 city: result[g].city,
                 state: result[g].state,
             };
-
             locationsData.push(singleLocationsListing);
         }
     }
 }
 
-/* Loop throught Locations and attach them to page */
-
-var cityContainer = document.getElementById("city-list");
-var cityArray = [];
-
-console.log(locationsData.length);
-
-for (var i = 0; i < locationsData.length; i++) {
-    console.log("testing");
-}
-
-locationsData.forEach(function (item) {
-    var city = item.city;
-    cityArray.push(city);
-});
-
-// cityArray = removeDuplicates(cityArray);
-// console.log(cityArray);
-locationsData.forEach(function (city) {
-    var cityElement = document.createElement("div");
-    cityElement.innerHTML = city;
-    cityContainer.appendChild(cityElement);
-    cityElement.addEventListener("click", manualSearch);
-});
-
 /* Request Events JSON */
 
-function requestEventsXHR(city) {
+function requestEventsXHR(cityID) {
+    theFeed.innerHTML = "";
+    eventData = [];
     var http = new XMLHttpRequest();
     var url =
-        "https://edmtrain.com/api/events?locationIds=81&client=" +
+        "https://edmtrain.com/api/events?locationIds=" +
+        cityID +
+        "&client=" +
         config.theGoods;
     http.open("GET", url);
     http.send();
@@ -182,6 +156,7 @@ function requestEventsXHR(city) {
             /*Puts the Data into our array*/
             parseData(PostResponce);
             /*Attaches the data to the page*/
+
             attachToPage();
 
             // console.log(PostResponce);
@@ -247,9 +222,39 @@ function attachToPage() {
         theFeed.appendChild(singleEventElement);
     }
 
+    /* Loop throught Locations and attach them to page */
+
+    var locationsContainer = document.getElementById("city-list");
+    locationsContainer.innerHTML = "";
+    var locationsArray = [];
+
+    locationsData.forEach(function (item) {
+        var location = {
+            id: item.id,
+            city: item.city,
+        };
+        if (location.city) {
+            locationsArray.push(location);
+        }
+    });
+
+    locationsArray.forEach(function (venue) {
+        var locationsElement = document.createElement("div");
+        locationsElement.innerHTML = venue.city;
+        locationsContainer.appendChild(locationsElement);
+        var ID = venue.id;
+        locationsElement.addEventListener("click", function (event) {
+            city = document.getElementById("city-list");
+            console.log(city.classList);
+            city.classList.remove("visible");
+            requestEventsXHR(ID);
+        });
+    });
+
     /* Loop throught Venues and attach them to page */
 
     var venueContainer = document.getElementById("venue-list");
+    venueContainer.innerHTML = "";
     var venueArray = [];
 
     eventData.forEach(function (item) {
@@ -266,7 +271,10 @@ function attachToPage() {
         venuleElement.addEventListener("click", manualSearch);
     });
 
+    /*  Artists  */
+
     var artistContainer = document.getElementById("artist-list");
+    artistContainer.innerHTML = "";
     artistArray = [];
     eventData.forEach(function (item) {
         var artist = item.artist;
@@ -313,7 +321,7 @@ function attachToPage() {
 
     function manualSearch() {
         console.log(this.parentElement);
-        this.parentElement.classList.remove("visibile");
+        this.parentElement.classList.remove("visible");
         // showHideDropdown();
         var searchInput = document.getElementById("input-search");
         var searchButton = document.getElementById("submit-search");
@@ -415,7 +423,7 @@ function createMarkUpforEvent(event) {
 if (theFeed) {
     requestLocationsXHR();
     requestImagesXHR();
-    requestEventsXHR();
+    requestEventsXHR(81);
 }
 
 // })();

@@ -100,9 +100,9 @@
     position: relative;
     display: flex;
     flex-wrap: nowrap;
-    // justify-content: space-between;
+    justify-content: space-between;
     > div {
-        margin-right: 40px;
+        // margin-right: 40px;
         cursor: pointer;
     }
     span {
@@ -123,7 +123,8 @@
 
 #venue-list,
 #date-list,
-#artist-list {
+#artist-list,
+#city-list {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
@@ -139,7 +140,7 @@
     display: flex;
     flex-wrap: wrap;
     > div {
-        padding: 10px 12px;
+        margin: 10px 12px;
         font-size: 16px !important;
         line-height: 18px;
         border-radius: 2px;
@@ -149,9 +150,10 @@
     }
 }
 
-#venue-list.visibile,
-#artist-list.visibile,
-#date-list.visibile {
+#venue-list.visible,
+#artist-list.visible,
+#city-list.visible,
+#date-list.visible {
     padding: 10px 5px;
     height: auto;
 }
