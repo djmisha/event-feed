@@ -378,14 +378,24 @@ body {
   cursor: pointer;
 }
 
+/* line 106, src/sass/components/_navigation.scss */
+.sort > div.visible span {
+  color: #ed687f;
+}
+
 /* line 108, src/sass/components/_navigation.scss */
+.sort > div.visible span:after {
+  color: #ed687f;
+}
+
+/* line 113, src/sass/components/_navigation.scss */
 .sort span {
   cursor: pointer;
   font-size: 14px;
   padding: 4px 15px;
 }
 
-/* line 114, src/sass/components/_navigation.scss */
+/* line 117, src/sass/components/_navigation.scss */
 .sort span:after {
   content: "↓";
   color: #ccc;
@@ -394,13 +404,13 @@ body {
   top: -2px;
 }
 
-/* line 124, src/sass/components/_navigation.scss */
+/* line 127, src/sass/components/_navigation.scss */
 #venue-list,
 #date-list,
 #artist-list,
 #city-list {
   overflow: hidden;
-  width: 100vw;
+  width: calc(100vw - 24px);
   height: 100vh;
   max-width: 1280px;
   position: absolute;
@@ -418,7 +428,7 @@ body {
       flex-wrap: wrap;
 }
 
-/* line 142, src/sass/components/_navigation.scss */
+/* line 145, src/sass/components/_navigation.scss */
 #venue-list > div,
 #date-list > div,
 #artist-list > div,
@@ -426,10 +436,9 @@ body {
   margin: 10px 12px;
   font-size: 16px !important;
   line-height: 18px;
-  border-radius: 2px;
 }
 
-/* line 147, src/sass/components/_navigation.scss */
+/* line 149, src/sass/components/_navigation.scss */
 #venue-list > div:hover,
 #date-list > div:hover,
 #artist-list > div:hover,
@@ -437,7 +446,7 @@ body {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* line 153, src/sass/components/_navigation.scss */
+/* line 155, src/sass/components/_navigation.scss */
 #venue-list.visible,
 #artist-list.visible,
 #city-list.visible,

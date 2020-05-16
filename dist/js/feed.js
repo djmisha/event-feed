@@ -26,7 +26,7 @@ function removeDuplicates(array) {
     return array.filter((a, b) => array.indexOf(a) === b);
 }
 
-// Navigations
+/* Prepare Navigations */
 
 var venueMenu = document.getElementById("venue-list");
 var artistMenu = document.getElementById("artist-list");
@@ -36,13 +36,15 @@ var cityMenu = document.getElementById("city-list");
 function navToggles(menu) {
     toggler = menu.previousElementSibling;
     toggler.addEventListener("click", showHideDropdown);
-
+    console.log(menu);
     function showHideDropdown() {
         // var menu = document.getElementById('venue-list');
         if (menu.classList.contains("visible")) {
             menu.classList.remove("visible");
+            menu.parentElement.classList.remove("visible");
         } else {
             menu.classList.add("visible");
+            menu.parentElement.classList.add("visible");
         }
     }
 }
@@ -66,13 +68,13 @@ var theFeed = document.getElementById("evenfeed");
 var eventData = [];
 
 /* Locations Data */
-
 var locationsData = [];
 
 /* Array to hold Image Data */
 var imageData = [];
 
 /* Request Images JSON */
+
 function requestImagesXHR() {
     var http = new XMLHttpRequest();
     var url = "images.json";
@@ -104,9 +106,8 @@ function requestImagesXHR() {
     }
 }
 
-/* Select City */
-
 /* Request Locations JSON */
+
 function requestLocationsXHR() {
     var http = new XMLHttpRequest();
     var url = "locations.json";
@@ -203,11 +204,7 @@ function attachToPage() {
 
     var bLazy = new Blazy({});
 
-    /* creates the HTML markup for each event */
-
-    // createMarkUpforEvent(event);
-
-    /* loop through all events and attach them to page */
+    /* loop through all event data and attach them to page */
 
     for (var i = 0; i < eventData.length; i++) {
         var singleEventElement = document.createElement("div");
@@ -223,6 +220,13 @@ function attachToPage() {
         theFeed.appendChild(singleEventElement);
     }
 
+    /* Create Sorting Navigation */
+    createSortingNavigations();
+}
+
+/* Create Navigations */
+
+function createSortingNavigations() {
     /* Loop throught Locations and attach them to page */
 
     var locationsContainer = document.getElementById("city-list");
@@ -244,10 +248,13 @@ function attachToPage() {
         locationsElement.innerHTML = venue.city;
         locationsContainer.appendChild(locationsElement);
         var ID = venue.id;
+        var theCity = venue.city;
         locationsElement.addEventListener("click", (function (event) {
             city = document.getElementById("city-list");
-            console.log(city.classList);
+            cityName = get(".sort-city #drop-trigger");
+            cityName.innerHTML = theCity;
             city.classList.remove("visible");
+            city.parentElement.classList.remove("visible");
             requestEventsXHR(ID);
         }));
     }));

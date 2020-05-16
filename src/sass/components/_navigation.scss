@@ -102,13 +102,16 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     > div {
-        // margin-right: 40px;
         cursor: pointer;
+        &.visible span {
+            color: $pink;
+            &:after {
+                color: $pink;
+            }
+        }
     }
     span {
         cursor: pointer;
-        // border: 1px solid #ccc;
-        // border-radius: 4px;
         font-size: 14px;
         padding: 4px 15px;
         &:after {
@@ -126,7 +129,7 @@
 #artist-list,
 #city-list {
     overflow: hidden;
-    width: 100vw;
+    width: calc(100vw - 24px);
     height: 100vh;
     max-width: 1280px;
     position: absolute;
@@ -143,7 +146,6 @@
         margin: 10px 12px;
         font-size: 16px !important;
         line-height: 18px;
-        border-radius: 2px;
         &:hover {
             background: rgba(#fff, 0.2);
         }
