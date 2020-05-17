@@ -27,35 +27,33 @@ function removeDuplicates(array) {
 
 /* Prepare Navigations */
 
-var venueMenu = document.getElementById("venue-list");
-var artistMenu = document.getElementById("artist-list");
-var dateMenu = document.getElementById("date-list");
-var cityMenu = document.getElementById("city-list");
+function navigationDropdowns() {
+    var venueMenu = document.getElementById("venue-list");
+    var artistMenu = document.getElementById("artist-list");
+    var dateMenu = document.getElementById("date-list");
+    var cityMenu = document.getElementById("city-list");
 
-function navToggles(menu) {
-    toggler = menu.previousElementSibling;
-    toggler.addEventListener("click", showHideDropdown);
-    console.log(menu);
-    function showHideDropdown() {
-        // var menu = document.getElementById('venue-list');
-        if (menu.classList.contains("visible")) {
-            menu.classList.remove("visible");
-            menu.parentElement.classList.remove("visible");
-        } else {
-            menu.classList.add("visible");
-            menu.parentElement.classList.add("visible");
+    function navToggles(menu) {
+        toggler = menu.previousElementSibling;
+        toggler.addEventListener("click", showHideDropdown);
+
+        function showHideDropdown() {
+            if (menu.classList.contains("visible")) {
+                menu.classList.remove("visible");
+                menu.parentElement.classList.remove("visible");
+            } else {
+                menu.classList.add("visible");
+                menu.parentElement.classList.add("visible");
+            }
         }
     }
+    navToggles(venueMenu);
+    navToggles(artistMenu);
+    navToggles(dateMenu);
+    navToggles(cityMenu);
 }
 
-navToggles(venueMenu);
-navToggles(artistMenu);
-navToggles(dateMenu);
-navToggles(cityMenu);
-
-/* Create Scope for Events*/
-
-// ;(function() {
+/* Create Events*/
 
 /* Get todays date*/
 var todaysDate = Date.now();
@@ -159,8 +157,6 @@ function requestEventsXHR(cityID) {
             /*Attaches the data to the page*/
 
             attachToPage();
-
-            // console.log(PostResponce);
         }
     };
 
@@ -217,6 +213,17 @@ function attachToPage() {
 
         /*Attach To the page*/
         theFeed.appendChild(singleEventElement);
+
+        /* Add Event Click for more info frame */
+
+        singleEventElement.addEventListener("click", function (event) {
+            event.preventDefault();
+            console.log(event);
+            console.log(this);
+            // var body = get("body");
+            // var overlay = "tetst";
+            // body.appendChild(overlay);
+        });
     }
 
     /* Create Sorting Navigation */
@@ -431,6 +438,5 @@ if (theFeed) {
     requestLocationsXHR();
     requestImagesXHR();
     requestEventsXHR(81);
+    navigationDropdowns();
 }
-
-// })();

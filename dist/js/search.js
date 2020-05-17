@@ -9,7 +9,7 @@
     var form = get("#form-search");
     var input = get("#input-search");
     var resultList = get("#searchresults");
-    var clearSeach = get("#clearSearch");
+    var clearSeach = get("#searchresults");
 
     //
     // Methods
