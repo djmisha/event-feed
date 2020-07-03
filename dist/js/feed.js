@@ -26,7 +26,7 @@ function removeDuplicates(array) {
     return array.filter((a, b) => array.indexOf(a) === b);
 }
 
-/* Prepare Navigations */
+/* Prepare  Navigations */
 
 function navigationDropdowns() {
     var venueMenu = document.getElementById("venue-list");
