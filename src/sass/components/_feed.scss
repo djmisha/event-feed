@@ -17,7 +17,7 @@
 
 .single-event {
     text-align: left;
-    padding: 15px 20px 15px 20px;
+    padding: 50px 20px 50px 20px;
     margin: 0px 0px;
     position: relative;
     background-color: #fff;
@@ -51,7 +51,7 @@
             background-color: #fff;
         }
         @include media($desktop) {
-            background-color: rgb(245, 245, 245);
+            background-color: rgb(240, 239, 239);
         }
     }
 }
