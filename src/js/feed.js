@@ -156,7 +156,7 @@ function requestEventsXHR(cityID) {
             parseData(PostResponce);
             /*Attaches the data to the page*/
 
-            console.log(PostResponce);
+            // console.log(PostResponce);
 
             attachToPage();
         }
@@ -219,9 +219,9 @@ function attachToPage() {
         /* Add Event Click for more info frame */
 
         singleEventElement.addEventListener("click", function (event) {
-            event.preventDefault();
-            console.log(event);
-            console.log(this);
+            // event.preventDefault();
+            // console.log(event);
+            // console.log(this);
             // var body = get("body");
             // var overlay = "tetst";
             // body.appendChild(overlay);
