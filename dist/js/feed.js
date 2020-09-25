@@ -157,6 +157,8 @@ function requestEventsXHR(cityID) {
             parseData(PostResponce);
             /*Attaches the data to the page*/
 
+            console.log(PostResponce);
+
             attachToPage();
         }
     };
@@ -429,7 +431,7 @@ function createMarkUpforEvent(event) {
         "</span></a></div></div> \n" +
         '<div class="event-link"><a href=' +
         event.link +
-        ' target="_blank">Learn More</a></div> \n';
+        ' target="_blank">View Event</a></div> \n';
 
     return singleEventMarkUp;
 }

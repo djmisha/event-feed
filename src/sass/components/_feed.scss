@@ -25,9 +25,10 @@
     position: relative;
     top: 0;
     border-bottom: 1px solid rgb(245, 245, 245);
+    text-align: center;
     @include media($tablet) {
         // box-shadow: 0px 3px 4px rgba(#000, 0.2);
-        padding: 20px 190px 30px 20px;
+        padding: 80px 60px 80px 60px;
     }
     @include media($desktop) {
     }
@@ -66,9 +67,9 @@
 }
 
 .event-title {
-    font-size: 18px;
+    font-size: 25px;
     line-height: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
     font-style: italic;
     color: #767679;
 }
@@ -77,11 +78,11 @@
     word-wrap: anywhere;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 22px;
-    line-height: 24px;
+    font-size: 30px;
+    line-height: 34px;
     padding-bottom: 10px;
-    text-align: left;
-    margin-right: 100px;
+    text-align: center;
+    // margin-right: 100px;
     @include media($tablet) {
         margin-right: 0px;
         padding-bottom: 20px;
@@ -94,6 +95,7 @@
 }
 
 .event-image {
+    display: none;
     width: 80px;
     height: 80px;
     background-size: cover;
@@ -133,15 +135,17 @@
 
 .event-link a {
     font-size: 14px;
-    color: #767679;
+    color: #fff;
     text-decoration: none;
-    background: #eee;
-    border: 1px solid #ccc;
-    display: none;
+    background: rgb(187, 187, 187);
+    margin-top: 40px;
+    display: inline-block;
+    border-radius: 4px;
+    text-transform: uppercase;
+    padding: 5px 30px;
+    border: none;
     @include media($tablet) {
-        border: none;
-        box-shadow: 0px 3px 7px rgba(#000, 0.1);
-        padding: 5px 30px;
+        // box-shadow: 0px 3px 7px rgba(#000, 0.1);
         // display: inline-block;
         margin-top: 30px;
     }
