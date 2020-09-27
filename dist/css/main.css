@@ -193,11 +193,6 @@ body {
   line-height: 20px;
 }
 
-/* line 119, src/sass/components/_feed.scss */
-.event-location {
-  display: none;
-}
-
 @media only screen and (min-width: 768px) {
   /* line 119, src/sass/components/_feed.scss */
   .event-location {

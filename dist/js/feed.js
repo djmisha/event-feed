@@ -7,19 +7,6 @@ function get(selector) {
     return document.querySelector(selector);
 }
 
-/* Create Marup for an element with classes and content */
-
-function createMarkUp(elementType, classList, content) {
-    element = document.createElement(elementType);
-    if (classList.length > 0) {
-        element.classList = classList.join(" ");
-    }
-    if (content) {
-        element.innerHTML = content;
-    }
-    return element;
-}
-
 /* Remove Duplicates Helper*/
 
 function removeDuplicates(array) {
@@ -351,19 +338,33 @@ function createSortingNavigations() {
 
 function listArtists(event) {
     var theArtists = [];
+    // console.log(event);
     for (a = 0; a < event.artist.length; a++) {
+
         for (b = 0; b < event.artist[a].length; b++) {
-            var theartist =
+
+            var singleArtistListingObject = {
+                link: event.artist[a][b].link,
+                name: event.artist[a][b].name,
+            };
+
+            var singleArtist =
                 '<div class="artist artist-' +
-                b +
-                '"><a href="' +
-                event.artist[a][b].link +
-                '" target="_blank">' +
-                event.artist[a][b].name +
-                "</a>&nbsp;</div>";
-            // push artists to array
-            theArtists.push(theartist);
+                singleArtistListingObject.name +
+                '">&nbsp;' +
+                // '">&nbsp;<a href="' +
+                // singleArtistListingObject.link +
+                // '" target="_blank">' +
+                singleArtistListingObject.name +
+                // "</a></div>";
+                "</div>";
+
+                // push artists to array
+                theArtists.push(singleArtist);
+             
         }
+        // console.log(theArtists);
+
         return theArtists;
     }
 }
@@ -389,37 +390,8 @@ function matchImageswithEvents(images, id) {
     }
 }
 
-/* Create MarkupForEvent */
-
-function createMarkUpforEvent(event) {
-    var id = event.id;
-    var showImages = matchImageswithEvents(imageData, id);
-    var showArtist = listArtists(event);
-    var showName = checkEventName(event);
-    var singleEventMarkUp =
-        '<div class="event-date" itemprop="startDate" content="' +
-        event.schemadate +
-        '">' +
-        event.date +
-        "</div> \n" +
-        "<a href=" +
-        event.link +
-        ' target=_blank><div class="event-image b-lazy" data-src="' +
-        showImages +
-        '"></div></a> \n' +
-        '<div class="event-title" itemprop="name">' +
-        showName +
-        "</div> \n" +
-        '<div class="event-artist" itemprop="name">' +
-        showArtist +
-        "</div> \n" +
-        '<div class="event-venue" itemprop="location" itemscope itemtype="http://schema.org/Place"><a href="https://www.google.com/maps/search/' +
-        event.venuename +
-        " " +
-        event.venueaddress +
-        '" target=_blank><span itemprop="name">' +
-        event.venuename +
-        "</span></a> \n" +
+function createShowLocation(event) {
+    var location =
         '<div class="event-location" itemscope itemtype="http://schema.org/PostalAddress"  itemprop="address" content="' +
         event.venueaddress +
         '"><a href="https://www.google.com/maps/search/' +
@@ -428,10 +400,61 @@ function createMarkUpforEvent(event) {
         event.venueaddress +
         '" target=_blank><span>' +
         event.venueaddress +
-        "</span></a></div></div> \n" +
+        "</span></a></div></div> \n";
+
+    return location;
+}
+
+/* Create MarkupForEvent */
+
+function createMarkUpforEvent(event) {
+    var id = event.id;
+    var showImages = matchImageswithEvents(imageData, id);
+    var showArtist = listArtists(event);
+    var showName = checkEventName(event);
+    var theEventVenueAddress = "";
+    if (event.venueaddress !== null) {
+        var theEventVenueAddress = createShowLocation(event);
+    }
+
+    var theEventDate =
+        '<div class="event-date" itemprop="startDate" content="' +
+        event.schemadate +
+        '">' +
+        event.date +
+        "</div> \n";
+
+    var theEventImage =
+        "<a href=" +
+        event.link +
+        ' target=_blank><div class="event-image b-lazy" data-src="' +
+        showImages +
+        '"></div></a> \n';
+
+    var theEventShowName =
+        '<div class="event-title" itemprop="name">' + showName + "</div> \n";
+
+    var theEventArtist =
+        '<div class="event-artist" itemprop="name">' + showArtist + "</div> \n";
+
+    var EventVenueName =
+        '<div class="event-venue" itemprop="location" itemscope itemtype="http://schema.org/Place"><span itemprop="name">' +
+        event.venuename +
+        "</span> \n";
+
+    var theEvenButtonLink =
         '<div class="event-link"><a href=' +
         event.link +
         ' target="_blank">View Event</a></div> \n';
+
+    var singleEventMarkUp =
+        theEventDate +
+        theEventImage +
+        theEventShowName +
+        theEventArtist +
+        EventVenueName +
+        theEventVenueAddress +
+        theEvenButtonLink;
 
     return singleEventMarkUp;
 }

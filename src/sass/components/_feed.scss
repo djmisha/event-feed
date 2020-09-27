@@ -117,7 +117,7 @@
 }
 
 .event-location {
-    display: none;
+    // display: none;
     @include media($tablet) {
         display: block;
     }
