@@ -6,10 +6,10 @@
     // Variables
     //
 
-    var form = get("#form-search");
-    var input = get("#input-search");
-    var resultList = get("#searchresults");
-    var clearSeach = get("#searchresults");
+    var form = document.querySelector("#form-search");
+    var input = document.querySelector("#input-search");
+    var resultList = document.querySelector("#searchresults");
+    var clearSeach = document.querySelector("#searchresults");
 
     //
     // Methods

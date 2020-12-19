@@ -1,16 +1,19 @@
 # EDM Event Feed for sandiegohousemusic.com
 
+## New Todo Dec, 2020
+
+-   refactor all code to be not so shit! lol
+-   create JS modules for more modular code
+-   add Schema for live streams
 
 ## New Todo Sept, 2020
 
-- add time of live stream, add red icon to live stream  
-- add pop up iframe when a link is clicked, add close button
-- give all buttons border and radius 
-- add close buttons to top menus
-- close other top menus when new one is clicked
-- change to black UI?
-
-
+-   add time of live stream, add red icon to live stream
+-   add pop up iframe when a link is clicked, add close button
+-   give all buttons border and radius
+-   add close buttons to top menus
+-   close other top menus when new one is clicked
+-   change to black UI?
 
 ## Todo List and Ideas
 

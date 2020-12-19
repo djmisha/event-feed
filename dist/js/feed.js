@@ -1,12 +1,4 @@
 /*! sdhm-event-feed v2.0.0 | (c) 2020 San Diego House Music | MIT License | https://github.com/djmisha/event-feed */
-/* Javascript Helper Function */
-
-/* Select an Element in the DOM */
-
-function get(selector) {
-    return document.querySelector(selector);
-}
-
 /* Remove Duplicates Helper*/
 
 function removeDuplicates(array) {
@@ -110,7 +102,7 @@ function requestLocationsXHR() {
     };
 
     function parseLocationsData(result) {
-        var data = result;
+        // var data = result;
         for (var g = 0; g < result.length; g++) {
             // Create Location Object
             var singleLocationsListing = {
@@ -127,7 +119,7 @@ function requestLocationsXHR() {
 
 function requestEventsXHR(cityID) {
     theFeed.innerHTML = "";
-    eventData = [];
+    // eventData = [];
     var http = new XMLHttpRequest();
     var url =
         "https://edmtrain.com/api/events?locationIds=" +
@@ -142,8 +134,8 @@ function requestEventsXHR(cityID) {
             var PostResponce = JSON.parse(http.responseText);
             /*Puts the Data into our array*/
             parseData(PostResponce);
-            /*Attaches the data to the page*/
 
+            /*Attaches the data to the page*/
             // console.log(PostResponce);
 
             attachToPage();
@@ -247,7 +239,7 @@ function createSortingNavigations() {
         var theCity = venue.city;
         locationsElement.addEventListener("click", (function (event) {
             city = document.getElementById("city-list");
-            cityName = get(".sort-city #drop-trigger");
+            cityName = document.querySelector(".sort-city #drop-trigger");
             cityName.innerHTML = theCity;
             city.classList.remove("visible");
             city.parentElement.classList.remove("visible");
@@ -413,8 +405,9 @@ function createMarkUpforEvent(event) {
     var showArtist = listArtists(event);
     var showName = checkEventName(event);
     var theEventVenueAddress = "";
+    
     if (event.venueaddress !== null) {
-        var theEventVenueAddress = createShowLocation(event);
+        theEventVenueAddress = createShowLocation(event);
     }
 
     var theEventDate =
@@ -460,9 +453,8 @@ function createMarkUpforEvent(event) {
 }
 
 /* Initialize our App */
-if (theFeed) {
-    requestLocationsXHR();
-    requestImagesXHR();
-    requestEventsXHR(81);
-    navigationDropdowns();
-}
+
+requestLocationsXHR();
+requestImagesXHR();
+requestEventsXHR(81);
+navigationDropdowns();
