@@ -363,10 +363,10 @@ function listArtists(event) {
 /* function to Check for Event name*/
 
 function checkEventName(event) {
-    if (!event.name === false) {
-        return event.name;
-    } else {
+    if (event.name === null) {
         return "";
+    } else {
+        return event.name;
     }
 }
 

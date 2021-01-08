@@ -5,6 +5,7 @@
 -   refactor all code to be not so shit! lol
 -   create JS modules for more modular code
 -   add Schema for live streams
+-   fix dropdowns so that when you click one the others close
 
 ## New Todo Sept, 2020
 
