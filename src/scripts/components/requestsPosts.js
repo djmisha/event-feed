@@ -1,9 +1,9 @@
-import Blazy from 'Blazy'
+// import Blazy from 'Blazy'
 
-var lazy = new Blazy({
-     selector: 'img' // all images
-});
-console.log(lazy);
+// var lazy = new Blazy({
+//      selector: 'img' // all images
+// });
+// console.log(lazy);
 function requestPostsAndAttachtoPage(category, numberofposts) {
     const http = new XMLHttpRequest();
     const url =
@@ -35,7 +35,7 @@ function requestPostsAndAttachtoPage(category, numberofposts) {
             pageElement.classList.add("single-music");
 
             pageElement.innerHTML =
-                '<a  href="' +
+                '<a target="_blank" href="' +
                 postURL +
                 '"><img src="' +
                 postIMG +
