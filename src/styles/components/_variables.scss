@@ -1,0 +1,41 @@
+// Variables
+
+$white: #fff;
+$black: #000;
+
+$blue: #06B6D4;
+$pink:#EC4899;
+$green:#10B981;
+$orange: #F97316;
+
+// Media Query break points
+
+$tablet: 768px;
+$desktop: 1080px;
+$full: 1480px;
+
+$ipad-min: 768px;
+$ipad-max: 1024px;
+
+$ipadpro-min: 1024px;
+$ipadpro-max: 1366px;
+
+$ipad: ipads;
+$ipads: ipads;
+
+$borderRadis: 5px;
+$boxShadow: 0px 3px 16px rgba(black, .16);
+
+$fontFamily: 'Oswald', 'Verdana', 'Arial', sanserif;
+
+// Lazy Loading
+
+.b-lazy {
+    transition: opacity 500ms ease-in-out;
+    max-width: 100%;
+    opacity: 0;
+}
+
+.b-lazy.b-loaded {
+    opacity: 1;
+}

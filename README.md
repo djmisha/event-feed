@@ -1,58 +1,51 @@
-# EDM Event Feed for sandiegohousemusic.com
+# live-reload-vanilla-website-template
 
-## New Todo Dec, 2020
+Starter template to build a website without a front-end framework but making use of Webpack to support writing modern JavaScript (ES6+), including ES Modules and Sass.
 
--   refactor all code to be not so shit! lol
--   create JS modules for more modular code
--   add Schema for live streams
--   fix dropdowns so that when you click one the others close
+## Features
 
-## New Todo Sept, 2020
+- Live reload in development
+- Webpack
+- Sass compilation (and minification/autoprefixing in production)
+- ES6+ transpilation (and minification/uglyfication in production)
+- ES Modules
 
--   add time of live stream, add red icon to live stream
--   add pop up iframe when a link is clicked, add close button
--   give all buttons border and radius
--   add close buttons to top menus
--   close other top menus when new one is clicked
--   change to black UI?
+## Usage
 
-## Todo List and Ideas
+- Install dependencies
 
--   add emojies to navigation
--   get more event data for each event and add dropdown with more info and links
--   Push Data to local Json
--   search : add autocomplete https://vanillajstoolkit.com/reference/javascript-free/autocomplete/
--   fix favicon
--   remove comma in artists array
--   random color bg event
--   create search and/or sort by month?
--   use fetch instead of XHR
--   finalize all scheme
--   add SEO to index.html
+```
+yarn
+```
 
-## Completed
+- Run development server
 
-May, 2020
+```
+yarn dev
+```
 
--   Go National Data
+Will open your default browser to http://localhost:8080/public
 
-April, 2020
+Webpack will watch for changes in the `./src` directory and output the bundled assets to `./public/assets`. In parallel, the development server will watch for changes in the `./public` directory and live reload the browser.
 
--   Input Sort by Artist: Date, Venue
+- Build production bundles
 
-March, 2020
+```
+yarn build
+```
 
--   search: clear search button
--   search: search, artistsm venues and event name
--   search: show search results text
--   search: fix single result only
--   add to search console
--   add link to venue to map
--   add venue addresses to schema
+Will compile, minify and autoprefix Sass to CSS. Will Minify and uglify JavaScript and output the bundled assets to `./public/assets`.
 
-February, 2020
+After building for production you can take the `./public` directory and deploy it.
 
--   convert date to readable
--   find source for images, lazy load
--   connect to API data source
--   convert date to Schema readable format
+## Tutorial
+
+Visit my [blog entry](https://esausilva.com/2018/09/17/build-a-website-with-modern-tooling-and-no-frameworks/) where I go step-by-step on how to build this template from scratch.
+
+## Giving Back
+
+If you would like to support my work and the time I put in making tutorials, you can click the image below to get me a coffee. I would really appreciate it (but is not required).
+
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/black_img.png)](https://www.buymeacoffee.com/esausilva)
+
+-Esau Silva

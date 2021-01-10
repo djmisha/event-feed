@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>EDM Events Techno Dance House Music Clubs USA</title>
+  <meta name="viewport" content="maximum-scale=5.0, user-scalable=yes, width=device-width" />
+  <meta name="google-site-verification" content="Me3u2y7obUKYQhQRu7jyrLKEaksGmf9J3tTIKg7DGFg" />
+  <meta name="description"
+    content="Find EDM events clubs house music techno dance in every major city in America. Explore now..." />
+  <link rel="canonical" href="https://events.sandiegohousemusic.com" />
+  <link rel="icon" href="favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+
+<body>
+  <heading>
+      <h1>EDM Events & Live Streams</h1>
+    </heading>
+  <div class="navigations">
+    <section class="sort">
+      <div class="sort-city">
+        <div class="sort-trigger" id="drop-trigger">San Diego</div>
+        <div id="city-list"></div>
+      </div>
+      <div class="sort-artists">
+        <div class="sort-trigger" id="drop-trigger">Artists</div>
+        <div id="artist-list"></div>
+      </div>
+      <div class="sort-venues">
+        <div class="sort-trigger" id="drop-trigger">Venues</div>
+        <div id="venue-list"></div>
+      </div>
+      <div class="sort-date">
+        <div class="sort-trigger" id="drop-trigger">Dates</div>
+        <div id="date-list"></div>
+      </div>
+    </section>
+  
+    <section class="search">
+      <form action="https://www.google.com/search" id="form-search">
+        <label for="input-search">search</label>
+        <input type="text" name="search" id="input-search" value="Search artist, venue, event..." />
+        <button id="submit-search">Search</button>
+      </form>
+    </section>
+  </div>
+
+  <div class="search-all">
+    <div id="clearSearch"><span>&times;</span></div>
+    <section id="searchresults"></section>
+  </div>
+
+  <section id="evenfeed"><img src="./assets/images/oval.svg" alt="loading"></section>
+  <h2>Listen to DJ Mixes </h2>
+  <section id="musicfeed"><img src="./assets/images/oval.svg" alt="loading"></section>
+
+  <script src="./assets/scripts/bundle.js"></script>
+</body>
+
+</html>

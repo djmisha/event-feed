@@ -1,0 +1,40 @@
+// Base Styles
+
+body {
+	font-family: 'Oswald', 'Verdana', 'Arial', sanserif;
+	margin: 0 auto;
+	width: 100%;
+	background: #27272A;
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 100;
+}
+
+h1 {
+	padding-left: 10px;
+	font-size: 25px;
+	color: $blue;
+	text-transform: uppercase;
+	font-weight: normal;
+	border-bottom: 2px solid $blue;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-top: 20;
+	padding-left: 10px;
+	font-size: 20px;
+	color: $blue;
+	border-bottom: 2px solid $blue;
+	@include media($tablet) {
+		display: inline-block;
+	}
+}
+
+h1 {
+	@include media($desktop) {
+		top: 10px;
+		position: absolute;
+	}
+}

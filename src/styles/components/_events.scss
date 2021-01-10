@@ -1,0 +1,161 @@
+// Event Feed   
+
+#evenfeed, #musicfeed {
+    padding: 0;
+    padding-bottom: 40px;
+    transition: all .25 ease-out;
+    @include media(650px) {
+        padding: 0 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+    @include media($tablet) {
+        margin-bottom: 20px;
+    }
+    @include media($desktop) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.single-event {
+    position: relative;
+    transition: all .25 ease-out;
+    text-align: left;
+    padding: 20px 10px 20px 10px;
+    margin: 0px 0px;
+    position: relative;
+    background-color: black;
+    transition: all 0.15s ease-in-out;
+    position: relative;
+    top: 0;
+    text-align: left;
+    margin-bottom: 10px;;
+    @include media($tablet) {
+        // border-radius: $borderRadis;
+        margin-bottom: 0;
+        padding: 20px 20px 20px 20px;
+    }
+    @include media($desktop) {
+        &:hover {
+            box-shadow: 0px 5px 15px #52525B;
+        }
+    }
+    a {
+        color: #767679;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline !important;
+        }
+    }
+    &.hidden {
+        display: none;
+    }
+}
+
+.event-date {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 10px;
+    font-weight: normal;
+    color: $blue;
+    @include media($tablet) {
+        padding-bottom: 20px;
+    }
+}
+
+.event-title {
+    font-size: 16px;
+    padding-bottom: 15px;
+    color: $blue;
+}
+
+.event-artist {
+    word-wrap: anywhere;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    position: relative;
+    left: -5px;
+    > div:nth-of-type(even) {
+        color: $orange;
+    }
+    > div:nth-of-type(odd) {
+        color: $pink;
+    }
+    @include media($tablet) {
+        margin-right: 0px;
+        padding-bottom: 20px;
+    }
+}
+
+.artist {
+    display: inline-block;
+    text-align: left;
+}
+
+.event-image {
+    display: none;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    @include media($tablet) {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+.event-venue {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    color: $green;
+}
+
+.event-location {
+    @include media($tablet) {
+        display: block;
+    }
+}
+
+.event-location span {
+    padding-top: 5px;
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+    a {
+        color: #c1c1c1;
+    }
+}
+
+.event-link a {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;;
+    font-size: 12px;
+    text-decoration: none;
+    border: 1px solid rgb(59, 59, 59);
+    margin-top: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 5px 15px;
+    letter-spacing: 1px;
+    @include media($tablet) {
+        margin-top: 30px;
+    }
+    &:hover {
+        text-decoration: none !important;
+    }
+}
