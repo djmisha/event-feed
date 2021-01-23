@@ -98,12 +98,12 @@ export function createMarkUpforEvent(event) {
     event.date +
     '</div> \n';
 
-  //   var theEventTime =
-  //     '<div class="event-time" itemprop="startTime" content="' +
-  //     showTime +
-  //     '">' +
-  //     showTime +
-  //     '</div> \n';
+  var theEventTime =
+    '<div class="event-time" itemprop="startTime" content="' +
+    showTime +
+    '">' +
+    showTime +
+    '</div> \n';
 
   // var theEventImage =
   //     "<a href=" +
@@ -130,7 +130,7 @@ export function createMarkUpforEvent(event) {
 
   var singleEventMarkUp =
     theEventDate +
-    theEventTime +
+    // theEventTime +
     // theEventImage +
     theEventShowName +
     theEventArtist +

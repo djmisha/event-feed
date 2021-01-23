@@ -28,9 +28,9 @@ function requestEventsXHR(cityID, locations) {
   function parseData(result) {
     for (var g = 0; g < result.data.length; g++) {
       /*get date converted to numerical value*/
-      var eventDateParsed = Date.parse(result.data[g].date);
-      console.log(result.data[g].startTime);
+      //   console.log(result.data[g].startTime);
       /*convert date to ISO for Schema and Readble Formats*/
+      //   var eventDateParsed = Date.parse(result.data[g].date);
       var eventDateISO = new Date(result.data[g].date);
       var readableDate = new Date(result.data[g].date).toDateString();
 
