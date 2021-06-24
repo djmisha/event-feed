@@ -10,4 +10,4 @@ let locations = requestLocationsXHR();
 requestEventsXHR(81, locations);
 requestImagesXHR();
 navigationDropdowns();
-// requestPostsAndAttachtoPage('music', 8);
+requestPostsAndAttachtoPage('music', 8);
