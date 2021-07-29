@@ -4,7 +4,7 @@ Live site: https://events.sandiegohousemusic.com
 
 DevOps: Auto deployed from `master` branch on Netfily
 
-# live-reload-vanilla-website-template
+## live-reload-vanilla-website-template
 
 Starter template to build a website without a front-end framework but making use of Webpack to support writing modern JavaScript (ES6+), including ES Modules and Sass.
 
