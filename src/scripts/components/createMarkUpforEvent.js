@@ -126,7 +126,7 @@ export function createMarkUpforEvent(event) {
   var theEvenButtonLink =
     '<div class="event-link"><a href=' +
     event.link +
-    ' target="_blank">View Event</a></div> \n';
+    ' target="_blank">View</a></div> \n';
 
   var singleEventMarkUp =
     theEventDate +

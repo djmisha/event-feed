@@ -5,7 +5,7 @@ function requestEventsXHR(cityID, locations) {
   var eventData = [];
 
   theFeed.innerHTML = '';
-  // eventData = [];
+
   var http = new XMLHttpRequest();
   var url =
     'https://edmtrain.com/api/events?locationIds=' +
