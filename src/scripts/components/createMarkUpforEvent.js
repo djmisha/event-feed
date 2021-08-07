@@ -19,14 +19,15 @@ function listArtists(event) {
         // '" target="_blank">' +
         singleArtistListingObject.name +
         // "</a></div>";
-        '</div>';
+        ' &nbsp;</div>';
 
       // push artists to array
-      theArtists.push(singleArtist);
+      theArtists += singleArtist;
     }
-    // console.log(theArtists);
-
-    return theArtists;
+    theArtists.toString(',');
+    // theArtists.split(',');
+    // console.log(typeof theArtists, theArtists);
+    return theArtists
   }
 }
 
@@ -61,12 +62,13 @@ function createShowLocation(event) {
     event.venueaddress +
     '" target=_blank><span>' +
     event.venueaddress +
-    '</span></a></div></div> \n';
+    '</span></a></div> \n';
 
   return location;
 }
 
-function calcualteEventtime(event) {
+// currently returns 5pm for everything - need to figure out why
+function calcTime(event) {
   let date = event.schemadate;
   let time = date.toLocaleString('en-US', {
     hour: 'numeric',
@@ -76,6 +78,12 @@ function calcualteEventtime(event) {
   return time;
 }
 
+// Format Date
+
+function formatDate(date) {
+  // do stuff
+}
+
 /* Create MarkupForEvent */
 
 export function createMarkUpforEvent(event) {
@@ -83,7 +91,8 @@ export function createMarkUpforEvent(event) {
   // var showImages = matchImageswithEvents(imageData, id);
   var showArtist = listArtists(event);
   var showName = checkEventName(event);
-  var showTime = calcualteEventtime(event);
+  var showTime = calcTime(event);
+  var showDate = formatDate(event.date);
 
   var theEventVenueAddress = '';
 
@@ -113,15 +122,15 @@ export function createMarkUpforEvent(event) {
   //     '"></div></a> \n';
 
   var theEventShowName =
-    '<div class="event-title" itemprop="name">' + showName + '</div> \n';
+    '<div class="event-info"><div class="event-title-artist"><span class="event-title" itemprop="name">' + showName + '</span> \n';
 
   var theEventArtist =
-    '<div class="event-artist" itemprop="name">' + showArtist + '</div> \n';
+    '<span class="event-artist" itemprop="name">' + showArtist + '</span></div> \n';
 
   var EventVenueName =
     '<div class="event-venue" itemprop="location" itemscope itemtype="http://schema.org/Place"><span itemprop="name">' +
     event.venuename +
-    '</span> \n';
+    '</span> </div>\n';
 
   var theEvenButtonLink =
     '<div class="event-link"><a href=' +

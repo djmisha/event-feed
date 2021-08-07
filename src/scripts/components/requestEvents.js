@@ -3,6 +3,7 @@ import attachToPage from './attachToPage';
 function requestEventsXHR(cityID, locations) {
   var theFeed = document.getElementById('evenfeed');
   var eventData = [];
+  var liveStreamData = [];
 
   theFeed.innerHTML = '';
 
@@ -52,8 +53,12 @@ function requestEventsXHR(cityID, locations) {
         // age: data[g].ageLabel,
       };
 
-      /*Push To Array*/
-      eventData.push(singleEventListing);
+      /*Push To Event DAta Array if not Live Stream*/
+      if (singleEventListing.venuename != 'Live Stream') {
+        eventData.push(singleEventListing);
+      } else {
+        liveStreamData.push(singleEventListing);
+      }
     }
   }
   return eventData;

@@ -11,21 +11,25 @@
   opacity: 1; }
 
 body {
-  font-family: 'Oswald', 'Verdana', 'Arial', sanserif;
+  font-family: "Poppins", "Verdana", "Arial", sanserif;
   margin: 0 auto;
   width: 100%;
-  background: #27272A;
-  font-size: 20px;
-  line-height: 24px;
+  background: #fff;
+  font-size: 16px;
+  line-height: 22px;
   font-weight: 100; }
 
 h1 {
   padding-left: 10px;
   font-size: 25px;
-  color: #06B6D4;
+  color: #1c94a5;
   text-transform: uppercase;
   font-weight: normal;
-  border-bottom: 2px solid #06B6D4; }
+  border-bottom: 2px solid #1c94a5;
+  display: none; }
+  @media only screen and (min-width: 1080px) {
+    h1 {
+      font-size: 25px; } }
 
 h2 {
   text-transform: uppercase;
@@ -33,8 +37,8 @@ h2 {
   margin-top: 20;
   padding-left: 10px;
   font-size: 20px;
-  color: #06B6D4;
-  border-bottom: 2px solid #06B6D4; }
+  color: #1c94a5;
+  border-bottom: 2px solid #1c94a5; }
   @media only screen and (min-width: 768px) {
     h2 {
       display: inline-block; } }
@@ -63,7 +67,7 @@ h2 {
   @media only screen and (min-width: 1080px) {
     #evenfeed,
     #musicfeed {
-      grid-template-columns: repeat(3, 1fr); } }
+      grid-template-columns: repeat(2, 1fr); } }
 
 .single-event {
   position: relative;
@@ -72,19 +76,18 @@ h2 {
   padding: 20px 10px 20px 10px;
   margin: 0px 0px;
   position: relative;
-  background-color: black;
+  background-color: #f6f6fb;
   transition: all 0.15s ease-in-out;
   position: relative;
   top: 0;
   text-align: left;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  display: flex; }
   @media only screen and (min-width: 768px) {
     .single-event {
+      border-radius: 6px;
       margin-bottom: 0;
       padding: 20px 20px 20px 20px; } }
-  @media only screen and (min-width: 1080px) {
-    .single-event:hover {
-      box-shadow: 0px 5px 15px #52525b; } }
   .single-event a {
     color: #767679;
     text-decoration: none; }
@@ -94,54 +97,46 @@ h2 {
     display: none; }
 
 .event-date {
-  position: absolute;
-  right: 10px;
-  top: 20px;
+  width: 90px;
+  height: 50px;
   font-size: 14px;
-  line-height: 16px;
-  padding-bottom: 10px;
-  font-weight: normal;
-  color: #06B6D4; }
-  @media only screen and (min-width: 768px) {
-    .event-date {
-      padding-bottom: 20px; } }
+  line-height: 18px;
+  font-weight: 400;
+  color: #1c94a5; }
+
+.event-info {
+  width: calc(100% - 100px); }
 
 .event-time {
-  position: absolute;
-  right: 10px;
-  top: 40px;
   font-size: 12px;
   line-height: 16px;
-  padding-bottom: 10px;
-  font-weight: normal;
-  color: #06B6D4; }
+  font-weight: 400;
+  color: #1c94a5; }
   @media only screen and (min-width: 768px) {
     .event-time {
       padding-bottom: 20px; } }
 
 .event-title {
-  font-size: 16px;
-  padding-bottom: 15px;
-  color: #06B6D4; }
+  font-size: 15px;
+  color: #04092c; }
 
 .event-artist {
   word-wrap: anywhere;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 15px;
   line-height: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   text-align: left;
   position: relative;
   left: -5px; }
   .event-artist > div:nth-of-type(even) {
-    color: #F97316; }
+    color: #f97316; }
   .event-artist > div:nth-of-type(odd) {
-    color: #EC4899; }
+    color: #ce3197; }
   @media only screen and (min-width: 768px) {
     .event-artist {
       margin-right: 0px;
-      padding-bottom: 20px; } }
+      padding-bottom: 5px; } }
 
 .artist {
   display: inline-block;
@@ -164,9 +159,9 @@ h2 {
 
 .event-venue {
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
-  color: #10B981; }
+  color: #04092c; }
 
 @media only screen and (min-width: 768px) {
   .event-location {
@@ -186,16 +181,18 @@ h2 {
   right: 10px;
   font-size: 12px;
   text-decoration: none;
-  border: 1px solid #3b3b3b;
+  border: 1px solid #dddddd;
   margin-top: 20px;
   display: inline-block;
-  text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 400;
   padding: 5px 15px;
-  letter-spacing: 1px; }
+  border-radius: 4px;
+  color: #b4b4b4;
+  display: none; }
   @media only screen and (min-width: 768px) {
     .event-link a {
-      margin-top: 30px; } }
+      margin-top: 30px;
+      display: inline; } }
   .event-link a:hover {
     text-decoration: none !important; }
 
@@ -230,9 +227,9 @@ h2 {
   height: 220px;
   overflow: hidden; }
   .single-music:nth-of-type(even) a {
-    color: #06B6D4; }
+    color: #1c94a5; }
   .single-music:nth-of-type(odd) a {
-    color: #10B981; }
+    color: #10b981; }
   @media only screen and (min-width: 1080px) {
     .single-music:hover {
       box-shadow: 0px 5px 15px #52525B; } }
@@ -257,7 +254,7 @@ h2 {
 @media only screen and (min-width: 768px) {
   .navigations {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding-left: 5px; } }
 
 #form-search {
@@ -267,6 +264,10 @@ h2 {
   color: #767679;
   justify-content: space-between; }
   @media only screen and (min-width: 768px) {
+    #form-search {
+      max-width: 300px;
+      margin: 20px 10px; } }
+  @media only screen and (min-width: 1080px) {
     #form-search {
       max-width: 500px;
       margin: 20px 10px; } }
@@ -283,38 +284,38 @@ h2 {
     left: -999px;
     top: -999px; }
   #form-search input {
-    font-family: "Oswald", "Verdana", "Arial", sanserif;
+    font-family: "Poppins", "Verdana", "Arial", sanserif;
     padding: 10px 30px 10px 50px;
     font-size: 12px;
     line-height: 0;
-    letter-spacing: 1px;
     width: calc(100% - 120px);
-    border: 1px solid #525252;
-    background: black;
+    border: 1px solid #d3d3dc;
+    background: white;
     transition: all 0.15s ease-in-out;
     position: relative;
     display: block;
-    color: #767679; }
+    color: #767679;
+    border-radius: 30px; }
     @media only screen and (min-width: 768px) {
       #form-search input {
-        width: 80%; } }
+        width: 300px; } }
     #form-search input:hover {
-      border: 1px solid #ccc; }
+      border: 1px solid #d3d3dc; }
     #form-search input:focus {
-      border: 1px solid #ccc;
+      border: 1px solid #d3d3dc;
       background: #fff; }
   #form-search button {
-    font-family: "Oswald", "Verdana", "Arial", sanserif;
+    font-family: "Poppins", "Verdana", "Arial", sanserif;
     margin-left: 10px;
     width: 20%;
     min-width: 100px;
-    border: 1px solid #525252;
-    background-color: black;
-    border: 1px solid #525252;
+    background-color: white;
+    border: 1px solid #d3d3dc;
     cursor: pointer;
-    color: #767679; }
+    color: #000;
+    border-radius: 30px; }
     #form-search button:hover {
-      border: 1px solid #ccc; }
+      border: 1px solid #d3d3dc; }
 
 .seach-all {
   position: relative; }
@@ -324,9 +325,9 @@ h2 {
   font-size: 14px;
   text-align: center;
   padding: 2px 15px;
-  border: 1px solid #EC4899;
-  border-left: 5px solid #EC4899;
-  color: #EC4899;
+  border: 1px solid #ce3197;
+  border-left: 5px solid #ce3197;
+  color: #ce3197;
   margin: 0 10px;
   margin-bottom: 10px; }
 
@@ -343,8 +344,8 @@ h2 {
     position: relative;
     top: 0px;
     right: 0px;
-    font-size: 60px;
-    color: #EC4899;
+    font-size: 30px;
+    color: #ce3197;
     z-index: -1; }
 
 .sort {
@@ -352,32 +353,39 @@ h2 {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   margin: 5px 0px; }
   @media only screen and (min-width: 768px) {
     .sort {
-      margin: 0; } }
+      margin: 0;
+      margin-right: 10px; } }
   .sort > div {
     cursor: pointer; }
     .sort > div.visible .sort-trigger {
-      background-color: black;
-      border: 1px solid #525252;
-      color: #EC4899; }
+      background-color: #fbe5f3;
+      border: 1px solid #fbe5f3;
+      color: #ce3197; }
       .sort > div.visible .sort-trigger:after {
-        color: #EC4899; }
+        color: #ce3197; }
   .sort .sort-trigger {
     display: block;
     cursor: pointer;
-    font-size: 14px;
-    font-weight: normal;
-    padding: 7px 15px;
-    border: 1px solid #525252;
-    background-color: black;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    background-color: white;
     margin-left: 5px;
     transition: all 0.15s ease-in-out;
-    color: #767679; }
+    color: #000;
+    border-radius: 30px;
+    padding: 7px 14px;
+    border: 1px solid #d3d3dc; }
+    @media only screen and (min-width: 768px) {
+      .sort .sort-trigger {
+        font-size: 14px;
+        padding: 7px 22px; } }
     .sort .sort-trigger:hover {
-      border: 1px solid #ccc; }
+      border: 1px solid #d3d3dc; }
     .sort .sort-trigger:after {
       content: "↓";
       font-size: 16px;
@@ -389,57 +397,58 @@ h2 {
 #date-list,
 #artist-list,
 #city-list {
-  transition: height .25 ease-in;
+  transition: height 0.25 ease-in;
   overflow: hidden;
-  height: 100vh;
-  width: calc(100% - 20px);
   position: absolute;
   margin: 0 auto;
   right: 0px;
-  left: 0px;
   top: 45px;
   z-index: 9999;
-  background: #767679;
-  color: black;
+  background: white;
+  color: white;
   height: 0;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  border-radius: 6px;
+  justify-content: space-around; }
   @media only screen and (min-width: 768px) {
     #venue-list,
     #date-list,
     #artist-list,
     #city-list {
-      top: 60px;
-      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-      width: 650px; } }
+      top: 70px;
+      width: 850px;
+      box-shadow: 0 10px 10px rgba(4, 9, 44, 0.2); } }
   #venue-list > div,
   #date-list > div,
   #artist-list > div,
   #city-list > div {
     width: 40%;
     padding: 8px 6px;
-    font-size: 16px !important;
-    line-height: 16px; }
+    font-size: 14px !important;
+    line-height: 16px;
+    border-radius: 4px;
+    font-weight: 400;
+    color: black; }
     @media only screen and (min-width: 768px) {
       #venue-list > div,
       #date-list > div,
       #artist-list > div,
       #city-list > div {
-        padding: 10px 12px;
-        width: 28%; } }
+        padding: 10px 20px;
+        width: 18%; } }
     #venue-list > div:hover,
     #date-list > div:hover,
     #artist-list > div:hover,
     #city-list > div:hover {
-      background: rgba(255, 255, 255, 0.2);
-      text-decoration: underline; }
+      background: #fbe5f3;
+      text-decoration: none; }
 
 #venue-list.visible,
 #artist-list.visible,
 #city-list.visible,
 #date-list.visible {
-  border: 1px solid #525252;
-  transition: height .25 ease-in;
+  transition: height 0.25 ease-in;
   padding: 10px 5px;
   height: auto; }
 

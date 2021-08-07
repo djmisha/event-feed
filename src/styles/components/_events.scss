@@ -15,7 +15,7 @@
     margin-bottom: 20px;
   }
   @include media($desktop) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -26,12 +26,13 @@
   padding: 20px 10px 20px 10px;
   margin: 0px 0px;
   position: relative;
-  background-color: rgba(#eee, 0.8);
+  background-color: $lightGrey;
   transition: all 0.15s ease-in-out;
   position: relative;
   top: 0;
   text-align: left;
   margin-bottom: 10px;
+  display: flex;
   @include media($tablet) {
     border-radius: 6px;
     margin-bottom: 0;
@@ -55,38 +56,45 @@
 }
 
 .event-date {
+  width: 90px;
+  height: 50px;
   font-size: 14px;
-  line-height: 16px;
-  padding-bottom: 10px;
-  font-weight: normal;
+  line-height: 18px;
+  font-weight: 400;
   color: $blue;
   @include media($tablet) {
-    padding-bottom: 20px;
   }
+}
+
+.event-info {
+  width: calc(100% - 100px);
 }
 
 .event-time {
   font-size: 12px;
   line-height: 16px;
-  font-weight: normal;
+  font-weight: 400;
   color: $blue;
   @include media($tablet) {
     padding-bottom: 20px;
   }
 }
 
+.event-title-artist {
+  // display: flex;
+}
+
 .event-title {
-  font-size: 16px;
-  color: black;
+  font-size: 15px;
+  color: $black;
 }
 
 .event-artist {
   word-wrap: anywhere;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 15px;
   line-height: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   text-align: left;
   position: relative;
   left: -5px;
@@ -98,7 +106,7 @@
   }
   @include media($tablet) {
     margin-right: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
   }
 }
 
@@ -125,9 +133,9 @@
 
 .event-venue {
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
-  color: black;
+  color: $black;
 }
 
 .event-location {
@@ -155,7 +163,7 @@
   border: 1px solid rgb(221, 221, 221);
   margin-top: 20px;
   display: inline-block;
-  font-weight: normal;
+  font-weight: 400;
   padding: 5px 15px;
   border-radius: 4px;
   color: rgb(180, 180, 180);

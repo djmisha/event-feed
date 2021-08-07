@@ -21,6 +21,7 @@ function attachToPage(eventData, locationsData, element) {
     /* Attach Events to the page*/
     element.appendChild(singleEventElement);
   });
+  // console.log(element)
 
   /* Create Sorting Navigation & Activate Search */
   createSortingNavigations(locationsData, eventData);
