@@ -437,7 +437,7 @@ h2 {
   position: absolute;
   margin: 0 auto;
   right: 0px;
-  top: 45px;
+  top: 40px;
   z-index: 9999;
   background: white;
   color: white;
@@ -445,7 +445,8 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   border-radius: 6px;
-  justify-content: space-around; }
+  justify-content: space-around;
+  z-index: 9999; }
   @media only screen and (min-width: 768px) {
     #venue-list,
     #date-list,

@@ -9,6 +9,10 @@
   - "I found this event at SanDiegoHouseMusic.com"
 
 
+## Music TODO 
+  - SORTABLE MUSIC MIXES (last 5 years?)
+    - top rated by stars 
+
 ## UI TODO
 
   - [DONE!] add icons next to each dropdown button

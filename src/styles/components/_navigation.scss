@@ -221,7 +221,7 @@
   position: absolute;
   margin: 0 auto;
   right: 0px;
-  top: 45px;
+  top: 40px;
   z-index: 9999;
   background: white;
   color: white;
@@ -230,6 +230,7 @@
   flex-wrap: wrap;
   border-radius: 6px;
   justify-content: space-around;
+  z-index: 9999;
 
   @include media($tablet) {
     top: 70px;
