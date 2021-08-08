@@ -140,7 +140,7 @@
   .sort-trigger {
     display: block;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
     border: 1px solid transparent;
     background-color: white;
@@ -148,27 +148,50 @@
     transition: all 0.15s ease-in-out;
     color: #000;
     border-radius: 30px;
-    padding: 7px 14px;
+    padding: 7px 12px;
     border: 1px solid $borderGrey;
 
-    @include media($tablet) {
+    @include media($desktop) {
       font-size: 14px;
       padding: 7px 22px;
-    }
-
-    @include media($desktop) {
     }
 
     &:hover {
       border: 1px solid $borderGrey;
     }
-    &:after {
-      content: "↓";
-      font-size: 16px;
-      margin-left: 8px;
+    &:before {
       position: relative;
-      top: -2px;
+      top: 2px;
+      font-size: 14px;
+      margin-right: 6px;
+      @include media($desktop) {
+        font-size: 20px;
+        margin-right: 8px;
+      }
     }
+  }
+}
+
+.sort-city .sort-trigger {
+  &:before {
+    content: "🌆";
+  }
+}
+.sort-artists .sort-trigger {
+  &:before {
+    content: "🔊";
+  }
+}
+
+.sort-venues .sort-trigger {
+  &:before {
+    content: "🏢";
+  }
+}
+
+.sort-date .sort-trigger {
+  &:before {
+    content: "🗓️";
   }
 }
 
