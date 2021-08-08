@@ -12,16 +12,22 @@ body {
 
 h1 {
   padding-left: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: $blue;
   text-transform: uppercase;
   font-weight: normal;
   border-bottom: 2px solid $blue;
-  display: none;
   @include media($desktop) {
     font-size: 25px;
   }
 }
+
+// h1 {
+//   @include media($desktop) {
+//     top: 10px;
+//     position: absolute;
+//   }
+// }
 
 h2 {
   text-transform: uppercase;
@@ -36,9 +42,13 @@ h2 {
   }
 }
 
-h1 {
-  @include media($desktop) {
-    top: 10px;
-    position: absolute;
-  }
+.button {
+  border: 1px solid $lightPink;
+  padding: 15px 10px;
+  background-color: $lightPink;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
 }

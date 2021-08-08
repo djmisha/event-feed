@@ -19,33 +19,35 @@
 
 <body>
   <header>
-    <h1>EDM Events & Live Streams</h1>
+    <h1>Upcoming Events Near You </h1>
   </header>
   <div class="navigations">
     <section class="search">
       <form action="#" id="form-search">
         <label for="input-search">search</label>
-        <input type="text" name="search" id="input-search" value="Search by artist, event, city or venue" />
+        <input type="text" name="search" id="input-search" value="Search by artist, event or venue" />
         <button id="submit-search">Search</button>
       </form>
     </section>
     <section class="sort">
-      <div class="sort-city">
-        <div class="sort-trigger" id="drop-trigger">San Diego</div>
-        <div id="city-list"></div>
+      <div class="sort-venues">
+        <div class="sort-trigger" id="drop-trigger">Venues</div>
+        <div id="venue-list"></div>
       </div>
       <div class="sort-artists">
         <div class="sort-trigger" id="drop-trigger">Artists</div>
         <div id="artist-list"></div>
       </div>
-      <div class="sort-venues">
-        <div class="sort-trigger" id="drop-trigger">Venues</div>
-        <div id="venue-list"></div>
-      </div>
+
       <div class="sort-date">
         <div class="sort-trigger" id="drop-trigger">Dates</div>
         <div id="date-list"></div>
       </div>
+      <div class="sort-city">
+        <div class="sort-trigger" id="drop-trigger">San Diego</div>
+        <div id="city-list"></div>
+      </div>
+
     </section>
   </div>
 
@@ -61,17 +63,6 @@
   <section id="musicfeed"><img src="./assets/images/oval.svg" alt="loading"></section> -->
 
   <script src="./assets/scripts/bundle.js"></script>
-
-
-  <script>
-    document.addEventListener(
-      "DOMContentLoaded", () => {
-        new Mmenu("#my-menu");
-      }
-    );
-  </script>
-
-
 
 </body>
 

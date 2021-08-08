@@ -21,12 +21,11 @@ body {
 
 h1 {
   padding-left: 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #1c94a5;
   text-transform: uppercase;
   font-weight: normal;
-  border-bottom: 2px solid #1c94a5;
-  display: none; }
+  border-bottom: 2px solid #1c94a5; }
   @media only screen and (min-width: 1080px) {
     h1 {
       font-size: 25px; } }
@@ -43,10 +42,14 @@ h2 {
     h2 {
       display: inline-block; } }
 
-@media only screen and (min-width: 1080px) {
-  h1 {
-    top: 10px;
-    position: absolute; } }
+.button {
+  border: 1px solid #fbe5f3;
+  padding: 15px 10px;
+  background-color: #fbe5f3;
+  text-align: center; }
+
+.hidden {
+  display: none; }
 
 #evenfeed,
 #musicfeed {
@@ -68,6 +71,9 @@ h2 {
     #evenfeed,
     #musicfeed {
       grid-template-columns: repeat(2, 1fr); } }
+
+#evenfeed.fixed-navigation {
+  margin-top: 115px; }
 
 .single-event {
   position: relative;
@@ -251,11 +257,23 @@ h2 {
     font-size: 14px;
     text-transform: uppercase; }
 
-@media only screen and (min-width: 768px) {
-  .navigations {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 5px; } }
+.navigations {
+  transition: all 0.2s ease; }
+  @media only screen and (min-width: 768px) {
+    .navigations {
+      position: relative;
+      display: flex;
+      top: auto;
+      justify-content: space-between;
+      padding-left: 5px; } }
+  .navigations.fixed-navigation {
+    position: fixed;
+    top: -55px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }
 
 #form-search {
   margin: 10px 5px;
@@ -324,12 +342,13 @@ h2 {
   position: relative;
   font-size: 14px;
   text-align: center;
-  padding: 2px 15px;
+  padding: 7px 15px;
   border: 1px solid #ce3197;
   border-left: 5px solid #ce3197;
   color: #ce3197;
   margin: 0 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  margin-top: 10px; }
 
 #clearSearch {
   font-size: 12px;
@@ -377,11 +396,12 @@ h2 {
     margin-left: 5px;
     transition: all 0.15s ease-in-out;
     color: #000;
-    border-radius: 30px;
-    padding: 7px 12px;
+    border-radius: 8px;
+    padding: 6px 12px;
     border: 1px solid #d3d3dc; }
     @media only screen and (min-width: 1080px) {
       .sort .sort-trigger {
+        border-radius: 30px;
         font-size: 14px;
         padding: 7px 22px; } }
     .sort .sort-trigger:hover {
@@ -438,8 +458,8 @@ h2 {
   #date-list > div,
   #artist-list > div,
   #city-list > div {
-    width: 40%;
-    padding: 8px 6px;
+    width: 30%;
+    padding: 10px 6px;
     font-size: 14px !important;
     line-height: 16px;
     border-radius: 4px;
