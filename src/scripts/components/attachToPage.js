@@ -15,6 +15,9 @@ function attachToPage(eventData, locationsData, element) {
     singleEventElement.setAttribute("data-id", event.id);
     singleEventElement.setAttribute("itemtype", "http://schema.org/Event");
 
+    // singleEventElement.classList.add('view-small');
+    singleEventElement.addEventListener('click', toToggleView);
+
     // if (index >= 10) {
     //   singleEventElement.classList.add("hidden");
     // }
@@ -27,11 +30,19 @@ function attachToPage(eventData, locationsData, element) {
 
   });
 
+
   // showMoreEventsButton(element);
 
   /* Create Sorting Navigation & Activate Search */
   createSortingNavigations(locationsData, eventData);
   search(eventData, locationsData);
+}
+
+function toToggleView(event) {
+  // if(event.classList.contains('small-view') {
+  console.log(event.target.closest('.single-event').classList);
+  event.target.closest('.single-event').classList.toggle('view-full');
+  // });
 }
 
 function showMoreEventsButton(element) {

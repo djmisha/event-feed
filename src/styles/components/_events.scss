@@ -37,6 +37,7 @@
   text-align: left;
   margin-bottom: 10px;
   display: flex;
+  overflow: hidden;
   @include media($tablet) {
     border-radius: 6px;
     margin-bottom: 0;
@@ -57,6 +58,26 @@
   &.hidden {
     display: none;
   }
+  // height: 60px;
+  // .event-location {
+  //   display: none;
+  // }
+  // .event-title-artist {
+  //   transition: all 0.15s ease-in-out;
+  //   height: 44px;
+  //   overflow: hidden;
+  // }
+  // &.view-full {
+  //   // height: auto;
+  //   // position: fixed;
+  //   .event-location {
+  //     display: block;
+  //   }
+  //   .event-title-artist {
+  //     height: auto;
+  //     overflow: visible;
+  //   }
+  // }
 }
 
 .event-date {

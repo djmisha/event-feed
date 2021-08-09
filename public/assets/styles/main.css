@@ -88,7 +88,8 @@ h2 {
   top: 0;
   text-align: left;
   margin-bottom: 10px;
-  display: flex; }
+  display: flex;
+  overflow: hidden; }
   @media only screen and (min-width: 768px) {
     .single-event {
       border-radius: 6px;
