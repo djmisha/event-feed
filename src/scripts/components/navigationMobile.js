@@ -3,16 +3,15 @@ function navigationMobile() {
   let lastKnownScrollPosition = 0;
   let ticking = false;
 
-  function doSomething(scrollPos) {
+  function stickNavigation(scrollPos) {
     if (window.innerWidth <= 768) {
-      console.log(scrollPos)
       var feed = document.getElementById('evenfeed')
       var navigation = document.querySelector('.navigations');
-      if (scrollPos > 95) {
+      if (scrollPos > 96) {
         navigation.classList.add('fixed-navigation');
         feed.classList.add('fixed-navigation');
       }
-      if (scrollPos <= 95) {
+      if (scrollPos <= 96) {
         navigation.classList.remove('fixed-navigation');
         feed.classList.remove('fixed-navigation');
       }
@@ -24,7 +23,7 @@ function navigationMobile() {
 
     if (!ticking) {
       window.requestAnimationFrame(function () {
-        doSomething(lastKnownScrollPosition);
+        stickNavigation(lastKnownScrollPosition);
         ticking = false;
       });
 

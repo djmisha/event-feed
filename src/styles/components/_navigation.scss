@@ -216,23 +216,20 @@
 #city-list {
   transition: height 0.25 ease-in;
   overflow: hidden;
-  // height: 100vh;
-  // width: calc(100% - 20px);
   position: absolute;
   margin: 0 auto;
   right: 0px;
   top: 40px;
-  z-index: 9999;
   background: white;
-  color: white;
   height: 0;
   display: flex;
   flex-wrap: wrap;
-  border-radius: 6px;
-  justify-content: space-around;
+  justify-content: flex-start;
   z-index: 9999;
+  box-shadow: 0 5px 5px rgba($color: $black, $alpha: 0.2);
 
   @include media($tablet) {
+    border-radius: 6px;
     top: 70px;
     width: 850px;
     box-shadow: 0 10px 10px rgba($color: $black, $alpha: 0.2);
@@ -245,7 +242,7 @@
     line-height: 16px;
     border-radius: 4px;
     font-weight: 400;
-    color: black;
+    color: $black;
     @include media($tablet) {
       padding: 10px 20px;
       width: 18%;
@@ -257,12 +254,21 @@
   }
 }
 
+#venue-list > div {
+  width: 45%;
+  @include media($tablet) {
+    width: 25%;
+  }
+}
+
 #venue-list.visible,
 #artist-list.visible,
 #city-list.visible,
 #date-list.visible {
-  // border: 1px solid #525252;
   transition: height 0.25 ease-in;
-  padding: 10px 5px;
+  padding: 10px 5px 30px 5px;
   height: auto;
+  @include media($tablet) {
+    min-height: none;
+  }
 }
