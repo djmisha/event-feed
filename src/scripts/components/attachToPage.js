@@ -3,7 +3,7 @@ import createSortingNavigations from './createSortingNavigations'
 import search from './search'
 
 /* Loop through all eventa  and attach them to page */
-function attachToPage(eventData, locationsData, element) {
+function attachToPage(eventData, locationsData, element, city) {
 
   /* Remove loading icon*/
   element.innerHTML = '';
@@ -34,7 +34,7 @@ function attachToPage(eventData, locationsData, element) {
   // showMoreEventsButton(element);
 
   /* Create Sorting Navigation & Activate Search */
-  createSortingNavigations(locationsData, eventData);
+  createSortingNavigations(locationsData, eventData, city);
   search(eventData, locationsData);
 }
 

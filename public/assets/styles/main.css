@@ -340,33 +340,38 @@ h2 {
   position: relative; }
 
 #searchresults p {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   font-size: 14px;
   text-align: center;
   padding: 7px 15px;
+  background: white;
   border: 1px solid #ce3197;
   border-left: 5px solid #ce3197;
   color: #ce3197;
-  margin: 0 10px;
+  margin: 10px;
   margin-bottom: 10px;
   margin-top: 10px; }
 
 #clearSearch {
   font-size: 12px;
   text-align: right;
-  margin: 0 10px;
+  margin: 0 5px;
   display: none;
   position: absolute;
-  right: 5px; }
+  pointer-events: pointer; }
   #clearSearch.visible {
     display: block; }
   #clearSearch span {
-    position: relative;
-    top: 10px;
-    right: 0px;
+    position: fixed;
+    top: 15px;
+    right: 15px;
     font-size: 40px;
     color: #ce3197;
-    z-index: -1; }
+    z-index: 1;
+    pointer-events: none; }
 
 .sort {
   position: relative;

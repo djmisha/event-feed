@@ -1,10 +1,10 @@
 # Roadmap 
 
-## IPSTACK - Location Detection 
+[DONE!]  ## IPSTACK - Location Detection  
   https://ipstack.com/quickstart
   API KEY  316340baee8e3995e8d261a746a2571a
 
-## SHARING 
+## SHARING   
   - Share this event by... Text, Social 
   - "I found this event at SanDiegoHouseMusic.com"
 
@@ -18,7 +18,7 @@
   - [DONE!] add icons next to each dropdown button
   - [DONE!] remove "Live Stream" for now, 
     [DONE!] - remove live stream artists 
-     maybe bring back as a different section / area - below in person events 
+            - maybe bring back as a different section / area - below in person events 
 
   - change event layout
     - [PARTIAL] change single layout to match vividseats

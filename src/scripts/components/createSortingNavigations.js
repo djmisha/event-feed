@@ -3,7 +3,7 @@ import requestEventsXHR from './requestEvents'
 
 /* Create Navigations */
 
-function createSortingNavigations(locationsData, eventData) {
+function createSortingNavigations(locationsData, eventData, city) {
 
   /* Locations */
 
@@ -34,9 +34,14 @@ function createSortingNavigations(locationsData, eventData) {
       city.parentElement.classList.remove("visible");
       locationsContainer.innerHTML = '';
       dateContainer.innerHTML = "";
-      requestEventsXHR(ID, locationsData);
+      requestEventsXHR(ID, locationsData, city);
     });
   });
+
+  // let locationCity = document.querySelector(".sort-city .sort-trigger");
+  // locationCity.innerHTML = city;
+
+
 
   /* Venues */
 

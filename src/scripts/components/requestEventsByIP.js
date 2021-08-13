@@ -1,6 +1,14 @@
-import attachToPage from './attachToPage';
 
-function requestEventsXHR(cityID, locations) {
+import attachToPage from './attachToPage';
+import getIPAddress from './getIPAddress'
+import getLocationByIp from './getLocationByIp'
+
+
+getIPAddress();
+getLocationByIp();
+
+function requestEventsByIP(locations) {
+
   var theFeed = document.getElementById('evenfeed');
   var eventData = [];
   var liveStreamData = [];
@@ -13,25 +21,28 @@ function requestEventsXHR(cityID, locations) {
 
   var http = new XMLHttpRequest();
 
+  // events?latitude=33.962&longitude=-118.358&state=California&client=...
+
   var url =
-    'https://edmtrain.com/api/events?locationIds=' +
-    cityID +
+    'https://edmtrain.com/api/events?latitude=' +
+    latitude +
+    '&longitude=' +
+    longitude +
+    '&state=' +
+    state +
     '&client=47211b0d-26f7-424c-b81c-45613a70f865';
 
 
   http.open('GET', url);
   http.send();
 
-  function prepareURL() {
-    apiPath = 'https://edmtrain.com/api/events?locationIds=';
-
-  }
 
   http.onreadystatechange = function () {
     if (http.readyState === XMLHttpRequest.DONE && http.status === 200) {
-      var PostResponce = JSON.parse(http.responseText);
+      var response = JSON.parse(http.responseText);
       /*Puts the Data into our array*/
-      parseData(PostResponce);
+      parseData(response);
+      console.log(response);
 
       /*Attaches the data to the page*/
       attachToPage(eventData, locations, theFeed, city);
@@ -76,4 +87,4 @@ function requestEventsXHR(cityID, locations) {
   return eventData;
 }
 
-export default requestEventsXHR;
+export default requestEventsByIP;
