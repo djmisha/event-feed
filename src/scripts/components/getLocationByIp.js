@@ -2,7 +2,7 @@
 const getLocationByIp = async () => {
   var ipaddress = localStorage.getItem('ip');;
   var http = new XMLHttpRequest();
-  var url = `https://api.ipstack.com/${ipaddress}?access_key=316340baee8e3995e8d261a746a2571a`;
+  var url = `http://api.ipstack.com/${ipaddress}?access_key=316340baee8e3995e8d261a746a2571a`;
   http.open("GET", url);
   http.send();
 

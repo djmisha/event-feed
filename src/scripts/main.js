@@ -1,3 +1,4 @@
+import requestEventsXHR from './components/requestEvents';
 import requestEventsByIP from './components/requestEventsByIP';
 import requestLocationsXHR from './components/requestLocations';
 import navigationDropdowns from './components/navigationDropdowns';
@@ -7,7 +8,8 @@ import navigationMobile from './components/navigationMobile';
 // Initialize Application
 
 let locations = requestLocationsXHR();
-requestEventsByIP(locations);
+requestEventsXHR(81, locations);
+// requestEventsByIP(locations);
 navigationDropdowns();
 navigationMobile();
 
