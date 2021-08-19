@@ -1,8 +1,11 @@
+import { apikeys } from '../vars.js';
 
+// need to refactor to use API route
 const getLocationByIp = async () => {
   var ipaddress = localStorage.getItem('ip');;
   var http = new XMLHttpRequest();
-  var url = `http://api.ipstack.com/${ipaddress}?access_key=316340baee8e3995e8d261a746a2571a`;
+  // var url = `http://localhost:3030/users`
+  var url = `http://api.ipstack.com/${ipaddress}?access_key=${apikeys.API_KEY_IPSTACK}`;
   http.open("GET", url);
   http.send();
 
@@ -10,7 +13,7 @@ const getLocationByIp = async () => {
     if (http.readyState === XMLHttpRequest.DONE) {
       var response = JSON.parse(http.responseText);
       setLocation(response);
-      console.log(response)
+      // console.log(response)
     }
   };
 }
@@ -30,7 +33,7 @@ function setLocation(response) {
   localStorage.setItem("zip", zip);
   localStorage.setItem("latitude", latitude);
   localStorage.setItem("longitude", longitude);
-  // console.table(locationdata.city);
+
   return locationdata.city
 }
 

@@ -1,8 +1,8 @@
 
+import { apikeys } from '../vars';
 import attachToPage from './attachToPage';
 import getIPAddress from './getIPAddress'
 import getLocationByIp from './getLocationByIp'
-
 
 getIPAddress();
 getLocationByIp();
@@ -21,8 +21,6 @@ function requestEventsByIP(locations) {
 
   var http = new XMLHttpRequest();
 
-  // events?latitude=33.962&longitude=-118.358&state=California&client=...
-
   var url =
     'https://edmtrain.com/api/events?latitude=' +
     latitude +
@@ -30,7 +28,8 @@ function requestEventsByIP(locations) {
     longitude +
     '&state=' +
     state +
-    '&client=47211b0d-26f7-424c-b81c-45613a70f865';
+    '&client=' +
+    apikeys.API_KEY_EDMTRAIN;
 
 
   http.open('GET', url);

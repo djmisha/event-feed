@@ -29,9 +29,10 @@ function requestEventsXHR(cityID, locations) {
 
   http.onreadystatechange = function () {
     if (http.readyState === XMLHttpRequest.DONE && http.status === 200) {
-      var PostResponce = JSON.parse(http.responseText);
+      var response = JSON.parse(http.responseText);
       /*Puts the Data into our array*/
-      parseData(PostResponce);
+      console.log(response);
+      parseData(response);
 
       /*Attaches the data to the page*/
       attachToPage(eventData, locations, theFeed, city);
@@ -41,17 +42,16 @@ function requestEventsXHR(cityID, locations) {
   function parseData(result) {
     for (var g = 0; g < result.data.length; g++) {
       /*get date converted to numerical value*/
-      //   console.log(result.data[g].startTime);
+      // console.log(result.data[g].startTime);
       /*convert date to ISO for Schema and Readble Formats*/
       //   var eventDateParsed = Date.parse(result.data[g].date);
       var eventDateISO = new Date(result.data[g].date);
-      var readableDate = new Date(result.data[g].date).toDateString();
 
       // Create Event Object
       var singleEventListing = {
         id: result.data[g].id,
         name: result.data[g].name,
-        date: readableDate,
+        date: result.data[g].date,
         link: result.data[g].link,
         venuename: result.data[g].venue.name,
         venueaddress: result.data[g].venue.address,
@@ -61,8 +61,6 @@ function requestEventsXHR(cityID, locations) {
         image: '',
         schemadate: eventDateISO,
         starttime: result.data[g].startTime,
-        // image: data[g].eventImage,
-        // age: data[g].ageLabel,
       };
 
       /*Push To Event DAta Array if not Live Stream*/
