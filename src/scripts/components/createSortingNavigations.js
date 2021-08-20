@@ -38,10 +38,8 @@ function createSortingNavigations(locationsData, eventData, city) {
     });
   });
 
-  // let locationCity = document.querySelector(".sort-city .sort-trigger");
-  // locationCity.innerHTML = city;
-
-
+  let locationCity = document.querySelector(".local-city");
+  locationCity.innerHTML = eventData[0].venuecity;
 
   /* Venues */
 

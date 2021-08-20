@@ -1,6 +1,6 @@
 import attachToPage from './attachToPage';
 
-function requestEventsXHR(cityID, locations) {
+function requestEvents(cityID, locations) {
   var theFeed = document.getElementById('evenfeed');
   var eventData = [];
   var liveStreamData = [];
@@ -74,4 +74,4 @@ function requestEventsXHR(cityID, locations) {
   return eventData;
 }
 
-export default requestEventsXHR;
+export default requestEvents;

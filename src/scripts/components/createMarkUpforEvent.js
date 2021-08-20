@@ -78,7 +78,7 @@ function calcTime(time) {
 // Format Date
 
 function formatDate(date) {
-  return moment(date).format('MMMM Do');
+  return moment(date).format('MMM Do');
 }
 
 function formatDayOfWeek(date) {
@@ -96,7 +96,7 @@ export function createMarkUpforEvent(event) {
   var showDate = formatDate(event.date);
   var showDayOfWeek = formatDayOfWeek(event.date)
   var theEventVenueAddress = '';
-  console.log(event.starttime)
+
   if (event.venueaddress !== null) {
     theEventVenueAddress = createShowLocation(event);
   }
