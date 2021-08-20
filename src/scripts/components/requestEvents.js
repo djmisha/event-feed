@@ -31,7 +31,7 @@ function requestEventsXHR(cityID, locations) {
     if (http.readyState === XMLHttpRequest.DONE && http.status === 200) {
       var response = JSON.parse(http.responseText);
       /*Puts the Data into our array*/
-      console.log(response);
+      // console.log(response);
       parseData(response);
 
       /*Attaches the data to the page*/
@@ -46,7 +46,7 @@ function requestEventsXHR(cityID, locations) {
       /*convert date to ISO for Schema and Readble Formats*/
       //   var eventDateParsed = Date.parse(result.data[g].date);
       var eventDateISO = new Date(result.data[g].date);
-
+      // console.log(result.data[g].startTime);
       // Create Event Object
       var singleEventListing = {
         id: result.data[g].id,

@@ -1,6 +1,6 @@
 # Roadmap 
 
-[DONE!]  ## IPSTACK - Location Detection  
+[INPROGRESS!]  ## IPSTACK - Location Detection  
   https://ipstack.com/quickstart
   API KEY  316340baee8e3995e8d261a746a2571a
 
@@ -43,6 +43,7 @@
 
   - ADD IMAGES TO EVENTS
   - Integrate TICKET MASTER API
+  - Integrate Stub Hub API
 
 
 ## Add ability to create pages programatically

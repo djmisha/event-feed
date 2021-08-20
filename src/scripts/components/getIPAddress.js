@@ -10,7 +10,6 @@ const getIPAddress = () => {
     if (http.readyState === XMLHttpRequest.DONE) {
       var response = JSON.parse(http.responseText);
       setIPAddress(response);
-      console.log(response)
     }
   };
 
@@ -24,13 +23,3 @@ const getIPAddress = () => {
 
 export default getIPAddress;
 
-
-function resolveAfter2Seconds() {
-  console.log("starting slow promise")
-  return new Promise(resolve => {
-    setTimeout(function () {
-      resolve("slow")
-      console.log("slow promise is done")
-    }, 2000)
-  })
-}

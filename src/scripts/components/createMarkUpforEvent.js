@@ -1,3 +1,5 @@
+var moment = require('moment');
+
 /* create a list of all Artists for an event*/
 
 function listArtists(event) {
@@ -68,42 +70,19 @@ function createShowLocation(event) {
 }
 
 // currently returns 5pm for everything - need to figure out why
-function calcTime(event) {
-  let date = event.schemadate;
-  let time = date.toLocaleString('en-US', {
-    hour: 'numeric',
-    minute: 'numeric',
-    hour12: true,
-  });
-  return time;
+function calcTime(time) {
+  // console.log(time)
+  return ` &bull; ${moment(time).format('LT')}`;
 }
 
 // Format Date
 
 function formatDate(date) {
-  //   // do stuff
-  //   switch (new Date().getDay()) {
-  //     case 0:
-  //       day = "Sunday";
-  //       break;
-  //     case 1:
-  //       day = "Monday";
-  //       break;
-  //     case 2:
-  //        day = "Tuesday";
-  //       break;
-  //     case 3:
-  //       day = "Wednesday";
-  //       break;
-  //     case 4:
-  //       day = "Thursday";
-  //       break;
-  //     case 5:
-  //       day = "Friday";
-  //       break;
-  //     case 6:
-  //       day = "Saturday";
-  //   }
+  return moment(date).format('MMMM Do');
+}
+
+function formatDayOfWeek(date) {
+  return moment(date).format('dddd');
 }
 
 /* Create MarkupForEvent */
@@ -113,11 +92,11 @@ export function createMarkUpforEvent(event) {
   // var showImages = matchImageswithEvents(imageData, id);
   var showArtist = listArtists(event);
   var showName = checkEventName(event);
-  var showTime = calcTime(event);
+  var showTime = calcTime(event.startTime);
   var showDate = formatDate(event.date);
-
+  var showDayOfWeek = formatDayOfWeek(event.date)
   var theEventVenueAddress = '';
-
+  console.log(event.starttime)
   if (event.venueaddress !== null) {
     theEventVenueAddress = createShowLocation(event);
   }
@@ -126,7 +105,9 @@ export function createMarkUpforEvent(event) {
     '<div class="event-date" itemprop="startDate" content="' +
     event.schemadate +
     '">' +
-    event.date +
+    showDate +
+    '<br>' +
+    showDayOfWeek +
     '</div> \n';
 
   var theEventTime =
