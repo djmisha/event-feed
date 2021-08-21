@@ -1,3 +1,4 @@
+var moment = require('moment');
 import removeDuplicates from './removeDuplicates'
 import requestEventsXHR from './requestEvents'
 
@@ -94,7 +95,7 @@ function createSortingNavigations(locationsData, eventData, city) {
   var dateArray = [];
 
   eventData.forEach(function (item) {
-    var date = item.date;
+    var date = moment(item.date).format('MMMM Do');
     dateArray.push(date);
   });
 
