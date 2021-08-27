@@ -1,5 +1,3 @@
-// Event Feed
-
 #evenfeed,
 #musicfeed {
   padding: 0;
@@ -48,6 +46,9 @@
       // box-shadow: 0px 5px 15px #d8d8d8;
     }
   }
+  &.hidden {
+    display: none;
+  }
   a {
     color: #767679;
     text-decoration: none;
@@ -55,29 +56,38 @@
       text-decoration: underline !important;
     }
   }
-  &.hidden {
+  .event-location {
     display: none;
+    opacity: 0;
+    transition: all 0.15s ease-in-out;
   }
-  // height: 60px;
-  // .event-location {
-  //   display: none;
-  // }
-  // .event-title-artist {
-  //   transition: all 0.15s ease-in-out;
-  //   height: 44px;
-  //   overflow: hidden;
-  // }
-  // &.view-full {
-  //   // height: auto;
-  //   // position: fixed;
-  //   .event-location {
-  //     display: block;
-  //   }
-  //   .event-title-artist {
-  //     height: auto;
-  //     overflow: visible;
-  //   }
-  // }
+  &.view-partial {
+    .event-link a {
+      display: none;
+    }
+    &:before {
+      content: "...";
+      color: $borderGrey;
+      font-size: 40px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+  }
+  &.view-full {
+    height: auto;
+    .event-venue {
+      padding-top: 20px;
+    }
+    .event-location {
+      display: inline-block;
+      opacity: 1;
+      transition: all 0.15s ease-in-out;
+    }
+    .event-link a {
+      display: inline-block;
+    }
+  }
 }
 
 .event-date {
@@ -149,7 +159,7 @@
   right: 20px;
   top: 20px;
   margin-bottom: 30px;
-  border-radius: 5px;
+  border-radius: 6px;
   @include media($tablet) {
     width: 140px;
     height: 140px;
@@ -157,7 +167,7 @@
 }
 
 .event-venue {
-  display: inline-block;
+  display: block;
   font-size: 15px;
   line-height: 20px;
   color: $black;
@@ -180,9 +190,6 @@
 }
 
 .event-link a {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
   font-size: 12px;
   text-decoration: none;
   border: 1px solid rgb(221, 221, 221);
@@ -190,12 +197,10 @@
   display: inline-block;
   font-weight: 400;
   padding: 5px 15px;
-  border-radius: 4px;
+  border-radius: 6px;
   color: rgb(180, 180, 180);
-  display: none;
   @include media($tablet) {
     margin-top: 30px;
-    display: inline;
   }
   &:hover {
     text-decoration: none !important;

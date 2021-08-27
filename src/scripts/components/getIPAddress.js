@@ -1,21 +1,23 @@
+import getLocationByIp from "./getLocationByIp";
 
-const getIPAddress = () => {
+const getIPAddress = async () => {
   var ipaddress;
-  var http = new XMLHttpRequest();
   var url = "https://api.ipify.org?format=json";
-  http.open("GET", url);
-  http.send();
 
-  http.onreadystatechange = function () {
-    if (http.readyState === XMLHttpRequest.DONE) {
-      var response = JSON.parse(http.responseText);
-      setIPAddress(response);
-    }
-  };
+  await fetch(url)
+    .then(function (response) {
+      response.json().then(jsonData => {
+        setIPAddress(jsonData);
+      });
+    })
+    .catch(function (error) {
+      console.log(error)
+    });
 
   function setIPAddress(response) {
     ipaddress = response.ip
     localStorage.setItem("ip", ipaddress);
+    getLocationByIp(ipaddress);
   }
 
   return ipaddress;

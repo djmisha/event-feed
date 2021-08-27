@@ -4,10 +4,12 @@
   https://ipstack.com/quickstart
   API KEY  316340baee8e3995e8d261a746a2571a
 
+  ## FREE 
+  https://tools.keycdn.com/geo.json?host={IP or hostname}
+
 ## SHARING   
   - Share this event by... Text, Social 
   - "I found this event at SanDiegoHouseMusic.com"
-
 
 ## Music TODO 
   - SORTABLE MUSIC MIXES (last 5 years?)

@@ -11,6 +11,7 @@ function attachToPage(eventData, locationsData, element, city) {
   const events = eventData.forEach((event, index) => {
     var singleEventElement = document.createElement("div");
     singleEventElement.classList.add("single-event");
+    singleEventElement.classList.add("view-partial");
     singleEventElement.setAttribute("itemscope", "");
     singleEventElement.setAttribute("data-id", event.id);
     singleEventElement.setAttribute("itemtype", "http://schema.org/Event");
@@ -39,11 +40,15 @@ function attachToPage(eventData, locationsData, element, city) {
 }
 
 function toToggleView(event) {
-  // if(event.classList.contains('small-view') {
   console.log(event.target.closest('.single-event').classList);
-  event.target.closest('.single-event').classList.toggle('view-full');
-  // });
-}
+  if (event.target.closest('.single-event').classList.contains('view-partial')) {
+    event.target.closest('.single-event').classList.add('view-full');
+    event.target.closest('.single-event').classList.remove('view-partial');
+  } else {
+    event.target.closest('.single-event').classList.remove('view-full');
+    event.target.closest('.single-event').classList.add('view-partial');
+  }
+};
 
 function showMoreEventsButton(element) {
   var showMoreButton = document.createElement('div')
@@ -52,7 +57,7 @@ function showMoreEventsButton(element) {
   showMoreButton.innerHTML = 'View More';
   showMoreButton.addEventListener('click', scanHiddenEvents);
   element.appendChild(showMoreButton);
-}
+};
 
 function scanHiddenEvents() {
   var hiddenEvents = document.querySelectorAll('.hidden');

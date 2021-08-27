@@ -1,40 +1,31 @@
-import { apikeys } from '../vars.js';
+import getLocationID from "./getLocationID";
 
-// need to refactor to use API route
-const getLocationByIp = async () => {
-  var ipaddress = localStorage.getItem('ip');;
-  var http = new XMLHttpRequest();
-  // var url = `http://localhost:3030/users`
-  var url = `http://api.ipstack.com/${ipaddress}?access_key=${apikeys.API_KEY_IPSTACK}`;
-  http.open("GET", url);
-  http.send();
+const getLocationByIp = async (ipaddress) => {
+  var ipaddress = ipaddress;
+  var url = `https://ipapi.co/${ipaddress}/json/`
 
-  http.onreadystatechange = function () {
-    if (http.readyState === XMLHttpRequest.DONE) {
-      var response = JSON.parse(http.responseText);
-      setLocation(response);
-      // console.log(response)
-    }
-  };
+  await fetch(url)
+    .then(function (response) {
+      response.json().then(jsonData => {
+        setLocation(jsonData);
+      });
+    })
+    .catch(function (error) {
+      console.log(error)
+    });
 }
 
-function setLocation(response) {
-  let locationdata = response;
-  let city = response.city;
-  let state = response.region_name;
-  let country = response.country_code;
-  let zip = response.zip;
-  let latitude = response.latitude;
-  let longitude = response.longitude;
+function setLocation(data) {
+  let locationdata = data;
+  let city = data.city;
+  let state = data.region;
+  let country = data.country_code;
 
   localStorage.setItem("city", city);
   localStorage.setItem("state", state);
   localStorage.setItem("country", country);
-  localStorage.setItem("zip", zip);
-  localStorage.setItem("latitude", latitude);
-  localStorage.setItem("longitude", longitude);
 
-  return locationdata.city
+  getLocationID(locationdata.city, locationdata.state);
 }
 
 
