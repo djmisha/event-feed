@@ -16,16 +16,15 @@ const getLocationByIp = async (ipaddress) => {
 }
 
 function setLocation(data) {
-  let locationdata = data;
   let city = data.city;
-  let state = data.region;
+  let state = data.region_code;
   let country = data.country_code;
 
   localStorage.setItem("city", city);
   localStorage.setItem("state", state);
   localStorage.setItem("country", country);
 
-  getLocationID(locationdata.city, locationdata.state);
+  getLocationID(city, state);
 }
 
 

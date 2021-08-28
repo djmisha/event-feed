@@ -1,8 +1,5 @@
 import locations from '../../locations';
-import requestLocationsXHR from './requestLocations';
 import requestEvents from './requestEvents';
-
-let alsolocations = requestLocationsXHR();
 
 const getLocationID = (city, state) => {
   var userLocation;
@@ -14,10 +11,11 @@ const getLocationID = (city, state) => {
     }
     if (!userLocation && state === item.stateCode) {
       userLocation = item.id;
+      return userLocation;
     }
   });
 
-  requestEvents(userLocation, alsolocations)
+  requestEvents(userLocation, locations)
 }
 
 export default getLocationID;
