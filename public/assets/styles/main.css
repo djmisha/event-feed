@@ -21,7 +21,7 @@ h1 {
   border-bottom: 2px solid #1c94a5; }
   @media only screen and (min-width: 768px) {
     h1 {
-      margin-top: 100px;
+      margin-top: 20px;
       display: block;
       font-size: 25px; } }
 
@@ -53,15 +53,6 @@ img.loading {
   right: 50%;
   text-align: center; }
 
-header {
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999 !important; }
-  @media only screen and (min-width: 768px) {
-    header {
-      position: fixed; } }
-
 .nav-bar {
   width: 100%;
   position: relative;
@@ -81,7 +72,6 @@ header {
   @media only screen and (min-width: 768px) {
     .nav-bar {
       flex-direction: row;
-      position: fixed;
       height: 80px;
       width: auto;
       left: 0px;

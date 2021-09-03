@@ -17,7 +17,7 @@ h1 {
   font-weight: normal;
   border-bottom: 2px solid $blue;
   @include media($tablet) {
-    margin-top: 100px;
+    margin-top: 20px;
     display: block;
     font-size: 25px;
   }

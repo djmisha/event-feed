@@ -1,12 +1,12 @@
-header {
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999 !important;
-  @include media($tablet) {
-    position: fixed;
-  }
-}
+// footer {
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: 9999 !important;
+//   @include media($tablet) {
+//     position: fixed;
+//   }
+// }
 
 .nav-bar {
   width: 100%;
@@ -27,7 +27,7 @@ header {
 
   @include media($tablet) {
       flex-direction: row;
-      position: fixed;
+      // position: fixed;
       height: 80px;
       width: auto;
       left: 0px;
