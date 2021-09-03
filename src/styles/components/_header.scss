@@ -1,0 +1,493 @@
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999 !important;
+  @include media($tablet) {
+    position: fixed;
+  }
+}
+
+.nav-bar {
+  width: 100%;
+  position: relative;
+  background: rgba(white, 1);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 0 20px;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  height: 60px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid #eee;
+
+  @include media($tablet) {
+      flex-direction: row;
+      position: fixed;
+      height: 80px;
+      width: auto;
+      left: 0px;
+      right: 0px;
+  }
+
+  @include media($desktop) {
+      z-index: 2;
+      height: 85px;
+      left: 0;
+      right: 0;
+      margin-top: 0;
+      nav {
+          position: absolute;
+          right: 0;
+      }
+  }
+}
+
+.site-logo {
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  // border: 1px solid pink;
+
+  @include media($tablet) {
+      top: 14px;
+      left: auto;
+      right: 20px;
+  }
+
+  @include media($desktop) {
+      top: 17px;
+      right: auto;
+      left: 20px;
+  }
+
+  .is--ipad & {
+  }
+
+  h1 {
+      margin: 0 !important;
+  }
+  img {
+      width: 120px;
+      height: auto;
+      transition: all 0.15s ease-in;
+      @include media($tablet) {
+          width: 200px;
+          &:hover {
+              // width: 210px;
+          }
+      }
+      @include media($desktop) {
+      }
+  }
+}
+
+.menu-trigger {
+  position: absolute;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  height: 100%;
+  @include media($desktop) {
+      display: none;
+  }
+  .hamburger {
+      width: 30px;
+      height: 2px;
+      border-radius: 20px;
+      background: $pink;
+      display: block;
+      margin-bottom: 4px;
+      &:last-of-type {
+          margin-bottom: 0px;
+      }
+  }
+  i {
+      color: $pink;
+      font-size: 27px;
+      display: none;
+  }
+  @include media($desktop) {
+      &.open {
+          .hamburger {
+              z-index: 9999;
+              display: none;
+          }
+          i {
+              color: #fff;
+              display: block;
+              position: fixed;
+              right: 20px;
+          }
+      }
+  }
+  > div {
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .touch-button-text {
+      margin-right: 15px;
+      display: none;
+      margin-top: 0px;
+      font-size: 20px;
+      font-weight: 100;
+      color: $black;
+      text-transform: uppercase;
+      @include media(370px) {
+          display: block;
+      }
+      @include media($tablet) {
+      }
+  }
+}
+
+
+
+// Touch Menu
+
+.menu-wrap {
+  display: none;
+}
+
+// Closing Opening Menu with Fade
+
+.touch-menu.menu-is-closed .main-menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 400ms, transform 5s;
+  transform: translate3d(100%, 0, 0);
+}
+
+
+.touch-menu.menu-is-open .main-menu {
+  visibility: visible;
+  overflow: scroll;
+  top: 0;
+  bottom:0;
+
+  // height: 100%;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 400ms;
+  transform: translate3d(100%, 0, 0);
+  margin: 0;
+  padding: 0;
+  padding-top: 80px;
+}
+
+
+.touch-menu {
+  display: block;
+
+  &.menu-wrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0;
+    left: -100%;
+    // overflow: scroll;
+    z-index: 500;
+  }
+
+  .main-menu {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    background: rgba(#000, .9) ;
+    height: 100%;
+    width: 100%;
+    top: 0; 
+    bottom: 0;
+    position: fixed;
+    // overflow-y: scroll;
+    transform: translate3d(-100%, 0, 0);
+    // visibility: hidden;
+    // opacity: 0;
+    // transition: visibility 0s linear 300ms, opacity 300ms;
+
+    // Set baseline "li" styling
+
+    li {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      list-style-type: none;
+      text-align: left;
+      // padding-left: 60px;
+      &:before {
+        display: none;
+      }
+    }
+
+    // Set baseline "a" styling
+
+    a {
+      text-transform: uppercase;
+      //  letter-spacing: 1px;
+      // font-family: $primaryFont;
+
+      text-decoration: none;
+      display: block;
+      color: rgba($pink, 1); // Set color for menu items
+      line-height: 1em;
+      font-size: 22px; // Set font size for menu items
+      font-weight: 200;
+      letter-spacing: 1px;
+      // border: 1px solid pink;
+      // padding-left: 40px;
+    }
+    // End "a" reset
+
+    // Touch Menu Items
+
+    .menu-item {
+      > a {
+          padding: 16px 20px 16px 100px;
+        // border-bottom: 1px solid rgba($lightColor, .15);
+      }
+    }
+
+    .first.menu-item {
+      // border-top: 1px solid rgba($lightColor, .15);
+    }
+
+    // General Sub-Menu Styling
+
+    .sub-menu {
+      display: none;
+      a {
+        // font-size: .9em;
+        // line-height: 22px;
+      }
+    }
+
+    // Specific Sub-Menu Level Styling
+
+    ul[data-ul-depth="0"] {
+      > li > a {
+        padding-left: 30px;
+      }
+    }
+    ul[data-ul-depth="1"] {
+      > li > a {
+        padding-left: 40px;
+      }
+    }
+    ul[data-ul-depth="2"] {
+      > li > a {
+        padding-left: 50px;
+      }
+    }
+    ul[data-ul-depth="3"] {
+      > li > a {
+        padding-left: 60px;
+      }
+    }
+    ul[data-ul-depth="4"] {
+      > li > a {
+        padding-left: 70px;
+      }
+    }
+  }
+
+  .nav-dropdown-button {
+    position: absolute;
+    z-index: 25;
+    width: 50px;
+    height: 50px;
+    // background: rgba($lightColor, 0.05);
+    right: 0;
+    top: 0px;
+    cursor: pointer;
+    // border-left: 1px solid rgba($lightColor, .15);
+
+    &:after {
+      content: "\f067";
+      font-family: "Font Awesome 5 Pro";
+      color: rgba(white, 0.4);
+      font-weight: 100;
+      transition: 0.2s linear transform;
+      position: absolute;
+      top: 25px;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .close-menu {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 23px;
+    color: rgba($pink, 1); // Set color for menu items
+    // text-align: center;
+    font-size: 35px; // match to other font-size
+    cursor: pointer;
+    i {
+      font-weight: 100;
+    }
+  }
+
+  .sub-menu-open {
+    > .nav-dropdown-button {
+      &:after {
+        content: "\f068";
+        font-weight: 100;
+      }
+    }
+  }
+}
+
+
+
+// DESKTOP MENU
+
+
+$menuHeight: 60px;
+
+.hover-menu {
+  display: block;
+  // justify-content: space-between;
+  // font-family: $primaryFont;
+  font-weight: 100;
+  // z-index: 9999;
+  // position: relative;
+  // border: 1px solid pink;
+  padding-top: 30px;
+
+  .main-menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+
+    > li {
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      height: 100%;
+
+      &:hover {
+        > a {
+          text-decoration: none !important;
+        }
+
+        > .sub-menu {
+          opacity: 1;
+          visibility: visible;
+          z-index: 1050;
+        }
+      }
+      &.mega-menu {
+        position: static;
+      }
+
+      a {
+        display: block;
+        text-decoration: none;
+        padding: 0px 25px;
+        transition: 0.25s ease-in-out;
+        color: $darkerGrey;
+        &:hover {
+          color: $pink !important;
+          &:before {
+            color: $pink !important;
+          }
+        }
+      }
+    }
+  }
+  a {
+    font-size: 22px; //reset font-size for inline-block hack
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 200;
+    @include media($desktop) {
+      font-size: 18px; //reset font-size for inline-block hack
+    }
+  }
+
+  .close-menu {
+    display: none !important;
+  }
+}
+
+  header {
+    .menu-item-9284 a,
+    .menu-item-7986 a,
+    .menu-item-9759 a,
+    .menu-item-9153 a,
+    .menu-item-7981 a,
+    .menu-item-7982 a,
+    .menu-item-7978 a,
+    .menu-item-7980 a,
+    .menu-item-9130 a,
+    .menu-item-7264 a,
+    .menu-item-9653 a,
+    .menu-item-9756 a,
+    .menu-item-7265 a {
+      position: relative;
+      &:before { 
+        font-family: "Font Awesome 5 Pro";
+        color: rgba($pink, 1);
+        font-size: 30px;
+        font-weight: 100;
+        transition: 0.2s all;
+        position: absolute;
+        left: 45px;
+        transition: all .2s ease-in-out;
+        font-weight: 100;
+      @include media($desktop) {
+        left: calc( 50% - 15px;);
+        color: $darkerGrey !important;
+        top: -28px;
+      }
+    }
+    @include media($desktop) {
+      &:hover {
+        &:before { 
+          color: $pink !important;
+        }
+      }
+    }
+  }
+  .menu-item-7265 a:before, 
+  .menu-item-7986 a:before {
+    content: "\f025";
+  }
+  .menu-item-7264 a:before, 
+  .menu-item-9759 a:before {
+    content: "\f3ff";
+  }
+  .menu-item-7980 a:before, 
+  .menu-item-7982 a:before {
+    content: "\f3c9";
+  }
+  .menu-item-9130 a:before, 
+  .menu-item-9153 a:before {
+    content: "\f51f";
+  }
+  .menu-item-7978 a:before, 
+  .menu-item-7981 a:before {
+    content: "\f0a1";
+  }
+  .menu-item-9284 a:before {
+    content: "\f0e0";
+  }
+  .menu-item-9653 a:before {
+    content: "\f4ad";
+  }
+  .menu-item-9756 a:before {
+    content: "\f0d1";
+  }
+}

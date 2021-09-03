@@ -1,5 +1,29 @@
 # Roadmap 
 
+August 31, 2021
+
+MVP Roadmap to launch app on main domain sandiegohousemusic.com
+
+  - add all needed SEO, just copy from current homepage
+  - add main navigation, or just in footer 
+  - on homepage add video, mixes, and mix carausel ? (later)
+  - upload to my own server ? (not sure)
+
+  - final touches 
+    - desktop nav base color
+    - mobile nav - not fixed, adjust transistion
+    - mobile search - adjust location 
+
+What is my goal here?  What am I trying to do? 
+  
+  - build an app with a modern tech stach and infrastructure
+  - build out a produce that attracts users and an audience 
+  - keep learning while making cool shit
+  - be a promoter of events in every city, just because I can 
+  - leaverage in the future for DJ gigs and other cool perks like travel, etc
+  - be able to leverage audience for promoting other events, partnerships 
+
+
 ## SHARING   
   - Share this event by... Text, Social 
   - "I found this event at SanDiegoHouseMusic.com"

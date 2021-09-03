@@ -117,6 +117,7 @@ function createSortingNavigations(locationsData, eventData, city) {
     var searchButton = document.getElementById("submit-search");
     searchInput.value = this.innerHTML;
     searchButton.click();
+    console.log(searchInput.value)
   }
 }
 
