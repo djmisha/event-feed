@@ -53,6 +53,30 @@ img.loading {
   right: 50%;
   text-align: center; }
 
+.site-logo {
+  position: absolute;
+  top: 16px;
+  right: 10px; }
+  @media only screen and (min-width: 768px) {
+    .site-logo {
+      top: 14px;
+      left: auto;
+      right: 20px; } }
+  @media only screen and (min-width: 1080px) {
+    .site-logo {
+      top: 17px;
+      right: auto;
+      left: 20px; } }
+  .site-logo h1 {
+    margin: 0 !important; }
+  .site-logo img {
+    width: 120px;
+    height: auto;
+    transition: all 0.15s ease-in; }
+    @media only screen and (min-width: 768px) {
+      .site-logo img {
+        width: 200px; } }
+
 .nav-bar {
   width: 100%;
   position: relative;
@@ -86,30 +110,6 @@ img.loading {
       .nav-bar nav {
         position: absolute;
         right: 0; } }
-
-.site-logo {
-  position: absolute;
-  top: 16px;
-  right: 10px; }
-  @media only screen and (min-width: 768px) {
-    .site-logo {
-      top: 14px;
-      left: auto;
-      right: 20px; } }
-  @media only screen and (min-width: 1080px) {
-    .site-logo {
-      top: 17px;
-      right: auto;
-      left: 20px; } }
-  .site-logo h1 {
-    margin: 0 !important; }
-  .site-logo img {
-    width: 120px;
-    height: auto;
-    transition: all 0.15s ease-in; }
-    @media only screen and (min-width: 768px) {
-      .site-logo img {
-        width: 200px; } }
 
 .menu-trigger {
   position: absolute;
@@ -408,6 +408,32 @@ header .menu-item-9653 a:before {
 
 header .menu-item-9756 a:before {
   content: "\f0d1"; }
+
+.main-wrap {
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 768px) {
+    .main-wrap {
+      padding: 20px;
+      flex-direction: row-reverse; }
+      .main-wrap .upcoming-events {
+        width: 65%; }
+      .main-wrap .sidebar {
+        width: 35%; } }
+
+.sidebar-venues {
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap; }
+  .sidebar-venues > div {
+    width: 50%; }
+
+.sidebar-artist {
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap; }
+  .sidebar-artist > div {
+    width: 25%; }
 
 #evenfeed,
 #musicfeed {
@@ -716,7 +742,7 @@ header .menu-item-9756 a:before {
   position: relative; }
 
 #searchresults p {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -736,13 +762,13 @@ header .menu-item-9756 a:before {
   text-align: right;
   margin: 0 5px;
   display: none;
-  position: absolute;
+  position: relative;
   pointer-events: pointer; }
   #clearSearch.visible {
     display: block; }
   #clearSearch span {
-    position: fixed;
-    top: 15px;
+    position: absolute;
+    top: 10px;
     right: 15px;
     font-size: 40px;
     color: #ce3197;

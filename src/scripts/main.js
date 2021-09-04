@@ -14,6 +14,7 @@ import getLocationID from './components/getLocationID';
 //     getLocationID(city, state);
 //   }
 //   else {
+//    setUserLocation();
 // }
 // }
 
@@ -24,7 +25,6 @@ const setUserLocation = async () => {
 }
 
 setUserLocation();
-
 
 navigationDropdowns();
 navigationMobile();

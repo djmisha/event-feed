@@ -45,7 +45,10 @@ function createSortingNavigations(locationsData, eventData, city) {
   /* Venues */
 
   var venueContainer = document.getElementById("venue-list");
+  var venuesidebarContainer = document.querySelector('.sidebar-venues');
+
   venueContainer.innerHTML = "";
+  venuesidebarContainer.innerHTML = "";
   var venueArray = [];
 
   eventData.forEach(function (item) {
@@ -57,6 +60,8 @@ function createSortingNavigations(locationsData, eventData, city) {
 
   venueArray.sort();
 
+  // To Refactor: this is WET 
+  // Navigation Events
   venueArray.forEach(function (venue) {
     var venuleElement = document.createElement("div");
     venuleElement.innerHTML = venue;
@@ -64,10 +69,22 @@ function createSortingNavigations(locationsData, eventData, city) {
     venuleElement.addEventListener("click", manualSearch);
   });
 
+  // Sidebar events 
+  venueArray.forEach(function (venue) {
+    var venuleElement = document.createElement("div");
+    venuleElement.innerHTML = venue;
+    venuesidebarContainer.appendChild(venuleElement);
+    venuleElement.addEventListener("click", manualSearch);
+  });
+
   /* Artists */
 
   var artistContainer = document.getElementById("artist-list");
+  var artistsidebarContainer = document.querySelector('.sidebar-artist');
+
   artistContainer.innerHTML = "";
+  artistsidebarContainer.innerHTML = ""
+
   var artistArray = [];
   eventData.forEach(function (item) {
     var artist = item.artist;
@@ -88,6 +105,14 @@ function createSortingNavigations(locationsData, eventData, city) {
     artistContainer.appendChild(element);
     element.addEventListener("click", manualSearch);
   });
+
+  artistArray.forEach(function (artist) {
+    var element = document.createElement("div");
+    element.innerHTML = artist;
+    artistsidebarContainer.appendChild(element);
+    element.addEventListener("click", manualSearch);
+  });
+
 
   /* Dates */
 

@@ -8,6 +8,37 @@
 //   }
 // }
 
+.site-logo {
+  position: absolute;
+  top: 16px;
+  right: 10px;
+
+  @include media($tablet) {
+      top: 14px;
+      left: auto;
+      right: 20px;
+  }
+
+  @include media($desktop) {
+      top: 17px;
+      right: auto;
+      left: 20px;
+  }
+
+
+  h1 {
+      margin: 0 !important;
+  }
+  img {
+      width: 120px;
+      height: auto;
+      transition: all 0.15s ease-in;
+      @include media($tablet) {
+          width: 200px;
+      }
+  }
+}
+
 .nav-bar {
   width: 100%;
   position: relative;
@@ -47,44 +78,7 @@
   }
 }
 
-.site-logo {
-  position: absolute;
-  top: 16px;
-  right: 10px;
-  // border: 1px solid pink;
 
-  @include media($tablet) {
-      top: 14px;
-      left: auto;
-      right: 20px;
-  }
-
-  @include media($desktop) {
-      top: 17px;
-      right: auto;
-      left: 20px;
-  }
-
-  .is--ipad & {
-  }
-
-  h1 {
-      margin: 0 !important;
-  }
-  img {
-      width: 120px;
-      height: auto;
-      transition: all 0.15s ease-in;
-      @include media($tablet) {
-          width: 200px;
-          &:hover {
-              // width: 210px;
-          }
-      }
-      @include media($desktop) {
-      }
-  }
-}
 
 .menu-trigger {
   position: absolute;

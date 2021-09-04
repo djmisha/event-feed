@@ -1,3 +1,36 @@
+.main-wrap {
+  display: flex;
+  flex-direction: column;
+  @include media($tablet) {
+    padding: 20px;
+    flex-direction: row-reverse;
+    .upcoming-events {
+      width: 65%;
+    }
+    .sidebar {
+      width: 35%;
+    }
+  }
+}
+
+.sidebar-venues {
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  > div {
+    width: 50%;
+  }
+}
+
+.sidebar-artist {
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  > div {
+    width: 25%;
+  }
+}
+
 #evenfeed,
 #musicfeed {
   padding: 0;

@@ -94,7 +94,7 @@
 }
 
 #searchresults p {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -115,15 +115,15 @@
   text-align: right;
   margin: 0 5px;
   display: none;
-  position: absolute;
+  position: relative;
   pointer-events: pointer;
 
   &.visible {
     display: block;
   }
   span {
-    position: fixed;
-    top: 15px;
+    position: absolute;
+    top: 10px;
     right: 15px;
     font-size: 40px;
     color: $pink;

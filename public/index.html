@@ -18,6 +18,11 @@
 </head>
 
 <body>
+  <!-- <div class="site-logo">
+    <a href="https://sandiegohousemusic.com">
+      <img src="https://sandiegohousemusic.com/wordpress/wp-content/uploads/2015/11/logo1.jpg?fit=300%2C97&amp;ssl=1"
+        alt="House Music Events"> </a>
+  </div> -->
   <div class="navigations">
     <section class="search">
       <form action="#" id="form-search">
@@ -32,7 +37,7 @@
         <div id="venue-list"></div>
       </div>
       <div class="sort-artists">
-        <div class="sort-trigger" id="drop-trigger">Artists</div>
+        <div class="sort-trigger" id="drop-trigger">DJ's & Artists</div>
         <div id="artist-list"></div>
       </div>
       <div class="sort-date">
@@ -46,16 +51,28 @@
     </section>
   </div>
 
-  <div class="search-all">
-    <div id="clearSearch"><span>&times;</span></div>
-    <section id="searchresults"></section>
+  <div class="main-wrap">
+    <section class="upcoming-events">
+      <h1>Events Near <span class="local-city">You</span></h1>
+      <div class="search-all">
+        <div id="clearSearch"><span>&times;</span></div>
+        <section id="searchresults"></section>
+      </div>
+      <section id="evenfeed"><img src="./assets/images/loading.svg" width="40" height="40" alt="loading"
+          class="loading">
+      </section>
+    </section>
+    <section class="sidebar">
+      <section class="sidebar-venue-sort">
+        <h2>Venues</h2>
+        <div class="sidebar-venues"></div>
+      </section>
+      <section class="sidebar-artist-sort">
+        <h2>DJ's</h2>
+        <div class="sidebar-artist"></div>
+      </section>
+    </section>
   </div>
-
-  <h1>Events Near <span class="local-city">You</span></h1>
-
-  <section class="sidebar"></section>
-  <section id="evenfeed"><img src="./assets/images/loading.svg" width="40" height="40" alt="loading" class="loading">
-  </section>
 
   <!-- <h2>Listen to DJ Mixes </h2>
   <section id="musicfeed"><img src="./assets/images/oval.svg" alt="loading"></section> -->
