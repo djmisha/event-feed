@@ -2,6 +2,9 @@
 /**
  * @section Mixins
  */
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: "Poppins", "Verdana", "Arial", sanserif;
   margin: 0 auto;
@@ -420,6 +423,12 @@ header .menu-item-9756 a:before {
         width: 65%; }
       .main-wrap .sidebar {
         width: 35%; } }
+
+.sidebar {
+  padding: 0 10px; }
+  @media only screen and (min-width: 768px) {
+    .sidebar {
+      padding: 0; } }
 
 .sidebar-venues {
   font-size: 12px;

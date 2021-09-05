@@ -13,6 +13,13 @@
   }
 }
 
+.sidebar {
+  padding: 0 10px;
+  @include media($tablet) {
+    padding: 0;
+  }
+}
+
 .sidebar-venues {
   font-size: 12px;
   display: flex;

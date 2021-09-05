@@ -118,9 +118,10 @@ function createSortingNavigations(locationsData, eventData, city) {
 
   var dateContainer = document.getElementById("date-list");
   var dateArray = [];
-
+  // console.log(eventData);
   eventData.forEach(function (item) {
-    var date = moment(item.date).format('MMMM Do');
+    // var date = moment(item.date).format('MMMM Do');
+    var date = item.date;
     dateArray.push(date);
   });
 
@@ -142,6 +143,7 @@ function createSortingNavigations(locationsData, eventData, city) {
     var searchButton = document.getElementById("submit-search");
     searchInput.value = this.innerHTML;
     searchButton.click();
+    location.href = '#top';
     console.log(searchInput.value)
   }
 }
