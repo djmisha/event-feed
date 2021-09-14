@@ -56,6 +56,15 @@ img.loading {
   right: 50%;
   text-align: center; }
 
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999 !important; }
+  @media only screen and (min-width: 768px) {
+    header {
+      position: fixed; } }
+
 .site-logo {
   position: absolute;
   top: 16px;
@@ -708,7 +717,7 @@ header .menu-item-9756 a:before {
     top: 8px;
     width: 30px;
     height: 30px;
-    z-index: 999; }
+    z-index: 199; }
   #form-search label {
     position: absolute;
     left: -999px;

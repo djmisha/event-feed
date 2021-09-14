@@ -1,5 +1,17 @@
 # Roadmap 
 
+Sept 5th
+
+Maybe I just leave SDHM alone and put this all on sandiegohousenusic.com/events
+this would keep all WordPress URL's in place. 
+Then I can buy another domain for the events site, if i want to continue building this app.  I need to upgrade the techstack now, otherwise it will start to get too late. 
+
+Sept 4th New List
+
+  - [done]fix date search
+  - [done]sidebar with Venues
+  - [done]sidebar with Artists
+
 August 31, 2021
 
 MVP Roadmap to launch app on main domain sandiegohousemusic.com
@@ -118,7 +130,6 @@ What is my goal here?  What am I trying to do?
   Upcoming Events Near You
 
   Events in all locations
-
 
   - Search Behaviour on Mobile 
 
