@@ -4,7 +4,7 @@ header {
   right: 0;
   z-index: 9999 !important;
   @include media($tablet) {
-    position: fixed;
+    // position: fixed;
   }
 }
 
@@ -14,28 +14,27 @@ header {
   right: 10px;
 
   @include media($tablet) {
-      top: 14px;
-      left: auto;
-      right: 20px;
+    top: 14px;
+    left: auto;
+    right: 20px;
   }
 
   @include media($desktop) {
-      top: 17px;
-      right: auto;
-      left: 20px;
+    top: 17px;
+    right: auto;
+    left: 20px;
   }
-
 
   h1 {
-      margin: 0 !important;
+    margin: 0 !important;
   }
   img {
-      width: 120px;
-      height: auto;
-      transition: all 0.15s ease-in;
-      @include media($tablet) {
-          width: 200px;
-      }
+    width: 120px;
+    height: auto;
+    transition: all 0.15s ease-in;
+    @include media($tablet) {
+      width: 200px;
+    }
   }
 }
 
@@ -57,28 +56,26 @@ header {
   border-bottom: 1px solid #eee;
 
   @include media($tablet) {
-      flex-direction: row;
-      // position: fixed;
-      height: 80px;
-      width: auto;
-      left: 0px;
-      right: 0px;
+    flex-direction: row;
+    // position: fixed;
+    height: 80px;
+    width: auto;
+    left: 0px;
+    right: 0px;
   }
 
   @include media($desktop) {
-      z-index: 2;
-      height: 85px;
-      left: 0;
+    z-index: 2;
+    height: 85px;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+    nav {
+      position: absolute;
       right: 0;
-      margin-top: 0;
-      nav {
-          position: absolute;
-          right: 0;
-      }
+    }
   }
 }
-
-
 
 .menu-trigger {
   position: absolute;
@@ -89,60 +86,58 @@ header {
   flex-direction: row-reverse;
   height: 100%;
   @include media($desktop) {
-      display: none;
+    display: none;
   }
   .hamburger {
-      width: 30px;
-      height: 2px;
-      border-radius: 20px;
-      background: $pink;
-      display: block;
-      margin-bottom: 4px;
-      &:last-of-type {
-          margin-bottom: 0px;
-      }
+    width: 30px;
+    height: 2px;
+    border-radius: 20px;
+    background: $pink;
+    display: block;
+    margin-bottom: 4px;
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
   }
   i {
-      color: $pink;
-      font-size: 27px;
-      display: none;
+    color: $pink;
+    font-size: 27px;
+    display: none;
   }
   @include media($desktop) {
-      &.open {
-          .hamburger {
-              z-index: 9999;
-              display: none;
-          }
-          i {
-              color: #fff;
-              display: block;
-              position: fixed;
-              right: 20px;
-          }
+    &.open {
+      .hamburger {
+        z-index: 9999;
+        display: none;
       }
+      i {
+        color: #fff;
+        display: block;
+        position: fixed;
+        right: 20px;
+      }
+    }
   }
   > div {
-      align-items: center;
-      flex-wrap: wrap;
-      justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .touch-button-text {
-      margin-right: 15px;
-      display: none;
-      margin-top: 0px;
-      font-size: 20px;
-      font-weight: 100;
-      color: $black;
-      text-transform: uppercase;
-      @include media(370px) {
-          display: block;
-      }
-      @include media($tablet) {
-      }
+    margin-right: 15px;
+    display: none;
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: 100;
+    color: $black;
+    text-transform: uppercase;
+    @include media(370px) {
+      display: block;
+    }
+    @include media($tablet) {
+    }
   }
 }
-
-
 
 // Touch Menu
 
@@ -159,12 +154,11 @@ header {
   transform: translate3d(100%, 0, 0);
 }
 
-
 .touch-menu.menu-is-open .main-menu {
   visibility: visible;
   overflow: scroll;
   top: 0;
-  bottom:0;
+  bottom: 0;
 
   // height: 100%;
   opacity: 1;
@@ -174,7 +168,6 @@ header {
   padding: 0;
   padding-top: 80px;
 }
-
 
 .touch-menu {
   display: block;
@@ -194,10 +187,10 @@ header {
   .main-menu {
     padding-top: 60px;
     padding-bottom: 20px;
-    background: rgba(#000, .9) ;
+    background: rgba(#000, 0.9);
     height: 100%;
     width: 100%;
-    top: 0; 
+    top: 0;
     bottom: 0;
     position: fixed;
     // overflow-y: scroll;
@@ -243,7 +236,7 @@ header {
 
     .menu-item {
       > a {
-          padding: 16px 20px 16px 100px;
+        padding: 16px 20px 16px 100px;
         // border-bottom: 1px solid rgba($lightColor, .15);
       }
     }
@@ -264,27 +257,27 @@ header {
 
     // Specific Sub-Menu Level Styling
 
-    ul[data-ul-depth="0"] {
+    ul[data-ul-depth='0'] {
       > li > a {
         padding-left: 30px;
       }
     }
-    ul[data-ul-depth="1"] {
+    ul[data-ul-depth='1'] {
       > li > a {
         padding-left: 40px;
       }
     }
-    ul[data-ul-depth="2"] {
+    ul[data-ul-depth='2'] {
       > li > a {
         padding-left: 50px;
       }
     }
-    ul[data-ul-depth="3"] {
+    ul[data-ul-depth='3'] {
       > li > a {
         padding-left: 60px;
       }
     }
-    ul[data-ul-depth="4"] {
+    ul[data-ul-depth='4'] {
       > li > a {
         padding-left: 70px;
       }
@@ -303,8 +296,8 @@ header {
     // border-left: 1px solid rgba($lightColor, .15);
 
     &:after {
-      content: "\f067";
-      font-family: "Font Awesome 5 Pro";
+      content: '\f067';
+      font-family: 'Font Awesome 5 Pro';
       color: rgba(white, 0.4);
       font-weight: 100;
       transition: 0.2s linear transform;
@@ -336,17 +329,14 @@ header {
   .sub-menu-open {
     > .nav-dropdown-button {
       &:after {
-        content: "\f068";
+        content: '\f068';
         font-weight: 100;
       }
     }
   }
 }
 
-
-
 // DESKTOP MENU
-
 
 $menuHeight: 60px;
 
@@ -416,72 +406,76 @@ $menuHeight: 60px;
   }
 }
 
-  header {
-    .menu-item-9284 a,
-    .menu-item-7986 a,
-    .menu-item-9759 a,
-    .menu-item-9153 a,
-    .menu-item-7981 a,
-    .menu-item-7982 a,
-    .menu-item-7978 a,
-    .menu-item-7980 a,
-    .menu-item-9130 a,
-    .menu-item-7264 a,
-    .menu-item-9653 a,
-    .menu-item-9756 a,
-    .menu-item-7265 a {
-      position: relative;
-      &:before { 
-        font-family: "Font Awesome 5 Pro";
-        color: rgba($pink, 1);
-        font-size: 30px;
-        font-weight: 100;
-        transition: 0.2s all;
-        position: absolute;
-        left: 45px;
-        transition: all .2s ease-in-out;
-        font-weight: 100;
+header {
+  .menu-item-10229 a,
+  .menu-item-9284 a,
+  .menu-item-7986 a,
+  .menu-item-9759 a,
+  .menu-item-9153 a,
+  .menu-item-7981 a,
+  .menu-item-7982 a,
+  .menu-item-7978 a,
+  .menu-item-7980 a,
+  .menu-item-9130 a,
+  .menu-item-7264 a,
+  .menu-item-9653 a,
+  .menu-item-9756 a,
+  .menu-item-7265 a {
+    position: relative;
+    &:before {
+      font-family: 'Font Awesome 5 Pro';
+      color: rgba($pink, 1);
+      font-size: 30px;
+      font-weight: 100;
+      transition: 0.2s all;
+      position: absolute;
+      left: 45px;
+      transition: all 0.2s ease-in-out;
+      font-weight: 100;
       @include media($desktop) {
-        left: calc( 50% - 15px;);
+        left: calc(50% - 15px;);
         color: $darkerGrey !important;
         top: -28px;
       }
     }
     @include media($desktop) {
       &:hover {
-        &:before { 
+        &:before {
           color: $pink !important;
         }
       }
     }
   }
-  .menu-item-7265 a:before, 
+  .menu-item-7265 a:before,
   .menu-item-7986 a:before {
-    content: "\f025";
+    content: '\f025';
   }
-  .menu-item-7264 a:before, 
+  .menu-item-7264 a:before,
   .menu-item-9759 a:before {
-    content: "\f3ff";
+    content: '\f3ff';
   }
-  .menu-item-7980 a:before, 
+  .menu-item-7980 a:before,
   .menu-item-7982 a:before {
-    content: "\f3c9";
+    content: '\f3c9';
   }
-  .menu-item-9130 a:before, 
+  .menu-item-9130 a:before,
   .menu-item-9153 a:before {
-    content: "\f51f";
+    content: '\f51f';
   }
-  .menu-item-7978 a:before, 
+  .menu-item-7978 a:before,
   .menu-item-7981 a:before {
-    content: "\f0a1";
+    content: '\f0a1';
   }
   .menu-item-9284 a:before {
-    content: "\f0e0";
+    content: '\f0e0';
   }
   .menu-item-9653 a:before {
-    content: "\f4ad";
+    content: '\f4ad';
   }
   .menu-item-9756 a:before {
-    content: "\f0d1";
+    content: '\f0d1';
+  }
+  .menu-item-10229 a:before {
+    content: '\f015';
   }
 }

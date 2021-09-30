@@ -61,9 +61,6 @@ header {
   left: 0;
   right: 0;
   z-index: 9999 !important; }
-  @media only screen and (min-width: 768px) {
-    header {
-      position: fixed; } }
 
 .site-logo {
   position: absolute;
@@ -235,15 +232,15 @@ header {
       padding: 16px 20px 16px 100px; }
     .touch-menu .main-menu .sub-menu {
       display: none; }
-    .touch-menu .main-menu ul[data-ul-depth="0"] > li > a {
+    .touch-menu .main-menu ul[data-ul-depth='0'] > li > a {
       padding-left: 30px; }
-    .touch-menu .main-menu ul[data-ul-depth="1"] > li > a {
+    .touch-menu .main-menu ul[data-ul-depth='1'] > li > a {
       padding-left: 40px; }
-    .touch-menu .main-menu ul[data-ul-depth="2"] > li > a {
+    .touch-menu .main-menu ul[data-ul-depth='2'] > li > a {
       padding-left: 50px; }
-    .touch-menu .main-menu ul[data-ul-depth="3"] > li > a {
+    .touch-menu .main-menu ul[data-ul-depth='3'] > li > a {
       padding-left: 60px; }
-    .touch-menu .main-menu ul[data-ul-depth="4"] > li > a {
+    .touch-menu .main-menu ul[data-ul-depth='4'] > li > a {
       padding-left: 70px; }
   .touch-menu .nav-dropdown-button {
     position: absolute;
@@ -254,8 +251,8 @@ header {
     top: 0px;
     cursor: pointer; }
     .touch-menu .nav-dropdown-button:after {
-      content: "\f067";
-      font-family: "Font Awesome 5 Pro";
+      content: '\f067';
+      font-family: 'Font Awesome 5 Pro';
       color: rgba(255, 255, 255, 0.4);
       font-weight: 100;
       transition: 0.2s linear transform;
@@ -278,7 +275,7 @@ header {
     .touch-menu .close-menu i {
       font-weight: 100; }
   .touch-menu .sub-menu-open > .nav-dropdown-button:after {
-    content: "\f068";
+    content: '\f068';
     font-weight: 100; }
 
 .hover-menu {
@@ -323,6 +320,7 @@ header {
   .hover-menu .close-menu {
     display: none !important; }
 
+header .menu-item-10229 a,
 header .menu-item-9284 a,
 header .menu-item-7986 a,
 header .menu-item-9759 a,
@@ -337,6 +335,7 @@ header .menu-item-9653 a,
 header .menu-item-9756 a,
 header .menu-item-7265 a {
   position: relative; }
+  header .menu-item-10229 a:before,
   header .menu-item-9284 a:before,
   header .menu-item-7986 a:before,
   header .menu-item-9759 a:before,
@@ -350,16 +349,17 @@ header .menu-item-7265 a {
   header .menu-item-9653 a:before,
   header .menu-item-9756 a:before,
   header .menu-item-7265 a:before {
-    font-family: "Font Awesome 5 Pro";
+    font-family: 'Font Awesome 5 Pro';
     color: #ce3197;
     font-size: 30px;
     font-weight: 100;
     transition: 0.2s all;
     position: absolute;
     left: 45px;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     font-weight: 100; }
     @media only screen and (min-width: 1080px) {
+      header .menu-item-10229 a:before,
       header .menu-item-9284 a:before,
       header .menu-item-7986 a:before,
       header .menu-item-9759 a:before,
@@ -373,10 +373,11 @@ header .menu-item-7265 a {
       header .menu-item-9653 a:before,
       header .menu-item-9756 a:before,
       header .menu-item-7265 a:before {
-        left: calc( 50% - 15px);
+        left: calc(50% - 15px);
         color: #adb5bd !important;
         top: -28px; } }
   @media only screen and (min-width: 1080px) {
+    header .menu-item-10229 a:hover:before,
     header .menu-item-9284 a:hover:before,
     header .menu-item-7986 a:hover:before,
     header .menu-item-9759 a:hover:before,
@@ -394,32 +395,35 @@ header .menu-item-7265 a {
 
 header .menu-item-7265 a:before,
 header .menu-item-7986 a:before {
-  content: "\f025"; }
+  content: '\f025'; }
 
 header .menu-item-7264 a:before,
 header .menu-item-9759 a:before {
-  content: "\f3ff"; }
+  content: '\f3ff'; }
 
 header .menu-item-7980 a:before,
 header .menu-item-7982 a:before {
-  content: "\f3c9"; }
+  content: '\f3c9'; }
 
 header .menu-item-9130 a:before,
 header .menu-item-9153 a:before {
-  content: "\f51f"; }
+  content: '\f51f'; }
 
 header .menu-item-7978 a:before,
 header .menu-item-7981 a:before {
-  content: "\f0a1"; }
+  content: '\f0a1'; }
 
 header .menu-item-9284 a:before {
-  content: "\f0e0"; }
+  content: '\f0e0'; }
 
 header .menu-item-9653 a:before {
-  content: "\f4ad"; }
+  content: '\f4ad'; }
 
 header .menu-item-9756 a:before {
-  content: "\f0d1"; }
+  content: '\f0d1'; }
+
+header .menu-item-10229 a:before {
+  content: '\f015'; }
 
 .main-wrap {
   display: flex;
