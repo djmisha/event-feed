@@ -15,6 +15,10 @@ const getLocationID = (city, state) => {
     }
   });
 
+  if(!userLocation) {
+    requestEvents(10, locations)
+  }
+
   requestEvents(userLocation, locations)
 }
 
