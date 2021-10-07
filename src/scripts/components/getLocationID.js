@@ -15,6 +15,7 @@ const getLocationID = (city, state) => {
     }
   });
 
+  // If location is not set, use CA
   if(!userLocation) {
     requestEvents(10, locations)
   }

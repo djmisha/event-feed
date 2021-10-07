@@ -6,7 +6,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: "Poppins", "Verdana", "Arial", sanserif;
+  font-family: 'Poppins', 'Verdana', 'Arial', sanserif;
   margin: 0 auto;
   width: 100%;
   background: #fff;
@@ -50,11 +50,12 @@ h2 {
   display: none; }
 
 img.loading {
-  position: fixed;
-  top: 40%;
-  left: 50%;
-  right: 50%;
-  text-align: center; }
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin: 0 auto;
+  margin-left: calc(50% - 25px);
+  margin-top: 30px; }
 
 header {
   top: 0;
@@ -444,18 +445,18 @@ header .menu-item-10229 a:before {
       padding: 0; } }
 
 .sidebar-venues {
-  font-size: 12px;
+  font-size: 14px;
   display: flex;
   flex-wrap: wrap; }
   .sidebar-venues > div {
     width: 50%; }
 
 .sidebar-artist {
-  font-size: 12px;
+  font-size: 14px;
   display: flex;
   flex-wrap: wrap; }
   .sidebar-artist > div {
-    width: 25%; }
+    width: 33%; }
 
 #evenfeed,
 #musicfeed {
@@ -515,7 +516,7 @@ header .menu-item-10229 a:before {
   .single-event.view-partial .event-link a {
     display: none; }
   .single-event.view-partial:before {
-    content: "...";
+    content: '...';
     color: #d3d3dc;
     font-size: 40px;
     position: absolute;
@@ -715,7 +716,7 @@ header .menu-item-10229 a:before {
       max-width: 500px;
       margin: 20px 10px; } }
   #form-search:before {
-    content: "\1F50D";
+    content: '\1F50D';
     position: absolute;
     left: 10px;
     top: 8px;
@@ -847,23 +848,23 @@ header .menu-item-10229 a:before {
           margin-right: 8px; } }
 
 .sort-city .sort-trigger:before {
-  content: "🌆"; }
+  content: '🌆'; }
 
 .sort-artists .sort-trigger:before {
-  content: "🔊"; }
+  content: '🔊'; }
 
 .sort-venues .sort-trigger:before {
-  content: "🏢"; }
+  content: '🏢'; }
 
 .sort-date .sort-trigger:before {
-  content: "🗓️"; }
+  content: '🗓️'; }
 
 #venue-list,
 #date-list,
 #artist-list,
 #city-list {
   transition: height 0.25 ease-in;
-  overflow: hidden;
+  overflow: scroll;
   position: absolute;
   margin: 0 auto;
   right: 0px;
@@ -880,7 +881,7 @@ header .menu-item-10229 a:before {
     #date-list,
     #artist-list,
     #city-list {
-      border-radius: 30px;
+      border-radius: 20px;
       top: 70px;
       width: 850px;
       box-shadow: 0 10px 10px rgba(4, 9, 44, 0.2); } }
@@ -921,7 +922,8 @@ header .menu-item-10229 a:before {
 #date-list.visible {
   transition: height 0.25 ease-in;
   padding: 10px 5px 30px 5px;
-  height: auto; }
+  height: 100vh;
+  overflow: scroll; }
   @media only screen and (min-width: 768px) {
     #venue-list.visible,
     #artist-list.visible,

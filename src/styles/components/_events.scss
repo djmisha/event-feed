@@ -21,7 +21,7 @@
 }
 
 .sidebar-venues {
-  font-size: 12px;
+  font-size: 14px;
   display: flex;
   flex-wrap: wrap;
   > div {
@@ -30,11 +30,11 @@
 }
 
 .sidebar-artist {
-  font-size: 12px;
+  font-size: 14px;
   display: flex;
   flex-wrap: wrap;
   > div {
-    width: 25%;
+    width: 33%;
   }
 }
 
@@ -106,7 +106,7 @@
       display: none;
     }
     &:before {
-      content: "...";
+      content: '...';
       color: $borderGrey;
       font-size: 40px;
       position: absolute;
