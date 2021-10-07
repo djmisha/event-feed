@@ -7,28 +7,27 @@ import activateNav from './components/navigation'
 
 // Initialize Application
 
-// const isReturnUser = () => {
-//   var city = localStorage.getItem("city", city);
-//   var state = localStorage.getItem("state", state);
-//   if (city && state) {
-//     getLocationID(city, state);
-//   }
-//   else {
-//    setUserLocation();
-// }
-// }
-
-// isReturnUser();
-
 const setUserLocation = async () => {
   await getIPAddress();
 }
 
-setUserLocation();
+// If return user. use local storage location 
 
+const isReturnUser = () => {
+  var city = localStorage.getItem("city", city);
+  var state = localStorage.getItem("state", state);
+  if (city && state) {
+    getLocationID(city, state);
+  }
+  else {
+   setUserLocation();
+  }
+}
+
+isReturnUser();
+setUserLocation();
 navigationDropdowns();
 navigationMobile();
-
 activateNav();
 
 // requestPostsAndAttachtoPage('music', 8);
