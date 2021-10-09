@@ -19,11 +19,11 @@ header {
     right: 20px;
   }
 
-  @include media($desktop) {
-    top: 17px;
-    right: auto;
-    left: 20px;
-  }
+  // @include media($desktop) {
+  //   top: 17px;
+  //   right: auto;
+  //   left: 20px;
+  // }
 
   h1 {
     margin: 0 !important;
@@ -64,17 +64,17 @@ header {
     right: 0px;
   }
 
-  @include media($desktop) {
-    z-index: 2;
-    height: 85px;
-    left: 0;
-    right: 0;
-    margin-top: 0;
-    nav {
-      position: absolute;
-      right: 0;
-    }
-  }
+  // @include media($desktop) {
+  //   z-index: 2;
+  //   height: 85px;
+  //   left: 0;
+  //   right: 0;
+  //   margin-top: 0;
+  //   nav {
+  //     position: absolute;
+  //     right: 0;
+  //   }
+  // }
 }
 
 .menu-trigger {
@@ -86,7 +86,7 @@ header {
   flex-direction: row-reverse;
   height: 100%;
   @include media($desktop) {
-    display: none;
+    // display: none;
   }
   .hamburger {
     width: 30px;
@@ -97,6 +97,7 @@ header {
     margin-bottom: 4px;
     &:last-of-type {
       margin-bottom: 0px;
+      width: 20px;
     }
   }
   i {
@@ -104,20 +105,20 @@ header {
     font-size: 27px;
     display: none;
   }
-  @include media($desktop) {
-    &.open {
-      .hamburger {
-        z-index: 9999;
-        display: none;
-      }
-      i {
-        color: #fff;
-        display: block;
-        position: fixed;
-        right: 20px;
-      }
-    }
-  }
+  // @include media($desktop) {
+  //   &.open {
+  //     .hamburger {
+  //       z-index: 9999;
+  //       display: none;
+  //     }
+  //     i {
+  //       color: #fff;
+  //       display: block;
+  //       position: fixed;
+  //       right: 20px;
+  //     }
+  //   }
+  // }
   > div {
     align-items: center;
     flex-wrap: wrap;
@@ -148,22 +149,35 @@ header {
 // Closing Opening Menu with Fade
 
 .touch-menu.menu-is-closed .main-menu {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s linear 300ms, opacity 400ms, transform 5s;
-  transform: translate3d(100%, 0, 0);
+  // top: 0;
+  // bottom: 0;
+  visibility: visible;
+  opacity: 1;
+  // transition: visibility 0s linear 300ms, opacity 400ms, transform 0.7s;
+  // transform: translate3d(100%, 0, 0);
+  // padding-top: 60px;
+  // padding-bottom: 20px;
+  background: rgba(#000, 0.9);
+  height: 0;
+  width: 0;
+  // top: -99999px;
+  // bottom: 0;
+  // left: -99999px;
+  // right: 0;
+  position: absolute;
+  z-index: -1px;
 }
 
 .touch-menu.menu-is-open .main-menu {
   visibility: visible;
   overflow: scroll;
-  top: 0;
-  bottom: 0;
+  // top: 0;
+  // bottom: 0;
 
   // height: 100%;
   opacity: 1;
-  transition: visibility 0s linear 0s, opacity 400ms;
-  transform: translate3d(100%, 0, 0);
+  // transition: visibility 0s linear 0s, opacity 400ms;
+  // transform: translate3d(100%, 0, 0);
   margin: 0;
   padding: 0;
   padding-top: 80px;
@@ -192,9 +206,13 @@ header {
     width: 100%;
     top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
     position: fixed;
+    margin: 0;
+
     // overflow-y: scroll;
-    transform: translate3d(-100%, 0, 0);
+    // transform: translate3d(-100%, 0, 0);
     // visibility: hidden;
     // opacity: 0;
     // transition: visibility 0s linear 300ms, opacity 300ms;
@@ -316,7 +334,7 @@ header {
     display: block;
     position: fixed;
     top: 10px;
-    left: 23px;
+    right: 23px;
     color: rgba($pink, 1); // Set color for menu items
     // text-align: center;
     font-size: 35px; // match to other font-size
@@ -334,6 +352,10 @@ header {
       }
     }
   }
+}
+
+.touch-menu.menu-is-closed .close-menu {
+  position: relative;
 }
 
 // DESKTOP MENU
@@ -432,19 +454,19 @@ header {
       left: 45px;
       transition: all 0.2s ease-in-out;
       font-weight: 100;
-      @include media($desktop) {
-        left: calc(50% - 15px;);
-        color: $darkerGrey !important;
-        top: -28px;
-      }
+      // @include media($desktop) {
+      //   left: calc(50% - 15px;);
+      //   color: $darkerGrey !important;
+      //   top: -28px;
+      // }
     }
-    @include media($desktop) {
-      &:hover {
-        &:before {
-          color: $pink !important;
-        }
-      }
-    }
+    // @include media($desktop) {
+    //   &:hover {
+    //     &:before {
+    //       color: $pink !important;
+    //     }
+    //   }
+    // }
   }
   .menu-item-7265 a:before,
   .menu-item-7986 a:before {

@@ -7,6 +7,16 @@ import activateNav from './components/navigation'
 
 // Initialize Application
 
+// redirect to new location, remove after a while
+const redirect = () => {
+  let loc = location.host;
+    if (loc === 'events.sandiegohousemusic.com') {
+    window.location.href = 'https://sandiegohousemusic.com/events'
+  }
+}
+
+redirect();
+
 const setUserLocation = async () => {
   await getIPAddress();
 }

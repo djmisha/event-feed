@@ -43,7 +43,6 @@ function search(eventData) {
 
   function showMatchedEvents(events) {
     var allEvents = document.querySelectorAll(".single-event");
-    // var bLazy = new Blazy({});
 
     allEvents.forEach(function (e) {
       var matchedID = e.getAttribute("data-id");

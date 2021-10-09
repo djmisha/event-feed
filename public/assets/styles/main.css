@@ -72,11 +72,6 @@ header {
       top: 14px;
       left: auto;
       right: 20px; } }
-  @media only screen and (min-width: 1080px) {
-    .site-logo {
-      top: 17px;
-      right: auto;
-      left: 20px; } }
   .site-logo h1 {
     margin: 0 !important; }
   .site-logo img {
@@ -110,16 +105,6 @@ header {
       width: auto;
       left: 0px;
       right: 0px; } }
-  @media only screen and (min-width: 1080px) {
-    .nav-bar {
-      z-index: 2;
-      height: 85px;
-      left: 0;
-      right: 0;
-      margin-top: 0; }
-      .nav-bar nav {
-        position: absolute;
-        right: 0; } }
 
 .menu-trigger {
   position: absolute;
@@ -129,9 +114,6 @@ header {
   justify-content: center;
   flex-direction: row-reverse;
   height: 100%; }
-  @media only screen and (min-width: 1080px) {
-    .menu-trigger {
-      display: none; } }
   .menu-trigger .hamburger {
     width: 30px;
     height: 2px;
@@ -140,20 +122,12 @@ header {
     display: block;
     margin-bottom: 4px; }
     .menu-trigger .hamburger:last-of-type {
-      margin-bottom: 0px; }
+      margin-bottom: 0px;
+      width: 20px; }
   .menu-trigger i {
     color: #ce3197;
     font-size: 27px;
     display: none; }
-  @media only screen and (min-width: 1080px) {
-    .menu-trigger.open .hamburger {
-      z-index: 9999;
-      display: none; }
-    .menu-trigger.open i {
-      color: #fff;
-      display: block;
-      position: fixed;
-      right: 20px; } }
   .menu-trigger > div {
     align-items: center;
     flex-wrap: wrap;
@@ -174,19 +148,18 @@ header {
   display: none; }
 
 .touch-menu.menu-is-closed .main-menu {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s linear 300ms, opacity 400ms, transform 5s;
-  transform: translate3d(100%, 0, 0); }
+  visibility: visible;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.9);
+  height: 0;
+  width: 0;
+  position: absolute;
+  z-index: -1px; }
 
 .touch-menu.menu-is-open .main-menu {
   visibility: visible;
   overflow: scroll;
-  top: 0;
-  bottom: 0;
   opacity: 1;
-  transition: visibility 0s linear 0s, opacity 400ms;
-  transform: translate3d(100%, 0, 0);
   margin: 0;
   padding: 0;
   padding-top: 80px; }
@@ -210,8 +183,10 @@ header {
     width: 100%;
     top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
     position: fixed;
-    transform: translate3d(-100%, 0, 0); }
+    margin: 0; }
     .touch-menu .main-menu li {
       margin: 0;
       padding: 0;
@@ -269,7 +244,7 @@ header {
     display: block;
     position: fixed;
     top: 10px;
-    left: 23px;
+    right: 23px;
     color: #ce3197;
     font-size: 35px;
     cursor: pointer; }
@@ -278,6 +253,9 @@ header {
   .touch-menu .sub-menu-open > .nav-dropdown-button:after {
     content: '\f068';
     font-weight: 100; }
+
+.touch-menu.menu-is-closed .close-menu {
+  position: relative; }
 
 .hover-menu {
   display: block;
@@ -359,40 +337,6 @@ header .menu-item-7265 a {
     left: 45px;
     transition: all 0.2s ease-in-out;
     font-weight: 100; }
-    @media only screen and (min-width: 1080px) {
-      header .menu-item-10229 a:before,
-      header .menu-item-9284 a:before,
-      header .menu-item-7986 a:before,
-      header .menu-item-9759 a:before,
-      header .menu-item-9153 a:before,
-      header .menu-item-7981 a:before,
-      header .menu-item-7982 a:before,
-      header .menu-item-7978 a:before,
-      header .menu-item-7980 a:before,
-      header .menu-item-9130 a:before,
-      header .menu-item-7264 a:before,
-      header .menu-item-9653 a:before,
-      header .menu-item-9756 a:before,
-      header .menu-item-7265 a:before {
-        left: calc(50% - 15px);
-        color: #adb5bd !important;
-        top: -28px; } }
-  @media only screen and (min-width: 1080px) {
-    header .menu-item-10229 a:hover:before,
-    header .menu-item-9284 a:hover:before,
-    header .menu-item-7986 a:hover:before,
-    header .menu-item-9759 a:hover:before,
-    header .menu-item-9153 a:hover:before,
-    header .menu-item-7981 a:hover:before,
-    header .menu-item-7982 a:hover:before,
-    header .menu-item-7978 a:hover:before,
-    header .menu-item-7980 a:hover:before,
-    header .menu-item-9130 a:hover:before,
-    header .menu-item-7264 a:hover:before,
-    header .menu-item-9653 a:hover:before,
-    header .menu-item-9756 a:hover:before,
-    header .menu-item-7265 a:hover:before {
-      color: #ce3197 !important; } }
 
 header .menu-item-7265 a:before,
 header .menu-item-7986 a:before {
@@ -884,7 +828,7 @@ header .menu-item-10229 a:before {
       border-radius: 20px;
       top: 70px;
       width: 850px;
-      box-shadow: 0 10px 10px rgba(4, 9, 44, 0.2); } }
+      box-shadow: 0 5px 10px rgba(4, 9, 44, 0.2); } }
   #venue-list > div,
   #date-list > div,
   #artist-list > div,
@@ -922,7 +866,7 @@ header .menu-item-10229 a:before {
 #date-list.visible {
   transition: height 0.25 ease-in;
   padding: 10px 5px 30px 5px;
-  height: 100vh;
+  height: 600px;
   overflow: scroll; }
   @media only screen and (min-width: 768px) {
     #venue-list.visible,
