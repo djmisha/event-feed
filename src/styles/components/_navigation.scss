@@ -135,13 +135,22 @@
 // Navigation Toggles
 
 .sort {
-  position: relative;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
-  margin: 5px 0px;
+  justify-content: space-around;
+  // margin: 5px 0px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  border-top: 1px solid $borderGrey;
+  height: 60px;
+  background-color: white;
   @include media($tablet) {
+    height: auto;
+    // position: relative;
     margin: 0;
     margin-right: 10px;
   }
@@ -159,26 +168,29 @@
   .sort-trigger {
     display: block;
     cursor: pointer;
-    font-size: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
     font-weight: 500;
     border: 1px solid transparent;
     background-color: white;
     margin-left: 5px;
     transition: all 0.15s ease-in-out;
     color: #000;
-    border-radius: 30px;
-    padding: 6px 12px;
-    border: 1px solid $borderGrey;
+    width: auto;
+    text-align: center;
 
     @include media($desktop) {
-      border-radius: 30px;
+      // border-radius: 30px;
+      // padding: 6px 12px;
+      // border: 1px solid $borderGrey;
 
+      // border-radius: 30px;
       font-size: 14px;
       padding: 7px 22px;
     }
 
     &:hover {
-      border: 1px solid $borderGrey;
+      // border: 1px solid $borderGrey;
     }
     &:before {
       position: relative;
@@ -193,52 +205,61 @@
   }
 }
 
-.sort-city .sort-trigger {
-  &:before {
-    content: '🌆';
-  }
-}
 .sort-artists .sort-trigger {
-  &:before {
-    content: '🔊';
+  img {
+    margin: 0 auto;
+    width: 30px;
+    display: block;
   }
 }
 
 .sort-venues .sort-trigger {
-  &:before {
-    content: '🏢';
+  img {
+    margin: 0 auto;
+    width: 23px;
+    display: block;
   }
 }
 
 .sort-date .sort-trigger {
-  &:before {
-    content: '🗓️';
+  img {
+    margin: 0 auto;
+    width: 25px;
+    display: block;
   }
 }
-
+.sort-city .sort-trigger {
+  img {
+    margin: 0 auto;
+    width: 23px;
+    display: block;
+  }
+}
 #venue-list,
 #date-list,
 #artist-list,
 #city-list {
-  transition: height 0.25 ease-in;
   overflow: scroll;
-  position: absolute;
-  margin: 0 auto;
   right: 0px;
-  top: 40px;
   background: white;
-  height: 0;
+  height: calc(100vh - 60px);
+  // bottom: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  z-index: 9999;
-  box-shadow: 0 5px 5px rgba($color: $black, $alpha: 0.2);
+  box-shadow: 0 2px 2px rgba($color: $black, $alpha: 0.2);
+  position: fixed;
+  left: 0;
+  right: 0;
+  transition: bottom 0.5s ease-in-out;
+  padding: 0px 15px 0px 15px;
+  z-index: 8;
+  bottom: calc(-100vh - 60px);
 
   @include media($tablet) {
-    border-radius: 20px;
-    top: 70px;
-    width: 850px;
-    box-shadow: 0 5px 10px rgba($color: $black, $alpha: 0.2);
+    transition: none;
+
+    bottom: calc(-100vh - 80px);
   }
 
   > div {
@@ -246,9 +267,10 @@
     padding: 10px 6px;
     font-size: 14px !important;
     line-height: 16px;
-    border-radius: 30px;
     font-weight: 400;
     color: $black;
+    // border-bottom: 1px solid $borderGrey;
+    // border-top: 1px solid $borderGrey;
     @include media($tablet) {
       padding: 10px 20px;
       width: 18%;
@@ -272,10 +294,14 @@
 #city-list.visible,
 #date-list.visible {
   transition: height 0.25 ease-in;
-  padding: 10px 5px 30px 5px;
-  height: 600px;
   overflow: scroll;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  height: calc(100vh - 60px);
+  position: fixed;
   @include media($tablet) {
-    min-height: none;
+    // height: calc(100vh - 0px);
+    // bottom: 60px;
   }
 }

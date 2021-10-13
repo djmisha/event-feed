@@ -1,6 +1,6 @@
 var moment = require('moment');
 import removeDuplicates from './removeDuplicates'
-import requestEventsXHR from './requestEvents'
+import requestEvents from './requestEvents'
 
 /* Create Navigations */
 
@@ -10,6 +10,11 @@ function createSortingNavigations(locationsData, eventData, city) {
 
   var locationsContainer = document.getElementById("city-list");
   var locationsArray = [];
+
+  var locationIcon = document.querySelector('.sort-city .sort-trigger span');
+  console.log(locationIcon);
+
+  // locationIcon.innerHTML = city;
 
   locationsData.forEach(function (item) {
     var location = {
@@ -29,13 +34,13 @@ function createSortingNavigations(locationsData, eventData, city) {
     var theCity = venue.city;
     locationsElement.addEventListener("click", function (event) {
       let city = document.getElementById("city-list");
-      let cityName = document.querySelector(".sort-city #drop-trigger");
+      let cityName = document.querySelector(".sort-city #drop-trigger span");
       cityName.innerHTML = theCity;
       city.classList.remove("visible");
       city.parentElement.classList.remove("visible");
       locationsContainer.innerHTML = '';
       dateContainer.innerHTML = "";
-      requestEventsXHR(ID, locationsData, city);
+      requestEvents(ID, locationsData, city);
     });
   });
 
