@@ -439,7 +439,8 @@ img.loading {
   left: 0;
   z-index: 999;
   border-top: 1px solid #d3d3dc;
-  height: 60px;
+  height: 70px;
+  padding-bottom: 10px;
   background-color: white; }
   @media only screen and (min-width: 768px) {
     .sort {
@@ -450,7 +451,6 @@ img.loading {
     cursor: pointer; }
     .sort > div.visible .sort-trigger {
       background-color: #fbe5f3;
-      border: 1px solid #fbe5f3;
       color: #ce3197; }
       .sort > div.visible .sort-trigger:after {
         color: #ce3197; }
@@ -463,10 +463,10 @@ img.loading {
     border: 1px solid transparent;
     background-color: white;
     margin-left: 5px;
-    transition: all 0.15s ease-in-out;
     color: #000;
     width: auto;
-    text-align: center; }
+    text-align: center;
+    padding: 4px 20px; }
     @media only screen and (min-width: 1080px) {
       .sort .sort-trigger {
         font-size: 14px;
@@ -508,18 +508,16 @@ img.loading {
   overflow: scroll;
   right: 0px;
   background: white;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 80px);
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  box-shadow: 0 2px 2px rgba(4, 9, 44, 0.2);
+  justify-content: space-around;
   position: fixed;
   left: 0;
   right: 0;
-  transition: bottom 0.5s ease-in-out;
   padding: 0px 15px 0px 15px;
   z-index: 8;
-  bottom: calc(-100vh - 60px); }
+  bottom: calc(-100vh - 80px); }
   @media only screen and (min-width: 768px) {
     #venue-list,
     #date-list,
@@ -531,7 +529,7 @@ img.loading {
   #date-list > div,
   #artist-list > div,
   #city-list > div {
-    width: 30%;
+    width: 29%;
     padding: 10px 6px;
     font-size: 14px !important;
     line-height: 16px;
@@ -563,9 +561,9 @@ img.loading {
 #date-list.visible {
   transition: height 0.25 ease-in;
   overflow: scroll;
-  bottom: 60px;
+  bottom: 80px;
   left: 0;
   right: 0;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 80px);
   position: fixed; }
 
