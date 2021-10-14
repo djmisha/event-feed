@@ -18,17 +18,15 @@ h1 {
   padding-left: 10px;
   font-size: 18px;
   color: #1c94a5;
-  text-transform: uppercase;
   font-weight: normal;
   border-bottom: 2px solid #1c94a5; }
   @media only screen and (min-width: 768px) {
     h1 {
       margin-top: 20px;
       display: block;
-      font-size: 25px; } }
+      font-size: 30px; } }
 
 h2 {
-  text-transform: uppercase;
   font-weight: normal;
   margin-top: 20;
   padding-left: 10px;
@@ -331,6 +329,11 @@ img.loading {
     background: #fff;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }
 
+.search {
+  text-align: center;
+  display: flex;
+  justify-content: center; }
+
 #form-search {
   margin: 10px 5px;
   display: flex;
@@ -444,7 +447,8 @@ img.loading {
   background-color: white; }
   @media only screen and (min-width: 768px) {
     .sort {
-      margin: 0; } }
+      margin: 0;
+      margin-right: 10px; } }
   .sort > div {
     cursor: pointer; }
     .sort > div.visible .sort-trigger {

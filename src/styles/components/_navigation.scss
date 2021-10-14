@@ -20,6 +20,12 @@
 
 // Search and Form
 
+.search {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
 #form-search {
   margin: 10px 5px;
   display: flex;
@@ -150,6 +156,7 @@
   background-color: white;
   @include media($tablet) {
     margin: 0;
+    margin-right: 10px;
   }
   > div {
     cursor: pointer;
