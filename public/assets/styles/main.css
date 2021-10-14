@@ -311,24 +311,6 @@ img.loading {
     font-size: 14px;
     text-transform: uppercase; }
 
-.navigations {
-  transition: all 0.2s ease; }
-  @media only screen and (min-width: 768px) {
-    .navigations {
-      position: relative;
-      display: flex;
-      top: auto;
-      justify-content: space-between;
-      padding-left: 5px; } }
-  .navigations.fixed-navigation {
-    position: fixed;
-    top: -55px;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    background: #fff;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }
-
 .search {
   text-align: center;
   display: flex;
@@ -342,19 +324,16 @@ img.loading {
   justify-content: space-between; }
   @media only screen and (min-width: 768px) {
     #form-search {
-      max-width: 300px;
+      max-width: 500px;
       margin: 20px 10px; } }
   @media only screen and (min-width: 1080px) {
     #form-search {
-      max-width: 500px;
       margin: 20px 10px; } }
-  #form-search:before {
-    content: '\1F50D';
+  #form-search img {
     position: absolute;
     left: 10px;
-    top: 8px;
+    top: 5px;
     width: 30px;
-    height: 30px;
     z-index: 199; }
   #form-search label {
     position: absolute;

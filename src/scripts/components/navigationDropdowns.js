@@ -11,7 +11,6 @@ function navigationDropdowns() {
 
         function showHideDropdown() {
             let openItem = document.querySelectorAll('.visible');
-            console.log(toggler)
             if (toggler.parentElement.classList.contains('visible')) {
               toggler.parentElement.classList.remove('visible');
               toggler.nextElementSibling.classList.remove('visible');
