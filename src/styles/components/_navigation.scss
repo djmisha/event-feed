@@ -37,7 +37,6 @@
     margin: 20px 10px;
   }
   @include media($desktop) {
-    // max-width: 500px;
     margin: 20px 10px;
   }
   img {
@@ -45,7 +44,6 @@
     left: 10px;
     top: 5px;
     width: 30px;
-    // height: 30px;
     z-index: 199;
   }
   label {
