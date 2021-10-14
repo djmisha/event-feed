@@ -1,9 +1,9 @@
 {
   "name": "House Music",
-  "short_name": "housemusic",
+  "short_name": "House Music",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#50e3c2","theme_color": "#B12A34",
+  "background_color": "#ce3197","theme_color": "#ce3197",
   "description": "House music events.",
   "icons": [{
     "src": "assets/images/housemusic48.png",

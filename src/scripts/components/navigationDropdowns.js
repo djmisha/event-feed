@@ -11,12 +11,19 @@ function navigationDropdowns() {
 
         function showHideDropdown() {
             let openItem = document.querySelectorAll('.visible');
+            console.log(toggler)
+            if (toggler.parentElement.classList.contains('visible')) {
+              toggler.parentElement.classList.remove('visible');
+              toggler.nextElementSibling.classList.remove('visible');
+              return;
+            }
             if (openItem.length > 0) {
                 for (let i = 0; i < openItem.length; i++) {
                     openItem[i].classList.remove('visible');
                 }
-            } 
-            else {
+                menu.classList.toggle("visible");
+                menu.parentElement.classList.toggle("visible");
+            } else {
                 menu.classList.toggle("visible");
                 menu.parentElement.classList.toggle("visible");
             }

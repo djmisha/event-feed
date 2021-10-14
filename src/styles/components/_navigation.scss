@@ -149,10 +149,7 @@
   padding-bottom: 10px;
   background-color: white;
   @include media($tablet) {
-    height: auto;
-    // position: relative;
     margin: 0;
-    margin-right: 10px;
   }
   > div {
     cursor: pointer;
@@ -173,7 +170,6 @@
     border: 1px solid transparent;
     background-color: white;
     margin-left: 5px;
-    // transition: all 0.15s ease-in-out;
     color: #000;
     width: auto;
     text-align: center;
@@ -182,10 +178,6 @@
     @include media($desktop) {
       font-size: 14px;
       padding: 7px 22px;
-    }
-
-    &:hover {
-      // border: 1px solid $borderGrey;
     }
     &:before {
       position: relative;
@@ -238,35 +230,34 @@
   right: 0px;
   background: white;
   height: calc(100vh - 80px);
-  // bottom: 0;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-around;
-  // box-shadow: 0 2px 2px rgba($color: $black, $alpha: 0.2);
   position: fixed;
   left: 0;
   right: 0;
-  // transition: bottom 0.5s ease-in-out;
+  transition: bottom 0.5s ease-in-out;
   padding: 0px 15px 0px 15px;
   z-index: 8;
   bottom: calc(-100vh - 80px);
 
   @include media($tablet) {
     transition: none;
-
     bottom: calc(-100vh - 80px);
   }
 
   > div {
-    width: 29%;
+    width: 28%;
     padding: 10px 6px;
     font-size: 14px !important;
     line-height: 16px;
     font-weight: 400;
     color: $black;
-    // border-bottom: 1px solid $borderGrey;
-    // border-top: 1px solid $borderGrey;
+    border-bottom: 1px solid $borderGrey;
     @include media($tablet) {
+      font-size: 16px !important;
+      line-height: 16px;
       padding: 10px 20px;
       width: 18%;
     }
@@ -274,13 +265,6 @@
       background: $lightPink;
       text-decoration: none;
     }
-  }
-}
-
-#venue-list > div {
-  width: 45%;
-  @include media($tablet) {
-    width: 25%;
   }
 }
 
@@ -295,8 +279,11 @@
   right: 0;
   height: calc(100vh - 80px);
   position: fixed;
+}
+
+#venue-list > div {
+  width: 45%;
   @include media($tablet) {
-    // height: calc(100vh - 0px);
-    // bottom: 60px;
+    width: 25%;
   }
 }

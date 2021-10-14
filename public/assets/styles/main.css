@@ -444,9 +444,7 @@ img.loading {
   background-color: white; }
   @media only screen and (min-width: 768px) {
     .sort {
-      height: auto;
-      margin: 0;
-      margin-right: 10px; } }
+      margin: 0; } }
   .sort > div {
     cursor: pointer; }
     .sort > div.visible .sort-trigger {
@@ -511,10 +509,12 @@ img.loading {
   height: calc(100vh - 80px);
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-around;
   position: fixed;
   left: 0;
   right: 0;
+  transition: bottom 0.5s ease-in-out;
   padding: 0px 15px 0px 15px;
   z-index: 8;
   bottom: calc(-100vh - 80px); }
@@ -529,17 +529,20 @@ img.loading {
   #date-list > div,
   #artist-list > div,
   #city-list > div {
-    width: 29%;
+    width: 28%;
     padding: 10px 6px;
     font-size: 14px !important;
     line-height: 16px;
     font-weight: 400;
-    color: #04092c; }
+    color: #04092c;
+    border-bottom: 1px solid #d3d3dc; }
     @media only screen and (min-width: 768px) {
       #venue-list > div,
       #date-list > div,
       #artist-list > div,
       #city-list > div {
+        font-size: 16px !important;
+        line-height: 16px;
         padding: 10px 20px;
         width: 18%; } }
     #venue-list > div:hover,
@@ -548,12 +551,6 @@ img.loading {
     #city-list > div:hover {
       background: #fbe5f3;
       text-decoration: none; }
-
-#venue-list > div {
-  width: 45%; }
-  @media only screen and (min-width: 768px) {
-    #venue-list > div {
-      width: 25%; } }
 
 #venue-list.visible,
 #artist-list.visible,
@@ -566,4 +563,10 @@ img.loading {
   right: 0;
   height: calc(100vh - 80px);
   position: fixed; }
+
+#venue-list > div {
+  width: 45%; }
+  @media only screen and (min-width: 768px) {
+    #venue-list > div {
+      width: 25%; } }
 
