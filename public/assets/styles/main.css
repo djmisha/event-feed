@@ -311,6 +311,17 @@ img.loading {
     font-size: 14px;
     text-transform: uppercase; }
 
+.search-all {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 998; }
+  @media only screen and (min-width: 768px) {
+    .search-all {
+      position: relative;
+      top: auto; } }
+
 .search {
   text-align: center;
   display: flex;
@@ -383,7 +394,7 @@ img.loading {
   right: 0;
   font-size: 14px;
   text-align: center;
-  padding: 7px 15px;
+  padding: 9px 15px;
   background: white;
   border: 1px solid #ce3197;
   border-left: 5px solid #ce3197;
@@ -403,12 +414,15 @@ img.loading {
     display: block; }
   #clearSearch span {
     position: absolute;
-    top: 10px;
+    top: 19px;
     right: 15px;
     font-size: 40px;
     color: #ce3197;
     z-index: 1;
     pointer-events: none; }
+    @media only screen and (min-width: 768px) {
+      #clearSearch span {
+        top: 10px; } }
 
 .sort {
   display: flex;
@@ -497,9 +511,9 @@ img.loading {
   position: fixed;
   left: 0;
   right: 0;
-  transition: bottom 0.5s ease-in-out;
   padding: 0px 15px 0px 15px;
   z-index: 8;
+  border-bottom: 1px solid #d3d3dc;
   bottom: calc(-100vh - 80px); }
   @media only screen and (min-width: 768px) {
     #venue-list,
@@ -508,11 +522,17 @@ img.loading {
     #city-list {
       transition: none;
       bottom: calc(-100vh - 80px); } }
+  #venue-list h2,
+  #date-list h2,
+  #artist-list h2,
+  #city-list h2 {
+    text-align: left;
+    width: 100%; }
   #venue-list > div,
   #date-list > div,
   #artist-list > div,
   #city-list > div {
-    width: 28%;
+    width: 100%;
     padding: 10px 6px;
     font-size: 14px !important;
     line-height: 16px;
@@ -526,8 +546,7 @@ img.loading {
       #city-list > div {
         font-size: 16px !important;
         line-height: 16px;
-        padding: 10px 20px;
-        width: 18%; } }
+        padding: 10px 20px; } }
     #venue-list > div:hover,
     #date-list > div:hover,
     #artist-list > div:hover,
@@ -545,11 +564,6 @@ img.loading {
   left: 0;
   right: 0;
   height: calc(100vh - 80px);
-  position: fixed; }
-
-#venue-list > div {
-  width: 45%; }
-  @media only screen and (min-width: 768px) {
-    #venue-list > div {
-      width: 25%; } }
+  position: fixed;
+  opacity: 1; }
 
