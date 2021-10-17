@@ -28,25 +28,24 @@ function navigationDropdowns() {
         }
     }
 
-    activateNavToggle(venueMenu);
-    activateNavToggle(artistMenu);
-    activateNavToggle(dateMenu);
-    activateNavToggle(cityMenu);
-    
     function attachNavTitle(menu) {
       const text = menu.previousElementSibling.lastChild.innerHTML;
-      console.log("🚀 ~ file: navigationDropdowns.js ~ line 32 ~ showHideDropdown ~ text", text)
       const navEl = menu.previousElementSibling.nextElementSibling;
       const title = document.createElement('h2');
-      console.log("🚀 ~ file: navigationDropdowns.js ~ line 36 ~ attachNavTitle ~ title", title)
       title.innerHTML = text;
       navEl.prepend(title);
     }
 
-    attachNavTitle(dateMenu);
-    attachNavTitle(cityMenu);
+    activateNavToggle(venueMenu);
+    activateNavToggle(artistMenu);
+    activateNavToggle(dateMenu);
+    activateNavToggle(cityMenu);
+
     attachNavTitle(venueMenu);
     attachNavTitle(artistMenu);
+    attachNavTitle(dateMenu);
+    attachNavTitle(cityMenu);
+    
 }
 
 export default navigationDropdowns;

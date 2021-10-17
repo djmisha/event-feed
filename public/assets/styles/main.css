@@ -258,7 +258,7 @@ img.loading {
 
 #musicfeed {
   padding: 0;
-  transition: all .25 ease-out; }
+  transition: all 0.25 ease-out; }
   @media only screen and (min-width: 650px) {
     #musicfeed {
       padding: 0 10px;
@@ -274,7 +274,7 @@ img.loading {
 
 .single-music {
   position: relative;
-  transition: all .25 ease-out;
+  transition: all 0.25 ease-out;
   text-align: left;
   margin: 0px 0px;
   position: relative;
@@ -292,7 +292,7 @@ img.loading {
     color: #10b981; }
   @media only screen and (min-width: 1080px) {
     .single-music:hover {
-      box-shadow: 0px 5px 15px #52525B; } }
+      box-shadow: 0px 5px 15px #52525b; } }
   .single-music a {
     text-decoration: none; }
   .single-music img {
@@ -308,7 +308,7 @@ img.loading {
     display: block;
     margin-top: 10px;
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 18px;
     text-transform: uppercase; }
 
 .search-all {
@@ -332,7 +332,8 @@ img.loading {
   display: flex;
   position: relative;
   color: #767679;
-  justify-content: space-between; }
+  justify-content: space-between;
+  width: 100%; }
   @media only screen and (min-width: 768px) {
     #form-search {
       max-width: 500px;
@@ -355,7 +356,7 @@ img.loading {
     padding: 10px 30px 10px 50px;
     font-size: 12px;
     line-height: 0;
-    width: calc(100% - 120px);
+    width: 100%;
     border: 1px solid #d3d3dc;
     background: white;
     transition: all 0.15s ease-in-out;
@@ -511,6 +512,7 @@ img.loading {
   position: fixed;
   left: 0;
   right: 0;
+  transition: all 0.5s ease-in-out;
   padding: 0px 15px 0px 15px;
   z-index: 8;
   border-bottom: 1px solid #d3d3dc;
@@ -526,6 +528,7 @@ img.loading {
   #date-list h2,
   #artist-list h2,
   #city-list h2 {
+    padding-top: 10px;
     text-align: left;
     width: 100%; }
   #venue-list > div,

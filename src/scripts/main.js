@@ -1,8 +1,7 @@
 import navigationDropdowns from './components/navigationDropdowns';
-import navigationMobile from './components/navigationMobile';
 import getIPAddress from './components/getIPAddress'
 import getLocationID from './components/getLocationID';
-import activateNav from './components/navigation'
+// import activateNav from './components/navigation'
 // import requestPostsAndAttachtoPage from './components/requestsPosts';
 
 // Register Service Worker 
@@ -38,7 +37,7 @@ const isReturnUser = () => {
 }
 
 isReturnUser();
-setUserLocation();
+// setUserLocation();
 navigationDropdowns();
 // navigationMobile();
 // activateNav();

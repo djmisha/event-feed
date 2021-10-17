@@ -11,9 +11,6 @@ function createSortingNavigations(locationsData, eventData, city) {
   var locationsContainer = document.getElementById("city-list");
   var locationsArray = [];
 
-  var locationIcon = document.querySelector('.sort-city .sort-trigger span');
-  console.log(locationIcon);
-
   // locationIcon.innerHTML = city;
 
   locationsData.forEach(function (item) {
@@ -47,6 +44,10 @@ function createSortingNavigations(locationsData, eventData, city) {
     
   let locationCity = document.querySelector(".local-city");
   locationCity.innerHTML = eventData[0].venuecity;
+
+  // var locationIcon = document.querySelector('.sort-city .sort-trigger span');
+  // locationIcon.innerHTML = city;
+  // console.log(locationIcon);
 
   /* Venues */
 
@@ -150,7 +151,7 @@ function createSortingNavigations(locationsData, eventData, city) {
     searchInput.value = this.innerHTML;
     searchButton.click();
     location.href = '#top';
-    console.log(searchInput.value)
+    // console.log(searchInput.value)
   }
 }
 
