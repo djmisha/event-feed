@@ -1,21 +1,23 @@
 import navigationDropdowns from './components/navigationDropdowns';
-import navigationMobile from './components/navigationMobile';
 import getIPAddress from './components/getIPAddress'
 import getLocationID from './components/getLocationID';
-import activateNav from './components/navigation'
+// import activateNav from './components/navigation'
 // import requestPostsAndAttachtoPage from './components/requestsPosts';
 
-// Initialize Application
+// Register Service Worker 
 
-// redirect to new location, remove after a while
-const redirect = () => {
-  let loc = location.host;
-    if (loc === 'events.sandiegohousemusic.com') {
-    window.location.href = 'https://sandiegohousemusic.com/events'
-  }
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("/public/sw.js")
+    .then(serviceWorker => {
+      console.log("Service Worker registered: ", serviceWorker);
+    })
+    .catch(error => {
+      console.error("Error registering the Service Worker: ", error);
+    });
 }
 
-redirect();
+// Initialize Application
 
 const setUserLocation = async () => {
   await getIPAddress();
@@ -35,9 +37,9 @@ const isReturnUser = () => {
 }
 
 isReturnUser();
-setUserLocation();
+// setUserLocation();
 navigationDropdowns();
-navigationMobile();
-activateNav();
+// navigationMobile();
+// activateNav();
 
 // requestPostsAndAttachtoPage('music', 8);

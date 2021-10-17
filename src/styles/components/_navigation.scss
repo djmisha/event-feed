@@ -1,24 +1,42 @@
-.navigations {
-  transition: all 0.2s ease;
+// .navigations {
+//   transition: all 0.2s ease;
+//   @include media($tablet) {
+//     position: relative;
+//     display: flex;
+//     top: auto;
+//     justify-content: space-between;
+//     padding-left: 5px;
+//   }
+//   &.fixed-navigation {
+//     position: fixed;
+//     top: -55px;
+//     left: 0;
+//     right: 0;
+//     z-index: 9999;
+//     background: $white;
+//     box-shadow: 0 2px 2px rgba(black, 0.1);
+//   }
+// }
+
+// Search and Form
+
+.search-all {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 998;
   @include media($tablet) {
     position: relative;
-    display: flex;
     top: auto;
-    justify-content: space-between;
-    padding-left: 5px;
-  }
-  &.fixed-navigation {
-    position: fixed;
-    top: -55px;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    background: $white;
-    box-shadow: 0 2px 2px rgba(black, 0.1);
   }
 }
 
-// Search and Form
+.search {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
 
 #form-search {
   margin: 10px 5px;
@@ -26,21 +44,19 @@
   position: relative;
   color: #767679;
   justify-content: space-between;
+  width: 100%;
   @include media($tablet) {
-    max-width: 300px;
-    margin: 20px 10px;
-  }
-  @include media($desktop) {
     max-width: 500px;
     margin: 20px 10px;
   }
-  &:before {
-    content: '\1F50D';
+  @include media($desktop) {
+    margin: 20px 10px;
+  }
+  img {
     position: absolute;
     left: 10px;
-    top: 8px;
+    top: 5px;
     width: 30px;
-    height: 30px;
     z-index: 199;
   }
   label {
@@ -54,7 +70,7 @@
     font-size: 12px;
     line-height: 0;
     // letter-spacing: 1px;
-    width: calc(100% - 120px);
+    width: 100%;
     border: 1px solid $borderGrey;
     background: white;
     transition: all 0.15s ease-in-out;
@@ -100,7 +116,7 @@
   right: 0;
   font-size: 14px;
   text-align: center;
-  padding: 7px 15px;
+  padding: 9px 15px;
   background: white;
   border: 1px solid $pink;
   border-left: 5px solid $pink;
@@ -123,24 +139,34 @@
   }
   span {
     position: absolute;
-    top: 10px;
+    top: 19px;
     right: 15px;
     font-size: 40px;
     color: $pink;
     z-index: 1;
     pointer-events: none;
+    @include media($tablet) {
+      top: 10px;
+    }
   }
 }
 
 // Navigation Toggles
 
 .sort {
-  position: relative;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
-  margin: 5px 0px;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  border-top: 1px solid $borderGrey;
+  height: 70px;
+  padding-bottom: 10px;
+  background-color: white;
   @include media($tablet) {
     margin: 0;
     margin-right: 10px;
@@ -149,7 +175,6 @@
     cursor: pointer;
     &.visible .sort-trigger {
       background-color: $lightPink;
-      border: 1px solid $lightPink;
       color: $pink;
       &:after {
         color: $pink;
@@ -159,26 +184,20 @@
   .sort-trigger {
     display: block;
     cursor: pointer;
-    font-size: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
     font-weight: 500;
     border: 1px solid transparent;
     background-color: white;
     margin-left: 5px;
-    transition: all 0.15s ease-in-out;
     color: #000;
-    border-radius: 30px;
-    padding: 6px 12px;
-    border: 1px solid $borderGrey;
+    width: auto;
+    text-align: center;
+    padding: 4px 20px;
 
     @include media($desktop) {
-      border-radius: 30px;
-
       font-size: 14px;
       padding: 7px 22px;
-    }
-
-    &:hover {
-      border: 1px solid $borderGrey;
     }
     &:before {
       position: relative;
@@ -193,65 +212,81 @@
   }
 }
 
-.sort-city .sort-trigger {
-  &:before {
-    content: '🌆';
-  }
-}
 .sort-artists .sort-trigger {
-  &:before {
-    content: '🔊';
+  img {
+    margin: 0 auto;
+    width: 30px;
+    display: block;
   }
 }
 
 .sort-venues .sort-trigger {
-  &:before {
-    content: '🏢';
+  img {
+    margin: 0 auto;
+    width: 23px;
+    display: block;
   }
 }
 
 .sort-date .sort-trigger {
-  &:before {
-    content: '🗓️';
+  img {
+    margin: 0 auto;
+    width: 25px;
+    display: block;
   }
 }
-
+.sort-city .sort-trigger {
+  img {
+    margin: 0 auto;
+    width: 23px;
+    display: block;
+  }
+}
 #venue-list,
 #date-list,
 #artist-list,
 #city-list {
-  transition: height 0.25 ease-in;
   overflow: scroll;
-  position: absolute;
-  margin: 0 auto;
   right: 0px;
-  top: 40px;
   background: white;
-  height: 0;
+  height: calc(100vh - 80px);
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  z-index: 9999;
-  box-shadow: 0 5px 5px rgba($color: $black, $alpha: 0.2);
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+  padding: 0px 15px 0px 15px;
+  z-index: 8;
+  border-bottom: 1px solid $borderGrey;
+  bottom: calc(-100vh - 80px);
+  // opacity: 0;
 
   @include media($tablet) {
-    border-radius: 20px;
-    top: 70px;
-    width: 850px;
-    box-shadow: 0 5px 10px rgba($color: $black, $alpha: 0.2);
+    transition: none;
+    bottom: calc(-100vh - 80px);
+  }
+
+  h2 {
+    padding-top: 10px;
+    text-align: left;
+    width: 100%;
   }
 
   > div {
-    width: 30%;
+    width: 100%;
     padding: 10px 6px;
     font-size: 14px !important;
     line-height: 16px;
-    border-radius: 30px;
     font-weight: 400;
     color: $black;
+    border-bottom: 1px solid $borderGrey;
     @include media($tablet) {
+      font-size: 16px !important;
+      line-height: 16px;
       padding: 10px 20px;
-      width: 18%;
     }
     &:hover {
       background: $lightPink;
@@ -260,22 +295,23 @@
   }
 }
 
-#venue-list > div {
-  width: 45%;
-  @include media($tablet) {
-    width: 25%;
-  }
-}
-
 #venue-list.visible,
 #artist-list.visible,
 #city-list.visible,
 #date-list.visible {
   transition: height 0.25 ease-in;
-  padding: 10px 5px 30px 5px;
-  height: 600px;
   overflow: scroll;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  height: calc(100vh - 80px);
+  position: fixed;
+  opacity: 1;
+}
+
+#venue-list > div {
+  // width: 45%;
   @include media($tablet) {
-    min-height: none;
+    // width: 25%;
   }
 }

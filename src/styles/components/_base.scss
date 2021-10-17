@@ -17,18 +17,18 @@ h1 {
   padding-left: 10px;
   font-size: 18px;
   color: $blue;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-weight: normal;
   border-bottom: 2px solid $blue;
   @include media($tablet) {
     margin-top: 20px;
     display: block;
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 
 h2 {
-  text-transform: uppercase;
+  // text-transform: uppercase;
   font-weight: normal;
   margin-top: 20;
   padding-left: 10px;

@@ -3,87 +3,55 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"  shrink-to-fit=no>
+  <!-- <meta  name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/> -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>House Music Events, Festivals, EDM Shows, Techno, Raves, Dance Clubs </title>
-  <meta name="viewport" content="maximum-scale=1.0, user-scalable=yes, width=device-width" />
+  <title>House Music Events, Festivals, EDM Shows, Techno, Raves, Dance Clubs</title>
+  <!-- <meta name="viewport" content="maximum-scale=1.0, user-scalable=yes, width=device-width" /> -->
   <meta name="google-site-verification" content="Me3u2y7obUKYQhQRu7jyrLKEaksGmf9J3tTIKg7DGFg" />
   <meta name="description"
     content="Find house music events festivals dance clubs techno raves edm shows in a city near you. " />
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="House Music" />
+  <meta name="apple-mobile-web-app-title" content="House Music" />
+  <link rel="apple-touch-icon" href="assets/images/housemusic192.png">
+  <meta name="msapplication-starturl" content="/index.html" />
+  <meta name="theme-color">
+
   <link rel="canonical" href="https://sandiegohousemusic.com/" />
   <link rel="icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./assets/fonts/css/all.css">
   <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 
 <body id="top">
-  <header>
-    <div class="nav-bar">
-      <div class="site-logo">
-        <a href="https://sandiegohousemusic.com">
-          <img
-            src="https://sandiegohousemusic.com/wordpress/wp-content/uploads/2015/11/logo1.jpg?fit=300%2C97&amp;ssl=1"
-            alt="House Music Events"> 
-        </a>
-      </div>
-      <div class="menu-trigger">
-        <div class="touch-button-icon">
-          <div class="hamburger"></div>
-          <div class="hamburger"></div>
-          <div class="hamburger"></div>
-          <div class="hamburger"></div>
-        </div>
-      </div>
-      <nav>
-        <div class="menu-wrap menu-is-closed touch-menu">
-          <ul id="menu-main" class="main-menu">
-            <li id="menu-item-10229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9229 current_page_item first menu-item-10229"><a href="https://sandiegohousemusic.com/" aria-current="page">House</a></li>
-            <li id="menu-item-9759"
-              class="get-events menu-item menu-item-type-custom menu-item-object-custom first menu-item-9759"><a
-                rel="noopener" href="https://sandiegohousemusic.com/events">Events</a></li>
-            <li id="menu-item-7986" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7986">
-              <a rel="noopener" href="https://sandiegohousemusic.com/category/music/">Music</a>
-            </li>
-            <li id="menu-item-9153"
-              class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4027 current_page_item menu-item-9153">
-              <a rel="noopener" href="https://sandiegohousemusic.com/djs/" aria-current="page">DJs</a>
-            </li>
-            <li id="menu-item-7982" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7982"><a
-                rel="noopener" href="https://sandiegohousemusic.com/submit-your-dj-mix/">Submit DJ Mix</a>
-            </li>
-            <li id="menu-item-9653"
-              class="show-form menu-item menu-item-type-custom menu-item-object-custom last menu-item-9653"><a
-                href="https://sandiegohousemusic.com/contactus/">Contact</a></li><span class="close-menu"><i
-                class="fa fa-times" aria-hidden="true"></i></span>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
+  <section class="search">
+    <form action="#" id="form-search">
+      <img src="assets/images/icon-search.svg" alt="Venue">
+      <label for="input-search">search</label>
+      <input type="text" name="search" id="input-search" value="Search by artist, event or venue" />
+      <button id="submit-search">Search</button>
+    </form>
+  </section>
   <div class="navigations">
-    <section class="search">
-      <form action="#" id="form-search">
-        <label for="input-search">search</label>
-        <input type="text" name="search" id="input-search" value="Search by artist, event or venue" />
-        <button id="submit-search">Search</button>
-      </form>
-    </section>
     <section class="sort">
       <div class="sort-venues">
-        <div class="sort-trigger" id="drop-trigger">Venues</div>
+        <div class="sort-trigger" id="drop-trigger"><img src="assets/images/icon-venue.svg" alt="Venue"><span>Venues</span></div>
         <div id="venue-list"></div>
       </div>
       <div class="sort-artists">
-        <div class="sort-trigger" id="drop-trigger">DJ's & Artists</div>
+        <div class="sort-trigger" id="drop-trigger"><img src="assets/images/icon-dj.svg" alt="DJ"><span>DJ's</span></div>
         <div id="artist-list"></div>
       </div>
       <div class="sort-date">
-        <div class="sort-trigger" id="drop-trigger">Dates</div>
+        <div class="sort-trigger" id="drop-trigger"><img src="assets/images/icon-cal.svg" alt="Calendar"><span>Dates</span></div>
         <div id="date-list"></div>
       </div>
       <div class="sort-city">
-        <div class="sort-trigger" id="drop-trigger">City</div>
+        <div class="sort-trigger" id="drop-trigger"><img src="assets/images/icon-map.svg" alt="City"><span>City</span></div>
         <div id="city-list"></div>
       </div>
     </section>
@@ -91,7 +59,7 @@
 
   <div class="main-wrap">
     <section class="upcoming-events">
-      <h1>Events Near <span class="local-city">You</span></h1>
+      <h1>Music Events Near <span class="local-city">You</span></h1>
       <div class="search-all">
         <div id="clearSearch"><span>&times;</span></div>
         <section id="searchresults"></section>
@@ -113,9 +81,9 @@
   </div>
 
   <!-- <h2>Listen to DJ Mixes </h2>
-  <section id="musicfeed"><img src="./assets/images/oval.svg" alt="loading"></section> -->
+  <section id="musicfeed"></section> -->
 
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script> -->
   <script src="./assets/scripts/bundle.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
