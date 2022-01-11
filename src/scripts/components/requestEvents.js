@@ -18,13 +18,11 @@ function requestEvents(cityID, locations) {
     cityID +
     '&client=47211b0d-26f7-424c-b81c-45613a70f865';
 
-
   http.open('GET', url);
   http.send();
 
   function prepareURL() {
     apiPath = 'https://edmtrain.com/api/events?locationIds=';
-
   }
 
   http.onreadystatechange = function () {
@@ -63,12 +61,12 @@ function requestEvents(cityID, locations) {
         starttime: result.data[g].startTime,
       };
 
-      /*Push To Event DAta Array if not Live Stream*/
-      if (singleEventListing.venuename != 'Live Stream') {
-        eventData.push(singleEventListing);
-      } else {
-        liveStreamData.push(singleEventListing);
-      }
+      /*Push To Event Data Array if not Live Stream*/
+      // if (singleEventListing.venuename != 'Live Stream') {
+      eventData.push(singleEventListing);
+      // } else {
+      // liveStreamData.push(singleEventListing);
+      // }
     }
   }
   return eventData;
