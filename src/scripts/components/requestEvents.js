@@ -1,3 +1,4 @@
+var dayjs = require('dayjs');
 import attachToPage from './attachToPage';
 
 function requestEvents(cityID, locations) {
@@ -44,12 +45,13 @@ function requestEvents(cityID, locations) {
       /*convert date to ISO for Schema and Readble Formats*/
       //   var eventDateParsed = Date.parse(result.data[g].date);
       var eventDateISO = new Date(result.data[g].date);
-      // console.log(result.data[g].startTime);
+      // console.log(eventDateISO);
       // Create Event Object
       var singleEventListing = {
         id: result.data[g].id,
         name: result.data[g].name,
         date: result.data[g].date,
+        formattedDate: dayjs(eventDateISO).format('MMM D'),
         link: result.data[g].link,
         venuename: result.data[g].venue.name,
         venueaddress: result.data[g].venue.address,
