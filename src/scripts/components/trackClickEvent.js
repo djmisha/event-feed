@@ -4,7 +4,6 @@ const trackClickEvent = (category, action, label) => {
     event_label: label,
     transport_type: 'beacon',
   });
-  debugger;
 };
 
 export default trackClickEvent;

@@ -25,6 +25,7 @@
 
 ### Done 2022
 
+- [done] add event tracking for Google Analytics
 - [done] update DATE to use DAY.js
 - [done] fix apple PNG icon
 

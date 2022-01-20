@@ -137,7 +137,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\nconst trackClickEvent = (category, action, label) => {\n  gtag('event', action, {\n    event_category: category,\n    event_label: label,\n    transport_type: 'beacon'\n  });\n  debugger;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (trackClickEvent);\n\n//# sourceURL=webpack://live-reload-vanilla-website-template/./src/scripts/components/trackClickEvent.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\nconst trackClickEvent = (category, action, label) => {\n  gtag('event', action, {\n    event_category: category,\n    event_label: label,\n    transport_type: 'beacon'\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (trackClickEvent);\n\n//# sourceURL=webpack://live-reload-vanilla-website-template/./src/scripts/components/trackClickEvent.js?");
 
 /***/ }),
 
