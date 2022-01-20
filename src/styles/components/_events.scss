@@ -6,6 +6,7 @@
     flex-direction: row-reverse;
     .upcoming-events {
       width: 65%;
+      padding-bottom: 80px;
     }
     .sidebar {
       width: 35%;
@@ -33,6 +34,8 @@
   font-size: 14px;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 120px;
+
   > div {
     width: 33%;
   }
