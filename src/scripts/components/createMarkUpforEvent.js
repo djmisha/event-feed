@@ -1,4 +1,4 @@
-var moment = require('moment');
+var dayjs = require('dayjs');
 
 /* create a list of all Artists for an event*/
 
@@ -29,7 +29,7 @@ function listArtists(event) {
     theArtists.toString(',');
     // theArtists.split(',');
     // console.log(typeof theArtists, theArtists);
-    return theArtists
+    return theArtists;
   }
 }
 
@@ -71,18 +71,18 @@ function createShowLocation(event) {
 
 // currently returns 5pm for everything - need to figure out why
 function calcTime(time) {
-  // console.log(time)
-  return ` &bull; ${moment(time).format('LT')}`;
+  // console.log(`${dayjs(time).format('h')}`);
+  return ` &bull; ${dayjs(time).format('h')}`;
 }
 
 // Format Date
 
 function formatDate(date) {
-  return moment(date).format('MMM Do');
+  return dayjs(date).format('MMM D');
 }
 
 function formatDayOfWeek(date) {
-  return moment(date).format('dddd');
+  return dayjs(date).format('dddd');
 }
 
 /* Create MarkupForEvent */
@@ -94,7 +94,7 @@ export function createMarkUpforEvent(event) {
   var showName = checkEventName(event);
   var showTime = calcTime(event.startTime);
   var showDate = formatDate(event.date);
-  var showDayOfWeek = formatDayOfWeek(event.date)
+  var showDayOfWeek = formatDayOfWeek(event.date);
   var theEventVenueAddress = '';
 
   if (event.venueaddress !== null) {
@@ -125,10 +125,14 @@ export function createMarkUpforEvent(event) {
   //     '"></div></a> \n';
 
   var theEventShowName =
-    '<div class="event-info"><div class="event-title-artist"><span class="event-title" itemprop="name">' + showName + '</span> \n';
+    '<div class="event-info"><div class="event-title-artist"><span class="event-title" itemprop="name">' +
+    showName +
+    '</span> \n';
 
   var theEventArtist =
-    '<span class="event-artist" itemprop="name">' + showArtist + '</span></div> \n';
+    '<span class="event-artist" itemprop="name">' +
+    showArtist +
+    '</span></div> \n';
 
   var EventVenueName =
     '<div class="event-venue" itemprop="location" itemscope itemtype="http://schema.org/Place"><span itemprop="name">' +

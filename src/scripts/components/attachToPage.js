@@ -1,20 +1,19 @@
-import createMarkUpforEvent from './createMarkUpforEvent'
-import createSortingNavigations from './createSortingNavigations'
-import search from './search'
+import createMarkUpforEvent from './createMarkUpforEvent';
+import createSortingNavigations from './createSortingNavigations';
+import search from './search';
 
 /* Loop through all eventa  and attach them to page */
 function attachToPage(eventData, locationsData, element, city) {
-
   /* Remove loading icon*/
   element.innerHTML = '';
 
   const events = eventData.forEach((event, index) => {
-    var singleEventElement = document.createElement("div");
-    singleEventElement.classList.add("single-event");
-    singleEventElement.classList.add("view-partial");
-    singleEventElement.setAttribute("itemscope", "");
-    singleEventElement.setAttribute("data-id", event.id);
-    singleEventElement.setAttribute("itemtype", "http://schema.org/Event");
+    var singleEventElement = document.createElement('div');
+    singleEventElement.classList.add('single-event');
+    singleEventElement.classList.add('view-partial');
+    singleEventElement.setAttribute('itemscope', '');
+    singleEventElement.setAttribute('data-id', event.id);
+    singleEventElement.setAttribute('itemtype', 'http://schema.org/Event');
 
     // singleEventElement.classList.add('view-small');
     singleEventElement.addEventListener('click', toToggleView);
@@ -28,9 +27,7 @@ function attachToPage(eventData, locationsData, element, city) {
 
     /* Attach Events to the page*/
     element.appendChild(singleEventElement);
-
   });
-
 
   // showMoreEventsButton(element);
 
@@ -41,14 +38,16 @@ function attachToPage(eventData, locationsData, element, city) {
 
 function toToggleView(event) {
   console.log(event.target.closest('.single-event').classList);
-  if (event.target.closest('.single-event').classList.contains('view-partial')) {
+  if (
+    event.target.closest('.single-event').classList.contains('view-partial')
+  ) {
     event.target.closest('.single-event').classList.add('view-full');
     event.target.closest('.single-event').classList.remove('view-partial');
   } else {
     event.target.closest('.single-event').classList.remove('view-full');
     event.target.closest('.single-event').classList.add('view-partial');
   }
-};
+}
 
 // function showMoreEventsButton(element) {
 //   var showMoreButton = document.createElement('div')

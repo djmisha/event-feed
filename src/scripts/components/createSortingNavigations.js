@@ -1,14 +1,13 @@
-var moment = require('moment');
-import removeDuplicates from './removeDuplicates'
-import requestEvents from './requestEvents'
+var dayjs = require('dayjs');
+import removeDuplicates from './removeDuplicates';
+import requestEvents from './requestEvents';
 
 /* Create Navigations */
 
 function createSortingNavigations(locationsData, eventData, city) {
-
   /* Locations */
 
-  var locationsContainer = document.getElementById("city-list");
+  var locationsContainer = document.getElementById('city-list');
   var locationsArray = [];
 
   // locationIcon.innerHTML = city;
@@ -24,25 +23,24 @@ function createSortingNavigations(locationsData, eventData, city) {
   });
 
   locationsArray.forEach(function (venue) {
-    var locationsElement = document.createElement("div");
+    var locationsElement = document.createElement('div');
     locationsElement.innerHTML = venue.city;
     locationsContainer.appendChild(locationsElement);
     var ID = venue.id;
     var theCity = venue.city;
-    locationsElement.addEventListener("click", function (event) {
-      let city = document.getElementById("city-list");
-      let cityName = document.querySelector(".sort-city #drop-trigger span");
+    locationsElement.addEventListener('click', function (event) {
+      let city = document.getElementById('city-list');
+      let cityName = document.querySelector('.sort-city #drop-trigger span');
       cityName.innerHTML = theCity;
-      city.classList.remove("visible");
-      city.parentElement.classList.remove("visible");
+      city.classList.remove('visible');
+      city.parentElement.classList.remove('visible');
       locationsContainer.innerHTML = '';
-      dateContainer.innerHTML = "";
+      dateContainer.innerHTML = '';
       requestEvents(ID, locationsData, city);
     });
   });
 
-    
-  let locationCity = document.querySelector(".local-city");
+  let locationCity = document.querySelector('.local-city');
   locationCity.innerHTML = eventData[0].venuecity;
 
   // var locationIcon = document.querySelector('.sort-city .sort-trigger span');
@@ -51,11 +49,11 @@ function createSortingNavigations(locationsData, eventData, city) {
 
   /* Venues */
 
-  var venueContainer = document.getElementById("venue-list");
+  var venueContainer = document.getElementById('venue-list');
   var venuesidebarContainer = document.querySelector('.sidebar-venues');
 
-  venueContainer.innerHTML = "";
-  venuesidebarContainer.innerHTML = "";
+  venueContainer.innerHTML = '';
+  venuesidebarContainer.innerHTML = '';
   var venueArray = [];
 
   eventData.forEach(function (item) {
@@ -67,30 +65,30 @@ function createSortingNavigations(locationsData, eventData, city) {
 
   venueArray.sort();
 
-  // To Refactor: this is WET 
+  // To Refactor: this is WET
   // Navigation Events
   venueArray.forEach(function (venue) {
-    var venuleElement = document.createElement("div");
+    var venuleElement = document.createElement('div');
     venuleElement.innerHTML = venue;
     venueContainer.appendChild(venuleElement);
-    venuleElement.addEventListener("click", manualSearch);
+    venuleElement.addEventListener('click', manualSearch);
   });
 
-  // Sidebar events 
+  // Sidebar events
   venueArray.forEach(function (venue) {
-    var venuleElement = document.createElement("div");
+    var venuleElement = document.createElement('div');
     venuleElement.innerHTML = venue;
     venuesidebarContainer.appendChild(venuleElement);
-    venuleElement.addEventListener("click", manualSearch);
+    venuleElement.addEventListener('click', manualSearch);
   });
 
   /* Artists */
 
-  var artistContainer = document.getElementById("artist-list");
+  var artistContainer = document.getElementById('artist-list');
   var artistsidebarContainer = document.querySelector('.sidebar-artist');
 
-  artistContainer.innerHTML = "";
-  artistsidebarContainer.innerHTML = ""
+  artistContainer.innerHTML = '';
+  artistsidebarContainer.innerHTML = '';
 
   var artistArray = [];
   eventData.forEach(function (item) {
@@ -107,27 +105,26 @@ function createSortingNavigations(locationsData, eventData, city) {
   artistArray.sort();
 
   artistArray.forEach(function (artist) {
-    var element = document.createElement("div");
+    var element = document.createElement('div');
     element.innerHTML = artist;
     artistContainer.appendChild(element);
-    element.addEventListener("click", manualSearch);
+    element.addEventListener('click', manualSearch);
   });
 
   artistArray.forEach(function (artist) {
-    var element = document.createElement("div");
+    var element = document.createElement('div');
     element.innerHTML = artist;
     artistsidebarContainer.appendChild(element);
-    element.addEventListener("click", manualSearch);
+    element.addEventListener('click', manualSearch);
   });
-
 
   /* Dates */
 
-  var dateContainer = document.getElementById("date-list");
+  var dateContainer = document.getElementById('date-list');
   var dateArray = [];
   // console.log(eventData);
   eventData.forEach(function (item) {
-    // var date = moment(item.date).format('MMMM Do');
+    // var date = dayjs(item.date).format('MMM D');
     var date = item.date;
     dateArray.push(date);
   });
@@ -135,19 +132,19 @@ function createSortingNavigations(locationsData, eventData, city) {
   dateArray = removeDuplicates(dateArray);
 
   dateArray.forEach(function (date) {
-    var element = document.createElement("div");
+    var element = document.createElement('div');
     element.innerHTML = date;
     dateContainer.appendChild(element);
-    element.addEventListener("click", manualSearch);
+    element.addEventListener('click', manualSearch);
   });
 
   /* Manual Search by populating input and clicking button*/
 
   function manualSearch() {
-    this.parentElement.classList.remove("visible");
-    this.parentElement.parentElement.classList.remove("visible");
-    var searchInput = document.getElementById("input-search");
-    var searchButton = document.getElementById("submit-search");
+    this.parentElement.classList.remove('visible');
+    this.parentElement.parentElement.classList.remove('visible');
+    var searchInput = document.getElementById('input-search');
+    var searchButton = document.getElementById('submit-search');
     searchInput.value = this.innerHTML;
     searchButton.click();
     location.href = '#top';

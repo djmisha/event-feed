@@ -454,6 +454,7 @@ img.loading {
     display: block;
     cursor: pointer;
     font-size: 12px;
+    line-height: 14px;
     text-transform: uppercase;
     font-weight: 500;
     border: 1px solid transparent;
@@ -467,6 +468,9 @@ img.loading {
       .sort .sort-trigger {
         font-size: 14px;
         padding: 7px 22px; } }
+    .sort .sort-trigger span {
+      display: block;
+      margin-top: 4px; }
     .sort .sort-trigger:before {
       position: relative;
       top: 2px;
