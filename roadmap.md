@@ -1,25 +1,29 @@
 # Roadmap
 
-## 2022 Roadmap
+## 2022 Product Roadmap
 
 ### Big Fries
 
-- Backend Server to store user and event info
-- whole SDHM app to Jamstack (like the whole app, the wordpress side too)
+- Backend Server to event info, then later user info
+- add more API's (you already have access to one) - BIG WIN!
+- Better Search - Elastic Search NPM package?
+- sort by "this week" "Next week" "this Month" - bar below main title
+- navitaion, logo, social icons at the top of page
 - App store ready?!
-- sort by "this week" "Next week" "this Month"
-- logo, social icons at the top of page
+- whole SDHM app to Jamstack (like the whole app, the wordpress side too)
 
 ### Small Fries
 
-- add missing Schema Mark up, check in Search Console
+- add missing Schema Mark up, check in Search Console - probably could to export the full schema as a giant object?
 - Dates to more readable dates with search working
-- Venue / DJ's Titles not showing
+- Venue / DJ's Titles not showing - func getting called too early
 - city icon text max characters limit "San Fran..."
+- set city as cookie or in local storage
 - hover states, active states for sidebar DJ's and Venues
-- "City" icon shows city at start
+- "City" icon shows city at on first load
+- loads Event info in an iframed popup - so that it doesn't leave site
 
-### Done 2020
+### Done 2022
 
 - [done] update DATE to use DAY.js
 - [done] fix apple PNG icon

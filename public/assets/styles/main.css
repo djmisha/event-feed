@@ -62,7 +62,8 @@ img.loading {
       padding: 20px;
       flex-direction: row-reverse; }
       .main-wrap .upcoming-events {
-        width: 65%; }
+        width: 65%;
+        padding-bottom: 80px; }
       .main-wrap .sidebar {
         width: 35%; } }
 
@@ -82,7 +83,8 @@ img.loading {
 .sidebar-artist {
   font-size: 14px;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding-bottom: 120px; }
   .sidebar-artist > div {
     width: 33%; }
 

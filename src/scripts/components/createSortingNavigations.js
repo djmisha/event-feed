@@ -1,6 +1,7 @@
 var dayjs = require('dayjs');
 import removeDuplicates from './removeDuplicates';
 import requestEvents from './requestEvents';
+import trackClickEvent from './trackClickEvent';
 
 /* Create Navigations */
 
@@ -37,6 +38,7 @@ function createSortingNavigations(locationsData, eventData, city) {
       locationsContainer.innerHTML = '';
       dateContainer.innerHTML = '';
       requestEvents(ID, locationsData, city);
+      trackClickEvent('Select City', 'Click', theCity);
     });
   });
 
@@ -148,6 +150,7 @@ function createSortingNavigations(locationsData, eventData, city) {
     searchInput.value = this.innerHTML;
     searchButton.click();
     location.href = '#top';
+    trackClickEvent('Sorting', 'Click', this.innerHTML);
     // console.log(searchInput.value)
   }
 }

@@ -1,6 +1,7 @@
 import createMarkUpforEvent from './createMarkUpforEvent';
 import createSortingNavigations from './createSortingNavigations';
 import search from './search';
+import trackClickEvent from './trackClickEvent';
 
 /* Loop through all eventa  and attach them to page */
 function attachToPage(eventData, locationsData, element, city) {
@@ -34,6 +35,15 @@ function attachToPage(eventData, locationsData, element, city) {
   /* Create Sorting Navigation & Activate Search */
   createSortingNavigations(locationsData, eventData, city);
   search(eventData, locationsData);
+
+  // Track outbound clicks
+  const outboundLinks = document.querySelectorAll('a[target="_blank"]');
+  for (let i = 0; i < outboundLinks.length; i++) {
+    outboundLinks[i].addEventListener('click', e => {
+      console.log(e);
+      trackClickEvent('Outbound', 'Click', e.target.href);
+    });
+  }
 }
 
 function toToggleView(event) {

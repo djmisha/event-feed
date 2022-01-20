@@ -1,8 +1,8 @@
-import getLocationByIp from "./getLocationByIp";
+import getLocationByIp from './getLocationByIp';
 
 const getIPAddress = async () => {
-  var ipaddress;
-  var url = "https://api.ipify.org?format=json";
+  let ipaddress;
+  const url = 'https://api.ipify.org?format=json';
 
   await fetch(url)
     .then(function (response) {
@@ -11,17 +11,16 @@ const getIPAddress = async () => {
       });
     })
     .catch(function (error) {
-      console.log(error)
+      console.log(error);
     });
 
   function setIPAddress(response) {
-    ipaddress = response.ip
-    localStorage.setItem("ip", ipaddress);
+    ipaddress = response.ip;
+    localStorage.setItem('ip', ipaddress);
     getLocationByIp(ipaddress);
   }
 
   return ipaddress;
-}
+};
 
 export default getIPAddress;
-
