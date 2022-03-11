@@ -27,5 +27,4 @@ function setLocation(data) {
   getLocationID(city, state);
 }
 
-
 export default getLocationByIp;
