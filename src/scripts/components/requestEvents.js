@@ -22,9 +22,9 @@ function requestEvents(cityID, locations) {
   http.open('GET', url);
   http.send();
 
-  function prepareURL() {
-    apiPath = 'https://edmtrain.com/api/events?locationIds=';
-  }
+  // function prepareURL() {
+  //   apiPath = 'https://edmtrain.com/api/events?locationIds=';
+  // }
 
   http.onreadystatechange = function () {
     if (http.readyState === XMLHttpRequest.DONE && http.status === 200) {
@@ -61,6 +61,7 @@ function requestEvents(cityID, locations) {
         image: '',
         schemadate: eventDateISO,
         starttime: result.data[g].startTime,
+        eventsource: 'edmtrain.com',
       };
 
       /*Push To Event Data Array if not Live Stream*/

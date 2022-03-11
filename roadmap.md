@@ -16,7 +16,6 @@
 
 - add missing Schema Mark up, check in Search Console - probably could to export the full schema as a giant object?
 - Dates to more readable dates with search working
-- Venue / DJ's Titles not showing - func getting called too early
 - city icon text max characters limit "San Fran..."
 - set city as cookie or in local storage
 - hover states, active states for sidebar DJ's and Venues
@@ -25,6 +24,7 @@
 
 ### Done 2022
 
+- [done] Venue / DJ's Titles not showing - func getting called too early
 - [done] add event tracking for Google Analytics
 - [done] update DATE to use DAY.js
 - [done] fix apple PNG icon
