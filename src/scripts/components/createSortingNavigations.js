@@ -43,7 +43,7 @@ function createSortingNavigations(locationsData, eventData, city) {
   });
 
   let locationCity = document.querySelector('.local-city');
-  locationCity.innerHTML = city;
+  locationCity.innerHTML = eventData[0].venuecity;
 
   // let iconCity = document.querySelector('.sort-city span');
   // iconCity.innerHTML = city;
