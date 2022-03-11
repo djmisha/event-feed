@@ -28,11 +28,10 @@ function navigationDropdowns() {
     }
   }
 
-  function attachNavTitle(menu) {
-    const text = menu.previousElementSibling.lastChild.innerHTML;
+  function attachNavTitle(menu, navtitle) {
     const navEl = menu.previousElementSibling.nextElementSibling;
     const title = document.createElement('h2');
-    title.innerHTML = text;
+    title.innerHTML = navtitle;
     navEl.prepend(title);
   }
 
@@ -41,10 +40,10 @@ function navigationDropdowns() {
   activateNavToggle(dateMenu);
   activateNavToggle(cityMenu);
 
-  attachNavTitle(venueMenu);
-  attachNavTitle(artistMenu);
-  attachNavTitle(dateMenu);
-  attachNavTitle(cityMenu);
+  attachNavTitle(venueMenu, 'Venues');
+  attachNavTitle(artistMenu, "DJ's & Artists");
+  attachNavTitle(dateMenu, 'Upcoming Dates');
+  attachNavTitle(cityMenu, 'Cities');
 }
 
 export default navigationDropdowns;

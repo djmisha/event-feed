@@ -431,7 +431,7 @@ img.loading {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -514,7 +514,7 @@ img.loading {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   position: fixed;
   left: 0;
   right: 0;

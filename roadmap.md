@@ -14,6 +14,7 @@
 
 ### Small Fries
 
+- icon (outgoing link) next to venue address
 - add missing Schema Mark up, check in Search Console - probably could to export the full schema as a giant object?
 - Dates to more readable dates with search working
 - city icon text max characters limit "San Fran..."
