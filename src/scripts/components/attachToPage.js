@@ -28,18 +28,18 @@ function attachToPage(eventData, locationsData, element, city) {
 
   /* Create Sorting Navigation & Activate Search */
   createSortingNavigations(locationsData, eventData, city);
-  navigationDropdowns();
   search(eventData, locationsData);
 
   // Track outbound clicks
   const outboundLinks = document.querySelectorAll('a[target="_blank"]');
   for (let i = 0; i < outboundLinks.length; i++) {
     outboundLinks[i].addEventListener('click', e => {
-      console.log(e);
       trackClickEvent('Outbound', 'Click', e.target.href);
     });
   }
 }
+
+navigationDropdowns();
 
 function toToggleView(event) {
   console.log(event.target.closest('.single-event').classList);

@@ -43,7 +43,10 @@ function createSortingNavigations(locationsData, eventData, city) {
   });
 
   let locationCity = document.querySelector('.local-city');
-  locationCity.innerHTML = eventData[0].venuecity;
+  locationCity.innerHTML = city;
+
+  // let iconCity = document.querySelector('.sort-city span');
+  // iconCity.innerHTML = city;
 
   // var locationIcon = document.querySelector('.sort-city .sort-trigger span');
   // locationIcon.innerHTML = city;
@@ -124,10 +127,8 @@ function createSortingNavigations(locationsData, eventData, city) {
 
   var dateContainer = document.getElementById('date-list');
   var dateArray = [];
-  // console.log(eventData);
   eventData.forEach(function (item) {
-    // var date = dayjs(item.date).format('MMM D');
-    var date = item.date;
+    var date = dayjs(item.date).format('dddd, MMMM D');
     dateArray.push(date);
   });
 
@@ -151,7 +152,6 @@ function createSortingNavigations(locationsData, eventData, city) {
     searchButton.click();
     location.href = '#top';
     trackClickEvent('Sorting', 'Click', this.innerHTML);
-    // console.log(searchInput.value)
   }
 }
 

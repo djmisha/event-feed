@@ -22,10 +22,6 @@ function requestEvents(cityID, locations) {
   http.open('GET', url);
   http.send();
 
-  // function prepareURL() {
-  //   apiPath = 'https://edmtrain.com/api/events?locationIds=';
-  // }
-
   http.onreadystatechange = function () {
     if (http.readyState === XMLHttpRequest.DONE && http.status === 200) {
       var response = JSON.parse(http.responseText);
@@ -51,7 +47,7 @@ function requestEvents(cityID, locations) {
         id: result.data[g].id,
         name: result.data[g].name,
         date: result.data[g].date,
-        formattedDate: dayjs(eventDateISO).format('MMM D'),
+        formattedDate: dayjs(eventDateISO).format('dddd, MMMM D'),
         link: result.data[g].link,
         venuename: result.data[g].venue.name,
         venueaddress: result.data[g].venue.address,
@@ -64,12 +60,7 @@ function requestEvents(cityID, locations) {
         eventsource: 'edmtrain.com',
       };
 
-      /*Push To Event Data Array if not Live Stream*/
-      // if (singleEventListing.venuename != 'Live Stream') {
       eventData.push(singleEventListing);
-      // } else {
-      // liveStreamData.push(singleEventListing);
-      // }
     }
   }
   return eventData;

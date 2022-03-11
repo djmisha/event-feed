@@ -1,53 +1,53 @@
 function search(eventData) {
   // (function (window, document, undefined) {
-  "use strict";
+  'use strict';
   //
   // Variables
   //
 
-  var form = document.querySelector("#form-search");
-  var input = document.querySelector("#input-search");
-  var resultList = document.querySelector("#searchresults");
-  var clearSeach = document.querySelector("#searchresults");
-  var searchResult = document.querySelector('#clearSearch')
+  var form = document.querySelector('#form-search');
+  var input = document.querySelector('#input-search');
+  var resultList = document.querySelector('#searchresults');
+  var clearSeach = document.querySelector('#searchresults');
+  var searchResult = document.querySelector('#clearSearch');
   //
   // Methods
   //
 
   /*Clear Search */
 
-  clearSeach.addEventListener("click", function (event) {
+  clearSeach.addEventListener('click', function (event) {
     showAllEvents();
-    searchResult.classList.remove("visible");
-    resultList.innerHTML = "";
-    clearSeach.classList.remove("visible");
+    searchResult.classList.remove('visible');
+    resultList.innerHTML = '';
+    clearSeach.classList.remove('visible');
   });
 
   /* Function to hide all Events on Search click */
 
   function hideAllEvents() {
-    var allEvents = document.querySelectorAll(".single-event");
+    var allEvents = document.querySelectorAll('.single-event');
     allEvents.forEach(function (e) {
-      e.classList.add("hidden");
+      e.classList.add('hidden');
     });
   }
 
   function showAllEvents() {
-    var allEvents = document.querySelectorAll(".single-event");
+    var allEvents = document.querySelectorAll('.single-event');
     allEvents.forEach(function (e) {
-      e.classList.remove("hidden");
+      e.classList.remove('hidden');
     });
   }
 
   /* Show Matched Events */
 
   function showMatchedEvents(events) {
-    var allEvents = document.querySelectorAll(".single-event");
+    var allEvents = document.querySelectorAll('.single-event');
 
     allEvents.forEach(function (e) {
-      var matchedID = e.getAttribute("data-id");
+      var matchedID = e.getAttribute('data-id');
       if (events.id.toString() === matchedID) {
-        e.classList.remove("hidden");
+        e.classList.remove('hidden');
       }
     });
   }
@@ -57,7 +57,7 @@ function search(eventData) {
    * @return {String} The markup
    */
   var createNoResultsHTML = function () {
-    return "<p>No events were found. Search again! </p>";
+    return '<p>No events were found. Search again! </p>';
   };
 
   /**
@@ -72,13 +72,13 @@ function search(eventData) {
       showMatchedEvents(article);
     });
     var html =
-      "<p>Found " +
+      '<p>Found ' +
       results.length +
       ' matching events for "' +
       input.value +
       '"</p>';
     resultList.innerHTML = html;
-    clearSearch.classList.add("visible");
+    clearSearch.classList.add('visible');
   };
 
   /**
@@ -87,7 +87,7 @@ function search(eventData) {
    */
   var search = function (query) {
     // Variables
-    var reg = new RegExp(query, "gi");
+    var reg = new RegExp(query, 'gi');
     var priority1 = [];
     var priority2 = [];
     var priority3 = [];
@@ -95,7 +95,7 @@ function search(eventData) {
     // Search the content
     eventData.forEach(function (article) {
       // console.log((article.artist.name));
-      if (reg.test(article.date)) return priority1.push(article);
+      if (reg.test(article.formattedDate)) return priority1.push(article);
       // if (reg.test(article.artist)) priority2.push(article);
       article.artist.forEach(function (a) {
         a.forEach(function (e) {
@@ -135,8 +135,8 @@ function search(eventData) {
   // 	input.value = input.value.replace('Search Artist, Venue, Event', '');
   // };
 
-  input.addEventListener("focusin", function (event) {
-    input.value = "";
+  input.addEventListener('focusin', function (event) {
+    input.value = '';
   });
 
   //
@@ -150,9 +150,8 @@ function search(eventData) {
   // clearInput();
 
   // Create a submit handler
-  form.addEventListener("submit", submitHandler, false);
+  form.addEventListener('submit', submitHandler, false);
   // })(window, document);
 }
-
 
 export default search;
