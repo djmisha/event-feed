@@ -1,6 +1,5 @@
 import createMarkUpforEvent from './createMarkUpforEvent';
 import createSortingNavigations from './createSortingNavigations';
-import navigationDropdowns from './navigationDropdowns';
 
 import search from './search';
 import trackClickEvent from './trackClickEvent';
@@ -38,8 +37,6 @@ function attachToPage(eventData, locationsData, element, city) {
     });
   }
 }
-
-navigationDropdowns();
 
 function toToggleView(event) {
   console.log(event.target.closest('.single-event').classList);

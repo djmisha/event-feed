@@ -1,5 +1,6 @@
 import getIPAddress from './components/getIPAddress';
 import getLocationID from './components/getLocationID';
+import navigationDropdowns from './components/navigationDropdowns';
 // import requestPostsAndAttachtoPage from './components/requestsPosts';
 
 // Register Service Worker
@@ -34,5 +35,7 @@ const isReturnUser = () => {
 };
 
 isReturnUser();
+
+navigationDropdowns();
 
 // requestPostsAndAttachtoPage('music', 8);
