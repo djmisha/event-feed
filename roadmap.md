@@ -14,17 +14,17 @@
 
 ### Small Fries
 
-- icon (outgoing link) next to venue address
-- add missing Schema Mark up, check in Search Console - probably could to export the full schema as a giant object?
-- Dates to more readable dates with search working
 - city icon text max characters limit "San Fran..."
 - set city as cookie or in local storage
 - hover states, active states for sidebar DJ's and Venues
 - "City" icon shows city at on first load
 - loads Event info in an iframed popup - so that it doesn't leave site
+- add missing Schema Mark up, check in Search Console
 
 ### Done 2022
 
+- [done] icon (outgoing link) next to venue address
+- [done] Dates to more readable dates with search working
 - [done] Venue / DJ's Titles not showing - func getting called too early
 - [done] add event tracking for Google Analytics
 - [done] update DATE to use DAY.js

@@ -1,6 +1,5 @@
 import createMarkUpforEvent from './createMarkUpforEvent';
 import createSortingNavigations from './createSortingNavigations';
-
 import search from './search';
 import trackClickEvent from './trackClickEvent';
 
@@ -39,7 +38,6 @@ function attachToPage(eventData, locationsData, element, city) {
 }
 
 function toToggleView(event) {
-  console.log(event.target.closest('.single-event').classList);
   if (
     event.target.closest('.single-event').classList.contains('view-partial')
   ) {
