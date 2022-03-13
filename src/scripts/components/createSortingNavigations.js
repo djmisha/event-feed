@@ -12,6 +12,7 @@ function createSortingNavigations(locationsData, eventData, city) {
   var locationsArray = [];
 
   // locationIcon.innerHTML = city;
+  console.log(city);
 
   locationsData.forEach(function (item) {
     var location = {
@@ -128,7 +129,8 @@ function createSortingNavigations(locationsData, eventData, city) {
   var dateContainer = document.getElementById('date-list');
   var dateArray = [];
   eventData.forEach(function (item) {
-    var date = dayjs(item.date).format('dddd, MMMM D');
+    // var date = dayjs(item.date).format('dddd, MMMM D');
+    var date = item.date;
     dateArray.push(date);
   });
 

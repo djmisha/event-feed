@@ -64,7 +64,7 @@ function createShowLocation(event) {
     event.venueaddress +
     '" target=_blank><span>' +
     event.venueaddress +
-    '</span></a></div> \n';
+    '<img src="assets/images/icon-link.svg"></span></a></div> \n';
 
   return location;
 }
