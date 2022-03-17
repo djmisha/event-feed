@@ -4,7 +4,7 @@ import search from './search';
 import trackClickEvent from './trackClickEvent';
 
 /* Loop through all eventa  and attach them to page */
-function attachToPage(eventData, locationsData, element, city) {
+function attachToPage(eventData, locationsData, element) {
   /* Remove loading icon*/
   element.innerHTML = '';
 
@@ -25,7 +25,7 @@ function attachToPage(eventData, locationsData, element, city) {
   });
 
   /* Create Sorting Navigation & Activate Search */
-  createSortingNavigations(locationsData, eventData, city);
+  createSortingNavigations(locationsData, eventData);
   search(eventData, locationsData);
 
   // Track outbound clicks
