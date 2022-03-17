@@ -1,18 +1,13 @@
 var dayjs = require('dayjs');
+import { attachNavTitle, createClickableElement } from './utilities';
 import removeDuplicates from './removeDuplicates';
 import requestEvents from './requestEvents';
 import trackClickEvent from './trackClickEvent';
 
-/* Create Navigations */
-
-function createSortingNavigations(locationsData, eventData, city) {
+function createSortingNavigations(locationsData, eventData) {
   /* Locations */
-
   var locationsContainer = document.getElementById('city-list');
   var locationsArray = [];
-
-  // locationIcon.innerHTML = city;
-  console.log(city);
 
   locationsData.forEach(function (item) {
     var location = {
@@ -30,7 +25,7 @@ function createSortingNavigations(locationsData, eventData, city) {
     locationsContainer.appendChild(locationsElement);
     var ID = venue.id;
     var theCity = venue.city;
-    locationsElement.addEventListener('click', function (event) {
+    locationsElement.addEventListener('click', function () {
       let city = document.getElementById('city-list');
       let cityName = document.querySelector('.sort-city #drop-trigger span');
       cityName.innerHTML = theCity;
@@ -43,18 +38,13 @@ function createSortingNavigations(locationsData, eventData, city) {
     });
   });
 
+  attachNavTitle(locationsContainer, 'Cities');
+
+  //  This sets the city on the h1 element, need to refactor
   let locationCity = document.querySelector('.local-city');
   locationCity.innerHTML = eventData[0].venuecity;
 
-  // let iconCity = document.querySelector('.sort-city span');
-  // iconCity.innerHTML = city;
-
-  // var locationIcon = document.querySelector('.sort-city .sort-trigger span');
-  // locationIcon.innerHTML = city;
-  // console.log(locationIcon);
-
   /* Venues */
-
   var venueContainer = document.getElementById('venue-list');
   var venuesidebarContainer = document.querySelector('.sidebar-venues');
 
@@ -68,28 +58,15 @@ function createSortingNavigations(locationsData, eventData, city) {
   });
 
   venueArray = removeDuplicates(venueArray);
-
   venueArray.sort();
 
-  // To Refactor: this is WET
   // Navigation Events
-  venueArray.forEach(function (venue) {
-    var venuleElement = document.createElement('div');
-    venuleElement.innerHTML = venue;
-    venueContainer.appendChild(venuleElement);
-    venuleElement.addEventListener('click', manualSearch);
-  });
-
+  createClickableElement(venueArray, venueContainer, manualSearch);
   // Sidebar events
-  venueArray.forEach(function (venue) {
-    var venuleElement = document.createElement('div');
-    venuleElement.innerHTML = venue;
-    venuesidebarContainer.appendChild(venuleElement);
-    venuleElement.addEventListener('click', manualSearch);
-  });
+  createClickableElement(venueArray, venuesidebarContainer, manualSearch);
+  attachNavTitle(venueContainer, 'Venues');
 
   /* Artists */
-
   var artistContainer = document.getElementById('artist-list');
   var artistsidebarContainer = document.querySelector('.sidebar-artist');
 
@@ -107,29 +84,18 @@ function createSortingNavigations(locationsData, eventData, city) {
   });
 
   artistArray = removeDuplicates(artistArray);
-
   artistArray.sort();
 
-  artistArray.forEach(function (artist) {
-    var element = document.createElement('div');
-    element.innerHTML = artist;
-    artistContainer.appendChild(element);
-    element.addEventListener('click', manualSearch);
-  });
-
-  artistArray.forEach(function (artist) {
-    var element = document.createElement('div');
-    element.innerHTML = artist;
-    artistsidebarContainer.appendChild(element);
-    element.addEventListener('click', manualSearch);
-  });
+  createClickableElement(artistArray, artistContainer, manualSearch);
+  createClickableElement(artistArray, artistsidebarContainer, manualSearch);
+  attachNavTitle(artistContainer, "DJ's & Artists");
 
   /* Dates */
 
   var dateContainer = document.getElementById('date-list');
   var dateArray = [];
+
   eventData.forEach(function (item) {
-    // var date = dayjs(item.date).format('dddd, MMMM D');
     var date = item.date;
     dateArray.push(date);
   });
@@ -138,18 +104,24 @@ function createSortingNavigations(locationsData, eventData, city) {
 
   dateArray.forEach(function (date) {
     var element = document.createElement('div');
-    element.innerHTML = date;
+    var formatted = dayjs(date).format('dddd, MMMM D');
+    element.innerHTML = formatted;
     dateContainer.appendChild(element);
     element.addEventListener('click', manualSearch);
   });
 
+  attachNavTitle(dateContainer, 'Upcoming Dates');
+
   /* Manual Search by populating input and clicking button*/
 
   function manualSearch() {
+    var div = this;
+    var date = div.getAttribute('data-date');
     this.parentElement.classList.remove('visible');
     this.parentElement.parentElement.classList.remove('visible');
     var searchInput = document.getElementById('input-search');
     var searchButton = document.getElementById('submit-search');
+    // searchInput.value = date || this.innerHTML;
     searchInput.value = this.innerHTML;
     searchButton.click();
     location.href = '#top';

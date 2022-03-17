@@ -14,7 +14,7 @@
 
 ### Small Fries
 
-- city icon text max characters limit "San Fran..."
+- city icon text max characters limit "San Fran..." // or just have it say CITI
 - set city as cookie or in local storage
 - hover states, active states for sidebar DJ's and Venues
 - "City" icon shows city at on first load

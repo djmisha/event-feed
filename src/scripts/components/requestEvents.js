@@ -1,16 +1,10 @@
-var dayjs = require('dayjs');
 import attachToPage from './attachToPage';
+import { readableDate } from './utilities';
 
 function requestEvents(cityID, locations) {
   var theFeed = document.getElementById('evenfeed');
+  var sidebar = document.querySelector('.sidebar');
   var eventData = [];
-  var liveStreamData = [];
-  var latitude = localStorage.getItem('latitude');
-  var longitude = localStorage.getItem('longitude');
-  var state = localStorage.getItem('state');
-  var city = localStorage.getItem('city');
-
-  theFeed.innerHTML = '';
 
   var http = new XMLHttpRequest();
 
@@ -26,40 +20,37 @@ function requestEvents(cityID, locations) {
     if (http.readyState === XMLHttpRequest.DONE && http.status === 200) {
       var response = JSON.parse(http.responseText);
       /*Puts the Data into our array*/
-      // console.log(response);
       parseData(response);
-
       /*Attaches the data to the page*/
-      attachToPage(eventData, locations, theFeed, city);
+      theFeed.innerHTML = '';
+      sidebar.classList.remove('isloading');
+      attachToPage(eventData, locations, theFeed);
     }
   };
 
-  function parseData(result) {
-    for (var g = 0; g < result.data.length; g++) {
-      /*get date converted to numerical value*/
-      // console.log(result.data[g].startTime);
-      /*convert date to ISO for Schema and Readble Formats*/
-      //   var eventDateParsed = Date.parse(result.data[g].date);
-      var eventDateISO = new Date(result.data[g].date);
-      // console.log(eventDateISO);
-      // Create Event Object
+  function parseData(response) {
+    const { data } = response;
+    for (var g = 0; g < data.length; g++) {
+      /*Convert date to ISO for Schema */
+      var eventDateISO = new Date(data[g].date);
+
+      /*Create Event Object*/
       var singleEventListing = {
-        id: result.data[g].id,
-        name: result.data[g].name,
-        date: result.data[g].date,
-        formattedDate: dayjs(eventDateISO).format('dddd, MMMM D'),
-        link: result.data[g].link,
-        venuename: result.data[g].venue.name,
-        venueaddress: result.data[g].venue.address,
-        venuecity: result.data[g].venue.location,
-        venuestate: result.data[g].venue.state,
-        artist: [result.data[g].artistList],
+        id: data[g].id,
+        name: data[g].name,
+        date: data[g].date,
+        formattedDate: readableDate(data[g].date),
+        link: data[g].link,
+        venuename: data[g].venue.name,
+        venueaddress: data[g].venue.address,
+        venuecity: data[g].venue.location,
+        venuestate: data[g].venue.state,
+        artist: [data[g].artistList],
         image: '',
         schemadate: eventDateISO,
-        starttime: result.data[g].startTime,
+        starttime: data[g].startTime,
         eventsource: 'edmtrain.com',
       };
-
       eventData.push(singleEventListing);
     }
   }

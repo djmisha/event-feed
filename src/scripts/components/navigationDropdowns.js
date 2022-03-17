@@ -28,22 +28,10 @@ function navigationDropdowns() {
     }
   }
 
-  function attachNavTitle(menu, navtitle) {
-    const navEl = menu.previousElementSibling.nextElementSibling;
-    const title = document.createElement('h2');
-    title.innerHTML = navtitle;
-    navEl.prepend(title);
-  }
-
   activateNavToggle(venueMenu);
   activateNavToggle(artistMenu);
   activateNavToggle(dateMenu);
   activateNavToggle(cityMenu);
-
-  attachNavTitle(venueMenu, 'Venues');
-  attachNavTitle(artistMenu, "DJ's & Artists");
-  attachNavTitle(dateMenu, 'Upcoming Dates');
-  attachNavTitle(cityMenu, 'Cities');
 }
 
 export default navigationDropdowns;
