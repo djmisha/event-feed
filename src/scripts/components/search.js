@@ -1,53 +1,50 @@
+import {
+  form,
+  input,
+  resultMessage,
+  clearSearch,
+  searchCloseBtn,
+  allSingleEvents,
+} from './elements';
+import {
+  removeVisible,
+  addVisible,
+  removeHidden,
+  addHidden,
+} from './utilities';
+
 function search(eventData) {
-  // (function (window, document, undefined) {
   'use strict';
-  //
-  // Variables
-  //
 
-  var form = document.querySelector('#form-search');
-  var input = document.querySelector('#input-search');
-  var resultList = document.querySelector('#searchresults');
-  var clearSeach = document.querySelector('#searchresults');
-  var searchResult = document.querySelector('#clearSearch');
-  //
-  // Methods
-  //
+  /* Clear Search */
 
-  /*Clear Search */
-
-  clearSeach.addEventListener('click', function (event) {
-    showAllEvents();
-    searchResult.classList.remove('visible');
-    resultList.innerHTML = '';
-    clearSeach.classList.remove('visible');
+  clearSearch.addEventListener('click', function () {
+    showAllEvents(allSingleEvents);
+    removeVisible(searchCloseBtn);
+    resultMessage.innerHTML = '';
+    removeVisible(clearSearch);
   });
 
-  /* Function to hide all Events on Search click */
-
-  function hideAllEvents() {
-    var allEvents = document.querySelectorAll('.single-event');
-    allEvents.forEach(function (e) {
-      e.classList.add('hidden');
+  /* Hide all Events on Search input click */
+  function hideAllEvents(onPageEvents) {
+    onPageEvents.forEach(function (singleEvent) {
+      addHidden(singleEvent);
     });
   }
 
-  function showAllEvents() {
-    var allEvents = document.querySelectorAll('.single-event');
-    allEvents.forEach(function (e) {
-      e.classList.remove('hidden');
+  /* Show all Events on clear search */
+  function showAllEvents(onPageEvents) {
+    onPageEvents.forEach(function (singleEvent) {
+      removeHidden(singleEvent);
     });
   }
 
   /* Show Matched Events */
-
-  function showMatchedEvents(events) {
-    var allEvents = document.querySelectorAll('.single-event');
-
-    allEvents.forEach(function (e) {
-      var matchedID = e.getAttribute('data-id');
+  function showMatchedEvents(events, onPageEvents) {
+    onPageEvents.forEach(function (singleEvent) {
+      const matchedID = singleEvent.getAttribute('data-id');
       if (events.id.toString() === matchedID) {
-        e.classList.remove('hidden');
+        removeHidden(singleEvent);
       }
     });
   }
@@ -56,7 +53,7 @@ function search(eventData) {
    * Create the markup when no results are found
    * @return {String} The markup
    */
-  var createNoResultsHTML = function () {
+  const createNoResultsHTML = function () {
     return '<p>No events were found. Search again! </p>';
   };
 
@@ -65,54 +62,45 @@ function search(eventData) {
    * @param  {Array} results The results to display
    * @return {String}        The results HTML
    */
-  var createResultsHTML = function (results) {
-    hideAllEvents();
-    results.map(function (article, index) {
-      // console.log(article,index);
-      showMatchedEvents(article);
+  const createResultsHTML = function (results) {
+    hideAllEvents(allSingleEvents);
+    results.map(function (event) {
+      showMatchedEvents(event, allSingleEvents);
     });
-    var html =
-      '<p>Found ' +
-      results.length +
-      ' matching events for "' +
-      input.value +
-      '"</p>';
-    resultList.innerHTML = html;
-    clearSearch.classList.add('visible');
+    const html = `<p>Found ${results.length} matching events for "${input.value}"</p>`;
+    resultMessage.innerHTML = html;
+    addVisible(searchCloseBtn);
   };
 
   /**
    * Search for matches
    * @param  {String} query The term to search for
    */
-  var search = function (query) {
+  const search = function (query) {
     // Variables
-    var reg = new RegExp(query, 'i'); // used to be 'gi' but was not searching date correctly
-    var priority1 = [];
-    var priority2 = [];
-    var priority3 = [];
+    const reg = new RegExp(query, 'i'); // used to be 'gi' but was not searching date correctly
+    const priority1 = []; // dates
+    const priority2 = []; // artist names
+    const priority3 = []; // venue names
 
     // Search the content
     eventData.forEach(function (article) {
-      // console.log((article.artist.name));
       if (reg.test(article.formattedDate)) return priority1.push(article);
-      // if (reg.test(article.artist)) priority2.push(article);
-      article.artist.forEach(function (a) {
-        a.forEach(function (e) {
-          if (reg.test(e.name)) priority2.push(article);
-          // console.log(e.name);
+      article.artist.forEach(function (artlistList) {
+        artlistList.forEach(function (artist) {
+          if (reg.test(artist.name)) priority2.push(article);
         });
       });
       if (reg.test(article.venuename)) priority3.push(article);
     });
 
     // Combine the results into a single array
-    var results = [].concat(priority1, priority2, priority3);
+    const results = [].concat(priority1, priority2, priority3);
 
     // Display the results
     // if no results
     if (results.length < 1) {
-      resultList.innerHTML = createNoResultsHTML();
+      resultMessage.innerHTML = createNoResultsHTML();
     }
     // if have results
     else {
@@ -123,7 +111,7 @@ function search(eventData) {
   /**
    * Handle submit events
    */
-  var submitHandler = function (event) {
+  const submitHandler = function (event) {
     event.preventDefault();
     search(input.value);
   };
@@ -131,7 +119,7 @@ function search(eventData) {
   /**
    * Remove site: from the input
    */
-  // var clearInput = function () {
+  // const clearInput = function () {
   // 	input.value = input.value.replace('Search Artist, Venue, Event', '');
   // };
 
@@ -144,14 +132,13 @@ function search(eventData) {
   //
 
   // Make sure required content exists
-  if (!form || !input || !resultList || !eventData) return;
+  if (!form || !input || !resultMessage || !eventData) return;
 
   // Clear the input field
   // clearInput();
 
   // Create a submit handler
   form.addEventListener('submit', submitHandler, false);
-  // })(window, document);
 }
 
 export default search;

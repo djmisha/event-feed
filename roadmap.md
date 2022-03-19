@@ -40,9 +40,9 @@ Then I can buy another domain for the events site, if i want to continue buildin
 
 Sept 4th New List
 
-- [done]fix date search
-- [done]sidebar with Venues
-- [done]sidebar with Artists
+- [done] fix date search
+- [done] sidebar with Venues
+- [done] sidebar with Artists
 
 August 31, 2021
 

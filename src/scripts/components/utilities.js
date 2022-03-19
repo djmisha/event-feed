@@ -19,3 +19,46 @@ export const attachNavTitle = (menu, navtitle) => {
 export const readableDate = date => {
   return dayjs(date).format('dddd, MMMM D');
 };
+
+export function parseData(response, dataArray) {
+  const { data } = response;
+  for (var g = 0; g < data.length; g++) {
+    /*Convert date to ISO for Schema */
+    var eventDateISO = new Date(data[g].date);
+
+    /*Create Event Object*/
+    var singleEventListing = {
+      id: data[g].id,
+      name: data[g].name,
+      date: data[g].date,
+      formattedDate: readableDate(data[g].date),
+      link: data[g].link,
+      venuename: data[g].venue.name,
+      venueaddress: data[g].venue.address,
+      venuecity: data[g].venue.location,
+      venuestate: data[g].venue.state,
+      artist: [data[g].artistList],
+      image: '',
+      schemadate: eventDateISO,
+      starttime: data[g].startTime,
+      eventsource: 'edmtrain.com',
+    };
+    dataArray.push(singleEventListing);
+  }
+}
+
+export const removeVisible = element => {
+  element.classList.remove('visible');
+};
+
+export const addVisible = element => {
+  element.classList.add('visible');
+};
+
+export const removeHidden = element => {
+  element.classList.remove('hidden');
+};
+
+export const addHidden = element => {
+  element.classList.add('hidden');
+};

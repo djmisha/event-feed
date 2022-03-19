@@ -41,7 +41,7 @@
   }
 }
 
-#evenfeed,
+#eventfeed,
 #musicfeed {
   padding: 0;
   padding-bottom: 40px;
@@ -60,7 +60,7 @@
   }
 }
 
-#evenfeed.fixed-navigation {
+#eventfeed.fixed-navigation {
   margin-top: 110px;
 }
 
@@ -83,11 +83,6 @@
     border-radius: 6px;
     margin-bottom: 0;
     padding: 20px 20px 20px 20px;
-  }
-  @include media($desktop) {
-    &:hover {
-      // box-shadow: 0px 5px 15px #d8d8d8;
-    }
   }
   &.hidden {
     display: none;
@@ -156,10 +151,6 @@
   @include media($tablet) {
     padding-bottom: 20px;
   }
-}
-
-.event-title-artist {
-  // display: flex;
 }
 
 .event-title {

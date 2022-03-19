@@ -84,7 +84,7 @@ function createSortingNavigations(locationsData, eventData) {
   });
 
   artistArray = removeDuplicates(artistArray);
-  artistArray.sort();
+  //  artistArray.sort(); // dont sort, rather show upcming first
 
   createClickableElement(artistArray, artistContainer, manualSearch);
   createClickableElement(artistArray, artistsidebarContainer, manualSearch);
