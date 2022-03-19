@@ -8,20 +8,20 @@ function attachToPage(eventData, locationsData, element) {
   /* Remove loading icon*/
   element.innerHTML = '';
 
-  const events = eventData.forEach((event, index) => {
-    var singleEventElement = document.createElement('div');
-    singleEventElement.classList.add('single-event');
-    singleEventElement.classList.add('view-partial');
-    singleEventElement.setAttribute('itemscope', '');
-    singleEventElement.setAttribute('data-id', event.id);
-    singleEventElement.setAttribute('itemtype', 'http://schema.org/Event');
-    singleEventElement.addEventListener('click', toToggleView);
+  eventData.forEach(event => {
+    var singleEventEl = document.createElement('div');
+    singleEventEl.classList.add('single-event');
+    singleEventEl.classList.add('view-partial');
+    singleEventEl.setAttribute('itemscope', '');
+    singleEventEl.setAttribute('data-id', event.id);
+    singleEventEl.setAttribute('itemtype', 'http://schema.org/Event');
+    singleEventEl.addEventListener('click', toToggleView);
 
     /* Add content for each Event */
-    singleEventElement.innerHTML = createMarkUpforEvent(event);
+    singleEventEl.innerHTML = createMarkUpforEvent(event);
 
     /* Attach Events to the page*/
-    element.appendChild(singleEventElement);
+    element.appendChild(singleEventEl);
   });
 
   /* Create Sorting Navigation & Activate Search */

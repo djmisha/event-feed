@@ -17,7 +17,6 @@ h1 {
   padding-left: 10px;
   font-size: 18px;
   color: $blue;
-  // text-transform: uppercase;
   font-weight: normal;
   border-bottom: 2px solid $blue;
   @include media($tablet) {
@@ -28,7 +27,6 @@ h1 {
 }
 
 h2 {
-  // text-transform: uppercase;
   font-weight: normal;
   margin-top: 20;
   padding-left: 10px;
@@ -47,10 +45,6 @@ h2 {
   text-align: center;
 }
 
-.hidden {
-  display: none;
-}
-
 img.loading {
   width: 100px;
   height: 100px;
@@ -59,6 +53,7 @@ img.loading {
   left: calc(50vw - 50px);
 }
 
+.hidden,
 .isloading {
   display: none;
 }
