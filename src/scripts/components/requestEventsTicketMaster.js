@@ -1,15 +1,15 @@
-
 // Consumer Key	Oiu77A9j14GwnLKIr9KWPVZGxyi3M98s
 // Consumer Secret	gQh6Cw9omkJOMDk4
 
 function requestEventsTMXHR(cityID, locations) {
-  var theFeed = document.getElementById('evenfeed');
+  var theFeed = document.getElementById('eventfeed');
   var eventData = [];
 
   theFeed.innerHTML = '';
 
   var http = new XMLHttpRequest();
-  var url = 'https://app.ticketmaster.com/discovery/v2/events.json?keyword=edm&countryCode=US&apikey=Oiu77A9j14GwnLKIr9KWPVZGxyi3M98s/';
+  var url =
+    'https://app.ticketmaster.com/discovery/v2/events.json?keyword=edm&countryCode=US&apikey=Oiu77A9j14GwnLKIr9KWPVZGxyi3M98s/';
   // var url =
   // 'https://edmtrain.com/api/events?locationIds=' +
   // cityID +

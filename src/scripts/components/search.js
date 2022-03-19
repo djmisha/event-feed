@@ -1,11 +1,11 @@
-import {
-  form,
-  input,
-  resultMessage,
-  clearSearch,
-  searchCloseBtn,
-  allSingleEvents,
-} from './elements';
+// import {
+//   form,
+//   input,
+//   resultMessage,
+//   clearSearch,
+//   searchCloseBtn,
+//   allSingleEvents,
+// } from './elements';
 import {
   removeVisible,
   addVisible,
@@ -14,7 +14,14 @@ import {
 } from './utilities';
 
 function search(eventData) {
-  'use strict';
+  const form = document.querySelector('#form-search');
+  const input = document.querySelector('#input-search');
+  const resultMessage = document.querySelector('#searchresults');
+  const clearSearch = document.querySelector('#searchresults');
+  const searchCloseBtn = document.querySelector('#clearSearch');
+  const allSingleEvents = document.querySelectorAll('.single-event');
+
+  ('use strict');
 
   /* Clear Search */
 
