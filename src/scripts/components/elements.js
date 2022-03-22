@@ -1,3 +1,7 @@
+// Primary Elements
+export const feedBody = document.getElementById('eventfeed');
+export const sidebar = document.querySelector('.sidebar');
+
 // Search Form Elements
 export const form = document.querySelector('#form-search');
 export const input = document.querySelector('#input-search');

@@ -1,7 +1,7 @@
 import locations from '../../locations';
 import requestEvents from './requestEvents';
 
-const getLocationID = (city, state) => {
+const setLocationID = (city, state) => {
   var userLocation;
 
   locations.forEach(function (item) {
@@ -16,11 +16,11 @@ const getLocationID = (city, state) => {
   });
 
   // If location is not set, use CA
-  if(!userLocation) {
-    requestEvents(10, locations)
+  if (!userLocation) {
+    requestEvents(10, locations);
   }
 
-  requestEvents(userLocation, locations)
-}
+  requestEvents(userLocation, locations);
+};
 
-export default getLocationID;
+export default setLocationID;

@@ -1,8 +1,8 @@
-import getLocationID from "./getLocationID";
+import setLocationID from './setLocationID';
 
-const getLocationByIp = async (ipaddress) => {
+const getLocationByIp = async ipaddress => {
   var ipaddress = ipaddress;
-  var url = `https://ipapi.co/${ipaddress}/json/`
+  var url = `https://ipapi.co/${ipaddress}/json/`;
 
   await fetch(url)
     .then(function (response) {
@@ -11,20 +11,20 @@ const getLocationByIp = async (ipaddress) => {
       });
     })
     .catch(function (error) {
-      console.log(error)
+      console.log(error);
     });
-}
+};
 
 function setLocation(data) {
   let city = data.city;
   let state = data.region_code;
   let country = data.country_code;
 
-  localStorage.setItem("city", city);
-  localStorage.setItem("state", state);
-  localStorage.setItem("country", country);
+  localStorage.setItem('city', city);
+  localStorage.setItem('state', state);
+  localStorage.setItem('country', country);
 
-  getLocationID(city, state);
+  setLocationID(city, state);
 }
 
 export default getLocationByIp;

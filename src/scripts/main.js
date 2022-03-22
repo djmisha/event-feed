@@ -1,5 +1,5 @@
 import getIPAddress from './components/getIPAddress';
-import getLocationID from './components/getLocationID';
+import setLocationID from './components/setLocationID';
 import navigationDropdowns from './components/navigationDropdowns';
 // import requestPostsAndAttachtoPage from './components/requestsPosts';
 
@@ -28,7 +28,7 @@ const isReturnUser = () => {
   var city = localStorage.getItem('city', city);
   var state = localStorage.getItem('state', state);
   if (city && state) {
-    getLocationID(city, state);
+    setLocationID(city, state);
   } else {
     setUserLocation();
   }

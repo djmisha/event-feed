@@ -2,11 +2,13 @@ import createMarkUpforEvent from './createMarkUpforEvent';
 import createSortingNavigations from './createSortingNavigations';
 import search from './search';
 import trackClickEvent from './trackClickEvent';
+import { feedBody, sidebar } from './elements';
 
 /* Loop through all eventa  and attach them to page */
-function attachToPage(eventData, locationsData, element) {
-  /* Remove loading icon*/
-  element.innerHTML = '';
+function attachToPage(eventData, locationsData) {
+  /* Remove loading icon & show sidebar*/
+  feedBody.innerHTML = '';
+  sidebar.classList.remove('isloading');
 
   eventData.forEach(event => {
     var singleEventEl = document.createElement('div');
@@ -21,7 +23,7 @@ function attachToPage(eventData, locationsData, element) {
     singleEventEl.innerHTML = createMarkUpforEvent(event);
 
     /* Attach Events to the page*/
-    element.appendChild(singleEventEl);
+    feedBody.appendChild(singleEventEl);
   });
 
   /* Create Sorting Navigation & Activate Search */
