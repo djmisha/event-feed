@@ -5,8 +5,9 @@
   right: 0;
   z-index: 998;
   @include media($tablet) {
-    position: relative;
-    top: auto;
+    top: 57px;
+    width: 65.3vw;
+    left: auto;
   }
 }
 
@@ -83,10 +84,6 @@
   }
 }
 
-.seach-all {
-  position: relative;
-}
-
 #searchresults p {
   position: relative;
   top: 0;
@@ -123,9 +120,6 @@
     color: $pink;
     z-index: 1;
     pointer-events: none;
-    @include media($tablet) {
-      top: 10px;
-    }
   }
 }
 

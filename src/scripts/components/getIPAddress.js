@@ -14,13 +14,13 @@ const getIPAddress = async () => {
       console.log(error);
     });
 
-  function setIPAddress(response) {
-    ipaddress = response.ip;
-    localStorage.setItem('ip', ipaddress);
-    getLocationByIp(ipaddress);
-  }
-
   return ipaddress;
 };
+
+function setIPAddress(response) {
+  ipaddress = response.ip;
+  localStorage.setItem('ip', ipaddress);
+  getLocationByIp(ipaddress);
+}
 
 export default getIPAddress;

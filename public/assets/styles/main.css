@@ -328,8 +328,9 @@ img.loading {
   z-index: 998; }
   @media only screen and (min-width: 768px) {
     .search-all {
-      position: relative;
-      top: auto; } }
+      top: 57px;
+      width: 65.3vw;
+      left: auto; } }
 
 .search {
   text-align: center;
@@ -394,9 +395,6 @@ img.loading {
     #form-search button:hover {
       border: 1px solid #d3d3dc; }
 
-.seach-all {
-  position: relative; }
-
 #searchresults p {
   position: relative;
   top: 0;
@@ -430,9 +428,6 @@ img.loading {
     color: #ce3197;
     z-index: 1;
     pointer-events: none; }
-    @media only screen and (min-width: 768px) {
-      #clearSearch span {
-        top: 10px; } }
 
 .sort {
   display: flex;

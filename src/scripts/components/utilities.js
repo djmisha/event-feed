@@ -47,6 +47,8 @@ export function parseData(response, dataArray) {
   }
 }
 
+/*  Show and Hide Elements on Page  */
+
 export const removeVisible = element => {
   element.classList.remove('visible');
 };
@@ -61,4 +63,10 @@ export const removeHidden = element => {
 
 export const addHidden = element => {
   element.classList.add('hidden');
+};
+
+/* Remove Duplicates Helper */
+
+export const removeDuplicates = array => {
+  return array.filter((a, b) => array.indexOf(a) === b);
 };

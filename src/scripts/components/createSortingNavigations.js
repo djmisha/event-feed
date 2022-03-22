@@ -1,6 +1,9 @@
 var dayjs = require('dayjs');
-import { attachNavTitle, createClickableElement } from './utilities';
-import removeDuplicates from './removeDuplicates';
+import {
+  attachNavTitle,
+  createClickableElement,
+  removeDuplicates,
+} from './utilities';
 import requestEvents from './requestEvents';
 import trackClickEvent from './trackClickEvent';
 
@@ -42,7 +45,7 @@ function createSortingNavigations(locationsData, eventData) {
 
   //  This sets the city on the h1 element, need to refactor
   let locationCity = document.querySelector('.local-city');
-  locationCity.innerHTML = eventData[0].venuecity;
+  locationCity.innerHTML = localStorage.getItem('city');
 
   /* Venues */
   var venueContainer = document.getElementById('venue-list');
@@ -84,7 +87,6 @@ function createSortingNavigations(locationsData, eventData) {
   });
 
   artistArray = removeDuplicates(artistArray);
-  //  artistArray.sort(); // dont sort, rather show upcming first
 
   createClickableElement(artistArray, artistContainer, manualSearch);
   createClickableElement(artistArray, artistsidebarContainer, manualSearch);
@@ -115,13 +117,10 @@ function createSortingNavigations(locationsData, eventData) {
   /* Manual Search by populating input and clicking button*/
 
   function manualSearch() {
-    var div = this;
-    var date = div.getAttribute('data-date');
     this.parentElement.classList.remove('visible');
     this.parentElement.parentElement.classList.remove('visible');
     var searchInput = document.getElementById('input-search');
     var searchButton = document.getElementById('submit-search');
-    // searchInput.value = date || this.innerHTML;
     searchInput.value = this.innerHTML;
     searchButton.click();
     location.href = '#top';
