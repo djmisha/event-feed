@@ -1,8 +1,8 @@
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/public/sw.js').then(function () {
-    console.log('Service Worker Registered');
-  });
-}
+// if ('serviceWorker' in navigator) {
+//   navigator.serviceWorker.register('/public/sw.js').then(function () {
+//     console.log('Service Worker Registered');
+//   });
+// }
 
 const OFFLINE_VERSION = 2;
 const CACHE_NAME = 'offline';
