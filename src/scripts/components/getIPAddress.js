@@ -1,7 +1,7 @@
 import getLocationByIp from './getLocationByIp';
 
 const getIPAddress = async () => {
-  let ipaddress;
+  const ipaddress;
   const url = 'https://api.ipify.org?format=json';
 
   await fetch(url)
@@ -18,7 +18,7 @@ const getIPAddress = async () => {
 };
 
 function setIPAddress(response) {
-  ipaddress = response.ip;
+  const ipaddress = response.ip;
   localStorage.setItem('ip', ipaddress);
   getLocationByIp(ipaddress);
 }
