@@ -7,7 +7,7 @@ import navigationDropdowns from './components/navigationDropdowns';
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
-    .register('/public/sw.js')
+    .register('/sw.js')
     .then(serviceWorker => {
       console.log('Service Worker registered: ', serviceWorker);
     })
