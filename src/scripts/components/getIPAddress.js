@@ -18,7 +18,7 @@ const getIPAddress = async () => {
 };
 
 function setIPAddress(response) {
-  ipaddress = response.ip;
+  const ipaddress = response.ip;
   localStorage.setItem('ip', ipaddress);
   getLocationByIp(ipaddress);
 }
