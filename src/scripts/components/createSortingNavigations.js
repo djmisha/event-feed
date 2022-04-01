@@ -45,7 +45,7 @@ function createSortingNavigations(locationsData, eventData) {
 
   //  This sets the city on the h1 element, need to refactor
   let locationCity = document.querySelector('.local-city');
-  locationCity.innerHTML = localStorage.getItem('city');
+  locationCity.innerHTML = eventData[0].venuecity;
 
   /* Venues */
   var venueContainer = document.getElementById('venue-list');
