@@ -16,6 +16,7 @@ if ('serviceWorker' in navigator) {
     });
 }
 
+console.log(process.env.NODE_ENV);
 // Initialize Application
 
 const setUserLocation = async () => {
