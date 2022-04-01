@@ -5,16 +5,16 @@ import navigationDropdowns from './components/navigationDropdowns';
 
 // Register Service Worker
 
-// if ('serviceWorker' in navigator) {
-//   navigator.serviceWorker
-//     .register('/sw.js')
-//     .then(serviceWorker => {
-//       console.log('Service Worker registered: ', serviceWorker);
-//     })
-//     .catch(error => {
-//       console.error('Error registering the Service Worker: ', error);
-//     });
-// }
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('./sw.js')
+    .then(serviceWorker => {
+      console.log('Service Worker registered: ', serviceWorker);
+    })
+    .catch(error => {
+      console.error('Error registering the Service Worker: ', error);
+    });
+}
 
 // Initialize Application
 
