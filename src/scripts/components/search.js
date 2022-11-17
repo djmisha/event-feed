@@ -71,12 +71,21 @@ function search(eventData) {
   };
 
   /**
+   * Removes special characters from string except letters and numbers
+   * @param {*} string
+   * @returns clean string
+   */
+  const cleanString = (string) => {
+    return string.replace(/[^a-zA-Z0-9 ]/g, '');
+  };
+
+  /**
    * Search for matches
    * @param  {String} query The term to search for
    */
   const search = function (query) {
     // Variables
-    const reg = new RegExp(query, 'i'); // used to be 'gi' but was not searching date correctly
+    const reg = new RegExp(cleanString(query), 'i'); // used to be 'gi' but was not searching date correctly
     const priority1 = []; // dates
     const priority2 = []; // artist names
     const priority3 = []; // venue names
@@ -86,10 +95,10 @@ function search(eventData) {
       if (reg.test(article.formattedDate)) return priority1.push(article);
       article.artist.forEach(function (artlistList) {
         artlistList.forEach(function (artist) {
-          if (reg.test(artist.name)) priority2.push(article);
+          if (reg.test(cleanString(artist.name))) priority2.push(article);
         });
       });
-      if (reg.test(article.venuename)) priority3.push(article);
+      if (reg.test(cleanString(article.venuename))) priority3.push(article);
     });
 
     // Combine the results into a single array
