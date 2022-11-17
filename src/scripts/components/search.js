@@ -3,6 +3,7 @@ import {
   addVisible,
   removeHidden,
   addHidden,
+  cleanString,
 } from './utilities';
 
 function search(eventData) {
@@ -68,15 +69,6 @@ function search(eventData) {
     const html = `<p>Found ${results.length} matching events for "${input.value}"</p>`;
     resultMessage.innerHTML = html;
     addVisible(searchCloseBtn);
-  };
-
-  /**
-   * Removes special characters from string except letters and numbers
-   * @param {*} string
-   * @returns clean string
-   */
-  const cleanString = (string) => {
-    return string.replace(/[^a-zA-Z0-9 ]/g, '');
   };
 
   /**

@@ -16,7 +16,7 @@ export const attachNavTitle = (menu, navtitle) => {
   navEl.prepend(title);
 };
 
-export const readableDate = date => {
+export const readableDate = (date) => {
   return dayjs(date).format('dddd, MMMM D');
 };
 
@@ -49,24 +49,35 @@ export function parseData(response, dataArray) {
 
 /*  Show and Hide Elements on Page  */
 
-export const removeVisible = element => {
+export const removeVisible = (element) => {
   element.classList.remove('visible');
 };
 
-export const addVisible = element => {
+export const addVisible = (element) => {
   element.classList.add('visible');
 };
 
-export const removeHidden = element => {
+export const removeHidden = (element) => {
   element.classList.remove('hidden');
 };
 
-export const addHidden = element => {
+export const addHidden = (element) => {
   element.classList.add('hidden');
 };
 
 /* Remove Duplicates Helper */
 
-export const removeDuplicates = array => {
+export const removeDuplicates = (array) => {
   return array.filter((a, b) => array.indexOf(a) === b);
+};
+
+/**
+ * Removes &amp; from string and
+ * special characters except letters and numbers
+ * @param {*} string
+ * @returns clean string
+ */
+export const cleanString = (string) => {
+  const clean = string.replace(/&amp;/g, '').replace(/[^a-zA-Z0-9 ]/g, '');
+  return clean;
 };
